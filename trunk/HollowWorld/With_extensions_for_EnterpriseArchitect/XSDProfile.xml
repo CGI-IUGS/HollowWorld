@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<UMLProfile>
+	<!--Profile name, version number and general notes -->
+	<Documentation id="XSDSchema" name="UML Profile for XSD Schema" version="1" notes="This profile defines a set of stereotypes and tagged values for defining XSD Schemas"/>
+	
+	<!-- The profile content -->
+	<Content>
+		
+		<!-- List of stereotypes used in this profile. Each stereotype may also include tagged values, constraints, metafile and descriptive comments-->
+		<Stereotypes>
+			
+			<!-- <<XSDschema>> -->
+			<Stereotype name="XSDschema" notes="Root element of XSD Schema. Contains all the definitions for a particular namespace. All the package contents or component classes are placed within the one schema">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="targetNamespace" description="URI to unique target namespace"/>
+					<Tag name="targetNamespacePrefix" description="Prefix associated with namespace"/>
+					<Tag name="defaultNamespace" description="Specifies the default namespace attribute in the schema element"/>					
+					<Tag name="version" description="Schema version"/>
+					<Tag name="elementFormDefault" description="Global default specifying whether instance elements require namespace prefix" values="qualified | unqualified" default="unqualified"/>
+					<Tag name="attributeFormDefault" description="Global default specifying whether instance attributes require namespace prefix" values="qualified | unqualified" default="unqualified"/>
+					<Tag name="modelGroup" description="Default model group used when generating complexType definitions for this Schema" values="all | sequence | choice" default="sequence"/>
+					<Tag name="memberNames" description="Determines whether the UML attribute and role names are qualified by the UML class name" values="qualified | unqualified" default="qualified" />
+					<Tag name="anonymousType" description="Specifies whether the class type is anonymous for attributes" values="true | false" default="false" />
+					<Tag name="anonymousRole" description="Specifies if the role name is included in the element declaration for the UML attribute" values="true | false" default="false" />
+					<Tag name="elementDerivation" description="Determines whether derived complexType definitions will be used or copy down inheritance" values="true | false" default="true" />
+				</TaggedValues>
+			</Stereotype>
+
+			<!-- <<XSDcomplexType>> -->
+			<Stereotype name="XSDcomplexType" notes="ComplexType definition generated in XML Schema">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				
+				<TaggedValues>
+					<Tag name="mixed" description="Determines whether this element may contain mixed element and character content.  Refer to the W3C XML Schema recommendation" values="true | false" default="false" />
+					<Tag name="modelGroup" description="Overrides the package-level default model group" values="all | sequence | choice"/>
+					<Tag name="memberNames" description="Overrides the package-level default for naming complexType definitions" values="qualified | unqualified" />
+				</TaggedValues>
+			</Stereotype>
+			
+			<!--<<XSDsimpleType>> -->
+			<Stereotype name="XSDsimpleType" notes="Define a new XML Schema Simple Type">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				
+				<TaggedValues>
+					<Tag name="derivation" description="Defines derivation type" values="restriction | list" default="restriction"/>
+					<Tag name="pattern" description="As defined by XML Schema Datatypes specification"/>
+					<Tag name="length" description="As defined by XML Schema Datatypes specification"/>
+					<Tag name="minLength" description="As defined by XML Schema Datatypes specification"/>
+					<Tag name="maxLength" description="As defined by XML Schema Datatypes specification"/>
+				</TaggedValues>
+				<Constraints>
+					<Constraint name="No attributes or associations" description="This UML class may not have any attributes or associations originating from it."/>
+					<Constraint name="Parent must be simpleType" description="If a superclass is specified, it must also be a SimpleType"/>
+				</Constraints>
+			</Stereotype>
+			
+			<!--<<enumeration>> -->
+			<Stereotype name="enumeration" notes="Generates a SimpleType with enumeration facets in XML Schema ">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="default" description="Optional value to specify default from list" />
+				</TaggedValues>
+				<Constraints>
+					<Constraint name="Attributes defined which include Datatype Specifications will be ignored" description=""/>
+				</Constraints>
+			</Stereotype>
+		
+			<!--<<XSDsequence>> -->
+			<Stereotype name="XSDsequence" notes="Represents a Sequence model group contained within a higher level model group of a complexType">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<Constraints>
+					<Constraint name="Classes specified with this stereotype must be the destination of unidirectional associations in the UML model" description=""/>
+				</Constraints>
+			</Stereotype>
+		
+			<!--<<XSDchoice>> -->
+			<Stereotype name="XSDchoice" notes="Elements marked with this stereotype represent a Choice model group conatined within a complexType definition">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<Constraints>
+					<Constraint name="Classes specified with this stereotype must be the destination of unidirectional associations in the UML model" description=""/>
+				</Constraints>
+			</Stereotype>
+		
+			<!--<<XSDany>> -->
+			<Stereotype name="XSDany" notes="The stereotyped class or attribute will be relaced by an 'any' or 'anyAttribute' element. The tagged values are copied into the corresponding attributes of the generated element">
+				<AppliesTo>
+					<Apply type="class"/>
+					<Apply type="attribute"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="namespace" description="As defined by XML Schema specification"/>				
+					<Tag name="processContents" description="As defined in XML Schema sepecification" values="skip | lax | strict" default="strict" />					
+				</TaggedValues>
+				<Constraints>
+				</Constraints>
+			</Stereotype>
+
+			<!--<<XSDattribute>> -->
+			<Stereotype name="XSDattribute" notes="Assigned to UML attribute or association end. Indicates item is to be generated as an attribute within complexType and not as an element">
+				<AppliesTo>
+					<Apply type="attribute"/>
+					<Apply type="associationRole"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="form" description="Overrides the attributeFormDefault for this schema" values="qualified | unqualified"/>
+					<Tag name="use" description="As defined by XML Schema specification" values="prohibited | optional | required" default="optional" />
+					<Tag name="default" description="As defined in XML Schema sepecification"/>
+					<Tag name="fixed" description="As defined in XML Schema sepecification"/>
+				</TaggedValues>
+				<Constraints>
+					<Constraint name="May not refer to a class specification" description=""/>
+				</Constraints>
+			</Stereotype>
+			
+			<!--<<XSDelement>> -->
+			<Stereotype name="XSDelement" notes="Assigned to UML attribute or association end. Indicates item is to be generated as element within complexType and not as attribute">
+				<AppliesTo>
+					<Apply type="attribute"/>
+					<Apply type="associationRole"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="form" description="Overrides the elementFormDefault for this schema" values="qualified | unqualified" default="" />
+					<Tag name="position" description="If assigned, indicates position in the sequence model group" values="" default="" />
+					<Tag name="anonymousType" description="The class type will be anonymous for XML documents generated by the schema" values="true | false" default="false" />
+					<Tag name="anonymousRole" description="The class type will be directly embedded within the complexType definition. Omit attribute or role type wrapper" values="true | false" default="false" />
+				</TaggedValues>
+				<Constraints>
+				</Constraints>
+			</Stereotype>
+
+			<!--<<XSDrestriction>> -->
+			<Stereotype name="XSDrestriction" notes="Marks a UML Generalization as being a restriction of the superclass, overriding the default behaviour of the extension. Child will be generated as a complexType with restriction child element">
+				<AppliesTo>
+					<Apply type="generalization"/>
+				</AppliesTo>
+				<TaggedValues>
+				</TaggedValues>
+				<Constraints>
+					<Constraint name="Parent and Child must be UML classes" description=""/>
+				</Constraints>
+			</Stereotype>
+		</Stereotypes>
+	</Content>
+	
+</UMLProfile>
