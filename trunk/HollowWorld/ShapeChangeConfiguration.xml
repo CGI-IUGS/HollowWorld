@@ -18,9 +18,11 @@
 		<Namespace nsabr="smXML" ns="http://www.isotc211.org/smXML" gmlVersion="3.1" location="http://www.isotc211.org/smXML/metadataEntity.xsd"/>
 		-->
 		<!-- SEE Grid - Hollow World template -->
-		<Namespace nsabr="geo" ns="http://www.seegrid.csiro.au/xml/geometry" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/geo/0.1.0/geometryProperties.xsd"/>
+		<Namespace nsabr="geo" ns="http://www.seegrid.csiro.au/xml/geometry" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/geo/0.1.0/geo.xsd"/>
 		<Namespace nsabr="meta" ns="http://www.seegrid.csiro.au/xml/metaLite" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/metaLite/0.1.30/metaLite.xsd"/>
-		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/recordSchema.xsd"/>
+		<Namespace nsabr="sa" ns="http://www.seegrid.csiro.au/xml/sampling" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sampling/0.1.0/sampling.xsd"/>
+		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
+		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
 
 	</namespaces>
 	<mapEntries>
@@ -488,6 +490,11 @@
 		<TypeMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingPropertyType" nsabr="gml"/>
 
 		<!-- SEE Grid - Hollow World template -->
+		<!--
+		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
+		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
+-->
+		<!-- Metadata stubs -->
 		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="SimplePartyType" nsabr="meta"/>
 		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="SimpleParty" nsabr="meta"/>
 		<TypeMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="PartyPropertyType" nsabr="meta"/>
@@ -500,7 +507,41 @@
 		-->
 		<TypeMapEntry type="DQ_DataQuality" gmlVersion="*" rule="direct" mapTo="QualityPropertyType" nsabr="meta"/>
 
-		<!-- OM support -->
+		<!-- Geometry extensions -->
+		<TypeMapEntry type="Shape1D" gmlVersion="*" rule="direct" mapTo="Shape1DPropertyType" nsabr="geo"/>
+		<TypeMapEntry type="Shape2D" gmlVersion="*" rule="direct" mapTo="Shape2DPropertyType" nsabr="geo"/>
+		<TypeMapEntry type="Shape3D" gmlVersion="*" rule="direct" mapTo="Shape3DPropertyType" nsabr="geo"/>
+
+		<!-- Sampling schema -->
+		<BaseMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="SpecimenType" nsabr="sa"/>
+		<ElementMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="Specimen" nsabr="sa"/>
+		<TypeMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="SpecimenPropertyType" nsabr="sa"/>
+		<BaseMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventType" nsabr="sa"/>
+		<ElementMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEvent" nsabr="sa"/>
+		<TypeMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventPropertyType" nsabr="sa"/>
+		<BaseMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="SiteType" nsabr="sa"/>
+		<ElementMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="Site" nsabr="sa"/>
+		<TypeMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="SitePropertyType" nsabr="sa"/>
+		<BaseMapEntry type="Station" gmlVersion="*" rule="direct" mapTo="StationType" nsabr="sa"/>
+		<ElementMapEntry type="Station" gmlVersion="*" rule="direct" mapTo="Station" nsabr="sa"/>
+		<TypeMapEntry type="Station" gmlVersion="*" rule="direct" mapTo="StationPropertyType" nsabr="sa"/>
+		<BaseMapEntry type="Profile" gmlVersion="*" rule="direct" mapTo="ProfileType" nsabr="sa"/>
+		<ElementMapEntry type="Profile" gmlVersion="*" rule="direct" mapTo="Profile" nsabr="sa"/>
+		<TypeMapEntry type="Profile" gmlVersion="*" rule="direct" mapTo="ProfilePropertyType" nsabr="sa"/>
+		<BaseMapEntry type="SurfaceOfInterest" gmlVersion="*" rule="direct" mapTo="SurfaceOfInterestType" nsabr="sa"/>
+		<ElementMapEntry type="SurfaceOfInterest" gmlVersion="*" rule="direct" mapTo="SurfaceOfInterest" nsabr="sa"/>
+		<TypeMapEntry type="SurfaceOfInterest" gmlVersion="*" rule="direct" mapTo="SurfaceOfInterestPropertyType" nsabr="sa"/>
+		<BaseMapEntry type="SolidOfInterest" gmlVersion="*" rule="direct" mapTo="SolidOfInterestType" nsabr="sa"/>
+		<ElementMapEntry type="SolidOfInterest" gmlVersion="*" rule="direct" mapTo="SolidOfInterest" nsabr="sa"/>
+		<TypeMapEntry type="SolidOfInterest" gmlVersion="*" rule="direct" mapTo="SolidOfInterestPropertyType" nsabr="sa"/>
+		<BaseMapEntry type="SiteCollection" gmlVersion="*" rule="direct" mapTo="SiteCollectionType" nsabr="sa"/>
+		<ElementMapEntry type="SiteCollection" gmlVersion="*" rule="direct" mapTo="SiteCollection" nsabr="sa"/>
+		<TypeMapEntry type="SiteCollection" gmlVersion="*" rule="direct" mapTo="SiteCollectionPropertyType" nsabr="sa"/>
+		<BaseMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedureType" nsabr="sa"/>
+		<ElementMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedure" nsabr="sa"/>
+		<TypeMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedurePropertyType" nsabr="sa"/>
+
+		<!-- SWE Base schema -->
 		<TypeMapEntry type="ScopedName" gmlVersion="*" rule="direct" mapTo="ScopedNameType" nsabr="swe"/>
 		<TypeMapEntry type="nonNegativeIntegerList" gmlVersion="*" rule="direct" mapTo="nonNegativeIntegerList" nsabr="swe"/>
 		<TypeMapEntry type="stringList" gmlVersion="*" rule="direct" mapTo="stringList" nsabr="swe"/>
@@ -509,12 +550,79 @@
 		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="OM_RecordType" nsabr="swe"/>
 		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="OM_NumericRecordType" nsabr="swe"/>
 		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="OM_RecordSchemaPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="OM_RecordSchemaType" nsabr="swe"/>
+		<ElementMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="OM_RecordSchema" nsabr="swe"/>
 		<TypeMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="OM_RecordSchemaPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonType" nsabr="swe"/>
+		<ElementMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="Phenomenon" nsabr="swe"/>
+		<TypeMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TimeAggregate" gmlVersion="*" rule="direct" mapTo="TimeAggregateType" nsabr="swe"/>
+		<ElementMapEntry type="TimeAggregate" gmlVersion="*" rule="direct" mapTo="TimeAggregate" nsabr="swe"/>
+		<TypeMapEntry type="TimeAggregate" gmlVersion="*" rule="direct" mapTo="TimeAggregatePropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGridType" nsabr="swe"/>
+		<ElementMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGrid" nsabr="swe"/>
+		<TypeMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGridPropertyType" nsabr="swe"/>
 		<!-- for "CommonObservation" -->
 		<TypeMapEntry type="DataValue" gmlVersion="*" rule="direct" mapTo="DataValueType" nsabr="swe"/>
 		<TypeMapEntry type="DataDefinition" gmlVersion="*" rule="direct" mapTo="DataDefinitionPropertyType" nsabr="swe"/>
 		<TypeMapEntry type="Encoding" gmlVersion="*" rule="direct" mapTo="EncodingPropertyType" nsabr="swe"/>
 
+		<!-- OM support -->
+		<BaseMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="EventType" nsabr="om"/>
+		<ElementMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="Event" nsabr="om"/>
+		<TypeMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="EventPropertyType" nsabr="om"/>
+		<BaseMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedureType" nsabr="om"/>
+		<ElementMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="Procedure" nsabr="om"/>
+		<TypeMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedurePropertyType" nsabr="om"/>
+		<BaseMapEntry type="SimpleProcedure" gmlVersion="*" rule="direct" mapTo="SimpleProcedureType" nsabr="om"/>
+		<ElementMapEntry type="SimpleProcedure" gmlVersion="*" rule="direct" mapTo="SimpleProcedure" nsabr="om"/>
+		<TypeMapEntry type="SimpleProcedure" gmlVersion="*" rule="direct" mapTo="SimpleProcedurePropertyType" nsabr="om"/>
+		<BaseMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackageType" nsabr="om"/>
+		<ElementMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackage" nsabr="om"/>
+		<TypeMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackagePropertyType" nsabr="om"/>
+		<BaseMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequenceType" nsabr="om"/>
+		<ElementMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequence" nsabr="om"/>
+		<TypeMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequencePropertyType" nsabr="om"/>
+		<BaseMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedureType" nsabr="om"/>
+		<ElementMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedure" nsabr="om"/>
+		<TypeMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedurePropertyType" nsabr="om"/>
+		<BaseMapEntry type="Instrument" gmlVersion="*" rule="direct" mapTo="InstrumentType" nsabr="om"/>
+		<ElementMapEntry type="Instrument" gmlVersion="*" rule="direct" mapTo="Instrument" nsabr="om"/>
+		<TypeMapEntry type="Instrument" gmlVersion="*" rule="direct" mapTo="InstrumentPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="AbstractObservation" gmlVersion="*" rule="direct" mapTo="AbstractObservationType" nsabr="om"/>
+		<ElementMapEntry type="AbstractObservation" gmlVersion="*" rule="direct" mapTo="AbstractObservation" nsabr="om"/>
+		<TypeMapEntry type="AbstractObservation" gmlVersion="*" rule="direct" mapTo="AbstractObservationPropertyType" nsabr="om"/>
+		<BaseMapEntry type="Observation" gmlVersion="*" rule="direct" mapTo="ObservationType" nsabr="om"/>
+		<ElementMapEntry type="Observation" gmlVersion="*" rule="direct" mapTo="Observation" nsabr="om"/>
+		<TypeMapEntry type="Observation" gmlVersion="*" rule="direct" mapTo="ObservationPropertyType" nsabr="om"/>
+		<BaseMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollectionType" nsabr="om"/>
+		<ElementMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollection" nsabr="om"/>
+		<TypeMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollectionPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="MeasurementType" nsabr="om"/>
+		<ElementMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="Measurement" nsabr="om"/>
+		<TypeMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="MeasurementPropertyType" nsabr="om"/>
+		<BaseMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservationType" nsabr="om"/>
+		<ElementMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservation" nsabr="om"/>
+		<TypeMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ComplexObservation" gmlVersion="*" rule="direct" mapTo="ComplexObservationType" nsabr="om"/>
+		<ElementMapEntry type="ComplexObservation" gmlVersion="*" rule="direct" mapTo="ComplexObservation" nsabr="om"/>
+		<TypeMapEntry type="ComplexObservation" gmlVersion="*" rule="direct" mapTo="ComplexObservationPropertyType" nsabr="om"/>
+		<BaseMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservationType" nsabr="om"/>
+		<ElementMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservation" nsabr="om"/>
+		<TypeMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservationPropertyType" nsabr="om"/>
+		<BaseMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationType" nsabr="om"/>
+		<ElementMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservation" nsabr="om"/>
+		<TypeMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ComplexMeasurement" gmlVersion="*" rule="direct" mapTo="ComplexMeasurementType" nsabr="om"/>
+		<ElementMapEntry type="ComplexMeasurement" gmlVersion="*" rule="direct" mapTo="ComplexMeasurement" nsabr="om"/>
+		<TypeMapEntry type="ComplexMeasurement" gmlVersion="*" rule="direct" mapTo="ComplexMeasurementPropertyType" nsabr="om"/>
+		<BaseMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurementType" nsabr="om"/>
+		<ElementMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurement" nsabr="om"/>
+		<TypeMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurementPropertyType" nsabr="om"/>
 		<!-- ISO 19115 + ISO/TS 19139 -->
 		<!--
 		<BaseMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address_Type" nsabr="smXML"/>
