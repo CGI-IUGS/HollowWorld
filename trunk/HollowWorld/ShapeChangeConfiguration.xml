@@ -23,6 +23,7 @@
 		<Namespace nsabr="sa" ns="http://www.seegrid.csiro.au/xml/sampling" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sampling/0.1.0/sampling.xsd"/>
 		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
 		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
+		<Namespace nsabr="" ns="http://www.w3.org/2001/XMLSchema" gmlVersion="*"/>
 
 	</namespaces>
 	<mapEntries>
@@ -489,11 +490,62 @@
 		<ElementMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRing" nsabr="gml"/>
 		<TypeMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingPropertyType" nsabr="gml"/>
 
-		<!-- SEE Grid - Hollow World template -->
+		<!-- ISO 19115 + ISO/TS 19139 -->
 		<!--
-		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
-		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
--->
+		<BaseMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CI_Citation_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_Contact" gmlVersion="*" rule="direct" mapTo="CI_Contact_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="CI_ResponsibleParty_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_Telephone" gmlVersion="*" rule="direct" mapTo="CI_Telephone_Type" nsabr="smXML"/>
+		<BaseMapEntry type="EX_Extent" gmlVersion="*" rule="direct" mapTo="EX_Extent_Type" nsabr="smXML"/>
+		<BaseMapEntry type="MD_Metadata" gmlVersion="*" rule="direct" mapTo="MD_Metadata_Type" nsabr="smXML"/>
+		<BaseMapEntry type="RS_Identifier" gmlVersion="*" rule="direct" mapTo="RS_Identifier_Type" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CI_Citation" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Contact" gmlVersion="*" rule="direct" mapTo="CI_Contact" nsabr="smXML"/>
+		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="CI_ResponsibleParty" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Series" gmlVersion="*" rule="direct" mapTo="CI_Series" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Telephone" gmlVersion="*" rule="direct" mapTo="CI_Telephone" nsabr="smXML"/>
+		<ElementMapEntry type="" gmlVersion="*" rule="direct" mapTo="DQ_DataQuality" nsabr="smXML"/>
+		<ElementMapEntry type="DQ_PositionalAccuracy" gmlVersion="*" rule="direct" mapTo="_DQ_PositionalAccuracy" nsabr="smXML"/>
+		<ElementMapEntry type="DQ_QuantitativeResult" gmlVersion="*" rule="direct" mapTo="DQ_QuantitativeResult" nsabr="smXML"/>
+		<ElementMapEntry type="EX_Extent" gmlVersion="*" rule="direct" mapTo="EX_Extent" nsabr="smXML"/>
+		<ElementMapEntry type="MD_BrowseGraphic" gmlVersion="*" rule="direct" mapTo="MD_BrowseGraphic" nsabr="smXML"/>
+		<ElementMapEntry type="MD_ClassificationCode" gmlVersion="*" rule="direct" mapTo="MD_ClassificationCode" nsabr="smXML"/>
+		<ElementMapEntry type="MD_Format" gmlVersion="*" rule="direct" mapTo="MD_Format" nsabr="smXML"/>
+		<ElementMapEntry type="MD_Identifier" gmlVersion="*" rule="direct" mapTo="MD_Identifier" nsabr="smXML"/>
+		<ElementMapEntry type="MD_ImagingConditionCode" gmlVersion="*" rule="direct" mapTo="MD_ImagingConditionCode" nsabr="smXML"/>
+		<ElementMapEntry type="MD_MediumNameCode" gmlVersion="*" rule="direct" mapTo="MD_MediumNameCode" nsabr="smXML"/>
+		<ElementMapEntry type="MD_Metadata" gmlVersion="*" rule="direct" mapTo="MD_Metadata" nsabr="smXML"/>
+		<ElementMapEntry type="RS_Identifier" gmlVersion="*" rule="direct" mapTo="RS_Identifier" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Address" gmlVersion="*" rule="propertyType" mapTo="CI_Address" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Citation" gmlVersion="*" rule="propertyType" mapTo="CI_Citation" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Contact" gmlVersion="*" rule="propertyType" mapTo="CI_Contact" nsabr="smXML"/>
+		<TypeMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="propertyType" mapTo="CI_ResponsibleParty" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Series" gmlVersion="*" rule="propertyType" mapTo="CI_Series" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Telephone" gmlVersion="*" rule="propertyType" mapTo="CI_Telephone" nsabr="smXML"/>
+		<TypeMapEntry type="DQ_DataQuality" gmlVersion="*" rule="propertyType" mapTo="DQ_DataQuality" nsabr="smXML"/>
+		<TypeMapEntry type="DQ_PositionalAccuracy" gmlVersion="*" rule="propertyType" mapTo="_DQ_PositionalAccuracy" nsabr="smXML"/>
+		<TypeMapEntry type="DQ_QuantitativeResult" gmlVersion="*" rule="propertyType" mapTo="DQ_QuantitativeResult" nsabr="smXML"/>
+		<TypeMapEntry type="EX_Extent" gmlVersion="*" rule="propertyType" mapTo="EX_Extent" nsabr="smXML"/>
+		<TypeMapEntry type="MD_BrowseGraphic" gmlVersion="*" rule="propertyType" mapTo="MD_BrowseGraphic" nsabr="smXML"/>
+		<TypeMapEntry type="MD_ClassificationCode" gmlVersion="*" rule="propertyType" mapTo="MD_ClassificationCode" nsabr="smXML"/>
+		<TypeMapEntry type="MD_Format" gmlVersion="*" rule="propertyType" mapTo="MD_Format" nsabr="smXML"/>
+		<TypeMapEntry type="MD_Identifier" gmlVersion="*" rule="propertyType" mapTo="MD_Identifier" nsabr="smXML"/>
+		<TypeMapEntry type="MD_ImagingConditionCode" gmlVersion="*" rule="propertyType" mapTo="MD_ImagingConditionCode" nsabr="smXML"/>
+		<TypeMapEntry type="MD_MediumNameCode" gmlVersion="*" rule="propertyType" mapTo="MD_MediumNameCode" nsabr="smXML"/>
+		<TypeMapEntry type="MD_Metadata" gmlVersion="*" rule="propertyType" mapTo="MD_Metadata" nsabr="smXML"/>
+		<TypeMapEntry type="RS_Identifier" gmlVersion="*" rule="propertyType" mapTo="RS_Identifier" nsabr="smXML"/>
+		-->
+		<!-- Others -->
+		<ElementMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurve" nsabr="gml"/>
+		<ElementMapEntry type="TopoPoint" gmlVersion="3.1" rule="direct" mapTo="TopoPoint" nsabr="gml"/>
+		<ElementMapEntry type="TopoSurface" gmlVersion="3.1" rule="direct" mapTo="TopoSurface" nsabr="gml"/>
+		<TypeMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TopoPoint" gmlVersion="3.1" rule="direct" mapTo="TopoPointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TopoSurface" gmlVersion="3.1" rule="direct" mapTo="TopoSurfacePropertyType" nsabr="gml"/>
+
+				<!-- SEE Grid - Hollow World template -->
 		<!-- Metadata stubs -->
 		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="SimplePartyType" nsabr="meta"/>
 		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="SimpleParty" nsabr="meta"/>
@@ -623,59 +675,55 @@
 		<BaseMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurementType" nsabr="om"/>
 		<ElementMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurement" nsabr="om"/>
 		<TypeMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurementPropertyType" nsabr="om"/>
-		<!-- ISO 19115 + ISO/TS 19139 -->
+
+		<!-- W3C XML Schema simple types -->
 		<!--
-		<BaseMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address_Type" nsabr="smXML"/>
-		<BaseMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CI_Citation_Type" nsabr="smXML"/>
-		<BaseMapEntry type="CI_Contact" gmlVersion="*" rule="direct" mapTo="CI_Contact_Type" nsabr="smXML"/>
-		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="CI_ResponsibleParty_Type" nsabr="smXML"/>
-		<BaseMapEntry type="CI_Telephone" gmlVersion="*" rule="direct" mapTo="CI_Telephone_Type" nsabr="smXML"/>
-		<BaseMapEntry type="EX_Extent" gmlVersion="*" rule="direct" mapTo="EX_Extent_Type" nsabr="smXML"/>
-		<BaseMapEntry type="MD_Metadata" gmlVersion="*" rule="direct" mapTo="MD_Metadata_Type" nsabr="smXML"/>
-		<BaseMapEntry type="RS_Identifier" gmlVersion="*" rule="direct" mapTo="RS_Identifier_Type" nsabr="smXML"/>
-		<ElementMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address" nsabr="smXML"/>
-		<ElementMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CI_Citation" nsabr="smXML"/>
-		<ElementMapEntry type="CI_Contact" gmlVersion="*" rule="direct" mapTo="CI_Contact" nsabr="smXML"/>
-		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="CI_ResponsibleParty" nsabr="smXML"/>
-		<ElementMapEntry type="CI_Series" gmlVersion="*" rule="direct" mapTo="CI_Series" nsabr="smXML"/>
-		<ElementMapEntry type="CI_Telephone" gmlVersion="*" rule="direct" mapTo="CI_Telephone" nsabr="smXML"/>
-		<ElementMapEntry type="" gmlVersion="*" rule="direct" mapTo="DQ_DataQuality" nsabr="smXML"/>
-		<ElementMapEntry type="DQ_PositionalAccuracy" gmlVersion="*" rule="direct" mapTo="_DQ_PositionalAccuracy" nsabr="smXML"/>
-		<ElementMapEntry type="DQ_QuantitativeResult" gmlVersion="*" rule="direct" mapTo="DQ_QuantitativeResult" nsabr="smXML"/>
-		<ElementMapEntry type="EX_Extent" gmlVersion="*" rule="direct" mapTo="EX_Extent" nsabr="smXML"/>
-		<ElementMapEntry type="MD_BrowseGraphic" gmlVersion="*" rule="direct" mapTo="MD_BrowseGraphic" nsabr="smXML"/>
-		<ElementMapEntry type="MD_ClassificationCode" gmlVersion="*" rule="direct" mapTo="MD_ClassificationCode" nsabr="smXML"/>
-		<ElementMapEntry type="MD_Format" gmlVersion="*" rule="direct" mapTo="MD_Format" nsabr="smXML"/>
-		<ElementMapEntry type="MD_Identifier" gmlVersion="*" rule="direct" mapTo="MD_Identifier" nsabr="smXML"/>
-		<ElementMapEntry type="MD_ImagingConditionCode" gmlVersion="*" rule="direct" mapTo="MD_ImagingConditionCode" nsabr="smXML"/>
-		<ElementMapEntry type="MD_MediumNameCode" gmlVersion="*" rule="direct" mapTo="MD_MediumNameCode" nsabr="smXML"/>
-		<ElementMapEntry type="MD_Metadata" gmlVersion="*" rule="direct" mapTo="MD_Metadata" nsabr="smXML"/>
-		<ElementMapEntry type="RS_Identifier" gmlVersion="*" rule="direct" mapTo="RS_Identifier" nsabr="smXML"/>
-		<TypeMapEntry type="CI_Address" gmlVersion="*" rule="propertyType" mapTo="CI_Address" nsabr="smXML"/>
-		<TypeMapEntry type="CI_Citation" gmlVersion="*" rule="propertyType" mapTo="CI_Citation" nsabr="smXML"/>
-		<TypeMapEntry type="CI_Contact" gmlVersion="*" rule="propertyType" mapTo="CI_Contact" nsabr="smXML"/>
-		<TypeMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="propertyType" mapTo="CI_ResponsibleParty" nsabr="smXML"/>
-		<TypeMapEntry type="CI_Series" gmlVersion="*" rule="propertyType" mapTo="CI_Series" nsabr="smXML"/>
-		<TypeMapEntry type="CI_Telephone" gmlVersion="*" rule="propertyType" mapTo="CI_Telephone" nsabr="smXML"/>
-		<TypeMapEntry type="DQ_DataQuality" gmlVersion="*" rule="propertyType" mapTo="DQ_DataQuality" nsabr="smXML"/>
-		<TypeMapEntry type="DQ_PositionalAccuracy" gmlVersion="*" rule="propertyType" mapTo="_DQ_PositionalAccuracy" nsabr="smXML"/>
-		<TypeMapEntry type="DQ_QuantitativeResult" gmlVersion="*" rule="propertyType" mapTo="DQ_QuantitativeResult" nsabr="smXML"/>
-		<TypeMapEntry type="EX_Extent" gmlVersion="*" rule="propertyType" mapTo="EX_Extent" nsabr="smXML"/>
-		<TypeMapEntry type="MD_BrowseGraphic" gmlVersion="*" rule="propertyType" mapTo="MD_BrowseGraphic" nsabr="smXML"/>
-		<TypeMapEntry type="MD_ClassificationCode" gmlVersion="*" rule="propertyType" mapTo="MD_ClassificationCode" nsabr="smXML"/>
-		<TypeMapEntry type="MD_Format" gmlVersion="*" rule="propertyType" mapTo="MD_Format" nsabr="smXML"/>
-		<TypeMapEntry type="MD_Identifier" gmlVersion="*" rule="propertyType" mapTo="MD_Identifier" nsabr="smXML"/>
-		<TypeMapEntry type="MD_ImagingConditionCode" gmlVersion="*" rule="propertyType" mapTo="MD_ImagingConditionCode" nsabr="smXML"/>
-		<TypeMapEntry type="MD_MediumNameCode" gmlVersion="*" rule="propertyType" mapTo="MD_MediumNameCode" nsabr="smXML"/>
-		<TypeMapEntry type="MD_Metadata" gmlVersion="*" rule="propertyType" mapTo="MD_Metadata" nsabr="smXML"/>
-		<TypeMapEntry type="RS_Identifier" gmlVersion="*" rule="propertyType" mapTo="RS_Identifier" nsabr="smXML"/>
+		<TypeMapEntry type="ID" gmlVersion="*" rule="direct" mapTo="ID"/>
+		<TypeMapEntry type="ENTITIES" gmlVersion="*" rule="direct" mapTo="ENTITIES"/>
+		<TypeMapEntry type="ENTITY" gmlVersion="*" rule="direct" mapTo="ENTITY"/>
+		<TypeMapEntry type="IDREF" gmlVersion="*" rule="direct" mapTo="IDREF"/>
+		<TypeMapEntry type="IDREFS" gmlVersion="*" rule="direct" mapTo="IDREFS"/>
+		<TypeMapEntry type="NCName" gmlVersion="*" rule="direct" mapTo="NCName"/>
+		<TypeMapEntry type="NMTOKEN" gmlVersion="*" rule="direct" mapTo="NMTOKEN"/>
+		<TypeMapEntry type="NMTOKENS" gmlVersion="*" rule="direct" mapTo="NMTOKENS"/>
+		<TypeMapEntry type="NOTATION" gmlVersion="*" rule="direct" mapTo="NOTATION"/>
+		<TypeMapEntry type="Name" gmlVersion="*" rule="direct" mapTo="Name"/>
+		<TypeMapEntry type="QName" gmlVersion="*" rule="direct" mapTo="QName"/>
+		<TypeMapEntry type="anySimpleType" gmlVersion="*" rule="direct" mapTo="anySimpleType"/>
+		<TypeMapEntry type="anyType" gmlVersion="*" rule="direct" mapTo="anyType"/>
+		<TypeMapEntry type="anyURI" gmlVersion="*" rule="direct" mapTo="anyURI"/>
+		<TypeMapEntry type="base64Binary" gmlVersion="*" rule="direct" mapTo="base64Binary"/>
+		<TypeMapEntry type="boolean" gmlVersion="*" rule="direct" mapTo="boolean"/>
+		<TypeMapEntry type="byte" gmlVersion="*" rule="direct" mapTo="byte"/>
+		<TypeMapEntry type="date" gmlVersion="*" rule="direct" mapTo="date"/>
+		<TypeMapEntry type="dateTime" gmlVersion="*" rule="direct" mapTo="dateTime"/>
+		<TypeMapEntry type="decimal" gmlVersion="*" rule="direct" mapTo="decimal"/>
+		<TypeMapEntry type="double" gmlVersion="*" rule="direct" mapTo="double"/>
+		<TypeMapEntry type="duration" gmlVersion="*" rule="direct" mapTo="duration"/>
+		<TypeMapEntry type="float" gmlVersion="*" rule="direct" mapTo="float"/>
+		<TypeMapEntry type="gDay" gmlVersion="*" rule="direct" mapTo="gDay"/>
+		<TypeMapEntry type="gMonth" gmlVersion="*" rule="direct" mapTo="gMonth"/>
+		<TypeMapEntry type="gMonthDay" gmlVersion="*" rule="direct" mapTo="gMonthDay"/>
+		<TypeMapEntry type="gYear" gmlVersion="*" rule="direct" mapTo="gYear"/>
+		<TypeMapEntry type="gYearMonth" gmlVersion="*" rule="direct" mapTo="gYearMonth"/>
+		<TypeMapEntry type="hexBinary" gmlVersion="*" rule="direct" mapTo="hexBinary"/>
+		<TypeMapEntry type="int" gmlVersion="*" rule="direct" mapTo="int"/>
+		<TypeMapEntry type="integer" gmlVersion="*" rule="direct" mapTo="integer"/>
+		<TypeMapEntry type="language" gmlVersion="*" rule="direct" mapTo="language"/>
+		<TypeMapEntry type="long" gmlVersion="*" rule="direct" mapTo="long"/>
+		<TypeMapEntry type="negativeInteger" gmlVersion="*" rule="direct" mapTo="negativeInteger"/>
+		<TypeMapEntry type="nonNegativeInteger" gmlVersion="*" rule="direct" mapTo="nonNegativeInteger"/>
+		<TypeMapEntry type="nonPositiveInteger" gmlVersion="*" rule="direct" mapTo="nonPositiveInteger"/>
+		<TypeMapEntry type="normalizedString" gmlVersion="*" rule="direct" mapTo="normalizedString"/>
+		<TypeMapEntry type="positiveInteger" gmlVersion="*" rule="direct" mapTo="positiveInteger"/>
+		<TypeMapEntry type="short" gmlVersion="*" rule="direct" mapTo="short"/>
+		<TypeMapEntry type="string" gmlVersion="*" rule="direct" mapTo="string"/>
+		<TypeMapEntry type="time" gmlVersion="*" rule="direct" mapTo="time"/>
+		<TypeMapEntry type="token" gmlVersion="*" rule="direct" mapTo="token"/>
+		<TypeMapEntry type="unsignedByte" gmlVersion="*" rule="direct" mapTo="unsignedByte"/>
+		<TypeMapEntry type="unsignedInt" gmlVersion="*" rule="direct" mapTo="unsignedInt"/>
+		<TypeMapEntry type="unsignedLong" gmlVersion="*" rule="direct" mapTo="unsignedLong"/>
+		<TypeMapEntry type="unsignedShort" gmlVersion="*" rule="direct" mapTo="unsignedShort"/>
 		-->
-		<!-- Others -->
-		<ElementMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurve" nsabr="gml"/>
-		<ElementMapEntry type="TopoPoint" gmlVersion="3.1" rule="direct" mapTo="TopoPoint" nsabr="gml"/>
-		<ElementMapEntry type="TopoSurface" gmlVersion="3.1" rule="direct" mapTo="TopoSurface" nsabr="gml"/>
-		<TypeMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurvePropertyType" nsabr="gml"/>
-		<TypeMapEntry type="TopoPoint" gmlVersion="3.1" rule="direct" mapTo="TopoPointPropertyType" nsabr="gml"/>
-		<TypeMapEntry type="TopoSurface" gmlVersion="3.1" rule="direct" mapTo="TopoSurfacePropertyType" nsabr="gml"/>
 	</mapEntries>
 </ShapeChangeConfiguration>
