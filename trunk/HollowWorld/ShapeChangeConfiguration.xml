@@ -34,6 +34,9 @@
 		<ElementMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="Record" nsabr="scXML"/>
 		<ElementMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="RecordType" nsabr="scXML"/>
 		-->
+		<!-- added by SJDC 2005-11-21 -->
+	  	<TypeMapEntry type="Any" gmlVersion="*" rule="direct" mapTo="anyType"/>
+	  	<!-- ............... -->
 		<TypeMapEntry type="Angle" gmlVersion="3.0" rule="direct" mapTo="AngleType" nsabr="gml"/>
 		<TypeMapEntry type="Angle" gmlVersion="3.1" rule="direct" mapTo="AngleType" nsabr="gml"/>
 		<TypeMapEntry type="Area" gmlVersion="3.0" rule="direct" mapTo="AreaType" nsabr="gml"/>
