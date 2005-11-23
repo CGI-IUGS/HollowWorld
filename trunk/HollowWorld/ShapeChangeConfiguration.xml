@@ -23,7 +23,6 @@
 		<Namespace nsabr="sa" ns="http://www.seegrid.csiro.au/xml/sampling" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sampling/0.1.0/sampling.xsd"/>
 		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
 		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
-		<Namespace nsabr="" ns="http://www.w3.org/2001/XMLSchema" gmlVersion="*"/>
 
 	</namespaces>
 	<mapEntries>
@@ -629,9 +628,9 @@
 		<BaseMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedureType" nsabr="om"/>
 		<ElementMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="Procedure" nsabr="om"/>
 		<TypeMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedurePropertyType" nsabr="om"/>
-		<BaseMapEntry type="SimpleProcedure" gmlVersion="*" rule="direct" mapTo="SimpleProcedureType" nsabr="om"/>
-		<ElementMapEntry type="SimpleProcedure" gmlVersion="*" rule="direct" mapTo="SimpleProcedure" nsabr="om"/>
-		<TypeMapEntry type="SimpleProcedure" gmlVersion="*" rule="direct" mapTo="SimpleProcedurePropertyType" nsabr="om"/>
+		<BaseMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedureType" nsabr="om"/>
+		<ElementMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedure" nsabr="om"/>
+		<TypeMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedurePropertyType" nsabr="om"/>
 		<BaseMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackageType" nsabr="om"/>
 		<ElementMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackage" nsabr="om"/>
 		<TypeMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackagePropertyType" nsabr="om"/>
