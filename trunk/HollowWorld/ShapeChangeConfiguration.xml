@@ -82,6 +82,16 @@
 		<TypeMapEntry type="Volume" gmlVersion="3.1" rule="direct" mapTo="VolumeType" nsabr="gml"/>
 		<TypeMapEntry type="Year" gmlVersion="*" rule="direct" mapTo="gYear"/>
 		<!-- ISO 19107 Geometry -->
+		
+		<!-- added by SJDC 2005-11-23 -->
+		<TypeMapEntry type="DirectPosition" gmlVersion="3.0" rule="direct" mapTo="DirectPositionType" nsabr="gml"/>
+		<TypeMapEntry type="DirectPosition" gmlVersion="3.1" rule="direct" mapTo="DirectPositionType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Position" gmlVersion="3.0" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+<!-- not strictly accurate as GM_Position also allows direct value, but this is most general -->
+		<TypeMapEntry type="GM_Position" gmlVersion="3.1" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+<!-- not strictly accurate as GM_Position also allows direct value, but this is most general  -->
+		<!-- .......................... -->
+		
 		<BaseMapEntry type="GM_Aggregate" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
 		<BaseMapEntry type="GM_Aggregate" gmlVersion="3.0" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
 		<BaseMapEntry type="GM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
