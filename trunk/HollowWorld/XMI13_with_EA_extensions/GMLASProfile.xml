@@ -2,31 +2,30 @@
 <UMLProfile profiletype="uml2">
 
 	<!--Profile name, version number and general notes -->
-	<Documentation id="GMLAS" name="UML Profile for GML Application Schemas" version="1" notes="This profile defines a set of stereotypes and tagged values for defining XSD Schemas that follow the patterns used in XSD representations of GML Application Schemas. 
-	Developed by Simon Cox, CSIRO Exploration and Mining, June 2005. 
-	Copyright © 2005 CSIRO - see https://www.seegrid.csiro.au/twiki/bin/view/Xmml/LegalNotices#Software_Notice "/>
-	
+	<Documentation id="GMLAS" name="UML Profile for GML Application Schemas" version="1"
+	               notes="This profile defines a set of stereotypes and tagged values for defining XSD Schemas that follow the patterns used in XSD representations of GML Application Schemas.   Developed by Simon Cox, CSIRO Exploration and Mining, June 2005.   Copyright © 2005 CSIRO - see https://www.seegrid.csiro.au/twiki/bin/view/Xmml/LegalNotices#Software_Notice "/>
+
 	<!-- The profile content -->
 	<Content>
-		
+
 		<!-- List of stereotypes used in this profile. Each stereotype may also include tagged values, constraints, metafile and descriptive comments-->
 		<Stereotypes>
 
-		<!-- Stereotypes used for designing ISO 19109/19118/19136 or GML Application Schema -->
+			<!-- Stereotypes used for designing ISO 19109/19118/19136 or GML Application Schema -->
 
-			<Stereotype name="Application Schema" notes="Root of model describing an Application Schema. Contains definitions of feature-types and other components related to a single conceptually coherent application. 
-			This will normally have a single maintenance and governance framework, and shall use a single XML namespace. ">
+			<Stereotype name="Application Schema"
+			            notes="Root of model describing an Application Schema. Contains definitions of feature-types and other components related to a single conceptually coherent application.     This will normally have a single maintenance and governance framework, and shall use a single XML namespace. ">
 				<AppliesTo>
 					<Apply type="package"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
-					<Tag name="owner" description="Party responsible for maintenance of this package" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="owner" description="Party responsible for maintenance of this package"/>
 					<Tag name="targetNamespace" description="URI to unique target namespace"/>
 					<Tag name="xmlns" description="Prefix associated with namespace"/>
 					<Tag name="version" description="Schema version"/>
 					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
-<!-- 					<Tag name="targetNamespacePrefix" description="(EA XML Profile) Prefix associated with namespace"/>
+					<!-- 					<Tag name="targetNamespacePrefix" description="(EA XML Profile) Prefix associated with namespace"/>
 					<Tag name="schemaLocation" description="(EA XML Profile) URI which identifies the location of the schema."/>
 					<Tag name="defaultNamespace" description="(EA XML Profile) Specifies the default namespace attribute in the schema element" 
 					default="http://www.w3.org/2001/XMLSchema"/>					
@@ -47,13 +46,13 @@
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="Leaf" notes="Subset of model describing a schema. A leaf package shall not contain any other packages. 
-			When implemented using W3C XML Schema, all Leaf package contents or component classes are typically placed within one XML schema document.">
+			<Stereotype name="Leaf"
+			            notes="Subset of model describing a schema. A leaf package shall not contain any other packages.     When implemented using W3C XML Schema, all Leaf package contents or component classes are typically placed within one XML schema document.">
 				<AppliesTo>
 					<Apply type="package"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="version" description="Schema version"/>
 					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
 				</TaggedValues>
@@ -63,28 +62,27 @@
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
 					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="FeatureType" notes="Class represents a Feature type as defined in ISO 19109, ISO 19136. 
-			This is the default stereotype for classes in Application Schemas, i.e. a class with no stereotype is assumed to be a feature type.">
+			<Stereotype name="FeatureType" notes="Class represents a Feature type as defined in ISO 19109, ISO 19136.     This is the default stereotype for classes in Application Schemas, i.e. a class with no stereotype is assumed to be a feature type.">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
 					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
 
-<!--
+			<!--
 			<Stereotype name="Type" notes="(Deprecated) Class represents an (abstract) Object type as defined in ISO 19103, 19118,19136">
 				<AppliesTo>
 					<Apply type="class"/>
@@ -98,27 +96,24 @@
 				</TaggedValues>
 	-->
 
-			<Stereotype name="Enumeration" notes="Class represents an Enumeration as defined in ISO 19103, 19136
-			i.e. a fixed list of literal values, that are implemented in an XML Schema as enumeration restriction of xsd:string">
+			<Stereotype name="Enumeration" notes="Class represents an Enumeration as defined in ISO 19103, 19136    i.e. a fixed list of literal values, that are implemented in an XML Schema as enumeration restriction of xsd:string">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="CodeList" notes="Class represents an CodeList as defined in ISO 19103, 19136; 
-			i.e. a list of consecutive integers or index values, which correspond to literal values as indicated in the schema annotation
-			A key functional distinction compared to Enumeration is that CodeList is extensible. 
-			In the GML implementation this is normally accomplished through a union with a pattern defining a string 'other:value' where 'value' is a string without internal spaces">
+			<Stereotype name="CodeList"
+			            notes="Class represents an CodeList as defined in ISO 19103, 19136;     i.e. a list of consecutive integers or index values, which correspond to literal values as indicated in the schema annotation    A key functional distinction compared to Enumeration is that CodeList is extensible.     In the GML implementation this is normally accomplished through a union with a pattern defining a string 'other:value' where 'value' is a string without internal spaces">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="asDictionary" description="implement as a dictionary instead of enumeration" values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
@@ -127,64 +122,73 @@
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
-					<Tag name="isAbstract" values="true" default="false" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="PrimitiveType" notes="ISO 19103 - Class definition where the actual representation is supported by a primitive type in the implementation
-			In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
+			<Stereotype name="PrimitiveType"
+			            notes="ISO 19103 - Class definition where the actual representation is supported by a primitive type in the implementation    In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="ListType" notes="Class definition where the representation is a list of primitive types from the implementation
-			In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
+			<Stereotype name="ListType"
+			            notes="Class definition where the representation is a list of primitive types from the implementation    In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
-					<Tag name="item" description="Primitive type comprising list items" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="item" description="Primitive type comprising list items"/>
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="BasicType" notes="Class represents a basic type defined in ISO 19118, 
-			or a simpleContent type derived from one of these types, 
-			or from a PrimitiveType or ListType, with a 'canonical' encoding. 
-			In the GML implementation, all UML attributes added in the derivation are implemented as XML attributes">
+			<Stereotype name="BasicType"
+			            notes="Class represents a basic type defined in ISO 19118,     or a simpleContent type derived from one of these types,     or from a PrimitiveType or ListType, with a 'canonical' encoding.     In the GML implementation, all UML attributes added in the derivation are implemented as XML attributes">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="DataType" notes="Class represents a DataType as defined in ISO 19103, 19109, 19136. This includes structured classes without identity.
-			In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType. 
-			This should be used as the fall-through stereotype for classes in application schemas, to be used for all classes that do not fall into one of the other categories. ">
+			<Stereotype name="DataType"
+			            notes="Class represents a DataType as defined in ISO 19103, 19109, 19136. This includes structured classes without identity.    In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType.     This should be used as the fall-through stereotype for classes in application schemas, to be used for all classes that do not fall into one of the other categories. ">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
-				
+
 				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element" />
+					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
 					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="true"/>
 				</TaggedValues>
 			</Stereotype>
 
+			<Stereotype name="property" notes="attribute or associationEnd represents a 'property' of the containing class.">
+				<AppliesTo>
+					<Apply type="attribute"/>
+					<Apply type="associationRole"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="inlineOrByReference" description="Constrain attribute or association-end to be implemented either inline or by reference only" values="inline | byReference"/>
+					<Tag name="sequenceNumber" description="Specify position of attribute or association-end within content model implemented as an ordered sequence"/>
+					<Tag name="isMetadata" description="flag that attribute or association-end is to be treated as metadata" values="true | false" default="false"/>
+				</TaggedValues>
+			</Stereotype>
 		</Stereotypes>
-	</Content>	
+	</Content>
 </UMLProfile>
