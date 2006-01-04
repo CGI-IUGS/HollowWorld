@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ShapeChangeConfiguration xmlnsabr="http://www.interactive-instruments.de/ShapeChange" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange ShapeChangeConfiguration.xsd">
+<ShapeChangeConfiguration xmlns="http://www.interactive-instruments.de/ShapeChange" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange ShapeChangeConfiguration.xsd">
 	<stereotypeAliases>
 		<StereotypeAlias wellknown="DataType" alias="Request"/>
 		<StereotypeAlias wellknown="DataType" alias="Response"/>
@@ -580,9 +580,6 @@
 		<BaseMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="SpecimenType" nsabr="sa"/>
 		<ElementMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="Specimen" nsabr="sa"/>
 		<TypeMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="SpecimenPropertyType" nsabr="sa"/>
-		<BaseMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventType" nsabr="sa"/>
-		<ElementMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEvent" nsabr="sa"/>
-		<TypeMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventPropertyType" nsabr="sa"/>
 		<BaseMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="SiteType" nsabr="sa"/>
 		<ElementMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="Site" nsabr="sa"/>
 		<TypeMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="SitePropertyType" nsabr="sa"/>
@@ -612,12 +609,12 @@
 		<TypeMapEntry type="stringList" gmlVersion="*" rule="direct" mapTo="stringList" nsabr="swe"/>
 		<TypeMapEntry type="refList" gmlVersion="*" rule="direct" mapTo="refList" nsabr="swe"/>
 		<TypeMapEntry type="doubleList" gmlVersion="*" rule="direct" mapTo="doubleList" nsabr="swe"/>
-		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="OM_RecordType" nsabr="swe"/>
-		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="OM_NumericRecordType" nsabr="swe"/>
-		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="OM_RecordSchemaPropertyType" nsabr="swe"/>
-		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="OM_RecordSchemaType" nsabr="swe"/>
-		<ElementMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="OM_RecordSchema" nsabr="swe"/>
-		<TypeMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="OM_RecordSchemaPropertyType" nsabr="swe"/>
+		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="SWE_RecordType" nsabr="swe"/>
+		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="SWE_NumericRecordType" nsabr="swe"/>
+		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaType" nsabr="swe"/>
+		<ElementMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchema" nsabr="swe"/>
+		<TypeMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaPropertyType" nsabr="swe"/>
 		<BaseMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonType" nsabr="swe"/>
 		<ElementMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="Phenomenon" nsabr="swe"/>
 		<TypeMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonPropertyType" nsabr="swe"/>
@@ -627,6 +624,15 @@
 		<BaseMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGridType" nsabr="swe"/>
 		<ElementMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGrid" nsabr="swe"/>
 		<TypeMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGridPropertyType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCategory" gmlVersion="*" rule="direct" mapTo="TypedCategoryType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCategoryList" gmlVersion="*" rule="direct" mapTo="TypedCategoryListType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCategoryInterval" gmlVersion="*" rule="direct" mapTo="TypedCategoryIntervalType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCount" gmlVersion="*" rule="direct" mapTo="TypedCountType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCountList" gmlVersion="*" rule="direct" mapTo="TypedCountListType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCountInterval" gmlVersion="*" rule="direct" mapTo="TypedCountIntervalType" nsabr="swe"/>
+		<TypeMapEntry type="TypedMeasure" gmlVersion="*" rule="direct" mapTo="TypedMeasureType" nsabr="swe"/>
+		<TypeMapEntry type="TypedMeasureList" gmlVersion="*" rule="direct" mapTo="TypedMeasureListType" nsabr="swe"/>
+		<TypeMapEntry type="TypedMeasureInterval" gmlVersion="*" rule="direct" mapTo="TypedMeasureIntervalType" nsabr="swe"/>
 		<!-- for "CommonObservation" -->
 		<TypeMapEntry type="DataValue" gmlVersion="*" rule="direct" mapTo="DataValueType" nsabr="swe"/>
 		<TypeMapEntry type="DataDefinition" gmlVersion="*" rule="direct" mapTo="DataDefinitionPropertyType" nsabr="swe"/>
@@ -636,9 +642,10 @@
 		<BaseMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="EventType" nsabr="om"/>
 		<ElementMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="Event" nsabr="om"/>
 		<TypeMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="EventPropertyType" nsabr="om"/>
-		<BaseMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedureType" nsabr="om"/>
-		<ElementMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="Procedure" nsabr="om"/>
-		<TypeMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedurePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ProcedureType" gmlVersion="*" rule="direct" mapTo="ProcedureTypeType" nsabr="om"/>
+		<ElementMapEntry type="ProcedureType" gmlVersion="*" rule="direct" mapTo="ProcedureType" nsabr="om"/>
+		<TypeMapEntry type="ProcedureType" gmlVersion="*" rule="direct" mapTo="ProcedureTypePropertyType" nsabr="om"/>
 		<BaseMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedureType" nsabr="om"/>
 		<ElementMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedure" nsabr="om"/>
 		<TypeMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedurePropertyType" nsabr="om"/>
@@ -648,6 +655,12 @@
 		<BaseMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequenceType" nsabr="om"/>
 		<ElementMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequence" nsabr="om"/>
 		<TypeMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequencePropertyType" nsabr="om"/>
+		<BaseMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventType" nsabr="om"/>
+		<ElementMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEvent" nsabr="om"/>
+		<TypeMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventPropertyType" nsabr="om"/>
+
+		<TypeMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedurePropertyType" nsabr="om"/>
+
 		<BaseMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedureType" nsabr="om"/>
 		<ElementMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedure" nsabr="om"/>
 		<TypeMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedurePropertyType" nsabr="om"/>
