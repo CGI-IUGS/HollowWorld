@@ -602,6 +602,11 @@
 		<ElementMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedure" nsabr="sa"/>
 		<TypeMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedurePropertyType" nsabr="sa"/>
 
+		<BaseMapEntry type="Swath" gmlVersion="*" rule="direct" mapTo="SwathType" nsabr="sa"/>
+		<ElementMapEntry type="Swath" gmlVersion="*" rule="direct" mapTo="Swath" nsabr="sa"/>
+		<BaseMapEntry type="Section" gmlVersion="*" rule="direct" mapTo="SectionType" nsabr="sa"/>
+		<ElementMapEntry type="Section" gmlVersion="*" rule="direct" mapTo="Section" nsabr="sa"/>
+
 		<!-- SWE Base schema -->
 		<TypeMapEntry type="ScopedName" gmlVersion="*" rule="direct" mapTo="ScopedNameType" nsabr="swe"/>
 		<TypeMapEntry type="RelativeMeasure" gmlVersion="*" rule="direct" mapTo="RelativeMeasureType" nsabr="swe"/>
@@ -677,6 +682,9 @@
 		<BaseMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollectionType" nsabr="om"/>
 		<ElementMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollection" nsabr="om"/>
 		<TypeMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollectionPropertyType" nsabr="om"/>
+		<BaseMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationType" nsabr="om"/>
+		<ElementMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservation" nsabr="om"/>
+		<TypeMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationPropertyType" nsabr="om"/>
 
 		<BaseMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="MeasurementType" nsabr="om"/>
 		<ElementMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="Measurement" nsabr="om"/>
@@ -684,23 +692,16 @@
 		<BaseMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservationType" nsabr="om"/>
 		<ElementMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservation" nsabr="om"/>
 		<TypeMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservationPropertyType" nsabr="om"/>
+		<BaseMapEntry type="CountObservation" gmlVersion="*" rule="direct" mapTo="CountObservationType" nsabr="om"/>
+		<ElementMapEntry type="CountObservation" gmlVersion="*" rule="direct" mapTo="CountObservation" nsabr="om"/>
+		<TypeMapEntry type="CountObservation" gmlVersion="*" rule="direct" mapTo="CountObservationPropertyType" nsabr="om"/>
+		<BaseMapEntry type="TruthObservation" gmlVersion="*" rule="direct" mapTo="TruthObservationType" nsabr="om"/>
+		<ElementMapEntry type="TruthObservation" gmlVersion="*" rule="direct" mapTo="TruthObservation" nsabr="om"/>
+		<TypeMapEntry type="TruthObservation" gmlVersion="*" rule="direct" mapTo="TruthObservationPropertyType" nsabr="om"/>
 
-		<BaseMapEntry type="ComplexObservation" gmlVersion="*" rule="direct" mapTo="ComplexObservationType" nsabr="om"/>
-		<ElementMapEntry type="ComplexObservation" gmlVersion="*" rule="direct" mapTo="ComplexObservation" nsabr="om"/>
-		<TypeMapEntry type="ComplexObservation" gmlVersion="*" rule="direct" mapTo="ComplexObservationPropertyType" nsabr="om"/>
 		<BaseMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservationType" nsabr="om"/>
 		<ElementMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservation" nsabr="om"/>
 		<TypeMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservationPropertyType" nsabr="om"/>
-		<BaseMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationType" nsabr="om"/>
-		<ElementMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservation" nsabr="om"/>
-		<TypeMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationPropertyType" nsabr="om"/>
-
-		<BaseMapEntry type="ComplexMeasurement" gmlVersion="*" rule="direct" mapTo="ComplexMeasurementType" nsabr="om"/>
-		<ElementMapEntry type="ComplexMeasurement" gmlVersion="*" rule="direct" mapTo="ComplexMeasurement" nsabr="om"/>
-		<TypeMapEntry type="ComplexMeasurement" gmlVersion="*" rule="direct" mapTo="ComplexMeasurementPropertyType" nsabr="om"/>
-		<BaseMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurementType" nsabr="om"/>
-		<ElementMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurement" nsabr="om"/>
-		<TypeMapEntry type="RangeMeasurement" gmlVersion="*" rule="direct" mapTo="RangeMeasurementPropertyType" nsabr="om"/>
 
 		<!-- W3C XML Schema simple types -->
 		<!--
