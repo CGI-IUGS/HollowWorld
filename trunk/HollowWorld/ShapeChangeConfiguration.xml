@@ -471,47 +471,6 @@
 		<TypeMapEntry type="CV_RectifiedGrid" gmlVersion="3.0" rule="direct" mapTo="RectifiedGridPropertyType" nsabr="gml"/>
 		<TypeMapEntry type="CV_RectifiedGrid" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridPropertyType" nsabr="gml"/>
 
-		<!-- stubs for primitive and basic types -->
-
-	  	<TypeMapEntry type="anyType" gmlVersion="*" rule="direct" mapTo="anyType"/>
-		<TypeMapEntry type="URI" gmlVersion="*" rule="direct" mapTo="anyURI"/>
-		<TypeMapEntry type="URL" gmlVersion="*" rule="direct" mapTo="anyURI"/>
-
-		<!-- GML stubs -->
-		<BaseMapEntry type="AbstractGML" gmlVersion="3.0" rule="direct" mapTo="AbstractGMLType" nsabr="gml"/>
-		<ElementMapEntry type="AbstractGML" gmlVersion="3.0" rule="direct" mapTo="_GML" nsabr="gml"/>
-		<BaseMapEntry type="AbstractGML" gmlVersion="3.1" rule="direct" mapTo="AbstractGMLType" nsabr="gml"/>
-		<ElementMapEntry type="AbstractGML" gmlVersion="3.1" rule="direct" mapTo="_GML" nsabr="gml"/>
-
-		<BaseMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="AbstractFeatureType" nsabr="gml"/>
-		<ElementMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="_Feature" nsabr="gml"/>
-		<TypeMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="FeaturePropertyType" nsabr="gml"/>
-		<BaseMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="AbstractFeatureType" nsabr="gml"/>
-		<ElementMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="_Feature" nsabr="gml"/>
-		<TypeMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="FeaturePropertyType" nsabr="gml"/>
-
-		<BaseMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="DefinitionType" nsabr="gml"/>
-		<ElementMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="Definition" nsabr="gml"/>
-		<TypeMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="DictionaryEntryType" nsabr="gml"/>
-		<BaseMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="DefinitionType" nsabr="gml"/>
-		<ElementMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="Definition" nsabr="gml"/>
-		<TypeMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="DictionaryEntryType" nsabr="gml"/>
-
-		<TypeMapEntry type="ReferenceType" gmlVersion="*" rule="direct" mapTo="ReferenceType" nsabr="gml"/>
-
-		<!-- GML geometry stubs and GEO extensions -->
-		<BaseMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineStringType" nsabr="gml"/>
-		<ElementMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineString" nsabr="gml"/>
-		<TypeMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineStringPropertyType" nsabr="geo"/>
-
-		<BaseMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="PolygonType" nsabr="gml"/>
-		<ElementMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="Polygon" nsabr="gml"/>
-		<TypeMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="PolygonPropertyType" nsabr="geo"/>
-
-		<BaseMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingType" nsabr="gml"/>
-		<ElementMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRing" nsabr="gml"/>
-		<TypeMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingPropertyType" nsabr="gml"/>
-
 		<!-- ISO 19115 via ISO/TS 19139 (GML 3.1 version from SEEGrid) -->
 		<!-- added by SJDC 20060118 -->
 		
@@ -1044,6 +1003,47 @@
 		-->
 		<!-- end add ISO 19115/19139 -->
 
+				<!-- stubs for primitive and basic types -->
+
+	  	<TypeMapEntry type="anyType" gmlVersion="*" rule="direct" mapTo="anyType"/>
+		<TypeMapEntry type="URI" gmlVersion="*" rule="direct" mapTo="anyURI"/>
+		<TypeMapEntry type="URL" gmlVersion="*" rule="direct" mapTo="anyURI"/>
+
+		<!-- GML stubs -->
+		<BaseMapEntry type="AbstractGML" gmlVersion="3.0" rule="direct" mapTo="AbstractGMLType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractGML" gmlVersion="3.0" rule="direct" mapTo="_GML" nsabr="gml"/>
+		<BaseMapEntry type="AbstractGML" gmlVersion="3.1" rule="direct" mapTo="AbstractGMLType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractGML" gmlVersion="3.1" rule="direct" mapTo="_GML" nsabr="gml"/>
+
+		<BaseMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="AbstractFeatureType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="_Feature" nsabr="gml"/>
+		<TypeMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="FeaturePropertyType" nsabr="gml"/>
+		<BaseMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="AbstractFeatureType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="_Feature" nsabr="gml"/>
+		<TypeMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="FeaturePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="DefinitionType" nsabr="gml"/>
+		<ElementMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="Definition" nsabr="gml"/>
+		<TypeMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="DictionaryEntryType" nsabr="gml"/>
+		<BaseMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="DefinitionType" nsabr="gml"/>
+		<ElementMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="Definition" nsabr="gml"/>
+		<TypeMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="DictionaryEntryType" nsabr="gml"/>
+
+		<TypeMapEntry type="ReferenceType" gmlVersion="*" rule="direct" mapTo="ReferenceType" nsabr="gml"/>
+
+		<!-- GML geometry stubs and GEO extensions -->
+		<BaseMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineStringType" nsabr="gml"/>
+		<ElementMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineString" nsabr="gml"/>
+		<TypeMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineStringPropertyType" nsabr="geo"/>
+
+		<BaseMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="PolygonType" nsabr="gml"/>
+		<ElementMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="Polygon" nsabr="gml"/>
+		<TypeMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="PolygonPropertyType" nsabr="geo"/>
+
+		<BaseMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingType" nsabr="gml"/>
+		<ElementMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRing" nsabr="gml"/>
+		<TypeMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingPropertyType" nsabr="gml"/>
+
 		<!-- Others -->
 		<ElementMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurve" nsabr="gml"/>
 		<TypeMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurvePropertyType" nsabr="gml"/>
@@ -1129,8 +1129,8 @@
 		<TypeMapEntry type="stringList" gmlVersion="*" rule="direct" mapTo="stringList" nsabr="swe"/>
 		<TypeMapEntry type="refList" gmlVersion="*" rule="direct" mapTo="refList" nsabr="swe"/>
 		<TypeMapEntry type="doubleList" gmlVersion="*" rule="direct" mapTo="doubleList" nsabr="swe"/>
-		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="SWE_RecordType" nsabr="swe"/>
-		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="SWE_NumericRecordType" nsabr="swe"/>
+		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="SWE_CompactRecordType" nsabr="swe"/>
+		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="SWE_CompactNumericRecordType" nsabr="swe"/>
 		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaPropertyType" nsabr="swe"/>
 
 		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaType" nsabr="swe"/>
