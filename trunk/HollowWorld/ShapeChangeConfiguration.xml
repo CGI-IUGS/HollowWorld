@@ -33,8 +33,19 @@
 		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
 		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
 
+		<Namespace nsabr="csml" ns="http://ndg.nerc.ac.uk/csml" gmlVersion="3.1" location="http://ndg.nerc.ac.uk/csml/2.0/schema/csml.xsd"/>
+
 	</namespaces>
 	<mapEntries>
+	<!-- Added by SJDC 2006-02-08 at UK Met Office -->
+		<BaseMapEntry type="GridFeature" gmlVersion="3.1" rule="direct" mapTo="GridFeatureType" nsabr="csml"/>
+		<BaseMapEntry type="GridSeriesFeature" gmlVersion="3.1" rule="direct" mapTo="GridSeriesFeatureType" nsabr="csml"/>
+		<ElementMapEntry type="GridFeature" gmlVersion="3.1" rule="direct" mapTo="GridFeature" nsabr="csmll"/>
+		<ElementMapEntry type="GridSeriesFeature" gmlVersion="3.1" rule="direct" mapTo="GridSeriesFeature" nsabr="csml"/>
+		<TypeMapEntry type="GridFeature" gmlVersion="3.1" rule="direct" mapTo="GridFeaturePropertyType" nsabr="csml"/>
+		<TypeMapEntry type="GridSeriesFeature" gmlVersion="3.1" rule="direct" mapTo="GridSeriesFeaturePropertyType" nsabr="csml"/>
+
+	<!-- end of CSML addition -->
 		<!-- ISO/TS 19103 -->
 		<!--
 		<BaseMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="Record_Type" nsabr="scXML"/>
