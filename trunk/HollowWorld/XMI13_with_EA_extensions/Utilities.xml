@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <!DOCTYPE XMI SYSTEM "UML_EA.dtd">
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2006-02-20 14:15:30">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2006-02-21 14:12:11">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -18,7 +18,7 @@
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="C:\Documents and Settings\cox075\My Documents\Dev\seegrid\trunk\HollowWorld\XMI13_with_EA_extensions\Utilities.xml"/>
 						<UML:TaggedValue tag="lastloaddate" value="2006-02-20 10:50:08"/>
-						<UML:TaggedValue tag="lastsavedate" value="2006-02-20 14:15:30"/>
+						<UML:TaggedValue tag="lastsavedate" value="2006-02-21 14:12:11"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="TRUE"/>
 						<UML:TaggedValue tag="owner" value="Simon Cox"/>
@@ -183,7 +183,7 @@
 						</UML:Dependency>
 						<UML:Package name="GeometryExtensions" xmi.id="EAPK_0F66716C_A29E_4fe1_BB39_08DD84CFBB81" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_5D0A0AD1_30F7_4644_A6D5_E2F8BF86ACB6"/>
+								<UML:Stereotype xmi.idref="EAID_43ECA2D4_DDB2_4e4f_B190_2E16D5CC3080"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-11-11 17:36:18"/>
@@ -614,7 +614,7 @@
 								</UML:Dependency>
 								<UML:Package name="geometry" xmi.id="EAPK_019BBBCC_0258_46be_8579_9F0FD644AE73" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1D2045BF_5196_4e3d_B093_5C6378146BD8"/>
+										<UML:Stereotype xmi.idref="EAID_A77FE9CE_14BA_4e92_A35E_5008C2475C66"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-06-24 00:00:00"/>
@@ -1475,7 +1475,7 @@
 								</UML:Package>
 								<UML:Package name="geometryProperties" xmi.id="EAPK_27B166A1_5909_41d1_9263_B4B017BB3F6C" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1D2045BF_5196_4e3d_B093_5C6378146BD8"/>
+										<UML:Stereotype xmi.idref="EAID_A77FE9CE_14BA_4e92_A35E_5008C2475C66"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-06-24 00:00:00"/>
@@ -1998,7 +1998,7 @@
 								</UML:Package>
 								<UML:Package name="geometrySimpleObjects" xmi.id="EAPK_27579C30_C0BF_4cde_8042_2B0682B2FD2F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1D2045BF_5196_4e3d_B093_5C6378146BD8"/>
+										<UML:Stereotype xmi.idref="EAID_A77FE9CE_14BA_4e92_A35E_5008C2475C66"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-06-24 00:00:00"/>
@@ -2513,7 +2513,7 @@
 								</UML:Package>
 								<UML:Package name="geometrySurfaces" xmi.id="EAPK_C245ACED_79E8_42b3_ADB4_84E98B5DE00F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1D2045BF_5196_4e3d_B093_5C6378146BD8"/>
+										<UML:Stereotype xmi.idref="EAID_A77FE9CE_14BA_4e92_A35E_5008C2475C66"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-06-24 00:00:00"/>
@@ -2857,10 +2857,10 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_5D0A0AD1_30F7_4644_A6D5_E2F8BF86ACB6" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_43ECA2D4_DDB2_4e4f_B190_2E16D5CC3080" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_1D2045BF_5196_4e3d_B093_5C6378146BD8" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_A77FE9CE_14BA_4e92_A35E_5008C2475C66" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid2" name="Vector" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
@@ -2876,7 +2876,7 @@
 		<UML:TaggedValue tag="version" xmi.id="EAID_51DC72B1_B819_4352_BD64_FA527597B45C" value="0.1.0#NOTES#Description: Schema version&#xA;" modelElement="EAID_0F66716C_A29E_4fe1_BB39_08DD84CFBB81"/>
 		<UML:TaggedValue tag="xmlns" xmi.id="EAID_E35F7837_EB1D_4701_96F4_11AE8B2E19BA" value="geo#NOTES#Description: Prefix associated with namespace&#xA;" modelElement="EAID_0F66716C_A29E_4fe1_BB39_08DD84CFBB81"/>
 		<UML:TaggedValue tag="xmlns" xmi.id="EAID_7C91C724_7B92_469d_A55A_C13F26ECE1DC" value="#NOTES#Description: Prefix associated with namespace&#xA;" modelElement="EAID_0F66716C_A29E_4fe1_BB39_08DD84CFBB81"/>
-		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_555E813A_8097_4c1d_98C0_EC6DAE5C3B82" value="http://www.seegrid.csiro.au/xml/geo/0.1.0/geo.xsd#NOTES#Description: Relative path to XML Schema document corresponding to this package.&#xA;" modelElement="EAID_0F66716C_A29E_4fe1_BB39_08DD84CFBB81"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_555E813A_8097_4c1d_98C0_EC6DAE5C3B82" value="http://www.seegrid.csiro.au/xsd/geo/0.1.0/geo.xsd#NOTES#Description: Relative path to XML Schema document corresponding to this package.&#xA;" modelElement="EAID_0F66716C_A29E_4fe1_BB39_08DD84CFBB81"/>
 		<UML:TaggedValue tag="documentation" xmi.id="EAID_339DC3EB_11D1_4045_A4C6_49C59739CEF4" value="#NOTES#Description: Normative documentation association with this element&#xA;" modelElement="EAID_019BBBCC_0258_46be_8579_9F0FD644AE73"/>
 		<UML:TaggedValue tag="version" xmi.id="EAID_8BDDB5CA_B8C8_4156_AF97_977BCA8B47F1" value="#NOTES#Description: Schema version&#xA;" modelElement="EAID_019BBBCC_0258_46be_8579_9F0FD644AE73"/>
 		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6ABB4320_B8DC_4531_9869_B920D493A202" value="geometry.xsd#NOTES#Description: Relative path to XML Schema document corresponding to this package.&#xA;" modelElement="EAID_019BBBCC_0258_46be_8579_9F0FD644AE73"/>
@@ -2955,7 +2955,7 @@
 				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=55:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=26:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;Path=;" subject="EAID_ED1DAE15_9D98_4898_A9DA_6503559ACAC3" style="Mode=3;EOID=484E5EEF;SOID=2577E38B;Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
-		<UML:Diagram name="Package depdendencies" xmi.id="EAID_10DE351A_A0F4_41da_9784_312B3486FB90" diagramType="PackageDiagram" owner="EAPK_0F66716C_A29E_4fe1_BB39_08DD84CFBB81" toolName="Enterprise Architect 2.5">
+		<UML:Diagram name="Package dependencies" xmi.id="EAID_10DE351A_A0F4_41da_9784_312B3486FB90" diagramType="PackageDiagram" owner="EAPK_0F66716C_A29E_4fe1_BB39_08DD84CFBB81" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="author" value="Simon Cox"/>

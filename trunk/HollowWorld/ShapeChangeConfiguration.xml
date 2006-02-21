@@ -18,20 +18,20 @@
 		<Namespace nsabr="smXML" ns="http://www.isotc211.org/smXML" gmlVersion="3.1" location="http://www.isotc211.org/smXML/metadataEntity.xsd"/>
 		-->
 		<!-- ISO 19139 - gml 3.1 version from SEEGrid -->
-		<Namespace nsabr="gco" ns="http://www.isotc211.org/2005/gco" gmlVersion="3.1" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/iso19139/gml3.1.1version/gco/gco.xsd"/>
-		<Namespace nsabr="gmd" ns="http://www.isotc211.org/2005/gmd" gmlVersion="3.1" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/iso19139/gml3.1.1version/gmd/gmd.xsd"/>
-		<Namespace nsabr="gss" ns="http://www.isotc211.org/2005/gss" gmlVersion="3.1" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/iso19139/gml3.1.1version/gss/gss.xsd"/>
-		<Namespace nsabr="gsr" ns="http://www.isotc211.org/2005/gsr" gmlVersion="3.1" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/iso19139/gml3.1.1version/gsr/gsr.xsd"/>
-		<Namespace nsabr="gts" ns="http://www.isotc211.org/2005/gts" gmlVersion="3.1" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/iso19139/gml3.1.1version/gts/gts.xsd"/>
-		<Namespace nsabr="gmx" ns="http://www.isotc211.org/2005/gmx" gmlVersion="3.1" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/iso19139/gml3.1.1version/gmx/gmx.xsd"/>
+		<Namespace nsabr="gco" ns="http://www.isotc211.org/2005/gco" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gco/gco.xsd"/>
+		<Namespace nsabr="gmd" ns="http://www.isotc211.org/2005/gmd" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gmd/gmd.xsd"/>
+		<Namespace nsabr="gss" ns="http://www.isotc211.org/2005/gss" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gss/gss.xsd"/>
+		<Namespace nsabr="gsr" ns="http://www.isotc211.org/2005/gsr" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gsr/gsr.xsd"/>
+		<Namespace nsabr="gts" ns="http://www.isotc211.org/2005/gts" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gts/gts.xsd"/>
+		<Namespace nsabr="gmx" ns="http://www.isotc211.org/2005/gmx" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gmx/gmx.xsd"/>
 		<!-- SEE Grid - Hollow World template -->
-		<Namespace nsabr="geo" ns="http://www.seegrid.csiro.au/xml/geometry" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/geo/0.1.0/geo.xsd"/>
+		<Namespace nsabr="geo" ns="http://www.seegrid.csiro.au/xml/geometry" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/geo/0.1.0/geo.xsd"/>
 <!-- no longer needed - use ISO 19139 mappings
 		<Namespace nsabr="meta" ns="http://www.seegrid.csiro.au/xml/metaLite" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/metaLite/0.1.30/metaLite.xsd"/>
 		-->
-		<Namespace nsabr="sa" ns="http://www.seegrid.csiro.au/xml/sampling" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sampling/0.1.0/sampling.xsd"/>
-		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/sweCommon/1.0.30/swe.xsd"/>
-		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/om/1.0.30/om.xsd"/>
+		<Namespace nsabr="sa" ns="http://www.seegrid.csiro.au/xml/sampling" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/sampling/0.1.0/sampling.xsd"/>
+		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/sweCommon/1.0.30/swe.xsd"/>
+		<Namespace nsabr="om" ns="http://www.opengis.net/om" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/om/1.0.30/om.xsd"/>
 
 		<Namespace nsabr="csml" ns="http://ndg.nerc.ac.uk/csml" gmlVersion="3.1" location="http://ndg.nerc.ac.uk/csml/2.0/schema/csml.xsd"/>
 
