@@ -58,7 +58,20 @@
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="ObjectType" notes="Class represents an Object type 'with identity' as defined in ISO 19136">
+			<Stereotype name="DataType"
+			            notes="Class represents a DataType as defined in ISO 19103, 19109, 19136. This includes structured classes without identity.    In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType.     This should be used as the fall-through stereotype for classes in application schemas, to be used for all classes that do not fall into one of the other categories. ">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Type" notes="Class represents a type 'with identity' as defined in ISO 19118 and 19136.  This is the default stereotype for classes in Application Schemas, i.e. a class with no stereotype is assumed to be a Type.">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
@@ -70,7 +83,7 @@
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="FeatureType" notes="Class represents a Feature type as defined in ISO 19109, ISO 19136.     This is the default stereotype for classes in Application Schemas, i.e. a class with no stereotype is assumed to be a feature type.">
+			<Stereotype name="FeatureType" notes="Class represents a Feature type as defined in ISO 19109, ISO 19136.">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
@@ -129,19 +142,22 @@
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="PrimitiveType"
-			            notes="ISO 19103 - Class definition where the actual representation is supported by a primitive type in the implementation    In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
+			<Stereotype name="BasicType"
+			            notes="Class represents a basic type as defined in ISO 19118,  having a 'canonical' encoding.     
+						In the GML implementation, all UML attributes added in the derivation are implemented as XML attributes">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
 
 				<TaggedValues>
 					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="xmlSchemaType" description="QName identifying the name of the XML Schema Type implementing this class"/>
 				</TaggedValues>
 			</Stereotype>
 
 			<Stereotype name="ListType"
-			            notes="Class definition where the representation is a list of primitive types from the implementation    In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
+			            notes="Class definition where the representation is a list of primitive types from the implementation    
+						In the GML implementation, this is implemented by mapping to a W3C XML Schema builtin simpleType when possible, or a simpleContent type with a 'canonical' encoding">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
@@ -149,30 +165,6 @@
 				<TaggedValues>
 					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="item" description="Primitive type comprising list items"/>
-				</TaggedValues>
-			</Stereotype>
-
-			<Stereotype name="BasicType"
-			            notes="Class represents a basic type defined in ISO 19118,     or a simpleContent type derived from one of these types,     or from a PrimitiveType or ListType, with a 'canonical' encoding.     In the GML implementation, all UML attributes added in the derivation are implemented as XML attributes">
-				<AppliesTo>
-					<Apply type="class"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element"/>
-				</TaggedValues>
-			</Stereotype>
-
-			<Stereotype name="DataType"
-			            notes="Class represents a DataType as defined in ISO 19103, 19109, 19136. This includes structured classes without identity.    In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType.     This should be used as the fall-through stereotype for classes in application schemas, to be used for all classes that do not fall into one of the other categories. ">
-				<AppliesTo>
-					<Apply type="class"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element"/>
-					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
-					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="true"/>
 				</TaggedValues>
 			</Stereotype>
 
