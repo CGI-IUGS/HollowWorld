@@ -58,20 +58,8 @@
 				</TaggedValues>
 			</Stereotype>
 
-			<Stereotype name="DataType"
-			            notes="Class represents a DataType as defined in ISO 19103, 19109, 19136. This includes structured classes without identity.    In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType.     This should be used as the fall-through stereotype for classes in application schemas, to be used for all classes that do not fall into one of the other categories. ">
-				<AppliesTo>
-					<Apply type="class"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element"/>
-					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
-					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="true"/>
-				</TaggedValues>
-			</Stereotype>
-
-			<Stereotype name="Type" notes="Class represents a type 'with identity' as defined in ISO 19118 and 19136.  This is the default stereotype for classes in Application Schemas, i.e. a class with no stereotype is assumed to be a Type.">
+			<Stereotype name="ObjectType" notes="Class represents an object type 'with identity' as defined in ISO 19118 and 19136.  
+			This is the default stereotype for classes in Application Schemas, i.e. a class with no stereotype is assumed to be an ObjectType.">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
@@ -109,28 +97,6 @@
 				</TaggedValues>
 	-->
 
-			<Stereotype name="Enumeration" notes="Class represents an Enumeration as defined in ISO 19103, 19136    i.e. a fixed list of literal values, that are implemented in an XML Schema as enumeration restriction of xsd:string">
-				<AppliesTo>
-					<Apply type="class"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element"/>
-				</TaggedValues>
-			</Stereotype>
-
-			<Stereotype name="CodeList"
-			            notes="Class represents an CodeList as defined in ISO 19103, 19136;     i.e. a list of consecutive integers or index values, which correspond to literal values as indicated in the schema annotation    A key functional distinction compared to Enumeration is that CodeList is extensible.     In the GML implementation this is normally accomplished through a union with a pattern defining a string 'other:value' where 'value' is a string without internal spaces">
-				<AppliesTo>
-					<Apply type="class"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="documentation" description="Normative documentation association with this element"/>
-					<Tag name="asDictionary" description="implement as a dictionary instead of enumeration" values="true | false" default="false"/>
-				</TaggedValues>
-			</Stereotype>
-
 			<Stereotype name="Union" notes="Class represents a Union as defined in ISO 19107, 19136">
 				<AppliesTo>
 					<Apply type="class"/>
@@ -152,6 +118,53 @@
 				<TaggedValues>
 					<Tag name="documentation" description="Normative documentation association with this element"/>
 					<Tag name="xmlSchemaType" description="QName identifying the name of the XML Schema Type implementing this class"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="DataType"
+			            notes="Class represents a DataType as defined in ISO 19103, 19109, 19136. This includes structured classes without identity.    
+						In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType.     This should be used as the fall-through stereotype for classes in application schemas, to be used for all classes that do not fall into one of the other categories. ">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Type" notes="(from UML 2) Abstract data type, without identity.   
+			In UML 2 this effectively supersedes 'interface' and is typically used to group a set of properties that are realized or mixed-in to the inheriting/associated class.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Enumeration" notes="Class represents an Enumeration as defined in ISO 19103, 19136    i.e. a fixed list of literal values, that are implemented in an XML Schema as enumeration restriction of xsd:string">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="CodeList"
+			            notes="Class represents an CodeList as defined in ISO 19103, 19136;     i.e. a list of consecutive integers or index values, which correspond to literal values as indicated in the schema annotation    A key functional distinction compared to Enumeration is that CodeList is extensible.     In the GML implementation this is normally accomplished through a union with a pattern defining a string 'other:value' where 'value' is a string without internal spaces">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="documentation" description="Normative documentation association with this element"/>
+					<Tag name="asDictionary" description="implement as a dictionary instead of enumeration" values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
 
