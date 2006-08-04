@@ -1142,11 +1142,11 @@
 		<TypeMapEntry type="doubleList" gmlVersion="*" rule="direct" mapTo="doubleList" nsabr="swe"/>
 		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="SWE_CompactRecordType" nsabr="swe"/>
 		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="SWE_CompactNumericRecordType" nsabr="swe"/>
-		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaPropertyType" nsabr="swe"/>
+		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="SWE_RecordTypePropertyType" nsabr="swe"/>
 
-		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaType" nsabr="swe"/>
-		<ElementMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchema" nsabr="swe"/>
-		<TypeMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordSchemaPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordTypeType" nsabr="swe"/>
+		<ElementMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordType" nsabr="swe"/>
+		<TypeMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordTypePropertyType" nsabr="swe"/>
 
 		<BaseMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonType" nsabr="swe"/>
 		<ElementMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="Phenomenon" nsabr="swe"/>
