@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeChangeConfiguration xmlns="http://www.interactive-instruments.de/ShapeChange" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange ShapeChangeConfiguration.xsd">
+	<stereotypeAliases>
+		<StereotypeAlias wellknown="DataType" alias="Request"/>
+		<StereotypeAlias wellknown="DataType" alias="Response"/>
+		<StereotypeAlias wellknown="FeatureType" alias="Feature"/>
+	</stereotypeAliases>
+	<namespaces>
+		<Namespace nsabr="sc" ns="http://www.interactive-instruments.de/ShapeChange" gmlVersion="*" location="http://www.interactive-instruments.de/ShapeChange/ShapeChangeAppinfo.xsd"/>
+		<Namespace nsabr="xlink" ns="http://www.w3.org/1999/xlink" gmlVersion="2.1" location="http://schemas.opengis.net/gml/2.1.2/xlinks.xsd"/>
+		<Namespace nsabr="gml" ns="http://www.opengis.net/gml" gmlVersion="2.1" location="http://schemas.opengis.net/gml/2.1.2/feature.xsd"/>
+		<Namespace nsabr="xlink" ns="http://www.w3.org/1999/xlink" gmlVersion="3.0" location="http://schemas.opengis.net/gml/3.0.1/xlink/xlinks.xsd"/>
+		<Namespace nsabr="gml" ns="http://www.opengis.net/gml" gmlVersion="3.0" location="http://schemas.opengis.net/gml/3.0.1/base/gml.xsd"/>
+		<Namespace nsabr="xlink" ns="http://www.w3.org/1999/xlink" gmlVersion="3.1" location="http://schemas.opengis.net/xlink/1.0.0/xlinks.xsd"/>
+		<Namespace nsabr="gml" ns="http://www.opengis.net/gml" gmlVersion="3.1" location="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+		<!--
+		<Namespace nsabr="scXML" ns="http://www.isotc211.org/scXML" gmlVersion="3.1" location="http://www.isotc211.org/scXML/scXMLbase.xsd"/>
+		<Namespace nsabr="smXML" ns="http://www.isotc211.org/smXML" gmlVersion="3.1" location="http://www.isotc211.org/smXML/metadataEntity.xsd"/>
+		-->
+		<!-- ISO 19139 - gml 3.1 version from SEEGrid -->
+		<Namespace nsabr="gco" ns="http://www.isotc211.org/2005/gco" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gco/gco.xsd"/>
+		<Namespace nsabr="gmd" ns="http://www.isotc211.org/2005/gmd" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gmd/gmd.xsd"/>
+		<Namespace nsabr="gss" ns="http://www.isotc211.org/2005/gss" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gss/gss.xsd"/>
+		<Namespace nsabr="gsr" ns="http://www.isotc211.org/2005/gsr" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gsr/gsr.xsd"/>
+		<Namespace nsabr="gts" ns="http://www.isotc211.org/2005/gts" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gts/gts.xsd"/>
+		<Namespace nsabr="gmx" ns="http://www.isotc211.org/2005/gmx" gmlVersion="3.1" location="http://www.seegrid.csiro.au/xsd/iso19139/gml3.1.1version/gmx/gmx.xsd"/>
+		<!-- SEE Grid - Hollow World template -->
+		<Namespace nsabr="geo" ns="http://www.seegrid.csiro.au/xml/geometry" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/geo/0.1.0/geo.xsd"/>
+<!-- no longer needed - use ISO 19139 mappings
+		<Namespace nsabr="meta" ns="http://www.seegrid.csiro.au/xml/metaLite" gmlVersion="*" location="https://www.seegrid.csiro.au/subversion/xmml/trunk/metaLite/0.1.30/metaLite.xsd"/>
+		-->
+		<Namespace nsabr="sa" ns="http://www.seegrid.csiro.au/xml/sampling" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/sampling/0.1.0/sampling.xsd"/>
+		<Namespace nsabr="swe" ns="http://www.opengis.net/swe" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/sweCommon/1.0.30/swe.xsd"/>
+		<Namespace nsabr="om" ns="http://www.opengeospatial.net/om/0.0" gmlVersion="*" location="http://www.seegrid.csiro.au/xsd/om/1.0.30/om.xsd"/>
+
+		<Namespace nsabr="csml" ns="http://ndg.nerc.ac.uk/csml" gmlVersion="3.1" location="http://ndg.nerc.ac.uk/csml/2.0/schema/csml.xsd"/>
+
+	</namespaces>
+	<mapEntries>
+	<!-- Added by SJDC 2006-02-08 at UK Met Office -->
+		<BaseMapEntry type="GridFeature" gmlVersion="3.1" rule="direct" mapTo="GridFeatureType" nsabr="csml"/>
+		<BaseMapEntry type="GridSeriesFeature" gmlVersion="3.1" rule="direct" mapTo="GridSeriesFeatureType" nsabr="csml"/>
+		<ElementMapEntry type="GridFeature" gmlVersion="3.1" rule="direct" mapTo="GridFeature" nsabr="csmll"/>
+		<ElementMapEntry type="GridSeriesFeature" gmlVersion="3.1" rule="direct" mapTo="GridSeriesFeature" nsabr="csml"/>
+		<TypeMapEntry type="GridFeature" gmlVersion="3.1" rule="direct" mapTo="GridFeaturePropertyType" nsabr="csml"/>
+		<TypeMapEntry type="GridSeriesFeature" gmlVersion="3.1" rule="direct" mapTo="GridSeriesFeaturePropertyType" nsabr="csml"/>
+
+	<!-- end of CSML addition -->
+		<!-- ISO/TS 19103 -->
+		<!--
+		<BaseMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="Record_Type" nsabr="scXML"/>
+		<BaseMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="RecordType_Type" nsabr="scXML"/>
+		<ElementMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="Record" nsabr="scXML"/>
+		<ElementMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="RecordType" nsabr="scXML"/>
+		-->
+		<!-- added by SJDC 2005-11-21 -->
+	  	<TypeMapEntry type="Any" gmlVersion="*" rule="direct" mapTo="anyType"/>
+	  	<!-- ............... -->
+		<TypeMapEntry type="Angle" gmlVersion="3.0" rule="direct" mapTo="AngleType" nsabr="gml"/>
+		<TypeMapEntry type="Angle" gmlVersion="3.1" rule="direct" mapTo="AngleType" nsabr="gml"/>
+		<TypeMapEntry type="Area" gmlVersion="3.0" rule="direct" mapTo="AreaType" nsabr="gml"/>
+		<TypeMapEntry type="Area" gmlVersion="3.1" rule="direct" mapTo="AreaType" nsabr="gml"/>
+		<TypeMapEntry type="Boolean" gmlVersion="*" rule="direct" mapTo="boolean"/>
+		<TypeMapEntry type="CharacterString" gmlVersion="*" rule="direct" mapTo="string"/>
+		<TypeMapEntry type="Date" gmlVersion="*" rule="direct" mapTo="date"/>
+		<TypeMapEntry type="DateTime" gmlVersion="*" rule="direct" mapTo="dateTime"/>
+		<TypeMapEntry type="Decimal" gmlVersion="*" rule="direct" mapTo="double"/>
+		<TypeMapEntry type="Distance" gmlVersion="3.0" rule="direct" mapTo="LengthType" nsabr="gml"/>
+		<TypeMapEntry type="Distance" gmlVersion="3.1" rule="direct" mapTo="LengthType" nsabr="gml"/>
+		<TypeMapEntry type="GenericName" gmlVersion="2.1.2" rule="direct" mapTo="string"/>
+		<TypeMapEntry type="GenericName" gmlVersion="3.0" rule="direct" mapTo="CodeType" nsabr="gml"/>
+		<TypeMapEntry type="GenericName" gmlVersion="3.1" rule="direct" mapTo="CodeType" nsabr="gml"/>
+		<TypeMapEntry type="Integer" gmlVersion="*" rule="direct" mapTo="integer"/>
+		<TypeMapEntry type="Length" gmlVersion="3.0" rule="direct" mapTo="LengthType" nsabr="gml"/>
+		<TypeMapEntry type="Length" gmlVersion="3.1" rule="direct" mapTo="LengthType" nsabr="gml"/>
+		<TypeMapEntry type="LocalName" gmlVersion="2.1.2" rule="direct" mapTo="string"/>
+		<TypeMapEntry type="LocalName" gmlVersion="3.0" rule="direct" mapTo="CodeType" nsabr="gml"/>
+		<TypeMapEntry type="LocalName" gmlVersion="3.1" rule="direct" mapTo="CodeType" nsabr="gml"/>
+		<TypeMapEntry type="Measure" gmlVersion="3.0" rule="direct" mapTo="MeasureType" nsabr="gml"/>
+		<TypeMapEntry type="Measure" gmlVersion="3.1" rule="direct" mapTo="MeasureType" nsabr="gml"/>
+		<TypeMapEntry type="Number" gmlVersion="*" rule="direct" mapTo="double"/>
+		<TypeMapEntry type="Real" gmlVersion="*" rule="direct" mapTo="double"/>
+		<!--
+		<TypeMapEntry type="Record" gmlVersion="*" rule="propertyType" mapTo="Record" nsabr="scXML"/>
+		<TypeMapEntry type="RecordType" gmlVersion="*" rule="propertyType" mapTo="RecordType" nsabr="scXML"/>
+		-->
+		<TypeMapEntry type="Scale" gmlVersion="3.0" rule="direct" mapTo="ScaleType" nsabr="gml"/>
+		<TypeMapEntry type="Scale" gmlVersion="3.1" rule="direct" mapTo="ScaleType" nsabr="gml"/>
+		<!--
+		<TypeMapEntry type="ScopedName" gmlVersion="3.0" rule="direct" mapTo="CodeType" nsabr="gml"/>
+		<TypeMapEntry type="ScopedName" gmlVersion="3.1" rule="direct" mapTo="CodeType" nsabr="gml"/>
+		-->
+		<TypeMapEntry type="Time" gmlVersion="*" rule="direct" mapTo="time"/>
+		<TypeMapEntry type="UnitOfMeasure" gmlVersion="3.0" rule="direct" mapTo="UnitOfMeasureType" nsabr="gml"/>
+		<TypeMapEntry type="UnitOfMeasure" gmlVersion="3.1" rule="direct" mapTo="UnitOfMeasureType" nsabr="gml"/>
+		<TypeMapEntry type="Vector" gmlVersion="2.1.2" rule="direct" mapTo="CoordinatesType" nsabr="gml"/>
+		<TypeMapEntry type="Vector" gmlVersion="3.0" rule="direct" mapTo="VectorType" nsabr="gml"/>
+		<TypeMapEntry type="Vector" gmlVersion="3.1" rule="direct" mapTo="VectorType" nsabr="gml"/>
+		<TypeMapEntry type="Velocity" gmlVersion="3.0" rule="direct" mapTo="VelocityType" nsabr="gml"/>
+		<TypeMapEntry type="Velocity" gmlVersion="3.1" rule="direct" mapTo="SpeedType" nsabr="gml"/>
+		<TypeMapEntry type="Volume" gmlVersion="3.0" rule="direct" mapTo="VolumeType" nsabr="gml"/>
+		<TypeMapEntry type="Volume" gmlVersion="3.1" rule="direct" mapTo="VolumeType" nsabr="gml"/>
+		<TypeMapEntry type="Year" gmlVersion="*" rule="direct" mapTo="gYear"/>
+		<!-- ISO 19107 Geometry -->
+		
+		<!-- added by SJDC 2005-11-23 -->
+		<TypeMapEntry type="DirectPosition" gmlVersion="3.0" rule="direct" mapTo="DirectPositionType" nsabr="gml"/>
+		<TypeMapEntry type="DirectPosition" gmlVersion="3.1" rule="direct" mapTo="DirectPositionType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Position" gmlVersion="3.0" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+<!-- not strictly accurate as GM_Position also allows direct value, but this is most general -->
+		<TypeMapEntry type="GM_Position" gmlVersion="3.1" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+<!-- not strictly accurate as GM_Position also allows direct value, but this is most general  -->
+		<!-- .......................... -->
+		
+		<BaseMapEntry type="GM_Aggregate" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Aggregate" gmlVersion="3.0" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Complex" gmlVersion="3.0" rule="direct" mapTo="GeometricComplexType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Complex" gmlVersion="3.1" rule="direct" mapTo="GeometricComplexType" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositeCurve" gmlVersion="3.0" rule="direct" mapTo="CompositeCurve" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositeCurve" gmlVersion="3.1" rule="direct" mapTo="CompositeCurve" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositePoint" gmlVersion="3.0" rule="direct" mapTo="PointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositePoint" gmlVersion="3.1" rule="direct" mapTo="PointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositeSolid" gmlVersion="3.0" rule="direct" mapTo="CompositeSolid" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositeSolid" gmlVersion="3.1" rule="direct" mapTo="CompositeSolid" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositeSurface" gmlVersion="3.0" rule="direct" mapTo="CompositeSurface" nsabr="gml"/>
+		<BaseMapEntry type="GM_CompositeSurface" gmlVersion="3.1" rule="direct" mapTo="CompositeSurface" nsabr="gml"/>
+		<BaseMapEntry type="GM_Curve" gmlVersion="2.1.2" rule="direct" mapTo="LineStringType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Curve" gmlVersion="3.0" rule="direct" mapTo="AbstractCurveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Curve" gmlVersion="3.1" rule="direct" mapTo="AbstractCurveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Envelope" gmlVersion="3.0" rule="direct" mapTo="Envelope" nsabr="gml"/>
+		<BaseMapEntry type="GM_Envelope" gmlVersion="3.1" rule="direct" mapTo="Envelope" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiCurve" gmlVersion="2.1.2" rule="direct" mapTo="MultiLineStringType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiCurve" gmlVersion="3.0" rule="direct" mapTo="MultiCurveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiCurve" gmlVersion="3.1" rule="direct" mapTo="MultiCurveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiPoint" gmlVersion="2.1.2" rule="direct" mapTo="MultiPointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiPoint" gmlVersion="3.0" rule="direct" mapTo="MultiPointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiPoint" gmlVersion="3.1" rule="direct" mapTo="MultiPointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiPrimitive" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiPrimitive" gmlVersion="3.0" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiPrimitive" gmlVersion="3.1" rule="direct" mapTo="MultiGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiSolid" gmlVersion="3.0" rule="direct" mapTo="MultiSolidType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiSolid" gmlVersion="3.1" rule="direct" mapTo="MultiSolidType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiSurface" gmlVersion="2.1.2" rule="direct" mapTo="MultiPolygonType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiSurface" gmlVersion="3.0" rule="direct" mapTo="MultiSurfaceType" nsabr="gml"/>
+		<BaseMapEntry type="GM_MultiSurface" gmlVersion="3.1" rule="direct" mapTo="MultiSurfaceType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Object" gmlVersion="2.1.2" rule="direct" mapTo="AbstractGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Object" gmlVersion="3.0" rule="direct" mapTo="AbstractGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Object" gmlVersion="3.1" rule="direct" mapTo="AbstractGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_OrientableCurve" gmlVersion="3.0" rule="direct" mapTo="AbstractCurveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_OrientableCurve" gmlVersion="3.1" rule="direct" mapTo="AbstractCurveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_OrientableSurface" gmlVersion="3.0" rule="direct" mapTo="AbstractSurfaceType" nsabr="gml"/>
+		<BaseMapEntry type="GM_OrientableSurface" gmlVersion="3.1" rule="direct" mapTo="AbstractSurfaceType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Point" gmlVersion="2.1.2" rule="direct" mapTo="PointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Point" gmlVersion="3.0" rule="direct" mapTo="PointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Point" gmlVersion="3.1" rule="direct" mapTo="PointType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Primitive" gmlVersion="2.1.2" rule="direct" mapTo="AbstractGeometryType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Primitive" gmlVersion="3.0" rule="direct" mapTo="AbstractGeometricPrimitiveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Primitive" gmlVersion="3.1" rule="direct" mapTo="AbstractGeometricPrimitiveType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Solid" gmlVersion="3.0" rule="direct" mapTo="SolidType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Solid" gmlVersion="3.1" rule="direct" mapTo="SolidType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Surface" gmlVersion="2.1.2" rule="direct" mapTo="PolygonType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Surface" gmlVersion="3.0" rule="direct" mapTo="AbstractSurfaceType" nsabr="gml"/>
+		<BaseMapEntry type="GM_Surface" gmlVersion="3.1" rule="direct" mapTo="AbstractSurfaceType" nsabr="gml"/>
+		<ElementMapEntry type="GM_Aggregate" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_Aggregate" gmlVersion="3.0" rule="direct" mapTo="MultiGeometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="MultiGeometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_Complex" gmlVersion="3.0" rule="direct" mapTo="GeometricComplex" nsabr="gml"/>
+		<ElementMapEntry type="GM_Complex" gmlVersion="3.1" rule="direct" mapTo="GeometricComplex" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositeCurve" gmlVersion="3.0" rule="direct" mapTo="CompositeCurve" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositeCurve" gmlVersion="3.1" rule="direct" mapTo="CompositeCurve" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositePoint" gmlVersion="3.0" rule="direct" mapTo="Point" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositePoint" gmlVersion="3.1" rule="direct" mapTo="Point" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositeSolid" gmlVersion="3.0" rule="direct" mapTo="CompositeSolid" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositeSolid" gmlVersion="3.1" rule="direct" mapTo="CompositeSolid" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositeSurface" gmlVersion="3.0" rule="direct" mapTo="CompositeSurface" nsabr="gml"/>
+		<ElementMapEntry type="GM_CompositeSurface" gmlVersion="3.1" rule="direct" mapTo="CompositeSurface" nsabr="gml"/>
+		<ElementMapEntry type="GM_Curve" gmlVersion="2.1.2" rule="direct" mapTo="LineString" nsabr="gml"/>
+		<ElementMapEntry type="GM_Curve" gmlVersion="3.0" rule="direct" mapTo="_Curve" nsabr="gml"/>
+		<ElementMapEntry type="GM_Curve" gmlVersion="3.1" rule="direct" mapTo="_Curve" nsabr="gml"/>
+		<ElementMapEntry type="GM_Envelope" gmlVersion="3.0" rule="direct" mapTo="Envelope" nsabr="gml"/>
+		<ElementMapEntry type="GM_Envelope" gmlVersion="3.1" rule="direct" mapTo="Envelope" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiCurve" gmlVersion="2.1.2" rule="direct" mapTo="MultiLineString" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiCurve" gmlVersion="3.0" rule="direct" mapTo="MultiCurve" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiCurve" gmlVersion="3.1" rule="direct" mapTo="MultiCurve" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiPoint" gmlVersion="2.1.2" rule="direct" mapTo="MultiPoint" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiPoint" gmlVersion="3.0" rule="direct" mapTo="MultiPoint" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiPoint" gmlVersion="3.1" rule="direct" mapTo="MultiPoint" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiPrimitive" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiPrimitive" gmlVersion="3.0" rule="direct" mapTo="MultiGeometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiPrimitive" gmlVersion="3.1" rule="direct" mapTo="MultiGeometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiSolid" gmlVersion="3.0" rule="direct" mapTo="MultiSolid" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiSolid" gmlVersion="3.1" rule="direct" mapTo="MultiSolid" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiSurface" gmlVersion="2.1.2" rule="direct" mapTo="MultiPolygon" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiSurface" gmlVersion="3.0" rule="direct" mapTo="MultiSurface" nsabr="gml"/>
+		<ElementMapEntry type="GM_MultiSurface" gmlVersion="3.1" rule="direct" mapTo="MultiSurface" nsabr="gml"/>
+		<ElementMapEntry type="GM_Object" gmlVersion="2.1.2" rule="direct" mapTo="_Geometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_Object" gmlVersion="3.0" rule="direct" mapTo="_Geometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_Object" gmlVersion="3.1" rule="direct" mapTo="_Geometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_OrientableCurve" gmlVersion="3.0" rule="direct" mapTo="_Curve" nsabr="gml"/>
+		<ElementMapEntry type="GM_OrientableCurve" gmlVersion="3.1" rule="direct" mapTo="_Curve" nsabr="gml"/>
+		<ElementMapEntry type="GM_OrientableSurface" gmlVersion="3.0" rule="direct" mapTo="_Surface" nsabr="gml"/>
+		<ElementMapEntry type="GM_OrientableSurface" gmlVersion="3.1" rule="direct" mapTo="_Surface" nsabr="gml"/>
+		<ElementMapEntry type="GM_Point" gmlVersion="2.1.2" rule="direct" mapTo="Point" nsabr="gml"/>
+		<ElementMapEntry type="GM_Point" gmlVersion="3.0" rule="direct" mapTo="Point" nsabr="gml"/>
+		<ElementMapEntry type="GM_Point" gmlVersion="3.1" rule="direct" mapTo="Point" nsabr="gml"/>
+		<ElementMapEntry type="GM_Primitive" gmlVersion="2.1.2" rule="direct" mapTo="_Geometry" nsabr="gml"/>
+		<ElementMapEntry type="GM_Primitive" gmlVersion="3.0" rule="direct" mapTo="_GeometricPrimitive" nsabr="gml"/>
+		<ElementMapEntry type="GM_Primitive" gmlVersion="3.1" rule="direct" mapTo="_GeometricPrimitive" nsabr="gml"/>
+		<ElementMapEntry type="GM_Solid" gmlVersion="3.0" rule="direct" mapTo="Solid" nsabr="gml"/>
+		<ElementMapEntry type="GM_Solid" gmlVersion="3.1" rule="direct" mapTo="Solid" nsabr="gml"/>
+		<ElementMapEntry type="GM_Surface" gmlVersion="2.1.2" rule="direct" mapTo="Polygon" nsabr="gml"/>
+		<ElementMapEntry type="GM_Surface" gmlVersion="3.0" rule="direct" mapTo="_Surface" nsabr="gml"/>
+		<ElementMapEntry type="GM_Surface" gmlVersion="3.1" rule="direct" mapTo="_Surface" nsabr="gml"/>
+		<TypeMapEntry type="GM_Aggregate" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Aggregate" gmlVersion="3.0" rule="direct" mapTo="MultiGeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="MultiGeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Complex" gmlVersion="3.0" rule="direct" mapTo="GeometricComplexPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Complex" gmlVersion="3.1" rule="direct" mapTo="GeometricComplexPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositeCurve" gmlVersion="3.0" rule="propertyType" mapTo="CompositeCurve" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositeCurve" gmlVersion="3.1" rule="propertyType" mapTo="CompositeCurve" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositePoint" gmlVersion="3.0" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositePoint" gmlVersion="3.1" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositeSolid" gmlVersion="3.0" rule="propertyType" mapTo="CompositeSolid" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositeSolid" gmlVersion="3.1" rule="propertyType" mapTo="CompositeSolid" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositeSurface" gmlVersion="3.0" rule="propertyType" mapTo="CompositeSurface" nsabr="gml"/>
+		<TypeMapEntry type="GM_CompositeSurface" gmlVersion="3.1" rule="propertyType" mapTo="CompositeSurface" nsabr="gml"/>
+		<TypeMapEntry type="GM_Curve" gmlVersion="2.1.2" rule="direct" mapTo="LineStringPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Curve" gmlVersion="3.0" rule="direct" mapTo="CurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Curve" gmlVersion="3.1" rule="direct" mapTo="CurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Envelope" gmlVersion="3.0" rule="propertyType" mapTo="Envelope" nsabr="gml"/>
+		<TypeMapEntry type="GM_Envelope" gmlVersion="3.1" rule="propertyType" mapTo="Envelope" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiCurve" gmlVersion="2.1.2" rule="direct" mapTo="MultiLineStringPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiCurve" gmlVersion="3.0" rule="direct" mapTo="MultiCurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiCurve" gmlVersion="3.1" rule="direct" mapTo="MultiCurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiPoint" gmlVersion="2.1.2" rule="direct" mapTo="MultiPointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiPoint" gmlVersion="3.0" rule="direct" mapTo="MultiPointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiPoint" gmlVersion="3.1" rule="direct" mapTo="MultiPointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiPrimitive" gmlVersion="2.1.2" rule="direct" mapTo="MultiGeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiPrimitive" gmlVersion="3.0" rule="direct" mapTo="MultiGeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiPrimitive" gmlVersion="3.1" rule="direct" mapTo="MultiGeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiSolid" gmlVersion="3.0" rule="direct" mapTo="MultiSolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiSolid" gmlVersion="3.1" rule="direct" mapTo="MultiSolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiSurface" gmlVersion="2.1.2" rule="direct" mapTo="MultiPolygonPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiSurface" gmlVersion="3.0" rule="direct" mapTo="MultiSurfacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_MultiSurface" gmlVersion="3.1" rule="direct" mapTo="MultiSurfacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Object" gmlVersion="2.1.2" rule="direct" mapTo="GeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Object" gmlVersion="3.0" rule="direct" mapTo="GeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Object" gmlVersion="3.1" rule="direct" mapTo="GeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_OrientableCurve" gmlVersion="3.0" rule="direct" mapTo="CurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_OrientableCurve" gmlVersion="3.1" rule="direct" mapTo="CurvePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_OrientableSurface" gmlVersion="3.0" rule="direct" mapTo="SurfacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_OrientableSurface" gmlVersion="3.1" rule="direct" mapTo="SurfacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Point" gmlVersion="2.1.2" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Point" gmlVersion="3.0" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Point" gmlVersion="3.1" rule="direct" mapTo="PointPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Primitive" gmlVersion="2.1.2" rule="direct" mapTo="GeometryPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Primitive" gmlVersion="3.0" rule="direct" mapTo="GeometricPrimitivePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Primitive" gmlVersion="3.1" rule="direct" mapTo="GeometricPrimitivePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Solid" gmlVersion="3.0" rule="direct" mapTo="SolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Solid" gmlVersion="3.1" rule="direct" mapTo="SolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Surface" gmlVersion="2.1.2" rule="direct" mapTo="PolygonPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Surface" gmlVersion="3.0" rule="direct" mapTo="SurfacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="GM_Surface" gmlVersion="3.1" rule="direct" mapTo="SurfacePropertyType" nsabr="gml"/>
+		<!-- ISO 19107 Topology -->
+		<BaseMapEntry type="TP_Object" gmlVersion="3.0" rule="direct" mapTo="AbstractTopologyType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Object" gmlVersion="3.1" rule="direct" mapTo="AbstractTopologyType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Complex" gmlVersion="3.0" rule="direct" mapTo="TopoComplexType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Complex" gmlVersion="3.1" rule="direct" mapTo="TopoComplexType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedEdge" gmlVersion="3.0" rule="direct" mapTo="DirectedEdgeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedEdge" gmlVersion="3.1" rule="direct" mapTo="DirectedEdgeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedFace" gmlVersion="3.0" rule="direct" mapTo="DirectedFaceType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedFace" gmlVersion="3.1" rule="direct" mapTo="DirectedFaceType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedNode" gmlVersion="3.0" rule="direct" mapTo="DirectedNodeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedNode" gmlVersion="3.1" rule="direct" mapTo="DirectedNodeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedSolid" gmlVersion="3.0" rule="direct" mapTo="DirectedTopoSolidType" nsabr="gml"/>
+		<BaseMapEntry type="TP_DirectedSolid" gmlVersion="3.1" rule="direct" mapTo="DirectedTopoSolidType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Edge" gmlVersion="3.0" rule="direct" mapTo="DirectedEdgeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Edge" gmlVersion="3.1" rule="direct" mapTo="DirectedEdgeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Face" gmlVersion="3.0" rule="direct" mapTo="DirectedFaceType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Face" gmlVersion="3.1" rule="direct" mapTo="DirectedFaceType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Node" gmlVersion="3.0" rule="direct" mapTo="DirectedNodeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Node" gmlVersion="3.1" rule="direct" mapTo="DirectedNodeType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Solid" gmlVersion="3.0" rule="direct" mapTo="DirectedTopoSolidType" nsabr="gml"/>
+		<BaseMapEntry type="TP_Solid" gmlVersion="3.1" rule="direct" mapTo="DirectedTopoSolidType" nsabr="gml"/>
+		<ElementMapEntry type="TP_Object" gmlVersion="3.0" rule="direct" mapTo="_Topology" nsabr="gml"/>
+		<ElementMapEntry type="TP_Object" gmlVersion="3.1" rule="direct" mapTo="_Topology" nsabr="gml"/>
+		<ElementMapEntry type="TP_Complex" gmlVersion="3.0" rule="direct" mapTo="TopoComplex" nsabr="gml"/>
+		<ElementMapEntry type="TP_Complex" gmlVersion="3.1" rule="direct" mapTo="TopoComplex" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedEdge" gmlVersion="3.0" rule="direct" mapTo="DirectedEdge" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedEdge" gmlVersion="3.1" rule="direct" mapTo="DirectedEdge" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedFace" gmlVersion="3.0" rule="direct" mapTo="DirectedFace" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedFace" gmlVersion="3.1" rule="direct" mapTo="DirectedFace" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedNode" gmlVersion="3.0" rule="direct" mapTo="DirectedNode" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedNode" gmlVersion="3.1" rule="direct" mapTo="DirectedNode" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedSolid" gmlVersion="3.0" rule="direct" mapTo="DirectedTopoSolid" nsabr="gml"/>
+		<ElementMapEntry type="TP_DirectedSolid" gmlVersion="3.1" rule="direct" mapTo="DirectedTopoSolid" nsabr="gml"/>
+		<ElementMapEntry type="TP_Edge" gmlVersion="3.0" rule="direct" mapTo="DirectedEdge" nsabr="gml"/>
+		<ElementMapEntry type="TP_Edge" gmlVersion="3.1" rule="direct" mapTo="DirectedEdge" nsabr="gml"/>
+		<ElementMapEntry type="TP_Face" gmlVersion="3.0" rule="direct" mapTo="DirectedFace" nsabr="gml"/>
+		<ElementMapEntry type="TP_Face" gmlVersion="3.1" rule="direct" mapTo="DirectedFace" nsabr="gml"/>
+		<ElementMapEntry type="TP_Node" gmlVersion="3.0" rule="direct" mapTo="DirectedNode" nsabr="gml"/>
+		<ElementMapEntry type="TP_Node" gmlVersion="3.1" rule="direct" mapTo="DirectedNode" nsabr="gml"/>
+		<ElementMapEntry type="TP_Solid" gmlVersion="3.0" rule="direct" mapTo="DirectedTopoSolid" nsabr="gml"/>
+		<ElementMapEntry type="TP_Solid" gmlVersion="3.1" rule="direct" mapTo="DirectedTopoSolid" nsabr="gml"/>
+		<TypeMapEntry type="TP_Object" gmlVersion="3.0" rule="propertyType" mapTo="_Topology" nsabr="gml"/>
+		<TypeMapEntry type="TP_Object" gmlVersion="3.1" rule="propertyType" mapTo="_Topology" nsabr="gml"/>
+		<TypeMapEntry type="TP_Complex" gmlVersion="3.0" rule="direct" mapTo="TopoComplexMemberType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Complex" gmlVersion="3.1" rule="direct" mapTo="TopoComplexMemberType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedEdge" gmlVersion="3.0" rule="direct" mapTo="DirectedEdgePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedEdge" gmlVersion="3.1" rule="direct" mapTo="DirectedEdgePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedFace" gmlVersion="3.0" rule="direct" mapTo="DirectedFacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedFace" gmlVersion="3.1" rule="direct" mapTo="DirectedFacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedNode" gmlVersion="3.0" rule="direct" mapTo="DirectedNodePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedNode" gmlVersion="3.1" rule="direct" mapTo="DirectedNodePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedSolid" gmlVersion="3.0" rule="direct" mapTo="DirectedTopoSolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_DirectedSolid" gmlVersion="3.1" rule="direct" mapTo="DirectedTopoSolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Edge" gmlVersion="3.0" rule="direct" mapTo="DirectedEdgePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Edge" gmlVersion="3.1" rule="direct" mapTo="DirectedEdgePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Face" gmlVersion="3.0" rule="direct" mapTo="DirectedFacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Face" gmlVersion="3.1" rule="direct" mapTo="DirectedFacePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Node" gmlVersion="3.0" rule="direct" mapTo="DirectedNodePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Node" gmlVersion="3.1" rule="direct" mapTo="DirectedNodePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Solid" gmlVersion="3.0" rule="direct" mapTo="DirectedTopoSolidPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TP_Solid" gmlVersion="3.1" rule="direct" mapTo="DirectedTopoSolidPropertyType" nsabr="gml"/>
+		<!-- ISO 19108 -->
+		<BaseMapEntry type="TM_Instant" gmlVersion="3.0" rule="direct" mapTo="TimeInstantType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Instant" gmlVersion="3.1" rule="direct" mapTo="TimeInstantType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Period" gmlVersion="3.0" rule="direct" mapTo="TimePeriodType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Period" gmlVersion="3.1" rule="direct" mapTo="TimePeriodType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Instant" gmlVersion="3.0" rule="direct" mapTo="TimeInstant" nsabr="gml"/>
+		<ElementMapEntry type="TM_Instant" gmlVersion="3.1" rule="direct" mapTo="TimeInstant" nsabr="gml"/>
+		<ElementMapEntry type="TM_Period" gmlVersion="3.0" rule="direct" mapTo="TimePeriod" nsabr="gml"/>
+		<ElementMapEntry type="TM_Period" gmlVersion="3.1" rule="direct" mapTo="TimePeriod" nsabr="gml"/>
+		<TypeMapEntry type="TM_Instant" gmlVersion="3.0" rule="direct" mapTo="TimeInstantPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Instant" gmlVersion="3.1" rule="direct" mapTo="TimeInstantPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Period" gmlVersion="3.0" rule="direct" mapTo="TimePeriodPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Period" gmlVersion="3.1" rule="direct" mapTo="TimePeriodPropertyType" nsabr="gml"/>
+		<!-- added by SJDC 2005-09-28 -->
+		<BaseMapEntry type="TM_Position" gmlVersion="3.0" rule="direct" mapTo="TimePositionType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Position" gmlVersion="3.1" rule="direct" mapTo="TimePositionType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Position" gmlVersion="3.0" rule="direct" mapTo="TimePositionType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Position" gmlVersion="3.1" rule="direct" mapTo="TimePositionType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Object" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeObjectType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeObjectType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Object" gmlVersion="3.0" rule="direct" mapTo="_TimeObject" nsabr="gml"/>
+		<ElementMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="_TimeObject" nsabr="gml"/>
+		<TypeMapEntry type="TM_Object" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeObjectPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeObjectPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Complex" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeComplexType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Complex" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeComplexType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Complex" gmlVersion="3.0" rule="direct" mapTo="_TimeComplex" nsabr="gml"/>
+		<ElementMapEntry type="TM_Complex" gmlVersion="3.1" rule="direct" mapTo="_TimeComplex" nsabr="gml"/>
+		<TypeMapEntry type="TM_Complex" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeComplexPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Complex" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeComplexPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Primitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimePrimitiveType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Primitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimePrimitiveType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Primitive" gmlVersion="3.0" rule="direct" mapTo="_TimePrimitive" nsabr="gml"/>
+		<ElementMapEntry type="TM_Primitive" gmlVersion="3.1" rule="direct" mapTo="_TimePrimitive" nsabr="gml"/>
+		<TypeMapEntry type="TM_Primitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimePrimitivePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Primitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimePrimitivePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_GeometricPrimitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeGeometricPrimitiveType" nsabr="gml"/>
+		<BaseMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeGeometricPrimitiveType" nsabr="gml"/>
+		<ElementMapEntry type="TM_GeometricPrimitive" gmlVersion="3.0" rule="direct" mapTo="_TimeGeometricPrimitive" nsabr="gml"/>
+		<ElementMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="_TimeGeometricPrimitive" nsabr="gml"/>
+		<TypeMapEntry type="TM_GeometricPrimitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeGeometricPrimitivePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeGeometricPrimitivePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_TopologicalComplex" gmlVersion="3.0" rule="direct" mapTo="TimeTopologyComplexType" nsabr="gml"/>
+		<BaseMapEntry type="TM_TopologicalComplex" gmlVersion="3.1" rule="direct" mapTo="TimeTopologyComplexType" nsabr="gml"/>
+		<ElementMapEntry type="TM_TopologicalComplex" gmlVersion="3.0" rule="direct" mapTo="TimeTopologyComplex" nsabr="gml"/>
+		<ElementMapEntry type="TM_TopologicalComplex" gmlVersion="3.1" rule="direct" mapTo="TimeTopologyComplex" nsabr="gml"/>
+		<TypeMapEntry type="TM_TopologicalComplex" gmlVersion="3.0" rule="direct" mapTo="TimeTopologyComplexPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_TopologicalComplex" gmlVersion="3.1" rule="direct" mapTo="TimeTopologyComplexPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_TopologicalPrimitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeTopologyPrimitiveType" nsabr="gml"/>
+		<BaseMapEntry type="TM_TopologicalPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeTopologyPrimitiveType" nsabr="gml"/>
+		<ElementMapEntry type="TM_TopologicalPrimitive" gmlVersion="3.0" rule="direct" mapTo="_TimeTopologyPrimitive" nsabr="gml"/>
+		<ElementMapEntry type="TM_TopologicalPrimitive" gmlVersion="3.1" rule="direct" mapTo="_TimeTopologyPrimitive" nsabr="gml"/>
+		<TypeMapEntry type="TM_TopologicalPrimitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeTopologyPrimitivePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_TopologicalPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeTopologyPrimitivePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Node" gmlVersion="3.0" rule="direct" mapTo="TimeNodeType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Node" gmlVersion="3.1" rule="direct" mapTo="TimeNodeType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Node" gmlVersion="3.0" rule="direct" mapTo="TimeNode" nsabr="gml"/>
+		<ElementMapEntry type="TM_Node" gmlVersion="3.1" rule="direct" mapTo="TimeNode" nsabr="gml"/>
+		<TypeMapEntry type="TM_Node" gmlVersion="3.0" rule="direct" mapTo="TimeNodePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Node" gmlVersion="3.1" rule="direct" mapTo="TimeNodePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Edge" gmlVersion="3.0" rule="direct" mapTo="TimeEdgeType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Edge" gmlVersion="3.1" rule="direct" mapTo="TimeEdgeType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Edge" gmlVersion="3.0" rule="direct" mapTo="TimeEdge" nsabr="gml"/>
+		<ElementMapEntry type="TM_Edge" gmlVersion="3.1" rule="direct" mapTo="TimeEdge" nsabr="gml"/>
+		<TypeMapEntry type="TM_Edge" gmlVersion="3.0" rule="direct" mapTo="TimeEdgePropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Edge" gmlVersion="3.1" rule="direct" mapTo="TimeEdgePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_ReferenceSystem" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeReferenceSystemType" nsabr="gml"/>
+		<BaseMapEntry type="TM_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeReferenceSystemType" nsabr="gml"/>
+		<ElementMapEntry type="TM_ReferenceSystem" gmlVersion="3.0" rule="direct" mapTo="_TimeReferenceSystem" nsabr="gml"/>
+		<ElementMapEntry type="TM_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="_TimeReferenceSystem" nsabr="gml"/>
+		<TypeMapEntry type="TM_ReferenceSystem" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeReferenceSystemPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeReferenceSystemPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_CalendarEra" gmlVersion="3.0" rule="direct" mapTo="TimeCalendarEraType" nsabr="gml"/>
+		<BaseMapEntry type="TM_CalendarEra" gmlVersion="3.1" rule="direct" mapTo="TimeCalendarEraType" nsabr="gml"/>
+		<ElementMapEntry type="TM_CalendarEra" gmlVersion="3.0" rule="direct" mapTo="TimeCalendarEra" nsabr="gml"/>
+		<ElementMapEntry type="TM_CalendarEra" gmlVersion="3.1" rule="direct" mapTo="TimeCalendarEra" nsabr="gml"/>
+		<TypeMapEntry type="TM_CalendarEra" gmlVersion="3.0" rule="direct" mapTo="TimeCalendarEraPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_CalendarEra" gmlVersion="3.1" rule="direct" mapTo="TimeCalendarEraPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Calendar" gmlVersion="3.0" rule="direct" mapTo="TimeCalendarType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Calendar" gmlVersion="3.1" rule="direct" mapTo="TimeCalendarType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Calendar" gmlVersion="3.0" rule="direct" mapTo="TimeCalendar" nsabr="gml"/>
+		<ElementMapEntry type="TM_Calendar" gmlVersion="3.1" rule="direct" mapTo="TimeCalendar" nsabr="gml"/>
+		<TypeMapEntry type="TM_Calendar" gmlVersion="3.0" rule="direct" mapTo="TimeCalendarPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Calendar" gmlVersion="3.1" rule="direct" mapTo="TimeCalendarPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_Clock" gmlVersion="3.0" rule="direct" mapTo="TimeClockType" nsabr="gml"/>
+		<BaseMapEntry type="TM_Clock" gmlVersion="3.1" rule="direct" mapTo="TimeClockType" nsabr="gml"/>
+		<ElementMapEntry type="TM_Clock" gmlVersion="3.0" rule="direct" mapTo="TimeClock" nsabr="gml"/>
+		<ElementMapEntry type="TM_Clock" gmlVersion="3.1" rule="direct" mapTo="TimeClock" nsabr="gml"/>
+		<TypeMapEntry type="TM_Clock" gmlVersion="3.0" rule="direct" mapTo="TimeClockPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_Clock" gmlVersion="3.1" rule="direct" mapTo="TimeClockPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_CoordinateSystem" gmlVersion="3.0" rule="direct" mapTo="TimeCoordinateSystemType" nsabr="gml"/>
+		<BaseMapEntry type="TM_CoordinateSystem" gmlVersion="3.1" rule="direct" mapTo="TimeCoordinateSystemType" nsabr="gml"/>
+		<ElementMapEntry type="TM_CoordinateSystem" gmlVersion="3.0" rule="direct" mapTo="TimeCoordinateSystem" nsabr="gml"/>
+		<ElementMapEntry type="TM_CoordinateSystem" gmlVersion="3.1" rule="direct" mapTo="TimeCoordinateSystem" nsabr="gml"/>
+		<TypeMapEntry type="TM_CoordinateSystem" gmlVersion="3.0" rule="direct" mapTo="TimeCoordinateSystemPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_CoordinateSystem" gmlVersion="3.1" rule="direct" mapTo="TimeCoordinateSystemPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_OrdinalReferenceSystem" gmlVersion="3.0" rule="direct" mapTo="TimeOrdinalReferenceSystemType" nsabr="gml"/>
+		<BaseMapEntry type="TM_OrdinalReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="TimeOrdinalReferenceSystemType" nsabr="gml"/>
+		<ElementMapEntry type="TM_OrdinalReferenceSystem" gmlVersion="3.0" rule="direct" mapTo="TimeOrdinalReferenceSystem" nsabr="gml"/>
+		<ElementMapEntry type="TM_OrdinalReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="TimeOrdinalReferenceSystem" nsabr="gml"/>
+		<TypeMapEntry type="TM_OrdinalReferenceSystem" gmlVersion="3.0" rule="direct" mapTo="TimeOrdinalReferenceSystemPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_OrdinalReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="TimeOrdinalReferenceSystemPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="TM_OrdinalEra" gmlVersion="3.0" rule="direct" mapTo="TimeOrdinalEraType" nsabr="gml"/>
+		<BaseMapEntry type="TM_OrdinalEra" gmlVersion="3.1" rule="direct" mapTo="TimeOrdinalEraType" nsabr="gml"/>
+		<ElementMapEntry type="TM_OrdinalEra" gmlVersion="3.0" rule="direct" mapTo="TimeOrdinalEra" nsabr="gml"/>
+		<ElementMapEntry type="TM_OrdinalEra" gmlVersion="3.1" rule="direct" mapTo="TimeOrdinalEra" nsabr="gml"/>
+		<TypeMapEntry type="TM_OrdinalEra" gmlVersion="3.0" rule="direct" mapTo="TimeOrdinalEraPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="TM_OrdinalEra" gmlVersion="3.1" rule="direct" mapTo="TimeOrdinalEraPropertyType" nsabr="gml"/>
+
+		<!-- ISO 19123 -->
+		<BaseMapEntry type="CV_ContinuousQuadrilateralGridCoverage" gmlVersion="3.1" rule="direct" mapTo="GridCoverageType" nsabr="gml"/>
+		<BaseMapEntry type="CV_Coverage" gmlVersion="3.1" rule="direct" mapTo="AbstractCoverageType" nsabr="gml"/>
+		<BaseMapEntry type="CV_DiscreteCurveCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiCurveCoverageType" nsabr="gml"/>
+		<BaseMapEntry type="CV_DiscreteGridPointCoverage" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridCoverageType" nsabr="gml"/>
+		<BaseMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiPointCoverageType" nsabr="gml"/>
+		<BaseMapEntry type="CV_DiscreteSurfaceCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiSurfaceCoverageType" nsabr="gml"/>
+		<ElementMapEntry type="CV_ContinuousQuadrilateralGridCoverage" gmlVersion="3.1" rule="direct" mapTo="GridCoverage" nsabr="gml"/>
+		<ElementMapEntry type="CV_Coverage" gmlVersion="3.1" rule="direct" mapTo="Coverage" nsabr="gml"/>
+		<ElementMapEntry type="CV_DiscreteCurveCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiCurveCoverage" nsabr="gml"/>
+		<ElementMapEntry type="CV_DiscreteGridPointCoverage" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridCoverage" nsabr="gml"/>
+		<ElementMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiPointCoverage" nsabr="gml"/>
+		<ElementMapEntry type="CV_DiscreteSurfaceCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiSurfaceCoverage" nsabr="gml"/>
+		<TypeMapEntry type="CV_ContinuousQuadrilateralGridCoverage" gmlVersion="3.1" rule="propertyType" mapTo="GridCoverage" nsabr="gml"/>
+		<TypeMapEntry type="CV_Coverage" gmlVersion="3.1" rule="propertyType" mapTo="Coverage" nsabr="gml"/>
+		<TypeMapEntry type="CV_DiscreteCurveCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiCurveCoverage" nsabr="gml"/>
+		<TypeMapEntry type="CV_DiscreteGridPointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="RectifiedGridCoverage" nsabr="gml"/>
+		<TypeMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiPointCoverage" nsabr="gml"/>
+		<TypeMapEntry type="CV_DiscreteSurfaceCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiSurfaceCoverage" nsabr="gml"/>
+
+		<!-- added by SJDC 2005-09-28 -->
+		<BaseMapEntry type="CV_Grid" gmlVersion="3.0" rule="direct" mapTo="GridType" nsabr="gml"/>
+		<BaseMapEntry type="CV_Grid" gmlVersion="3.1" rule="direct" mapTo="GridType" nsabr="gml"/>
+		<ElementMapEntry type="CV_Grid" gmlVersion="3.0" rule="direct" mapTo="Grid" nsabr="gml"/>
+		<ElementMapEntry type="CV_Grid" gmlVersion="3.1" rule="direct" mapTo="Grid" nsabr="gml"/>
+		<TypeMapEntry type="CV_Grid" gmlVersion="3.0" rule="direct" mapTo="GridPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="CV_Grid" gmlVersion="3.1" rule="direct" mapTo="GridPropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="CV_RectifiedGrid" gmlVersion="3.0" rule="direct" mapTo="RectifiedGridType" nsabr="gml"/>
+		<BaseMapEntry type="CV_RectifiedGrid" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridType" nsabr="gml"/>
+		<ElementMapEntry type="CV_RectifiedGrid" gmlVersion="3.0" rule="direct" mapTo="RectifiedGrid" nsabr="gml"/>
+		<ElementMapEntry type="CV_RectifiedGrid" gmlVersion="3.1" rule="direct" mapTo="RectifiedGrid" nsabr="gml"/>
+		<TypeMapEntry type="CV_RectifiedGrid" gmlVersion="3.0" rule="direct" mapTo="RectifiedGridPropertyType" nsabr="gml"/>
+		<TypeMapEntry type="CV_RectifiedGrid" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridPropertyType" nsabr="gml"/>
+
+		<!-- ISO 19115 via ISO/TS 19139 (GML 3.1 version from SEEGrid) -->
+		<!-- added by SJDC 20060118 -->
+		
+		<BaseMapEntry type="CI_Address" gmlVersion="3.1" rule="direct" mapTo="CI_Address_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_Address" gmlVersion="3.1" rule="direct" mapTo="CI_Address" nsabr="gmd"/>
+		<TypeMapEntry type="CI_Address" gmlVersion="3.1" rule="propertyType" mapTo="CI_Address_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_Citation" gmlVersion="3.1" rule="direct" mapTo="CI_Citation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_Citation" gmlVersion="3.1" rule="direct" mapTo="CI_Citation" nsabr="gmd"/>
+		<TypeMapEntry type="CI_Citation" gmlVersion="3.1" rule="propertyType" mapTo="CI_Citation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_Contact" gmlVersion="3.1" rule="direct" mapTo="CI_Contact_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_Contact" gmlVersion="3.1" rule="direct" mapTo="CI_Contact" nsabr="gmd"/>
+		<TypeMapEntry type="CI_Contact" gmlVersion="3.1" rule="propertyType" mapTo="CI_Contact_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_Date" gmlVersion="3.1" rule="direct" mapTo="CI_Date_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_Date" gmlVersion="3.1" rule="direct" mapTo="CI_Date" nsabr="gmd"/>
+		<TypeMapEntry type="CI_Date" gmlVersion="3.1" rule="propertyType" mapTo="CI_Date_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="CI_DateTypeCode" gmlVersion="3.1" rule="direct" mapTo="CI_DateTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="CI_DateTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="CI_DateTypeCode_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="CI_OnLineFunctionCode" gmlVersion="3.1" rule="direct" mapTo="CI_OnLineFunctionCode" nsabr="gmd"/>
+		<TypeMapEntry type="CI_OnLineFunctionCode" gmlVersion="3.1" rule="propertyType" mapTo="CI_OnLineFunctionCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_OnlineResource" gmlVersion="3.1" rule="direct" mapTo="CI_OnlineResource_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_OnlineResource" gmlVersion="3.1" rule="direct" mapTo="CI_OnlineResource" nsabr="gmd"/>
+		<TypeMapEntry type="CI_OnlineResource" gmlVersion="3.1" rule="propertyType" mapTo="CI_OnlineResource_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="CI_PresentationFormCode" gmlVersion="3.1" rule="direct" mapTo="CI_PresentationFormCode" nsabr="gmd"/>
+		<TypeMapEntry type="CI_PresentationFormCode" gmlVersion="3.1" rule="propertyType" mapTo="CI_PresentationFormCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="3.1" rule="direct" mapTo="CI_ResponsibleParty_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="3.1" rule="direct" mapTo="CI_ResponsibleParty" nsabr="gmd"/>
+		<TypeMapEntry type="CI_ResponsibleParty" gmlVersion="3.1" rule="propertyType" mapTo="CI_ResponsibleParty_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="CI_RoleCode" gmlVersion="3.1" rule="direct" mapTo="CI_RoleCode" nsabr="gmd"/>
+		<TypeMapEntry type="CI_RoleCode" gmlVersion="3.1" rule="propertyType" mapTo="CI_RoleCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_Series" gmlVersion="3.1" rule="direct" mapTo="CI_Series_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_Series" gmlVersion="3.1" rule="direct" mapTo="CI_Series" nsabr="gmd"/>
+		<TypeMapEntry type="CI_Series" gmlVersion="3.1" rule="propertyType" mapTo="CI_Series_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="CI_Telephone" gmlVersion="3.1" rule="direct" mapTo="CI_Telephone_Type" nsabr="gmd"/>
+		<ElementMapEntry type="CI_Telephone" gmlVersion="3.1" rule="direct" mapTo="CI_Telephone" nsabr="gmd"/>
+		<TypeMapEntry type="CI_Telephone" gmlVersion="3.1" rule="propertyType" mapTo="CI_Telephone_PropertyType" nsabr="gmd"/>
+
+	
+		<BaseMapEntry type="DQ_AbsoluteExternalPositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_AbsoluteExternalPositionalAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_AbsoluteExternalPositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_AbsoluteExternalPositionalAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_AbsoluteExternalPositionalAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_AbsoluteExternalPositionalAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_AccuracyOfATimeMeasurement" gmlVersion="3.1" rule="direct" mapTo="DQ_AccuracyOfATimeMeasurement_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_AccuracyOfATimeMeasurement" gmlVersion="3.1" rule="direct" mapTo="DQ_AccuracyOfATimeMeasurement" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_AccuracyOfATimeMeasurement" gmlVersion="3.1" rule="propertyType" mapTo="DQ_AccuracyOfATimeMeasurement_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_Completeness" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_Completeness_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_Completeness" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_Completeness" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_Completeness" gmlVersion="3.1" rule="propertyType" mapTo="DQ_Completeness_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_CompletenessCommission" gmlVersion="3.1" rule="direct" mapTo="DQ_CompletenessCommission_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_CompletenessCommission" gmlVersion="3.1" rule="direct" mapTo="DQ_CompletenessCommission" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_CompletenessCommission" gmlVersion="3.1" rule="propertyType" mapTo="DQ_CompletenessCommission_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_CompletenessOmission" gmlVersion="3.1" rule="direct" mapTo="DQ_CompletenessOmission_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_CompletenessOmission" gmlVersion="3.1" rule="direct" mapTo="DQ_CompletenessOmission" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_CompletenessOmission" gmlVersion="3.1" rule="propertyType" mapTo="DQ_CompletenessOmission_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_ConformanceResult" gmlVersion="3.1" rule="direct" mapTo="DQ_ConformanceResult_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_ConformanceResult" gmlVersion="3.1" rule="direct" mapTo="DQ_ConformanceResult" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_ConformanceResult" gmlVersion="3.1" rule="propertyType" mapTo="DQ_ConformanceResult_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_ConceptualConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_ConceptualConsistency_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_ConceptualConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_ConceptualConsistency" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_ConceptualConsistency" gmlVersion="3.1" rule="propertyType" mapTo="DQ_ConceptualConsistency_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_DataQuality" gmlVersion="3.1" rule="direct" mapTo="DQ_DataQuality_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_DataQuality" gmlVersion="3.1" rule="direct" mapTo="DQ_DataQuality" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_DataQuality" gmlVersion="3.1" rule="propertyType" mapTo="DQ_DataQuality_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_DomainConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_DomainConsistency_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_DomainConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_DomainConsistency" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_DomainConsistency" gmlVersion="3.1" rule="propertyType" mapTo="DQ_DomainConsistency_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_Element" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_Element_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_Element" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_Element" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_Element" gmlVersion="3.1" rule="propertyType" mapTo="DQ_Element_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="DQ_EvaluationMethodTypeCode" gmlVersion="3.1" rule="direct" mapTo="DQ_EvaluationMethodTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_EvaluationMethodTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="DQ_EvaluationMethodTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_GriddedDataPositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_GriddedDataPositionalAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_GriddedDataPositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_GriddedDataPositionalAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_GriddedDataPositionalAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_GriddedDataPositionalAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_FormatConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_FormatConsistency_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_FormatConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_FormatConsistency" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_FormatConsistency" gmlVersion="3.1" rule="propertyType" mapTo="DQ_FormatConsistency_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_LogicalConsistency" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_LogicalConsistency_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_LogicalConsistency" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_LogicalConsistency" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_LogicalConsistency" gmlVersion="3.1" rule="propertyType" mapTo="DQ_LogicalConsistency_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_NonQuantitativeAttributeAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_NonQuantitativeAttributeAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_NonQuantitativeAttributeAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_NonQuantitativeAttributeAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_NonQuantitativeAttributeAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_NonQuantitativeAttributeAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_PositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_PositionalAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_PositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_PositionalAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_PositionalAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_PositionalAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_QuantitativeAttributeAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_QuantitativeAttributeAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_QuantitativeAttributeAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_QuantitativeAttributeAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_QuantitativeAttributeAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_QuantitativeAttributeAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_QuantitativeResult" gmlVersion="3.1" rule="direct" mapTo="DQ_QuantitativeResult_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_QuantitativeResult" gmlVersion="3.1" rule="direct" mapTo="DQ_QuantitativeResult" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_QuantitativeResult" gmlVersion="3.1" rule="propertyType" mapTo="DQ_QuantitativeResult_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_RelativeInternalPositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_RelativeInternalPositionalAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_RelativeInternalPositionalAccuracy" gmlVersion="3.1" rule="direct" mapTo="DQ_RelativeInternalPositionalAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_RelativeInternalPositionalAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_RelativeInternalPositionalAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_Result" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_Result_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_Result" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_Result" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_Result" gmlVersion="3.1" rule="propertyType" mapTo="DQ_Result_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_Scope" gmlVersion="3.1" rule="direct" mapTo="DQ_Scope_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_Scope" gmlVersion="3.1" rule="direct" mapTo="DQ_Scope" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_Scope" gmlVersion="3.1" rule="propertyType" mapTo="DQ_Scope_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_TemporalAccuracy" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_TemporalAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_TemporalAccuracy" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_TemporalAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_TemporalAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_TemporalAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_TemporalConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_TemporalConsistency_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_TemporalConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_TemporalConsistency" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_TemporalConsistency" gmlVersion="3.1" rule="propertyType" mapTo="DQ_TemporalConsistency_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_TemporalValidity" gmlVersion="3.1" rule="direct" mapTo="DQ_TemporalValidity_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_TemporalValidity" gmlVersion="3.1" rule="direct" mapTo="DQ_TemporalValidity" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_TemporalValidity" gmlVersion="3.1" rule="propertyType" mapTo="DQ_TemporalValidity_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_ThematicAccuracy" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_ThematicAccuracy_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_ThematicAccuracy" gmlVersion="3.1" rule="direct" mapTo="AbstractDQ_ThematicAccuracy" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_ThematicAccuracy" gmlVersion="3.1" rule="propertyType" mapTo="DQ_ThematicAccuracy_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_ThematicClassificationCorrectness" gmlVersion="3.1" rule="direct" mapTo="DQ_ThematicClassificationCorrectness_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_ThematicClassificationCorrectness" gmlVersion="3.1" rule="direct" mapTo="DQ_ThematicClassificationCorrectness" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_ThematicClassificationCorrectness" gmlVersion="3.1" rule="propertyType" mapTo="DQ_ThematicClassificationCorrectness_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DQ_TopologicalConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_TopologicalConsistency_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DQ_TopologicalConsistency" gmlVersion="3.1" rule="direct" mapTo="DQ_TopologicalConsistency" nsabr="gmd"/>
+		<TypeMapEntry type="DQ_TopologicalConsistency" gmlVersion="3.1" rule="propertyType" mapTo="DQ_TopologicalConsistency_PropertyType" nsabr="gmd"/>
+
+
+		<BaseMapEntry type="DS_Aggregate" gmlVersion="3.1" rule="direct" mapTo="AbstractDS_Aggregate_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_Aggregate" gmlVersion="3.1" rule="direct" mapTo="AbstractDS_Aggregate" nsabr="gmd"/>
+		<TypeMapEntry type="DS_Aggregate" gmlVersion="3.1" rule="propertyType" mapTo="DS_Aggregate_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_Association" gmlVersion="3.1" rule="direct" mapTo="DS_Association_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_Association" gmlVersion="3.1" rule="direct" mapTo="DS_Association" nsabr="gmd"/>
+		<TypeMapEntry type="DS_Association" gmlVersion="3.1" rule="propertyType" mapTo="DS_Association_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="DS_AssociationTypeCode" gmlVersion="3.1" rule="direct" mapTo="DS_AssociationTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="DS_AssociationTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="DS_AssociationTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_DataSet" gmlVersion="3.1" rule="direct" mapTo="DS_DataSet_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_DataSet" gmlVersion="3.1" rule="direct" mapTo="DS_DataSet" nsabr="gmd"/>
+		<TypeMapEntry type="DS_DataSet" gmlVersion="3.1" rule="propertyType" mapTo="DS_DataSet_PropertyType" nsabr="gmd"/>		<ElementMapEntry type="MD_CellGeometryCode" gmlVersion="3.1" rule="direct" mapTo="MD_CellGeometryCode" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_Initiative" gmlVersion="3.1" rule="direct" mapTo="DS_Initiative_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_Initiative" gmlVersion="3.1" rule="direct" mapTo="DS_Initiative" nsabr="gmd"/>
+		<TypeMapEntry type="DS_Initiative" gmlVersion="3.1" rule="propertyType" mapTo="DS_Initiative_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="DS_InitiativeTypeCode" gmlVersion="3.1" rule="direct" mapTo="DS_InitiativeTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="DS_InitiativeTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="DS_InitiativeTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_OtherAggregate" gmlVersion="3.1" rule="direct" mapTo="DS_OtherAggregate_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_OtherAggregate" gmlVersion="3.1" rule="direct" mapTo="DS_OtherAggregate" nsabr="gmd"/>
+		<TypeMapEntry type="DS_OtherAggregate" gmlVersion="3.1" rule="propertyType" mapTo="DS_OtherAggregate_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_Platform" gmlVersion="3.1" rule="direct" mapTo="DS_Platform_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_Platform" gmlVersion="3.1" rule="direct" mapTo="DS_Platform" nsabr="gmd"/>
+		<TypeMapEntry type="DS_Platform" gmlVersion="3.1" rule="propertyType" mapTo="DS_Platform_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_ProductionSeries" gmlVersion="3.1" rule="direct" mapTo="DS_ProductionSeries_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_ProductionSeries" gmlVersion="3.1" rule="direct" mapTo="DS_ProductionSeries" nsabr="gmd"/>
+		<TypeMapEntry type="DS_ProductionSeries" gmlVersion="3.1" rule="propertyType" mapTo="DS_ProductionSeries_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_Sensor" gmlVersion="3.1" rule="direct" mapTo="DS_Sensor_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_Sensor" gmlVersion="3.1" rule="direct" mapTo="DS_Sensor" nsabr="gmd"/>
+		<TypeMapEntry type="DS_Sensor" gmlVersion="3.1" rule="propertyType" mapTo="DS_Sensor_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_Series" gmlVersion="3.1" rule="direct" mapTo="DS_Series_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_Series" gmlVersion="3.1" rule="direct" mapTo="DS_Series" nsabr="gmd"/>
+		<TypeMapEntry type="DS_Series" gmlVersion="3.1" rule="propertyType" mapTo="DS_Series_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="DS_StereoMate" gmlVersion="3.1" rule="direct" mapTo="DS_StereoMate_Type" nsabr="gmd"/>
+		<ElementMapEntry type="DS_StereoMate" gmlVersion="3.1" rule="direct" mapTo="DS_StereoMate" nsabr="gmd"/>
+		<TypeMapEntry type="DS_StereoMate" gmlVersion="3.1" rule="propertyType" mapTo="DS_StereoMate_PropertyType" nsabr="gmd"/>
+
+
+		<BaseMapEntry type="EX_BoundingPolygon" gmlVersion="3.1" rule="direct" mapTo="EX_BoundingPolygon_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_BoundingPolygon" gmlVersion="3.1" rule="direct" mapTo="EX_BoundingPolygon" nsabr="gmd"/>
+		<TypeMapEntry type="EX_BoundingPolygon" gmlVersion="3.1" rule="propertyType" mapTo="EX_BoundingPolygon_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_Extent" gmlVersion="3.1" rule="direct" mapTo="EX_Extent_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_Extent" gmlVersion="3.1" rule="direct" mapTo="EX_Extent" nsabr="gmd"/>
+		<TypeMapEntry type="EX_Extent" gmlVersion="3.1" rule="propertyType" mapTo="EX_Extent_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_GeographicDescription" gmlVersion="3.1" rule="direct" mapTo="EX_GeographicDescription_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_GeographicDescription" gmlVersion="3.1" rule="direct" mapTo="EX_GeographicDescription" nsabr="gmd"/>
+		<TypeMapEntry type="EX_GeographicDescription" gmlVersion="3.1" rule="propertyType" mapTo="EX_GeographicDescription_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_GeographicExtent" gmlVersion="3.1" rule="direct" mapTo="AbstractEX_GeographicExtent_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_GeographicExtent" gmlVersion="3.1" rule="direct" mapTo="AbstractEX_GeographicExtent" nsabr="gmd"/>
+		<TypeMapEntry type="EX_GeographicExtent" gmlVersion="3.1" rule="propertyType" mapTo="EX_GeographicExtent_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_GeographicBoundingBox" gmlVersion="3.1" rule="direct" mapTo="EX_GeographicBoundingBox_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_GeographicBoundingBox" gmlVersion="3.1" rule="direct" mapTo="EX_GeographicBoundingBox" nsabr="gmd"/>
+		<TypeMapEntry type="EX_GeographicBoundingBox" gmlVersion="3.1" rule="propertyType" mapTo="EX_GeographicBoundingBox_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_SpatialTemporalExtent" gmlVersion="3.1" rule="direct" mapTo="EX_SpatialTemporalExtent_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_SpatialTemporalExtent" gmlVersion="3.1" rule="direct" mapTo="EX_SpatialTemporalExtent" nsabr="gmd"/>
+		<TypeMapEntry type="EX_SpatialTemporalExtent" gmlVersion="3.1" rule="propertyType" mapTo="EX_SpatialTemporalExtent_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_TemporalExtent" gmlVersion="3.1" rule="direct" mapTo="EX_TemporalExtent_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_TemporalExtent" gmlVersion="3.1" rule="direct" mapTo="EX_TemporalExtent" nsabr="gmd"/>
+		<TypeMapEntry type="EX_TemporalExtent" gmlVersion="3.1" rule="propertyType" mapTo="EX_TemporalExtent_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="EX_VerticalExtent" gmlVersion="3.1" rule="direct" mapTo="EX_VerticalExtent_Type" nsabr="gmd"/>
+		<ElementMapEntry type="EX_VerticalExtent" gmlVersion="3.1" rule="direct" mapTo="EX_VerticalExtent" nsabr="gmd"/>
+		<TypeMapEntry type="EX_VerticalExtent" gmlVersion="3.1" rule="propertyType" mapTo="EX_VerticalExtent_PropertyType" nsabr="gmd"/>
+
+
+		<BaseMapEntry type="LI_ProcessStep" gmlVersion="3.1" rule="direct" mapTo="LI_ProcessStep_Type" nsabr="gmd"/>
+		<ElementMapEntry type="LI_ProcessStep" gmlVersion="3.1" rule="direct" mapTo="LI_ProcessStep" nsabr="gmd"/>
+		<TypeMapEntry type="LI_ProcessStep" gmlVersion="3.1" rule="propertyType" mapTo="LI_ProcessStep_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="LI_Source" gmlVersion="3.1" rule="direct" mapTo="LI_Source_Type" nsabr="gmd"/>
+		<ElementMapEntry type="LI_Source" gmlVersion="3.1" rule="direct" mapTo="LI_Source" nsabr="gmd"/>
+		<TypeMapEntry type="LI_Source" gmlVersion="3.1" rule="propertyType" mapTo="LI_Source_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="LI_Lineage" gmlVersion="3.1" rule="direct" mapTo="LI_Lineage_Type" nsabr="gmd"/>
+		<ElementMapEntry type="LI_Lineage" gmlVersion="3.1" rule="direct" mapTo="LI_Lineage" nsabr="gmd"/>
+		<TypeMapEntry type="LI_Lineage" gmlVersion="3.1" rule="propertyType" mapTo="LI_Lineage_PropertyType" nsabr="gmd"/>
+
+
+		<BaseMapEntry type="MD_AggregateInformation" gmlVersion="3.1" rule="direct" mapTo="MD_AggregateInformation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_AggregateInformation" gmlVersion="3.1" rule="direct" mapTo="MD_AggregateInformation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_AggregateInformation" gmlVersion="3.1" rule="propertyType" mapTo="MD_AggregateInformation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ApplicationSchemaInformation" gmlVersion="3.1" rule="direct" mapTo="MD_ApplicationSchemaInformation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ApplicationSchemaInformation" gmlVersion="3.1" rule="direct" mapTo="MD_ApplicationSchemaInformation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ApplicationSchemaInformation" gmlVersion="3.1" rule="propertyType" mapTo="MD_ApplicationSchemaInformation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Band" gmlVersion="3.1" rule="direct" mapTo="MD_Band_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Band" gmlVersion="3.1" rule="direct" mapTo="MD_Band" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Band" gmlVersion="3.1" rule="propertyType" mapTo="MD_Band_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_BrowseGraphic" gmlVersion="3.1" rule="direct" mapTo="MD_BrowseGraphic_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_BrowseGraphic" gmlVersion="3.1" rule="direct" mapTo="MD_BrowseGraphic" nsabr="gmd"/>
+		<TypeMapEntry type="MD_BrowseGraphic" gmlVersion="3.1" rule="propertyType" mapTo="MD_BrowseGraphic_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_CellGeometryCode" gmlVersion="3.1" rule="direct" mapTo="MD_CellGeometryCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_CellGeometryCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_CellGeometryCode_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_CharacterSetCode" gmlVersion="3.1" rule="direct" mapTo="MD_CharacterSetCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_CharacterSetCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_CharacterSetCode_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_ClassificationCode" gmlVersion="3.1" rule="direct" mapTo="MD_ClassificationCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ClassificationCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_ClassificationCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Constraints" gmlVersion="3.1" rule="direct" mapTo="MD_Constraints_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Constraints" gmlVersion="3.1" rule="direct" mapTo="MD_Constraints" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Constraints" gmlVersion="3.1" rule="propertyType" mapTo="MD_Constraints_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ContentInformation" gmlVersion="3.1" rule="direct" mapTo="AbstractMD_ContentInformation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ContentInformation" gmlVersion="3.1" rule="direct" mapTo="AbstractMD_ContentInformation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ContentInformation" gmlVersion="3.1" rule="propertyType" mapTo="MD_ContentInformation_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_CoverageContentTypeCode" gmlVersion="3.1" rule="direct" mapTo="MD_CoverageContentTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_CoverageContentTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_CoverageContentTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_CoverageDescription" gmlVersion="3.1" rule="direct" mapTo="MD_CoverageDescription_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_CoverageDescription" gmlVersion="3.1" rule="direct" mapTo="MD_CoverageDescription" nsabr="gmd"/>
+		<TypeMapEntry type="MD_CoverageDescription" gmlVersion="3.1" rule="propertyType" mapTo="MD_CoverageDescription_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_DataIdentification" gmlVersion="3.1" rule="direct" mapTo="MD_DataIdentification_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_DataIdentification" gmlVersion="3.1" rule="direct" mapTo="MD_DataIdentification" nsabr="gmd"/>
+		<TypeMapEntry type="MD_DataIdentification" gmlVersion="3.1" rule="propertyType" mapTo="MD_DataIdentification_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_DatatypeCode" gmlVersion="3.1" rule="direct" mapTo="MD_DatatypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_DatatypeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_DatatypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_DigitalTransferOptions" gmlVersion="3.1" rule="direct" mapTo="MD_DigitalTransferOptions_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_DigitalTransferOptions" gmlVersion="3.1" rule="direct" mapTo="MD_DigitalTransferOptions" nsabr="gmd"/>
+		<TypeMapEntry type="MD_DigitalTransferOptions" gmlVersion="3.1" rule="propertyType" mapTo="MD_DigitalTransferOptions_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Dimension" gmlVersion="3.1" rule="direct" mapTo="MD_Dimension_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Dimension" gmlVersion="3.1" rule="direct" mapTo="MD_Dimension" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Dimension" gmlVersion="3.1" rule="propertyType" mapTo="MD_Dimension_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_DimensionNameTypeCode" gmlVersion="3.1" rule="direct" mapTo="MD_DimensionNameTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_DimensionNameTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_DimensionNameTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Distribution" gmlVersion="3.1" rule="direct" mapTo="MD_Distribution_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Distribution" gmlVersion="3.1" rule="direct" mapTo="MD_Distribution" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Distribution" gmlVersion="3.1" rule="propertyType" mapTo="MD_Distribution_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_DistributionUnits" gmlVersion="3.1" rule="direct" mapTo="MD_DistributionUnits" nsabr="gmd"/>
+		<TypeMapEntry type="MD_DistributionUnits" gmlVersion="3.1" rule="propertyType" mapTo="MD_DistributionUnits_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Distributor" gmlVersion="3.1" rule="direct" mapTo="MD_Distributor_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Distributor" gmlVersion="3.1" rule="direct" mapTo="MD_Distributor" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Distributor" gmlVersion="3.1" rule="propertyType" mapTo="MD_Distributor_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ExtendedElementInformation" gmlVersion="3.1" rule="direct" mapTo="MD_ExtendedElementInformation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ExtendedElementInformation" gmlVersion="3.1" rule="direct" mapTo="MD_ExtendedElementInformation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ExtendedElementInformation" gmlVersion="3.1" rule="propertyType" mapTo="MD_ExtendedElementInformation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_FeatureCatalogueDescription" gmlVersion="3.1" rule="direct" mapTo="MD_FeatureCatalogueDescription_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_FeatureCatalogueDescription" gmlVersion="3.1" rule="direct" mapTo="MD_FeatureCatalogueDescription" nsabr="gmd"/>
+		<TypeMapEntry type="MD_FeatureCatalogueDescription" gmlVersion="3.1" rule="propertyType" mapTo="MD_FeatureCatalogueDescription_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Format" gmlVersion="3.1" rule="direct" mapTo="MD_Format_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Format" gmlVersion="3.1" rule="direct" mapTo="MD_Format" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Format" gmlVersion="3.1" rule="propertyType" mapTo="MD_Format_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_GeometricObjects" gmlVersion="3.1" rule="direct" mapTo="MD_GeometricObjects_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_GeometricObjects" gmlVersion="3.1" rule="direct" mapTo="MD_GeometricObjects" nsabr="gmd"/>
+		<TypeMapEntry type="MD_GeometricObjects" gmlVersion="3.1" rule="propertyType" mapTo="MD_GeometricObjects_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_GeometricObjectTypeCode" gmlVersion="3.1" rule="direct" mapTo="MD_GeometricObjectTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_GeometricObjectTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_GeometricObjectTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Georectified" gmlVersion="3.1" rule="direct" mapTo="MD_Georectified_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Georectified" gmlVersion="3.1" rule="direct" mapTo="MD_Georectified" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Georectified" gmlVersion="3.1" rule="propertyType" mapTo="MD_Georectified_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Georeferenceable" gmlVersion="3.1" rule="direct" mapTo="MD_Georeferenceable_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Georeferenceable" gmlVersion="3.1" rule="direct" mapTo="MD_Georeferenceable" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Georeferenceable" gmlVersion="3.1" rule="propertyType" mapTo="MD_Georeferenceable_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_GridSpatialRepresentation" gmlVersion="3.1" rule="direct" mapTo="MD_GridSpatialRepresentation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_GridSpatialRepresentation" gmlVersion="3.1" rule="direct" mapTo="MD_GridSpatialRepresentation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_GridSpatialRepresentation" gmlVersion="3.1" rule="propertyType" mapTo="MD_GridSpatialRepresentation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Identification" gmlVersion="3.1" rule="direct" mapTo="AbstractMD_Identification_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Identification" gmlVersion="3.1" rule="direct" mapTo="AbstractMD_Identification" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Identification" gmlVersion="3.1" rule="propertyType" mapTo="MD_Identification_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Identifier" gmlVersion="3.1" rule="direct" mapTo="MD_Identifier_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Identifier" gmlVersion="3.1" rule="direct" mapTo="MD_Identifier" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Identifier" gmlVersion="3.1" rule="propertyType" mapTo="MD_Identifier_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ImageDescription" gmlVersion="3.1" rule="direct" mapTo="MD_ImageDescription_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ImageDescription" gmlVersion="3.1" rule="direct" mapTo="MD_ImageDescription" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ImageDescription" gmlVersion="3.1" rule="propertyType" mapTo="MD_ImageDescription_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_ImagingConditionCode" gmlVersion="3.1" rule="direct" mapTo="MD_ImagingConditionCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ImagingConditionCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_ImagingConditionCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Keywords" gmlVersion="3.1" rule="direct" mapTo="MD_Keywords_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Keywords" gmlVersion="3.1" rule="direct" mapTo="MD_Keywords" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Keywords" gmlVersion="3.1" rule="propertyType" mapTo="MD_Keywords_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_KeywordTypeCode" gmlVersion="3.1" rule="direct" mapTo="MD_KeywordTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_KeywordTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_KeywordTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_LegalConstraints" gmlVersion="3.1" rule="direct" mapTo="MD_LegalConstraints_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_LegalConstraints" gmlVersion="3.1" rule="direct" mapTo="MD_LegalConstraints" nsabr="gmd"/>
+		<TypeMapEntry type="MD_LegalConstraints" gmlVersion="3.1" rule="propertyType" mapTo="MD_LegalConstraints_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_MaintenanceFrequencyCode" gmlVersion="3.1" rule="direct" mapTo="MD_MaintenanceFrequencyCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_MaintenanceFrequencyCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_MaintenanceFrequencyCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_MaintenanceInformation" gmlVersion="3.1" rule="direct" mapTo="MD_MaintenanceInformation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_MaintenanceInformation" gmlVersion="3.1" rule="direct" mapTo="MD_MaintenanceInformation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_MaintenanceInformation" gmlVersion="3.1" rule="propertyType" mapTo="MD_MaintenanceInformation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Medium" gmlVersion="3.1" rule="direct" mapTo="MD_Medium_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Medium" gmlVersion="3.1" rule="direct" mapTo="MD_Medium" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Medium" gmlVersion="3.1" rule="propertyType" mapTo="MD_Medium_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_MediumFormatCode" gmlVersion="3.1" rule="direct" mapTo="MD_MediumFormatCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_MediumFormatCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_MediumFormatCode_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_MediumNameCode" gmlVersion="3.1" rule="direct" mapTo="MD_MediumNameCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_MediumNameCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_MediumNameCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Metadata" gmlVersion="3.1" rule="direct" mapTo="MD_Metadata_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Metadata" gmlVersion="3.1" rule="direct" mapTo="MD_Metadata" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Metadata" gmlVersion="3.1" rule="propertyType" mapTo="MD_Metadata_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_MetadataExtensionInformation" gmlVersion="3.1" rule="direct" mapTo="MD_MetadataExtensionInformation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_MetadataExtensionInformation" gmlVersion="3.1" rule="direct" mapTo="MD_MetadataExtensionInformation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_MetadataExtensionInformation" gmlVersion="3.1" rule="propertyType" mapTo="MD_MetadataExtensionInformation_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ObligationCode" gmlVersion="3.1" rule="direct" mapTo="MD_ObligationCode_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ObligationCode" gmlVersion="3.1" rule="direct" mapTo="MD_ObligationCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ObligationCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_ObligationCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_PixelOrientationCode" gmlVersion="3.1" rule="direct" mapTo="MD_PixelOrientationCode_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_PixelOrientationCode" gmlVersion="3.1" rule="direct" mapTo="MD_PixelOrientationCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_PixelOrientationCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_PixelOrientationCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_PortrayalCatalogueReference" gmlVersion="3.1" rule="direct" mapTo="MD_PortrayalCatalogueReference_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_PortrayalCatalogueReference" gmlVersion="3.1" rule="direct" mapTo="MD_PortrayalCatalogueReference" nsabr="gmd"/>
+		<TypeMapEntry type="MD_PortrayalCatalogueReference" gmlVersion="3.1" rule="propertyType" mapTo="MD_PortrayalCatalogueReference_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_ProgressCode" gmlVersion="3.1" rule="direct" mapTo="MD_ProgressCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ProgressCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_ProgressCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_RangeDimension" gmlVersion="3.1" rule="direct" mapTo="MD_RangeDimension_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_RangeDimension" gmlVersion="3.1" rule="direct" mapTo="MD_RangeDimension" nsabr="gmd"/>
+		<TypeMapEntry type="MD_RangeDimension" gmlVersion="3.1" rule="propertyType" mapTo="MD_RangeDimension_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="MD_ReferenceSystem_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="MD_ReferenceSystem" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ReferenceSystem" gmlVersion="3.1" rule="propertyType" mapTo="MD_ReferenceSystem_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_RepresentativeFraction" gmlVersion="3.1" rule="direct" mapTo="MD_RepresentativeFraction_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_RepresentativeFraction" gmlVersion="3.1" rule="direct" mapTo="MD_RepresentativeFraction" nsabr="gmd"/>
+		<TypeMapEntry type="MD_RepresentativeFraction" gmlVersion="3.1" rule="propertyType" mapTo="MD_RepresentativeFraction_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Resolution" gmlVersion="3.1" rule="direct" mapTo="MD_Resolution_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Resolution" gmlVersion="3.1" rule="direct" mapTo="MD_Resolution" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Resolution" gmlVersion="3.1" rule="propertyType" mapTo="MD_Resolution_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_RestrictionCode" gmlVersion="3.1" rule="direct" mapTo="MD_RestrictionCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_RestrictionCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_RestrictionCode_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_ScopeCode" gmlVersion="3.1" rule="direct" mapTo="MD_ScopeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ScopeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_ScopeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ScopeDescription" gmlVersion="3.1" rule="direct" mapTo="MD_ScopeDescription_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ScopeDescription" gmlVersion="3.1" rule="direct" mapTo="MD_ScopeDescription" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ScopeDescription" gmlVersion="3.1" rule="propertyType" mapTo="MD_ScopeDescription_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_SecurityConstraints" gmlVersion="3.1" rule="direct" mapTo="MD_SecurityConstraints_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_SecurityConstraints" gmlVersion="3.1" rule="direct" mapTo="MD_SecurityConstraints" nsabr="gmd"/>
+		<TypeMapEntry type="MD_SecurityConstraints" gmlVersion="3.1" rule="propertyType" mapTo="MD_SecurityConstraints_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_ServiceIdentification" gmlVersion="3.1" rule="direct" mapTo="MD_ServiceIdentification_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_ServiceIdentification" gmlVersion="3.1" rule="direct" mapTo="MD_ServiceIdentification" nsabr="gmd"/>
+		<TypeMapEntry type="MD_ServiceIdentification" gmlVersion="3.1" rule="propertyType" mapTo="MD_ServiceIdentification_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_SpatialRepresentation" gmlVersion="3.1" rule="direct" mapTo="AbstractMD_SpatialRepresentation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_SpatialRepresentation" gmlVersion="3.1" rule="direct" mapTo="AbstractMD_SpatialRepresentation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_SpatialRepresentation" gmlVersion="3.1" rule="propertyType" mapTo="MD_SpatialRepresentation_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_SpatialRepresentationTypeCode" gmlVersion="3.1" rule="direct" mapTo="MD_SpatialRepresentationTypeCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_SpatialRepresentationTypeCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_SpatialRepresentationTypeCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_StandardOrderProcess" gmlVersion="3.1" rule="direct" mapTo="MD_StandardOrderProcess_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_StandardOrderProcess" gmlVersion="3.1" rule="direct" mapTo="MD_StandardOrderProcess" nsabr="gmd"/>
+		<TypeMapEntry type="MD_StandardOrderProcess" gmlVersion="3.1" rule="propertyType" mapTo="MD_StandardOrderProcess_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_TopicCategoryCode" gmlVersion="3.1" rule="direct" mapTo="MD_TopicCategoryCode_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_TopicCategoryCode" gmlVersion="3.1" rule="direct" mapTo="MD_TopicCategoryCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_TopicCategoryCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_TopicCategoryCode_PropertyType" nsabr="gmd"/>
+
+		<ElementMapEntry type="MD_TopologyLevelCode" gmlVersion="3.1" rule="direct" mapTo="MD_TopologyLevelCode" nsabr="gmd"/>
+		<TypeMapEntry type="MD_TopologyLevelCode" gmlVersion="3.1" rule="propertyType" mapTo="MD_TopologyLevelCode_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_Usage" gmlVersion="3.1" rule="direct" mapTo="MD_Usage_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_Usage" gmlVersion="3.1" rule="direct" mapTo="MD_Usage" nsabr="gmd"/>
+		<TypeMapEntry type="MD_Usage" gmlVersion="3.1" rule="propertyType" mapTo="MD_Usage_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="MD_VectorSpatialRepresentation" gmlVersion="3.1" rule="direct" mapTo="MD_VectorSpatialRepresentation_Type" nsabr="gmd"/>
+		<ElementMapEntry type="MD_VectorSpatialRepresentation" gmlVersion="3.1" rule="direct" mapTo="MD_VectorSpatialRepresentation" nsabr="gmd"/>
+		<TypeMapEntry type="MD_VectorSpatialRepresentation" gmlVersion="3.1" rule="propertyType" mapTo="MD_VectorSpatialRepresentation_PropertyType" nsabr="gmd"/>
+
+
+		<BaseMapEntry type="RS_Identifier" gmlVersion="3.1" rule="direct" mapTo="RS_Identifier_Type" nsabr="gmd"/>
+		<ElementMapEntry type="RS_Identifier" gmlVersion="3.1" rule="direct" mapTo="RS_Identifier" nsabr="gmd"/>
+		<TypeMapEntry type="RS_Identifier" gmlVersion="3.1" rule="propertyType" mapTo="RS_Identifier_PropertyType" nsabr="gmd"/>
+
+		<BaseMapEntry type="RS_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="AbstractRS_ReferenceSystem_Type" nsabr="gmd"/>
+		<ElementMapEntry type="RS_ReferenceSystem" gmlVersion="3.1" rule="direct" mapTo="AbstractRS_ReferenceSystem" nsabr="gmd"/>
+		<TypeMapEntry type="RS_ReferenceSystem" gmlVersion="3.1" rule="propertyType" mapTo="RS_ReferenceSystem_PropertyType" nsabr="gmd"/>
+	
+		<!--
+		<BaseMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CI_Citation_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_Contact" gmlVersion="*" rule="direct" mapTo="CI_Contact_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="CI_ResponsibleParty_Type" nsabr="smXML"/>
+		<BaseMapEntry type="CI_Telephone" gmlVersion="*" rule="direct" mapTo="CI_Telephone_Type" nsabr="smXML"/>
+		<BaseMapEntry type="EX_Extent" gmlVersion="*" rule="direct" mapTo="EX_Extent_Type" nsabr="smXML"/>
+		<BaseMapEntry type="MD_Metadata" gmlVersion="*" rule="direct" mapTo="MD_Metadata_Type" nsabr="smXML"/>
+		<BaseMapEntry type="RS_Identifier" gmlVersion="*" rule="direct" mapTo="RS_Identifier_Type" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Address" gmlVersion="*" rule="direct" mapTo="CI_Address" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CI_Citation" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Contact" gmlVersion="*" rule="direct" mapTo="CI_Contact" nsabr="smXML"/>
+		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="CI_ResponsibleParty" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Series" gmlVersion="*" rule="direct" mapTo="CI_Series" nsabr="smXML"/>
+		<ElementMapEntry type="CI_Telephone" gmlVersion="*" rule="direct" mapTo="CI_Telephone" nsabr="smXML"/>
+		<ElementMapEntry type="" gmlVersion="*" rule="direct" mapTo="DQ_DataQuality" nsabr="smXML"/>
+		<ElementMapEntry type="DQ_PositionalAccuracy" gmlVersion="*" rule="direct" mapTo="_DQ_PositionalAccuracy" nsabr="smXML"/>
+		<ElementMapEntry type="DQ_QuantitativeResult" gmlVersion="*" rule="direct" mapTo="DQ_QuantitativeResult" nsabr="smXML"/>
+		<ElementMapEntry type="EX_Extent" gmlVersion="*" rule="direct" mapTo="EX_Extent" nsabr="smXML"/>
+		<ElementMapEntry type="MD_BrowseGraphic" gmlVersion="*" rule="direct" mapTo="MD_BrowseGraphic" nsabr="smXML"/>
+		<ElementMapEntry type="MD_ClassificationCode" gmlVersion="*" rule="direct" mapTo="MD_ClassificationCode" nsabr="smXML"/>
+		<ElementMapEntry type="MD_Format" gmlVersion="*" rule="direct" mapTo="MD_Format" nsabr="smXML"/>
+		<ElementMapEntry type="MD_Identifier" gmlVersion="*" rule="direct" mapTo="MD_Identifier" nsabr="smXML"/>
+		<ElementMapEntry type="MD_ImagingConditionCode" gmlVersion="*" rule="direct" mapTo="MD_ImagingConditionCode" nsabr="smXML"/>
+		<ElementMapEntry type="MD_MediumNameCode" gmlVersion="*" rule="direct" mapTo="MD_MediumNameCode" nsabr="smXML"/>
+		<ElementMapEntry type="MD_Metadata" gmlVersion="*" rule="direct" mapTo="MD_Metadata" nsabr="smXML"/>
+		<ElementMapEntry type="RS_Identifier" gmlVersion="*" rule="direct" mapTo="RS_Identifier" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Address" gmlVersion="*" rule="propertyType" mapTo="CI_Address" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Citation" gmlVersion="*" rule="propertyType" mapTo="CI_Citation" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Contact" gmlVersion="*" rule="propertyType" mapTo="CI_Contact" nsabr="smXML"/>
+		<TypeMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="propertyType" mapTo="CI_ResponsibleParty" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Series" gmlVersion="*" rule="propertyType" mapTo="CI_Series" nsabr="smXML"/>
+		<TypeMapEntry type="CI_Telephone" gmlVersion="*" rule="propertyType" mapTo="CI_Telephone" nsabr="smXML"/>
+		<TypeMapEntry type="DQ_DataQuality" gmlVersion="*" rule="propertyType" mapTo="DQ_DataQuality" nsabr="smXML"/>
+		<TypeMapEntry type="DQ_PositionalAccuracy" gmlVersion="*" rule="propertyType" mapTo="_DQ_PositionalAccuracy" nsabr="smXML"/>
+		<TypeMapEntry type="DQ_QuantitativeResult" gmlVersion="*" rule="propertyType" mapTo="DQ_QuantitativeResult" nsabr="smXML"/>
+		<TypeMapEntry type="EX_Extent" gmlVersion="*" rule="propertyType" mapTo="EX_Extent" nsabr="smXML"/>
+		<TypeMapEntry type="MD_BrowseGraphic" gmlVersion="*" rule="propertyType" mapTo="MD_BrowseGraphic" nsabr="smXML"/>
+		<TypeMapEntry type="MD_ClassificationCode" gmlVersion="*" rule="propertyType" mapTo="MD_ClassificationCode" nsabr="smXML"/>
+		<TypeMapEntry type="MD_Format" gmlVersion="*" rule="propertyType" mapTo="MD_Format" nsabr="smXML"/>
+		<TypeMapEntry type="MD_Identifier" gmlVersion="*" rule="propertyType" mapTo="MD_Identifier" nsabr="smXML"/>
+		<TypeMapEntry type="MD_ImagingConditionCode" gmlVersion="*" rule="propertyType" mapTo="MD_ImagingConditionCode" nsabr="smXML"/>
+		<TypeMapEntry type="MD_MediumNameCode" gmlVersion="*" rule="propertyType" mapTo="MD_MediumNameCode" nsabr="smXML"/>
+		<TypeMapEntry type="MD_Metadata" gmlVersion="*" rule="propertyType" mapTo="MD_Metadata" nsabr="smXML"/>
+		<TypeMapEntry type="RS_Identifier" gmlVersion="*" rule="propertyType" mapTo="RS_Identifier" nsabr="smXML"/>
+		-->
+		<!-- end add ISO 19115/19139 -->
+
+				<!-- stubs for primitive and basic types -->
+
+	  	<TypeMapEntry type="anyType" gmlVersion="*" rule="direct" mapTo="anyType"/>
+		<TypeMapEntry type="URI" gmlVersion="*" rule="direct" mapTo="anyURI"/>
+		<TypeMapEntry type="URL" gmlVersion="*" rule="direct" mapTo="anyURI"/>
+
+		<!-- GML stubs -->
+		<BaseMapEntry type="AbstractGML" gmlVersion="3.0" rule="direct" mapTo="AbstractGMLType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractGML" gmlVersion="3.0" rule="direct" mapTo="_GML" nsabr="gml"/>
+		<BaseMapEntry type="AbstractGML" gmlVersion="3.1" rule="direct" mapTo="AbstractGMLType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractGML" gmlVersion="3.1" rule="direct" mapTo="_GML" nsabr="gml"/>
+
+		<BaseMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="AbstractFeatureType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="_Feature" nsabr="gml"/>
+		<TypeMapEntry type="AbstractFeature" gmlVersion="3.0" rule="direct" mapTo="FeaturePropertyType" nsabr="gml"/>
+		<BaseMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="AbstractFeatureType" nsabr="gml"/>
+		<ElementMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="_Feature" nsabr="gml"/>
+		<TypeMapEntry type="AbstractFeature" gmlVersion="3.1" rule="direct" mapTo="FeaturePropertyType" nsabr="gml"/>
+
+		<BaseMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="DefinitionType" nsabr="gml"/>
+		<ElementMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="Definition" nsabr="gml"/>
+		<TypeMapEntry type="Definition" gmlVersion="3.0" rule="direct" mapTo="DictionaryEntryType" nsabr="gml"/>
+		<BaseMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="DefinitionType" nsabr="gml"/>
+		<ElementMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="Definition" nsabr="gml"/>
+		<TypeMapEntry type="Definition" gmlVersion="3.1" rule="direct" mapTo="DictionaryEntryType" nsabr="gml"/>
+
+		<TypeMapEntry type="ReferenceType" gmlVersion="*" rule="direct" mapTo="ReferenceType" nsabr="gml"/>
+
+		<!-- GML geometry stubs and GEO extensions -->
+		<BaseMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineStringType" nsabr="gml"/>
+		<ElementMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineString" nsabr="gml"/>
+		<TypeMapEntry type="LineString" gmlVersion="*" rule="direct" mapTo="LineStringPropertyType" nsabr="geo"/>
+
+		<BaseMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="PolygonType" nsabr="gml"/>
+		<ElementMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="Polygon" nsabr="gml"/>
+		<TypeMapEntry type="Polygon" gmlVersion="*" rule="direct" mapTo="PolygonPropertyType" nsabr="geo"/>
+
+		<BaseMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingType" nsabr="gml"/>
+		<ElementMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRing" nsabr="gml"/>
+		<TypeMapEntry type="LinearRing" gmlVersion="*" rule="direct" mapTo="LinearRingPropertyType" nsabr="gml"/>
+
+		<!-- Others -->
+		<ElementMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurve" nsabr="gml"/>
+		<TypeMapEntry type="TopoCurve" gmlVersion="3.1" rule="direct" mapTo="TopoCurvePropertyType" nsabr="gml"/>
+
+		<ElementMapEntry type="TopoPoint" gmlVersion="3.1" rule="direct" mapTo="TopoPoint" nsabr="gml"/>
+		<TypeMapEntry type="TopoPoint" gmlVersion="3.1" rule="direct" mapTo="TopoPointPropertyType" nsabr="gml"/>
+
+		<ElementMapEntry type="TopoSurface" gmlVersion="3.1" rule="direct" mapTo="TopoSurface" nsabr="gml"/>
+		<TypeMapEntry type="TopoSurface" gmlVersion="3.1" rule="direct" mapTo="TopoSurfacePropertyType" nsabr="gml"/>
+
+				<!-- SEE Grid - Hollow World template -->
+		<!-- Metadata stubs -->
+		<!-- no longer needed - see ISO 19139 mappings above 
+		<BaseMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="SimplePartyType" nsabr="meta"/>
+		<ElementMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="SimpleParty" nsabr="meta"/>
+		<TypeMapEntry type="CI_ResponsibleParty" gmlVersion="*" rule="direct" mapTo="PartyPropertyType" nsabr="meta"/>
+		<BaseMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="SimpleCitationType" nsabr="meta"/>
+		<ElementMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="SimpleCitation" nsabr="meta"/>
+		<TypeMapEntry type="CI_Citation" gmlVersion="*" rule="direct" mapTo="CitationPropertyType" nsabr="meta"/>
+		<BaseMapEntry type="DQ_DataQuality" gmlVersion="*" rule="direct" mapTo="anyType"/>
+		<ElementMapEntry type="DQ_DataQuality" gmlVersion="*" rule="direct" mapTo="SimpleQuality" nsabr="meta"/>
+		<TypeMapEntry type="DQ_DataQuality" gmlVersion="*" rule="direct" mapTo="QualityPropertyType" nsabr="meta"/>
+		-->
+
+		<!-- Geometry extensions -->
+		<TypeMapEntry type="Shape1D" gmlVersion="*" rule="direct" mapTo="Shape1DPropertyType" nsabr="geo"/>
+		<TypeMapEntry type="Shape2D" gmlVersion="*" rule="direct" mapTo="Shape2DPropertyType" nsabr="geo"/>
+		<TypeMapEntry type="Shape3D" gmlVersion="*" rule="direct" mapTo="Shape3DPropertyType" nsabr="geo"/>
+
+		<!-- Sampling schema -->
+		<BaseMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="SpecimenType" nsabr="sa"/>
+		<ElementMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="Specimen" nsabr="sa"/>
+		<TypeMapEntry type="Specimen" gmlVersion="*" rule="direct" mapTo="SpecimenPropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="SiteType" nsabr="sa"/>
+		<ElementMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="Site" nsabr="sa"/>
+		<TypeMapEntry type="Site" gmlVersion="*" rule="direct" mapTo="SitePropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="Station" gmlVersion="*" rule="direct" mapTo="StationType" nsabr="sa"/>
+		<ElementMapEntry type="Station" gmlVersion="*" rule="direct" mapTo="Station" nsabr="sa"/>
+		<TypeMapEntry type="Station" gmlVersion="*" rule="direct" mapTo="StationPropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="Profile" gmlVersion="*" rule="direct" mapTo="ProfileType" nsabr="sa"/>
+		<ElementMapEntry type="Profile" gmlVersion="*" rule="direct" mapTo="Profile" nsabr="sa"/>
+		<TypeMapEntry type="Profile" gmlVersion="*" rule="direct" mapTo="ProfilePropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="SurfaceOfInterest" gmlVersion="*" rule="direct" mapTo="SurfaceOfInterestType" nsabr="sa"/>
+		<ElementMapEntry type="SurfaceOfInterest" gmlVersion="*" rule="direct" mapTo="SurfaceOfInterest" nsabr="sa"/>
+		<TypeMapEntry type="SurfaceOfInterest" gmlVersion="*" rule="direct" mapTo="SurfaceOfInterestPropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="SolidOfInterest" gmlVersion="*" rule="direct" mapTo="SolidOfInterestType" nsabr="sa"/>
+		<ElementMapEntry type="SolidOfInterest" gmlVersion="*" rule="direct" mapTo="SolidOfInterest" nsabr="sa"/>
+		<TypeMapEntry type="SolidOfInterest" gmlVersion="*" rule="direct" mapTo="SolidOfInterestPropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="SiteCollection" gmlVersion="*" rule="direct" mapTo="SiteCollectionType" nsabr="sa"/>
+		<ElementMapEntry type="SiteCollection" gmlVersion="*" rule="direct" mapTo="SiteCollection" nsabr="sa"/>
+		<TypeMapEntry type="SiteCollection" gmlVersion="*" rule="direct" mapTo="SiteCollectionPropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedureType" nsabr="sa"/>
+		<ElementMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedure" nsabr="sa"/>
+		<TypeMapEntry type="SurveyProcedure" gmlVersion="*" rule="direct" mapTo="SurveyProcedurePropertyType" nsabr="sa"/>
+
+		<BaseMapEntry type="Swath" gmlVersion="*" rule="direct" mapTo="SwathType" nsabr="sa"/>
+		<ElementMapEntry type="Swath" gmlVersion="*" rule="direct" mapTo="Swath" nsabr="sa"/>
+
+		<BaseMapEntry type="Section" gmlVersion="*" rule="direct" mapTo="SectionType" nsabr="sa"/>
+		<ElementMapEntry type="Section" gmlVersion="*" rule="direct" mapTo="Section" nsabr="sa"/>
+
+		<!-- SWE Base schema -->
+		<TypeMapEntry type="TypedCategory" gmlVersion="*" rule="direct" mapTo="TypedCategoryType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCategoryList" gmlVersion="*" rule="direct" mapTo="TypedCategoryListType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCategoryInterval" gmlVersion="*" rule="direct" mapTo="TypedCategoryIntervalType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCount" gmlVersion="*" rule="direct" mapTo="TypedCountType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCountList" gmlVersion="*" rule="direct" mapTo="TypedCountListType" nsabr="swe"/>
+		<TypeMapEntry type="TypedCountInterval" gmlVersion="*" rule="direct" mapTo="TypedCountIntervalType" nsabr="swe"/>
+		<TypeMapEntry type="TypedMeasure" gmlVersion="*" rule="direct" mapTo="TypedMeasureType" nsabr="swe"/>
+		<TypeMapEntry type="TypedMeasureList" gmlVersion="*" rule="direct" mapTo="TypedMeasureListType" nsabr="swe"/>
+		<TypeMapEntry type="TypedMeasureInterval" gmlVersion="*" rule="direct" mapTo="TypedMeasureIntervalType" nsabr="swe"/>
+
+		<TypeMapEntry type="ScopedName" gmlVersion="*" rule="direct" mapTo="ScopedNameType" nsabr="swe"/>
+		<TypeMapEntry type="RelativeMeasure" gmlVersion="*" rule="direct" mapTo="RelativeMeasureType" nsabr="swe"/>
+		<TypeMapEntry type="nonNegativeIntegerList" gmlVersion="*" rule="direct" mapTo="nonNegativeIntegerList" nsabr="swe"/>
+		<TypeMapEntry type="stringList" gmlVersion="*" rule="direct" mapTo="stringList" nsabr="swe"/>
+		<TypeMapEntry type="refList" gmlVersion="*" rule="direct" mapTo="refList" nsabr="swe"/>
+		<TypeMapEntry type="doubleList" gmlVersion="*" rule="direct" mapTo="doubleList" nsabr="swe"/>
+		<TypeMapEntry type="Record" gmlVersion="*" rule="direct" mapTo="SWE_CompactRecordType" nsabr="swe"/>
+		<TypeMapEntry type="NumericRecord" gmlVersion="*" rule="direct" mapTo="SWE_CompactNumericRecordType" nsabr="swe"/>
+		<TypeMapEntry type="RecordType" gmlVersion="*" rule="direct" mapTo="SWE_RecordTypePropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordTypeType" nsabr="swe"/>
+		<ElementMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordType" nsabr="swe"/>
+		<TypeMapEntry type="RecordSchema" gmlVersion="*" rule="direct" mapTo="SWE_RecordTypePropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonType" nsabr="swe"/>
+		<ElementMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="Phenomenon" nsabr="swe"/>
+		<TypeMapEntry type="Phenomenon" gmlVersion="*" rule="direct" mapTo="PhenomenonPropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="TimeAggregate" gmlVersion="*" rule="direct" mapTo="TimeAggregateType" nsabr="swe"/>
+		<ElementMapEntry type="TimeAggregate" gmlVersion="*" rule="direct" mapTo="TimeAggregate" nsabr="swe"/>
+		<TypeMapEntry type="TimeAggregate" gmlVersion="*" rule="direct" mapTo="TimeAggregatePropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGridType" nsabr="swe"/>
+		<ElementMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGrid" nsabr="swe"/>
+		<TypeMapEntry type="TimeGrid" gmlVersion="*" rule="direct" mapTo="TimeGridPropertyType" nsabr="swe"/>
+
+		<!-- for "CommonObservation" -->
+		<TypeMapEntry type="DataValue" gmlVersion="*" rule="direct" mapTo="DataValueType" nsabr="swe"/>
+		<TypeMapEntry type="DataDefinition" gmlVersion="*" rule="direct" mapTo="DataDefinitionPropertyType" nsabr="swe"/>
+		<TypeMapEntry type="Encoding" gmlVersion="*" rule="direct" mapTo="EncodingPropertyType" nsabr="swe"/>
+
+		<!-- OM schema -->
+		<BaseMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="EventType" nsabr="om"/>
+		<ElementMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="Event" nsabr="om"/>
+		<TypeMapEntry type="Event" gmlVersion="*" rule="direct" mapTo="EventPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ProcedureType" gmlVersion="*" rule="direct" mapTo="ProcedureTypeType" nsabr="om"/>
+		<ElementMapEntry type="ProcedureType" gmlVersion="*" rule="direct" mapTo="ProcedureType" nsabr="om"/>
+		<TypeMapEntry type="ProcedureType" gmlVersion="*" rule="direct" mapTo="ProcedureTypePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedureType" nsabr="om"/>
+		<ElementMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedure" nsabr="om"/>
+		<TypeMapEntry type="ObservationProcedure" gmlVersion="*" rule="direct" mapTo="ObservationProcedurePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackageType" nsabr="om"/>
+		<ElementMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackage" nsabr="om"/>
+		<TypeMapEntry type="ProcedurePackage" gmlVersion="*" rule="direct" mapTo="ProcedurePackagePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequenceType" nsabr="om"/>
+		<ElementMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequence" nsabr="om"/>
+		<TypeMapEntry type="ProcedureSequence" gmlVersion="*" rule="direct" mapTo="ProcedureSequencePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventType" nsabr="om"/>
+		<ElementMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEvent" nsabr="om"/>
+		<TypeMapEntry type="ProcedureEvent" gmlVersion="*" rule="direct" mapTo="ProcedureEventPropertyType" nsabr="om"/>
+
+		<TypeMapEntry type="Procedure" gmlVersion="*" rule="direct" mapTo="ProcedurePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedureType" nsabr="om"/>
+		<ElementMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedure" nsabr="om"/>
+		<TypeMapEntry type="CalculationProcedure" gmlVersion="*" rule="direct" mapTo="CalculationProcedurePropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="Instrument" gmlVersion="*" rule="direct" mapTo="InstrumentType" nsabr="om"/>
+		<ElementMapEntry type="Instrument" gmlVersion="*" rule="direct" mapTo="Instrument" nsabr="om"/>
+		<TypeMapEntry type="Instrument" gmlVersion="*" rule="direct" mapTo="InstrumentPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="AbstractObservation" gmlVersion="*" rule="direct" mapTo="AbstractObservationType" nsabr="om"/>
+		<ElementMapEntry type="AbstractObservation" gmlVersion="*" rule="direct" mapTo="AbstractObservation" nsabr="om"/>
+		<TypeMapEntry type="AbstractObservation" gmlVersion="*" rule="direct" mapTo="AbstractObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="Observation" gmlVersion="*" rule="direct" mapTo="ObservationType" nsabr="om"/>
+		<ElementMapEntry type="Observation" gmlVersion="*" rule="direct" mapTo="Observation" nsabr="om"/>
+		<TypeMapEntry type="Observation" gmlVersion="*" rule="direct" mapTo="ObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollectionType" nsabr="om"/>
+		<ElementMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollection" nsabr="om"/>
+		<TypeMapEntry type="ObservationCollection" gmlVersion="*" rule="direct" mapTo="ObservationCollectionPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationType" nsabr="om"/>
+		<ElementMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservation" nsabr="om"/>
+		<TypeMapEntry type="CompositeObservation" gmlVersion="*" rule="direct" mapTo="CompositeObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="MeasurementType" nsabr="om"/>
+		<ElementMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="Measurement" nsabr="om"/>
+		<TypeMapEntry type="Measurement" gmlVersion="*" rule="direct" mapTo="MeasurementPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservationType" nsabr="om"/>
+		<ElementMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservation" nsabr="om"/>
+		<TypeMapEntry type="CategoryObservation" gmlVersion="*" rule="direct" mapTo="CategoryObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="CountObservation" gmlVersion="*" rule="direct" mapTo="CountObservationType" nsabr="om"/>
+		<ElementMapEntry type="CountObservation" gmlVersion="*" rule="direct" mapTo="CountObservation" nsabr="om"/>
+		<TypeMapEntry type="CountObservation" gmlVersion="*" rule="direct" mapTo="CountObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="TruthObservation" gmlVersion="*" rule="direct" mapTo="TruthObservationType" nsabr="om"/>
+		<ElementMapEntry type="TruthObservation" gmlVersion="*" rule="direct" mapTo="TruthObservation" nsabr="om"/>
+		<TypeMapEntry type="TruthObservation" gmlVersion="*" rule="direct" mapTo="TruthObservationPropertyType" nsabr="om"/>
+
+		<BaseMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservationType" nsabr="om"/>
+		<ElementMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservation" nsabr="om"/>
+		<TypeMapEntry type="CommonObservation" gmlVersion="*" rule="direct" mapTo="CommonObservationPropertyType" nsabr="om"/>
+
+		<!-- W3C XML Schema simple types -->
+		<!--
+		<TypeMapEntry type="ID" gmlVersion="*" rule="direct" mapTo="ID"/>
+		<TypeMapEntry type="ENTITIES" gmlVersion="*" rule="direct" mapTo="ENTITIES"/>
+		<TypeMapEntry type="ENTITY" gmlVersion="*" rule="direct" mapTo="ENTITY"/>
+		<TypeMapEntry type="IDREF" gmlVersion="*" rule="direct" mapTo="IDREF"/>
+		<TypeMapEntry type="IDREFS" gmlVersion="*" rule="direct" mapTo="IDREFS"/>
+		<TypeMapEntry type="NCName" gmlVersion="*" rule="direct" mapTo="NCName"/>
+		<TypeMapEntry type="NMTOKEN" gmlVersion="*" rule="direct" mapTo="NMTOKEN"/>
+		<TypeMapEntry type="NMTOKENS" gmlVersion="*" rule="direct" mapTo="NMTOKENS"/>
+		<TypeMapEntry type="NOTATION" gmlVersion="*" rule="direct" mapTo="NOTATION"/>
+		<TypeMapEntry type="Name" gmlVersion="*" rule="direct" mapTo="Name"/>
+		<TypeMapEntry type="QName" gmlVersion="*" rule="direct" mapTo="QName"/>
+		<TypeMapEntry type="anySimpleType" gmlVersion="*" rule="direct" mapTo="anySimpleType"/>
+		<TypeMapEntry type="anyType" gmlVersion="*" rule="direct" mapTo="anyType"/>
+		<TypeMapEntry type="anyURI" gmlVersion="*" rule="direct" mapTo="anyURI"/>
+		<TypeMapEntry type="base64Binary" gmlVersion="*" rule="direct" mapTo="base64Binary"/>
+		<TypeMapEntry type="boolean" gmlVersion="*" rule="direct" mapTo="boolean"/>
+		<TypeMapEntry type="byte" gmlVersion="*" rule="direct" mapTo="byte"/>
+		<TypeMapEntry type="date" gmlVersion="*" rule="direct" mapTo="date"/>
+		<TypeMapEntry type="dateTime" gmlVersion="*" rule="direct" mapTo="dateTime"/>
+		<TypeMapEntry type="decimal" gmlVersion="*" rule="direct" mapTo="decimal"/>
+		<TypeMapEntry type="double" gmlVersion="*" rule="direct" mapTo="double"/>
+		<TypeMapEntry type="duration" gmlVersion="*" rule="direct" mapTo="duration"/>
+		<TypeMapEntry type="float" gmlVersion="*" rule="direct" mapTo="float"/>
+		<TypeMapEntry type="gDay" gmlVersion="*" rule="direct" mapTo="gDay"/>
+		<TypeMapEntry type="gMonth" gmlVersion="*" rule="direct" mapTo="gMonth"/>
+		<TypeMapEntry type="gMonthDay" gmlVersion="*" rule="direct" mapTo="gMonthDay"/>
+		<TypeMapEntry type="gYear" gmlVersion="*" rule="direct" mapTo="gYear"/>
+		<TypeMapEntry type="gYearMonth" gmlVersion="*" rule="direct" mapTo="gYearMonth"/>
+		<TypeMapEntry type="hexBinary" gmlVersion="*" rule="direct" mapTo="hexBinary"/>
+		<TypeMapEntry type="int" gmlVersion="*" rule="direct" mapTo="int"/>
+		<TypeMapEntry type="integer" gmlVersion="*" rule="direct" mapTo="integer"/>
+		<TypeMapEntry type="language" gmlVersion="*" rule="direct" mapTo="language"/>
+		<TypeMapEntry type="long" gmlVersion="*" rule="direct" mapTo="long"/>
+		<TypeMapEntry type="negativeInteger" gmlVersion="*" rule="direct" mapTo="negativeInteger"/>
+		<TypeMapEntry type="nonNegativeInteger" gmlVersion="*" rule="direct" mapTo="nonNegativeInteger"/>
+		<TypeMapEntry type="nonPositiveInteger" gmlVersion="*" rule="direct" mapTo="nonPositiveInteger"/>
+		<TypeMapEntry type="normalizedString" gmlVersion="*" rule="direct" mapTo="normalizedString"/>
+		<TypeMapEntry type="positiveInteger" gmlVersion="*" rule="direct" mapTo="positiveInteger"/>
+		<TypeMapEntry type="short" gmlVersion="*" rule="direct" mapTo="short"/>
+		<TypeMapEntry type="string" gmlVersion="*" rule="direct" mapTo="string"/>
+		<TypeMapEntry type="time" gmlVersion="*" rule="direct" mapTo="time"/>
+		<TypeMapEntry type="token" gmlVersion="*" rule="direct" mapTo="token"/>
+		<TypeMapEntry type="unsignedByte" gmlVersion="*" rule="direct" mapTo="unsignedByte"/>
+		<TypeMapEntry type="unsignedInt" gmlVersion="*" rule="direct" mapTo="unsignedInt"/>
+		<TypeMapEntry type="unsignedLong" gmlVersion="*" rule="direct" mapTo="unsignedLong"/>
+		<TypeMapEntry type="unsignedShort" gmlVersion="*" rule="direct" mapTo="unsignedShort"/>
+		-->
+	</mapEntries>
+</ShapeChangeConfiguration>
