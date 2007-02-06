@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <!DOCTYPE XMI SYSTEM "UML_EA.dtd">
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2007-02-06 13:22:12">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2007-02-06 13:56:46">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -13,13 +13,13 @@
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="O&amp;M" xmi.id="EAPK_2A10AD77_2C25_4390_A5FF_2183A4807F44" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.stereotype>
-						<UML:Stereotype xmi.idref="EAID_BDC5E1E1_C6D6_48e2_AA78_F201C509784D"/>
+						<UML:Stereotype xmi.idref="EAID_29EA1003_DAE7_4b4c_A0F1_1513E845AB2F"/>
 					</UML:ModelElement.stereotype>
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="created" value="2005-09-19 00:00:00"/>
 						<UML:TaggedValue tag="modified" value="2005-09-19 00:00:00"/>
-						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
-						<UML:TaggedValue tag="xmlpath" value="C:\Documents and Settings\cox075\My Documents\dev\xmml\HollowWorld\XMI13_with_EA_extensions\OM.xml"/>
+						<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+						<UML:TaggedValue tag="xmlpath" value="OM.xml"/>
 						<UML:TaggedValue tag="lastloaddate" value="2005-11-01 15:13:28"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-02-06 13:22:12"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
@@ -697,7 +697,7 @@
 						</UML:Dependency>
 						<UML:Package name="event" xmi.id="EAPK_F0698DA5_22A3_48f7_8CBC_BE702025C10F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024"/>
+								<UML:Stereotype xmi.idref="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2004-12-14 00:00:00"/>
@@ -966,7 +966,7 @@
 						</UML:Package>
 						<UML:Package name="observation" xmi.id="EAPK_C45A7E41_1AD8_49a8_95C3_85B30890A5BA" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024"/>
+								<UML:Stereotype xmi.idref="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-07-29 17:11:19"/>
@@ -1822,7 +1822,7 @@
 						</UML:Package>
 						<UML:Package name="observationSpecializations" xmi.id="EAPK_50A4BD66_0564_4ffb_8EC2_FADEBB4FA5C1" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024"/>
+								<UML:Stereotype xmi.idref="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-10-05 00:00:00"/>
@@ -2615,7 +2615,7 @@
 						</UML:Package>
 						<UML:Package name="om" xmi.id="EAPK_2E2C2CF0_AE7A_4591_880B_63B0DD476F33" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024"/>
+								<UML:Stereotype xmi.idref="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2006-08-04 00:00:00"/>
@@ -4317,7 +4317,7 @@
 						</UML:Package>
 						<UML:Package name="procedure" xmi.id="EAPK_6F71EAC2_67AE_4604_B088_196EEBCA6C14" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024"/>
+								<UML:Stereotype xmi.idref="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-07-29 17:11:21"/>
@@ -5048,7 +5048,7 @@
 						</UML:Package>
 						<UML:Package name="procedureSpecializations" xmi.id="EAPK_D555562A_70E1_48f1_A1CC_AA4BE26CDF66" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024"/>
+								<UML:Stereotype xmi.idref="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-10-05 00:00:00"/>
@@ -5328,10 +5328,10 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_BDC5E1E1_C6D6_48e2_AA78_F201C509784D" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_29EA1003_DAE7_4b4c_A0F1_1513E845AB2F" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_D4EC9666_3107_4ca1_9D23_FC5B62EE1024" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_CA4A0BFC_3CD2_4616_B299_D48D034A989E" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid7" name="Record" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
