@@ -12,14 +12,14 @@
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="O&amp;M" xmi.id="EAPK_2A10AD77_2C25_4390_A5FF_2183A4807F44" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.stereotype>
-						<UML:Stereotype xmi.idref="EAID_971C5BE5_93A4_4f83_B5A9_3346A12A5F81"/>
+						<UML:Stereotype xmi.idref="EAID_4C0C5D99_4403_4678_8E25_45B60F577620"/>
 					</UML:ModelElement.stereotype>
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="created" value="2005-09-19 00:00:00"/>
 						<UML:TaggedValue tag="modified" value="2005-09-19 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="OM.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2007-02-06 16:52:59"/>
+						<UML:TaggedValue tag="lastloaddate" value="2007-02-06 17:20:44"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-02-06 13:22:12"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -60,28 +60,6 @@
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
 										<UML:TaggedValue tag="ea_localid" value="696"/>
-										<UML:TaggedValue tag="ea_eleType" value="package"/>
-										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:ClassifierRole>
-								<UML:ClassifierRole name="dummy package 2" xmi.id="EAID_4FD328C3_45A8_4c84_97BE_44BA3E5FA79E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="isSpecification" value="false"/>
-										<UML:TaggedValue tag="ea_stype" value="Package"/>
-										<UML:TaggedValue tag="ea_ntype" value="0"/>
-										<UML:TaggedValue tag="version" value="1.0"/>
-										<UML:TaggedValue tag="package" value="EAPK_2A10AD77_2C25_4390_A5FF_2183A4807F44"/>
-										<UML:TaggedValue tag="date_created" value="2007-02-06 16:40:41"/>
-										<UML:TaggedValue tag="date_modified" value="2007-02-06 16:40:41"/>
-										<UML:TaggedValue tag="gentype" value="Java"/>
-										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package2" value="EAID_4FD328C3_45A8_4c84_97BE_44BA3E5FA79E"/>
-										<UML:TaggedValue tag="package_name" value="O&amp;M"/>
-										<UML:TaggedValue tag="phase" value="1.0"/>
-										<UML:TaggedValue tag="complexity" value="1"/>
-										<UML:TaggedValue tag="status" value="Proposed"/>
-										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="699"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -464,25 +442,9 @@
 								<UML:TaggedValue tag="mb" value=" &#xA;«import»"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
-						<UML:Package name="dummy package 2" xmi.id="EAPK_4FD328C3_45A8_4c84_97BE_44BA3E5FA79E" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
-							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="created" value="2007-02-06 00:00:00"/>
-								<UML:TaggedValue tag="modified" value="2007-02-06 00:00:00"/>
-								<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
-								<UML:TaggedValue tag="version" value="1.0"/>
-								<UML:TaggedValue tag="isprotected" value="FALSE"/>
-								<UML:TaggedValue tag="usedtd" value="FALSE"/>
-								<UML:TaggedValue tag="logxml" value="FALSE"/>
-								<UML:TaggedValue tag="phase" value="1.0"/>
-								<UML:TaggedValue tag="status" value="Proposed"/>
-								<UML:TaggedValue tag="complexity" value="1"/>
-								<UML:TaggedValue tag="ea_stype" value="Public"/>
-							</UML:ModelElement.taggedValue>
-							<UML:Namespace.ownedElement/>
-						</UML:Package>
 						<UML:Package name="event" xmi.id="EAPK_F0698DA5_22A3_48f7_8CBC_BE702025C10F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_28727B4B_DD02_4ea3_8E3B_56679281F0D1"/>
+								<UML:Stereotype xmi.idref="EAID_040CC567_DEF9_41eb_AEA1_5D4723E1B35D"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2004-12-14 00:00:00"/>
@@ -751,7 +713,7 @@
 						</UML:Package>
 						<UML:Package name="observation" xmi.id="EAPK_C45A7E41_1AD8_49a8_95C3_85B30890A5BA" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_28727B4B_DD02_4ea3_8E3B_56679281F0D1"/>
+								<UML:Stereotype xmi.idref="EAID_040CC567_DEF9_41eb_AEA1_5D4723E1B35D"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-07-29 17:11:19"/>
@@ -1413,7 +1375,7 @@
 						</UML:Package>
 						<UML:Package name="observationSpecializations" xmi.id="EAPK_50A4BD66_0564_4ffb_8EC2_FADEBB4FA5C1" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_28727B4B_DD02_4ea3_8E3B_56679281F0D1"/>
+								<UML:Stereotype xmi.idref="EAID_040CC567_DEF9_41eb_AEA1_5D4723E1B35D"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-10-05 00:00:00"/>
@@ -3844,7 +3806,7 @@
 						</UML:Package>
 						<UML:Package name="procedure" xmi.id="EAPK_6F71EAC2_67AE_4604_B088_196EEBCA6C14" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_28727B4B_DD02_4ea3_8E3B_56679281F0D1"/>
+								<UML:Stereotype xmi.idref="EAID_040CC567_DEF9_41eb_AEA1_5D4723E1B35D"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-07-29 17:11:21"/>
@@ -4507,7 +4469,7 @@
 						</UML:Package>
 						<UML:Package name="procedureSpecializations" xmi.id="EAPK_D555562A_70E1_48f1_A1CC_AA4BE26CDF66" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_28727B4B_DD02_4ea3_8E3B_56679281F0D1"/>
+								<UML:Stereotype xmi.idref="EAID_040CC567_DEF9_41eb_AEA1_5D4723E1B35D"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2005-10-05 00:00:00"/>
@@ -4755,10 +4717,10 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_971C5BE5_93A4_4f83_B5A9_3346A12A5F81" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_4C0C5D99_4403_4678_8E25_45B60F577620" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_28727B4B_DD02_4ea3_8E3B_56679281F0D1" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_040CC567_DEF9_41eb_AEA1_5D4723E1B35D" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid10" name="Record" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
