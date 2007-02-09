@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<UMLProfile profiletype="uml2">
+
+	<!--Profile name, version number and general notes -->
+	<Documentation id="DMProfile" name="UML Profile for Mapping Conceptual Models to Application Schemas" version="1"
+	               notes="Provides informative stereotypes to assist in the separation of concerns between conceptual common ground and multiple implementations (Application Schemas) developed according to the ISO19109 rules. 
+						Implemented for Enterprise Architect tool by Rob Atkinson, Social Change Online and Simon Cox, CSIRO Exploration and Mining."/>
+
+	<!-- The profile content -->
+	<Content>
+
+		<!-- List of stereotypes used in this profile. Each stereotype may also include tagged values, constraints, metafile and descriptive comments-->
+		<Stereotypes>
+
+			<!-- Stereotypes used for designing ISO 19109/19118/19136 or GML Application Schema -->
+
+			<Stereotype name="Domain Model"
+			            notes="Root of model describing a Domain. Contains placeholders for conceptual elements that may have multiple representations in one or more Application Schemas. ">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="owner" description="Party responsible for maintenance of this package"/>
+					
+					<Tag name="version" description="Model version"/>
+					
+				</TaggedValues>
+			</Stereotype>
+
+
+			<Stereotype name="ConceptualFeature" notes="Class represents a common agreement that an object exists - i.e. carries identity and characteristic properties. Generically, all ConceptualFeatures have an extensible set of typed properties, whose name is bound to an external dictionary. Where explicit relationships depend on particular properties, these properties can be promoted to named properties.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+<Tag name="owner" description="Party responsible for maintenance of this package"/>
+					
+					<Tag name="version" description="Model version"/>
+				
+			</Stereotype>
+
+			<Stereotype name="ControlledVocabulary"
+			            notes="Class represents a dictionary, with some level of ontological richness appropriate to the domain. ">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					
+				</TaggedValues>
+			</Stereotype>
+
+
+			<Stereotype name="profileOf" notes="realizing class constrains implementation of one or more properties of realized class.">
+				<AppliesTo>
+					<Apply type="realization"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					
+				</TaggedValues>
+			</Stereotype>
+			
+			<Stereotype name="implementsViewOf" notes="realizing class provides implementable view of conceptual class.">
+				<AppliesTo>
+					<Apply type="realization"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					
+				</TaggedValues>
+			</Stereotype>
+
+		</Stereotypes>
+	</Content>
+</UMLProfile>
