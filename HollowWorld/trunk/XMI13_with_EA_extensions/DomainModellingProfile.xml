@@ -38,8 +38,8 @@
 				
 			</Stereotype>
 
-			<Stereotype name="ControlledVocabulary"
-			            notes="Class represents a dictionary, with some level of ontological richness appropriate to the domain. ">
+			<Stereotype name="VocabularyBinding"
+			            notes="Class represents a network addressable service binding to an available dictionary, with some level of ontological richness appropriate to the domain.">
 				<AppliesTo>
 					<Apply type="class"/>
 				</AppliesTo>
@@ -67,6 +67,18 @@
 
 				<TaggedValues>
 					
+				</TaggedValues>
+			</Stereotype>
+
+			
+			<Stereotype name="scopedBy" notes="The identified property (targetRole) is to be bound to a value from the set of values defined by the associated object.">
+				<AppliesTo>
+					<Apply type="dependency"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="URN" description="Published URN of bound value domain"/>
+						
 				</TaggedValues>
 			</Stereotype>
 
