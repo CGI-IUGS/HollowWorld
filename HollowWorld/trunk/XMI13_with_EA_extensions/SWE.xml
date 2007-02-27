@@ -17,7 +17,7 @@
 						<UML:TaggedValue tag="modified" value="2005-09-28 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="SWE.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2007-02-27 12:23:38"/>
+						<UML:TaggedValue tag="lastloaddate" value="2007-02-27 12:45:50"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-02-06 13:20:37"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="TRUE"/>
@@ -1182,7 +1182,7 @@
 						</UML:Dependency>
 						<UML:Package name="O&amp;M" xmi.id="EAPK_2A10AD77_2C25_4390_A5FF_2183A4807F44" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+								<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="The Observations and Measurements models, revised from the OGC Best Practice document OGC 05-087r4&#xA;&#xA;Package implements as a stub schema comprising the whole of O&amp;M schema"/>
@@ -1234,17 +1234,17 @@
 										</UML:ClassifierRole>
 										<UML:ClassifierRole name="observationSpecializations: constraint" xmi.id="EAID_2BD2FED1_633C_4979_9FBB_59A6E987A223" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 											<UML:ModelElement.stereotype>
-												<UML:Stereotype name="Leaf"/>
+												<UML:Stereotype name="experimental"/>
 											</UML:ModelElement.stereotype>
 											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="documentation" value="Alternative formulation of observation-specializations. The result property is subject to a constraint on its type. "/>
+												<UML:TaggedValue tag="documentation" value="Alternative formulation of observation-specializations. The result property is subject to a constraint on its type, and the tagged-value xsdDerivation is set to false"/>
 												<UML:TaggedValue tag="isSpecification" value="false"/>
 												<UML:TaggedValue tag="ea_stype" value="Package"/>
 												<UML:TaggedValue tag="ea_ntype" value="0"/>
 												<UML:TaggedValue tag="version" value="1.0"/>
 												<UML:TaggedValue tag="package" value="EAPK_2A10AD77_2C25_4390_A5FF_2183A4807F44"/>
 												<UML:TaggedValue tag="date_created" value="2007-02-19 11:44:51"/>
-												<UML:TaggedValue tag="date_modified" value="2007-02-19 12:02:10"/>
+												<UML:TaggedValue tag="date_modified" value="2007-02-27 12:46:29"/>
 												<UML:TaggedValue tag="gentype" value="Java"/>
 												<UML:TaggedValue tag="tagged" value="0"/>
 												<UML:TaggedValue tag="package2" value="EAID_2BD2FED1_633C_4979_9FBB_59A6E987A223"/>
@@ -1252,12 +1252,12 @@
 												<UML:TaggedValue tag="phase" value="1.0"/>
 												<UML:TaggedValue tag="complexity" value="1"/>
 												<UML:TaggedValue tag="status" value="Proposed"/>
-												<UML:TaggedValue tag="stereotype" value="Leaf"/>
+												<UML:TaggedValue tag="stereotype" value="experimental"/>
 												<UML:TaggedValue tag="tpos" value="0"/>
 												<UML:TaggedValue tag="ea_localid" value="539614908"/>
 												<UML:TaggedValue tag="ea_eleType" value="package"/>
 												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
-												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={59BF6B2E-429F-4039-AFB0-34280A0FC528}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=Leaf;GUID={0F780064-AD90-4e04-95E2-C5A7FC02CA1F};@ENDSTEREO;$DES;$CLT={2BD2FED1-633C-4979-9FBB-59A6E987A223}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={59BF6B2E-429F-4039-AFB0-34280A0FC528}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=experimental;GUID={40C824C7-707C-4dac-AB65-031645C7623E};@ENDSTEREO;$DES;$CLT={2BD2FED1-633C-4979-9FBB-59A6E987A223}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 											</UML:ModelElement.taggedValue>
 										</UML:ClassifierRole>
 										<UML:ClassifierRole name="observationSpecializations: override" xmi.id="EAID_50A4BD66_0564_4ffb_8EC2_FADEBB4FA5C1" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
@@ -1534,7 +1534,7 @@
 								</UML:Dependency>
 								<UML:Package name="observation" xmi.id="EAPK_C45A7E41_1AD8_49a8_95C3_85B30890A5BA" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="The basic Observation model"/>
@@ -2637,10 +2637,10 @@
 								</UML:Package>
 								<UML:Package name="observationSpecializations: constraint" xmi.id="EAPK_2BD2FED1_633C_4979_9FBB_59A6E987A223" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_B96094C4_3F85_4bd0_B767_CD1EFC02680E"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="Alternative formulation of observation-specializations. The result property is subject to a constraint on its type. "/>
+										<UML:TaggedValue tag="documentation" value="Alternative formulation of observation-specializations. The result property is subject to a constraint on its type, and the tagged-value xsdDerivation is set to false"/>
 										<UML:TaggedValue tag="created" value="2007-02-19 00:00:00"/>
 										<UML:TaggedValue tag="modified" value="2007-02-19 00:00:00"/>
 										<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
@@ -2655,7 +2655,7 @@
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
-										<UML:TaggedValue tag="stereotype" value="Leaf"/>
+										<UML:TaggedValue tag="stereotype" value="experimental"/>
 										<UML:TaggedValue tag="ea_stype" value="Public"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Namespace.ownedElement>
@@ -3200,7 +3200,7 @@
 								</UML:Package>
 								<UML:Package name="observationSpecializations: override" xmi.id="EAPK_50A4BD66_0564_4ffb_8EC2_FADEBB4FA5C1" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="Alternative formulation of observation-specializations. The type of the result property is fixed by overriding the declration inherited from the parent class. "/>
@@ -5770,7 +5770,7 @@
 								</UML:Package>
 								<UML:Package name="procedure" xmi.id="EAPK_6F71EAC2_67AE_4604_B088_196EEBCA6C14" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="The procedure provides a description of the process used to obtain the result. This is often an instrument or sensor, but may be a human observer, a simulator, or a process or algorithm applied to more primitive results used as inputs. "/>
@@ -6512,7 +6512,7 @@
 								</UML:Package>
 								<UML:Package name="procedureSpecializations" xmi.id="EAPK_D555562A_70E1_48f1_A1CC_AA4BE26CDF66" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-10-05 00:00:00"/>
@@ -6736,7 +6736,7 @@
 						</UML:Package>
 						<UML:Package name="Sampling" xmi.id="EAPK_9662A3AB_3E73_4444_8FFB_45B61FCF9BCF" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+								<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="A model for sampling features. These feature-types are typically associated with making observations at locations that are considered in some way to be representative of a domain feature. Sampling features embody a sampling strategy that is suitable for the observation procedure and the observed property. Hence, sampling features are artefacts of the observation process rather than the inherent domain semantics. Similar sampling strategies are used across a wide range of application domains so a common sampling features schema may be described.&#xA;Instances of sampling features may act as the proximate feature-of-interest for observations [O&amp;M], particularly early in the value-adding chain.&#xA;&#xA;Documented in OGC 07-002"/>
@@ -7070,7 +7070,7 @@
 								</UML:Dependency>
 								<UML:Package name="extensiveSampling" xmi.id="EAPK_1A39B6A2_F192_471e_B9AB_577070BF9EAD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="A hierarchy of sampling feature types may be organized on the basis of the dimensionality of their extent (Figure 4). A Station samples the world at a point, a Profile along a curve, a SurfaceOfInterest on a surface, and a SolidOfInterest in a solid region. &#xA;As well as the generic soft-typed property inherited from SamplingFeature, extensive sampling features may carry properties whose values vary over the extent of the feature, which is described as a coverage [ISO 19123].Along a curve this is conventionally a propertyLog; on a surface it is designated propertyMap; in a solid it is a propertyFill. &#xA;An extensive sampling feature may be sub-sampled in various ways. Thus, the shape of a sampling feature may describe the extent of a sampling domain, while not specifying the elements of the domain of a discrete coverage representation of the variation of a property within the sampling feature. It is nevertheless useful to have the description of the sampling feature and its shape as a basis for the description of the domain decomposition.&#xA;Example: Logs of different properties along a well or borehole may use different intervals, and sub-samples may be either instantaneous or averaged in some way over an interval. The position of the samples may be conveniently described in terms of offsets in a linear coordinate reference system that is defined by the shape of the borehole axis. "/>
@@ -8273,7 +8273,7 @@
 								</UML:Package>
 								<UML:Package name="samplingBase" xmi.id="EAPK_B304C681_A31D_4451_AA7E_119756899389" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="The basic Sampling Feature model. "/>
@@ -8657,7 +8657,7 @@
 								</UML:Package>
 								<UML:Package name="specimen" xmi.id="EAPK_1F751AE5_9720_41bb_B23D_74A5CA5DEA0B" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="A Specimen (Figure 5) is a physical sample, usually obtained for observation carried out ex situ, often in a laboratory. A specimen is characterized by having a currentLocation (e.g. its storage location) and an indication of its currentSize (e.g. mass), and its gross materialClass (e.g. soil, water, rock, tissue, etc). "/>
@@ -9059,7 +9059,7 @@
 								</UML:Package>
 								<UML:Package name="surveyProcedure" xmi.id="EAPK_C42BEF1D_0EA4_45d6_9CD1_EEAB18E65361" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-06-23 00:00:00"/>
@@ -9342,7 +9342,7 @@
 						</UML:Package>
 						<UML:Package name="SensorML" xmi.id="EAPK_8440AC36_6367_4f11_B60D_DC3DF908BE17" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+								<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Stubs for SensorML. "/>
@@ -9976,7 +9976,7 @@
 						</UML:Package>
 						<UML:Package name="sweCommon" xmi.id="EAPK_53217018_498E_4440_8914_E98F4BD76C8B" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+								<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Harmonized version of SWE Common basic type library, as at conclusion of OWS-4&#xA;&#xA;Documented in OGC 07-003 (upcoming)"/>
@@ -10692,7 +10692,7 @@
 								</UML:Dependency>
 								<UML:Package name="aggregateTypes" xmi.id="EAPK_51CEDE63_9B2C_4d3b_AF07_21404EE90D42" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2006-09-19 00:00:00"/>
@@ -11825,7 +11825,7 @@
 								</UML:Package>
 								<UML:Package name="basicTypes" xmi.id="EAPK_0C799BAD_55C8_4810_ADB3_512616F96392" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2007-01-15 00:00:00"/>
@@ -12488,7 +12488,7 @@
 								</UML:Package>
 								<UML:Package name="curveTypes" xmi.id="EAPK_B0B958E1_1F59_4e4b_9E8A_4913B14C7146" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2007-01-15 00:00:00"/>
@@ -12891,7 +12891,7 @@
 								</UML:Package>
 								<UML:Package name="data" xmi.id="EAPK_E8D31356_8C41_442b_9380_3CE4FFFF683C" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2007-01-15 00:00:00"/>
@@ -13138,7 +13138,7 @@
 								</UML:Package>
 								<UML:Package name="encoding" xmi.id="EAPK_929F1CFA_04B6_461c_B887_CC503BF184F2" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2006-09-19 00:00:00"/>
@@ -14056,7 +14056,7 @@
 								</UML:Package>
 								<UML:Package name="phenomenon" xmi.id="EAPK_D25EE54E_F955_48e9_8452_0BA777EB13BD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-07-29 17:11:21"/>
@@ -14712,7 +14712,7 @@
 								</UML:Package>
 								<UML:Package name="positionTypes" xmi.id="EAPK_40C53F7B_0F72_4a07_BBC9_CA1D4584C835" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2006-09-19 00:00:00"/>
@@ -15694,7 +15694,7 @@
 								</UML:Package>
 								<UML:Package name="recordType" xmi.id="EAPK_CF8CB1E6_C783_46b2_9905_3C723C9AEFE5" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_25B1E29B_3B1C_40c6_B9DD_75C20824E663"/>
+										<UML:Stereotype xmi.idref="EAID_B96094C4_3F85_4bd0_B767_CD1EFC02680E"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-06-20 00:00:00"/>
@@ -16176,7 +16176,7 @@
 								</UML:Package>
 								<UML:Package name="simpleTypes" xmi.id="EAPK_30B8B991_8168_41a0_9C67_57B5ECBEADBD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2007-01-15 00:00:00"/>
@@ -18836,7 +18836,7 @@
 								</UML:Package>
 								<UML:Package name="temporalAggregates" xmi.id="EAPK_03D077F0_5822_4083_9C35_93C599724B60" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-07-29 17:11:22"/>
@@ -19490,7 +19490,7 @@
 								</UML:Package>
 								<UML:Package name="xmlData" xmi.id="EAPK_F11FAE41_FEF1_4188_ABC7_FC9DC7D37320" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+										<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2006-09-19 00:00:00"/>
@@ -20097,7 +20097,7 @@
 								</UML:Collaboration>
 								<UML:Package name="SimpleTypeDerivation" xmi.id="EAPK_45F9767D_891E_4424_BEC7_AF125072BD15" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+										<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2005-11-07 00:00:00"/>
@@ -20155,7 +20155,7 @@
 										</UML:Collaboration>
 										<UML:Package name="simpleTypeDerivation" xmi.id="EAPK_C6D7476E_A718_4fb1_8DD3_2E3D81504EA8" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 											<UML:ModelElement.stereotype>
-												<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+												<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 											</UML:ModelElement.stereotype>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="created" value="2005-11-07 00:00:00"/>
@@ -20181,7 +20181,7 @@
 								</UML:Package>
 								<UML:Package name="xlinks" xmi.id="EAPK_A74BAEEA_0F7E_4e90_8A91_E8C44317E00F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+										<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="Not a GML Application Schema, but stereotyped thus for compatibility with UGAS/ShapeChange "/>
@@ -20239,7 +20239,7 @@
 										</UML:Collaboration>
 										<UML:Package name="xlinks" xmi.id="EAPK_6EBF9C46_60DD_4b98_9E80_D8425CFFB740" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 											<UML:ModelElement.stereotype>
-												<UML:Stereotype xmi.idref="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F"/>
+												<UML:Stereotype xmi.idref="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC"/>
 											</UML:ModelElement.stereotype>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="created" value="2005-11-07 00:00:00"/>
@@ -20756,7 +20756,7 @@
 								</UML:Package>
 								<UML:Package name="XSDDatatypes" xmi.id="EAPK_DE039051_0302_4cfb_A11F_B5DFA52F8322" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341"/>
+										<UML:Stereotype xmi.idref="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="Not a GML Application Schema, but stereotyped thus for compatibility with UGAS/ShapeChange XML Namespace: &#xA;&#xA;http://www.w3.org/2001/XMLSchema&#xA;Typical ns prefix: xs, xsd"/>
@@ -23132,13 +23132,13 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_16E7CD9F_70C6_44fc_9CED_17ADD7944341" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_4CA8DA7E_8AC7_4e6f_8C2D_C0C982CB826F" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_1313E1CC_4EFA_4f14_AD1D_BB54D79AD17F" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_42EF6A47_D12C_40ca_A067_8AAEB8B49AEC" name="Leaf" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_25B1E29B_3B1C_40c6_B9DD_75C20824E663" name="experimental" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_B96094C4_3F85_4bd0_B767_CD1EFC02680E" name="experimental" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid22" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
@@ -23309,7 +23309,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_8B9FF05C_3571_4ad6_B5CA_E9474A27D678" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_2CAEE05E_7361_4033_8906_64A401567793"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_24AEDF43_C3BB_4744_B295_3227F3EDA4B5" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_2CAEE05E_7361_4033_8906_64A401567793"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_FB89142E_7025_48ca_8332_3C2257B0263C" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_2CAEE05E_7361_4033_8906_64A401567793"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_97EF5F0D_8B71_40d7_A71A_1C068757D801" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_2CAEE05E_7361_4033_8906_64A401567793"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_97EF5F0D_8B71_40d7_A71A_1C068757D801" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_2CAEE05E_7361_4033_8906_64A401567793"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_C185418A_1DA1_4ded_92E0_C2828FB787A3" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_2CAEE05E_7361_4033_8906_64A401567793"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_CEFAD1CA_2525_4c8f_A01B_0BC87F130248" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_18A65A8B_DEE8_4d5e_9B1D_907913ED81FB" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
@@ -23319,7 +23319,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_B0C26575_57B6_4568_BC2D_43E2BB5F0E66" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_AAB359B1_086F_4df4_9F59_C73AAE940AAB" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_C7BD2B37_4959_414a_8C5B_855319ABD2A8" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_F33B776A_29BA_4cec_B483_B7AD91A8C604" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_F33B776A_29BA_4cec_B483_B7AD91A8C604" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_B2AD0C97_8295_4ea6_9E99_A0FEFDD5F049" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_51CA36B0_E9A8_403b_AF7A_5A8FB959D369"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_F65EEE0A_2D00_40e0_839B_CDA1A40000C7" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_307C74CC_D2C8_4942_A81E_C3E69CA36421" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
@@ -23329,7 +23329,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_C74DDC3F_586D_4e1b_8ED3_FCA124E8CBE3" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_024304B3_94F7_44f9_8469_11AE99C62345" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_912EE6AB_35F4_4c64_9984_EB70A08A06EC" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_94C65DE4_5280_48d6_A1E6_3F986390624B" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_94C65DE4_5280_48d6_A1E6_3F986390624B" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_FD205531_4303_4ad8_87B8_E598D60009E1" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_6B46485E_1670_4c3d_A135_642F0967B249"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_160A2E9E_58B6_49b8_B884_8ADAC8EFF5DB" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_9FF4D822_AAE2_467b_9A02_6155B474F9EF" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
@@ -23339,7 +23339,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_C9998826_28EB_4a67_AF63_DCC427995FC0" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_4A303F3E_6D44_471b_901E_40A5404AD990" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_1CDAC7E2_F03E_4cac_8607_FE5C13DFFF39" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_01C3225D_97F1_4fbd_B7FD_0537514D749A" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_01C3225D_97F1_4fbd_B7FD_0537514D749A" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_3BAA4DA0_1903_4edc_84CD_B08456583977" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_78A8B625_E5D9_4cb2_95A7_8BEF5CE626BC"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_4E56A95C_BFCD_4c4b_95D2_6061BD76484F" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_DE70525A_1AA3_463b_AD36_5CE037557EB9" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
@@ -23349,7 +23349,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_6D146412_4CA2_440a_AB97_9045EA104BF0" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_C7A74602_D819_4dd0_89F0_EFBAFE53F700" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_B5A062F1_1540_4d94_BA42_48F827F375F1" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_74987548_40A9_4d5d_9E18_998D7850F110" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_74987548_40A9_4d5d_9E18_998D7850F110" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_737038FD_4C5A_4c68_913E_4D0F4B6DCB53" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_94101BB4_B05B_43e4_A117_9DA462E4C209"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_D0BEC1CC_34B3_47c6_AE73_178456515146" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_4168A670_924D_4f33_953B_5B99C7E355C5" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
@@ -23359,7 +23359,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_50326D1D_63CD_47fb_9EC5_05DB995DFEA0" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_3239171E_9E02_4b21_B41D_6D5BABA9C19D" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_3380F0ED_BCC0_4399_BC3D_2C2C1E9FF40B" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_D1D5A597_D9B0_4dbb_B36C_54128A8D6A2C" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_D1D5A597_D9B0_4dbb_B36C_54128A8D6A2C" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_C20AE96D_5F10_4a60_8C8C_BA82A280A75A" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_C1CD7E4F_512D_40a1_9C00_96E961E28FF2"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_979BEF3B_01E2_4670_A48C_EC5698F32840" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_CAA0165C_1385_4f31_A5F8_9B983A42E366" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
@@ -23369,7 +23369,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_BAD1951A_A12B_4943_9985_476351058D45" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_6ED32720_4209_4edb_9635_A81C09685779" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_D0E5ED83_A5AD_4c97_BB61_FBD712A14F78" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_F7A6330B_3F4D_47e7_AD99_C895D24255E1" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_F7A6330B_3F4D_47e7_AD99_C895D24255E1" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_14D0391C_0333_4d7e_81BF_D7595740C552" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_CE0CCB4A_1F31_4459_B75E_2D28E9A0B8E6"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_FF5A9D15_7FF4_4954_85F6_110EA302A1FC" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_CFF7D34E_9A42_4f32_8BC3_5830CB3BAD50" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
@@ -23379,7 +23379,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_608C1238_8CD1_457f_B085_1E8BA3A9E002" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_38242BD4_A2DB_4240_BF5F_FC0AE24D789C" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_7E7990DB_7BA3_444e_AC16_875489824F56" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_4CCD8043_8DE7_4ebb_9036_A58345E21F3C" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_4CCD8043_8DE7_4ebb_9036_A58345E21F3C" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_773CD1B7_6C11_4853_B987_40231A8660B3" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_D6FB4559_DEAB_4829_888D_9A73FD9B6D42"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_2ACB608C_BFB4_494d_8F44_55E00F4407A5" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_16F0DB42_78B4_4719_A3AE_2643155F29CB" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
@@ -23389,7 +23389,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_2A6EE402_30CC_41ee_BE90_8931A8D696BE" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_F8FFDFF1_3F1B_43f8_B906_83659FAED1BA" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_FC225706_6565_4774_8562_B93A4FD6AEA6" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_7FD81FFC_1313_4bf6_A598_B1B0EA343349" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_7FD81FFC_1313_4bf6_A598_B1B0EA343349" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_72E92C9A_901C_4151_9E7C_25C02B9EC5B8" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_DB0B4FAA_E117_4d52_B4E2_55893AE4B675"/>
 		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_24821864_C0E9_4c8a_B0D9_D6FBC6A388F9" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: enforce the 'by value' property pattern without xlinks&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
 		<UML:TaggedValue tag="hasXmlLang" xmi.id="EAID_8BEE971E_2FAD_460a_9AA5_12C6319CB16D" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: axml attribute xml:lang shall be generated for the type representing the class&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
@@ -23399,7 +23399,7 @@
 		<UML:TaggedValue tag="xsdCanonicalPropertyGroup" xmi.id="EAID_6552D322_C683_43d3_B612_14F83633BFD3" value="#NOTES#Description: group to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
 		<UML:TaggedValue tag="xsdCanonicalPropertyType" xmi.id="EAID_233FE5DC_744C_4be5_90A8_C5E3950659B1" value="#NOTES#Description: type to be referenced if the class is used as a type of a property&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
 		<UML:TaggedValue tag="xsdCanonicalType" xmi.id="EAID_E6E2ABB6_94D9_42da_9074_96D316E9484A" value="#NOTES#Description: no type shall be generated for the class, but the given type or element referenced&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
-		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_2317D866_AFAD_4483_A34F_F692D0AC3764" value="true#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
+		<UML:TaggedValue tag="xsdDerivation" xmi.id="EAID_2317D866_AFAD_4483_A34F_F692D0AC3764" value="false#NOTES#Values: true | false&#xA;Default: true&#xA;Description: class implemented as new type + element, or by applying constraints only&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
 		<UML:TaggedValue tag="xsdName" xmi.id="EAID_897CF9F7_52FE_4806_A0EC_2D505E1A9E98" value="#NOTES#Description: value to be used for the schema conversion instead of the UML name&#xA;" modelElement="EAID_F37777E8_C1B4_4b6c_97AF_3DC2496FE446"/>
 		<UML:Diagram name="Figure: specializedObservations(2)" xmi.id="EAID_0AC738CD_C8DC_4fbb_9E2A_5935CA73510C" diagramType="ClassDiagram" owner="EAPK_2BD2FED1_633C_4979_9FBB_59A6E987A223" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
