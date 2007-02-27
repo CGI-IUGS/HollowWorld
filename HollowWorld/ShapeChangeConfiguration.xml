@@ -345,8 +345,7 @@
 		<BaseMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeObjectType" nsabr="gml"/>
 		<ElementMapEntry type="TM_Object" gmlVersion="3.0" rule="direct" mapTo="_TimeObject" nsabr="gml"/>
 		<ElementMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="_TimeObject" nsabr="gml"/>
-		<TypeMapEntry type="TM_Object" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeObjectPropertyType" nsabr="gml"/>
-		<TypeMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeObjectPropertyType" nsabr="gml"/>
+	
 
 		<BaseMapEntry type="TM_Complex" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeComplexType" nsabr="gml"/>
 		<BaseMapEntry type="TM_Complex" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeComplexType" nsabr="gml"/>
@@ -361,13 +360,6 @@
 		<ElementMapEntry type="TM_Primitive" gmlVersion="3.1" rule="direct" mapTo="_TimePrimitive" nsabr="gml"/>
 		<TypeMapEntry type="TM_Primitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimePrimitivePropertyType" nsabr="gml"/>
 		<TypeMapEntry type="TM_Primitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimePrimitivePropertyType" nsabr="gml"/>
-
-		<BaseMapEntry type="TM_GeometricPrimitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeGeometricPrimitiveType" nsabr="gml"/>
-		<BaseMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeGeometricPrimitiveType" nsabr="gml"/>
-		<ElementMapEntry type="TM_GeometricPrimitive" gmlVersion="3.0" rule="direct" mapTo="_TimeGeometricPrimitive" nsabr="gml"/>
-		<ElementMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="_TimeGeometricPrimitive" nsabr="gml"/>
-		<TypeMapEntry type="TM_GeometricPrimitive" gmlVersion="3.0" rule="direct" mapTo="AbstractTimeGeometricPrimitivePropertyType" nsabr="gml"/>
-		<TypeMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeGeometricPrimitivePropertyType" nsabr="gml"/>
 
 		<BaseMapEntry type="TM_TopologicalComplex" gmlVersion="3.0" rule="direct" mapTo="TimeTopologyComplexType" nsabr="gml"/>
 		<BaseMapEntry type="TM_TopologicalComplex" gmlVersion="3.1" rule="direct" mapTo="TimeTopologyComplexType" nsabr="gml"/>
@@ -1116,47 +1108,79 @@
 		<ElementMapEntry type="LocatedSpecimen" gmlVersion="3.1" rule="direct" mapTo="LocatedSpecimen" nsabr="sa"/>
 		<TypeMapEntry type="LocatedSpecimen" gmlVersion="3.1" rule="direct" mapTo="LocatedSpecimenPropertyType" nsabr="sa"/>
 
-		<!-- SWE Base schema -->
-		<TypeMapEntry type="TypedCategory" gmlVersion="3.1" rule="direct" mapTo="TypedCategoryType" nsabr="swe"/>
-		<TypeMapEntry type="TypedCategoryList" gmlVersion="3.1" rule="direct" mapTo="TypedCategoryListType" nsabr="swe"/>
-		<TypeMapEntry type="TypedCategoryInterval" gmlVersion="3.1" rule="direct" mapTo="TypedCategoryIntervalType" nsabr="swe"/>
-		<TypeMapEntry type="TypedCount" gmlVersion="3.1" rule="direct" mapTo="TypedCountType" nsabr="swe"/>
-		<TypeMapEntry type="TypedCountList" gmlVersion="3.1" rule="direct" mapTo="TypedCountListType" nsabr="swe"/>
-		<TypeMapEntry type="TypedCountInterval" gmlVersion="3.1" rule="direct" mapTo="TypedCountIntervalType" nsabr="swe"/>
-		<TypeMapEntry type="TypedMeasure" gmlVersion="3.1" rule="direct" mapTo="TypedMeasureType" nsabr="swe"/>
-		<TypeMapEntry type="TypedMeasureList" gmlVersion="3.1" rule="direct" mapTo="TypedMeasureListType" nsabr="swe"/>
-		<TypeMapEntry type="TypedMeasureInterval" gmlVersion="3.1" rule="direct" mapTo="TypedMeasureIntervalType" nsabr="swe"/>
-
+		<!-- SWE Common schema -->
 		<TypeMapEntry type="ScopedName" gmlVersion="3.1" rule="direct" mapTo="ScopedNameType" nsabr="swe"/>
-		<TypeMapEntry type="RelativeMeasure" gmlVersion="3.1" rule="direct" mapTo="RelativeMeasureType" nsabr="swe"/>
-		<TypeMapEntry type="nonNegativeIntegerList" gmlVersion="3.1" rule="direct" mapTo="nonNegativeIntegerList" nsabr="swe"/>
-		<TypeMapEntry type="stringList" gmlVersion="3.1" rule="direct" mapTo="stringList" nsabr="swe"/>
-		<TypeMapEntry type="refList" gmlVersion="3.1" rule="direct" mapTo="refList" nsabr="swe"/>
-		<TypeMapEntry type="doubleList" gmlVersion="3.1" rule="direct" mapTo="doubleList" nsabr="swe"/>
-		<TypeMapEntry type="Record" gmlVersion="3.1" rule="direct" mapTo="SWE_CompactRecordType" nsabr="swe"/>
-		<TypeMapEntry type="NumericRecord" gmlVersion="3.1" rule="direct" mapTo="SWE_CompactNumericRecordType" nsabr="swe"/>
-		<TypeMapEntry type="RecordType" gmlVersion="3.1" rule="direct" mapTo="SWE_RecordTypePropertyType" nsabr="swe"/>
+		
+		<BaseMapEntry type="TypedValue" gmlVersion="3.1" rule="direct" mapTo="TypedValueType" nsabr="swe"/>
+		<ElementMapEntry type="TypedValue" gmlVersion="3.1" rule="direct" mapTo="TypedValue" nsabr="swe"/>
+		<TypeMapEntry type="TypedValue" gmlVersion="3.1" rule="direct" mapTo="TypedValuePropertyType" nsabr="swe"/>
 
-		<BaseMapEntry type="RecordSchema" gmlVersion="3.1" rule="direct" mapTo="SWE_RecordTypeType" nsabr="swe"/>
-		<ElementMapEntry type="RecordSchema" gmlVersion="3.1" rule="direct" mapTo="SWE_RecordType" nsabr="swe"/>
-		<TypeMapEntry type="RecordSchema" gmlVersion="3.1" rule="direct" mapTo="SWE_RecordTypePropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TypedValueList" gmlVersion="3.1" rule="direct" mapTo="TypedValueListType" nsabr="swe"/>
+		<ElementMapEntry type="TypedValueList" gmlVersion="3.1" rule="direct" mapTo="TypedValueList" nsabr="swe"/>
+		<TypeMapEntry type="TypedValueList" gmlVersion="3.1" rule="direct" mapTo="TypedValueListPropertyType" nsabr="swe"/>
+		
+		<BaseMapEntry type="Interval" gmlVersion="3.1" rule="direct" mapTo="IntervalType" nsabr="swe"/>
+		<ElementMapEntry type="Interval" gmlVersion="3.1" rule="direct" mapTo="Interval" nsabr="swe"/>
+		<TypeMapEntry type="Interval" gmlVersion="3.1" rule="direct" mapTo="IntervalPropertyType" nsabr="swe"/>
 
 		<BaseMapEntry type="Phenomenon" gmlVersion="3.1" rule="direct" mapTo="PhenomenonType" nsabr="swe"/>
 		<ElementMapEntry type="Phenomenon" gmlVersion="3.1" rule="direct" mapTo="Phenomenon" nsabr="swe"/>
 		<TypeMapEntry type="Phenomenon" gmlVersion="3.1" rule="direct" mapTo="PhenomenonPropertyType" nsabr="swe"/>
+		
+		<BaseMapEntry type="ConstrainedPhenomenon" gmlVersion="3.1" rule="direct" mapTo="ConstrainedPhenomenonType" nsabr="swe"/>
+		<ElementMapEntry type="ConstrainedPhenomenon" gmlVersion="3.1" rule="direct" mapTo="ConstrainedPhenomenon" nsabr="swe"/>
+		<TypeMapEntry type="ConstrainedPhenomenon" gmlVersion="3.1" rule="direct" mapTo="ConstrainedPhenomenonPropertyType" nsabr="swe"/>
+		
+		<BaseMapEntry type="CompoundPhenomenon" gmlVersion="3.1" rule="direct" mapTo="CompoundPhenomenonType" nsabr="swe"/>
+		<ElementMapEntry type="CompoundPhenomenon" gmlVersion="3.1" rule="direct" mapTo="CompoundPhenomenon" nsabr="swe"/>
+		<TypeMapEntry type="CompoundPhenomenon" gmlVersion="3.1" rule="direct" mapTo="CompoundPhenomenonPropertyType" nsabr="swe"/>
+		
+		<BaseMapEntry type="CompositePhenomenon" gmlVersion="3.1" rule="direct" mapTo="CompositePhenomenonType" nsabr="swe"/>
+		<ElementMapEntry type="CompositePhenomenon" gmlVersion="3.1" rule="direct" mapTo="CompositePhenomenon" nsabr="swe"/>
+		<TypeMapEntry type="CompositePhenomenon" gmlVersion="3.1" rule="direct" mapTo="CompositePhenomenonPropertyType" nsabr="swe"/>
+		
+		<BaseMapEntry type="PhenomenonSeries" gmlVersion="3.1" rule="direct" mapTo="PhenomenonSeriesType" nsabr="swe"/>
+		<ElementMapEntry type="PhenomenonSeries" gmlVersion="3.1" rule="direct" mapTo="PhenomenonSeries" nsabr="swe"/>
+		<TypeMapEntry type="PhenomenonSeries" gmlVersion="3.1" rule="direct" mapTo="PhenomenonSeriesPropertyType" nsabr="swe"/>
+		
+		<TypeMapEntry type="TM_Object" gmlVersion="3.1" rule="direct" mapTo="TimeObjectPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="AbstractTimeGeometricPrimitiveType" nsabr="swe"/>
+		<ElementMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="_TimeGeometricPrimitive" nsabr="swe"/>
+		<TypeMapEntry type="TM_GeometricPrimitive" gmlVersion="3.1" rule="direct" mapTo="TimeGeometricPrimitivePropertyType" nsabr="swe"/>
 
-		<BaseMapEntry type="TimeAggregate" gmlVersion="3.1" rule="direct" mapTo="TimeAggregateType" nsabr="swe"/>
-		<ElementMapEntry type="TimeAggregate" gmlVersion="3.1" rule="direct" mapTo="TimeAggregate" nsabr="swe"/>
-		<TypeMapEntry type="TimeAggregate" gmlVersion="3.1" rule="direct" mapTo="TimeAggregatePropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TM_GeometricComplex" gmlVersion="3.1" rule="direct" mapTo="TimeGeometricComplexType" nsabr="swe"/>
+		<ElementMapEntry type="TM_GeometricComplex" gmlVersion="3.1" rule="direct" mapTo="TimeGeometricComplex" nsabr="swe"/>
+		<TypeMapEntry type="TM_GeometricComplex" gmlVersion="3.1" rule="direct" mapTo="TimeGeometricComplexPropertyType" nsabr="swe"/>
 
-		<BaseMapEntry type="TimeGrid" gmlVersion="3.1" rule="direct" mapTo="TimeGridType" nsabr="swe"/>
-		<ElementMapEntry type="TimeGrid" gmlVersion="3.1" rule="direct" mapTo="TimeGrid" nsabr="swe"/>
-		<TypeMapEntry type="TimeGrid" gmlVersion="3.1" rule="direct" mapTo="TimeGridPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="TimeAggregateType" nsabr="swe"/>
+		<ElementMapEntry type="TM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="TimeAggregate" nsabr="swe"/>
+		<TypeMapEntry type="TM_Aggregate" gmlVersion="3.1" rule="direct" mapTo="TimeAggregatePropertyType" nsabr="swe"/>
 
-		<!-- for "CommonObservation" -->
-		<TypeMapEntry type="DataValue" gmlVersion="3.1" rule="direct" mapTo="DataValueType" nsabr="swe"/>
-		<TypeMapEntry type="DataDefinition" gmlVersion="3.1" rule="direct" mapTo="DataDefinitionPropertyType" nsabr="swe"/>
-		<TypeMapEntry type="Encoding" gmlVersion="3.1" rule="direct" mapTo="EncodingPropertyType" nsabr="swe"/>
+		<BaseMapEntry type="TM_Grid" gmlVersion="3.1" rule="direct" mapTo="TimeGridType" nsabr="swe"/>
+		<ElementMapEntry type="TM_Grid" gmlVersion="3.1" rule="direct" mapTo="TimeGrid" nsabr="swe"/>
+		<TypeMapEntry type="TM_Grid" gmlVersion="3.1" rule="direct" mapTo="TimeGridPropertyType" nsabr="swe"/>
+
+		<TypeMapEntry type="TM_GridEnvelope" gmlVersion="3.1" rule="direct" mapTo="TimeGridEnvelopePropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="TM_InstantGrid" gmlVersion="3.1" rule="direct" mapTo="TimeInstantGridType" nsabr="swe"/>
+		<ElementMapEntry type="TM_InstantGrid" gmlVersion="3.1" rule="direct" mapTo="TimeInstantGrid" nsabr="swe"/>
+		<TypeMapEntry type="TM_InstantGrid" gmlVersion="3.1" rule="direct" mapTo="TimeInstantGridPropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="TM_IntervalGrid" gmlVersion="3.1" rule="direct" mapTo="TimeIntervalGridType" nsabr="swe"/>
+		<ElementMapEntry type="TM_IntervalGrid" gmlVersion="3.1" rule="direct" mapTo="TimeIntervalGrid" nsabr="swe"/>
+		<TypeMapEntry type="TM_IntervalGrid" gmlVersion="3.1" rule="direct" mapTo="TimeIntervalGridPropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="Item" gmlVersion="3.1" rule="direct" mapTo="anyType" nsabr="xsd"/>
+		<ElementMapEntry type="Item" gmlVersion="3.1" rule="direct" mapTo="Item" nsabr="swe"/>
+		<TypeMapEntry type="Item" gmlVersion="3.1" rule="direct" mapTo="ItemPropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="Record" gmlVersion="3.1" rule="direct" mapTo="RecordType" nsabr="xsd"/>
+		<ElementMapEntry type="Record" gmlVersion="3.1" rule="direct" mapTo="Record" nsabr="swe"/>
+		<TypeMapEntry type="Record" gmlVersion="3.1" rule="direct" mapTo="RecordPropertyType" nsabr="swe"/>
+
+		<BaseMapEntry type="Array" gmlVersion="3.1" rule="direct" mapTo="ArrayType" nsabr="xsd"/>
+		<ElementMapEntry type="Array" gmlVersion="3.1" rule="direct" mapTo="Array" nsabr="swe"/>
+		<TypeMapEntry type="Array" gmlVersion="3.1" rule="direct" mapTo="ArrayPropertyType" nsabr="swe"/>
 
 		<!-- OM schema -->
 		<BaseMapEntry type="Process" gmlVersion="3.1" rule="direct" mapTo="ProcessType" nsabr="om"/>
