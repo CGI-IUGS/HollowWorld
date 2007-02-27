@@ -443,19 +443,19 @@
 		<BaseMapEntry type="CV_Coverage" gmlVersion="3.1" rule="direct" mapTo="AbstractCoverageType" nsabr="gml"/>
 		<BaseMapEntry type="CV_DiscreteCurveCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiCurveCoverageType" nsabr="gml"/>
 		<BaseMapEntry type="CV_DiscreteGridPointCoverage" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridCoverageType" nsabr="gml"/>
-		<BaseMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiPointCoverageType" nsabr="gml"/>
+<!--		<BaseMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiPointCoverageType" nsabr="gml"/> -->
 		<BaseMapEntry type="CV_DiscreteSurfaceCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiSurfaceCoverageType" nsabr="gml"/>
 		<ElementMapEntry type="CV_ContinuousQuadrilateralGridCoverage" gmlVersion="3.1" rule="direct" mapTo="GridCoverage" nsabr="gml"/>
 		<ElementMapEntry type="CV_Coverage" gmlVersion="3.1" rule="direct" mapTo="Coverage" nsabr="gml"/>
 		<ElementMapEntry type="CV_DiscreteCurveCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiCurveCoverage" nsabr="gml"/>
 		<ElementMapEntry type="CV_DiscreteGridPointCoverage" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridCoverage" nsabr="gml"/>
-		<ElementMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiPointCoverage" nsabr="gml"/>
+<!--		<ElementMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiPointCoverage" nsabr="gml"/> -->
 		<ElementMapEntry type="CV_DiscreteSurfaceCoverage" gmlVersion="3.1" rule="direct" mapTo="MultiSurfaceCoverage" nsabr="gml"/>
 		<TypeMapEntry type="CV_ContinuousQuadrilateralGridCoverage" gmlVersion="3.1" rule="propertyType" mapTo="GridCoverage" nsabr="gml"/>
 		<TypeMapEntry type="CV_Coverage" gmlVersion="3.1" rule="propertyType" mapTo="Coverage" nsabr="gml"/>
 		<TypeMapEntry type="CV_DiscreteCurveCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiCurveCoverage" nsabr="gml"/>
 		<TypeMapEntry type="CV_DiscreteGridPointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="RectifiedGridCoverage" nsabr="gml"/>
-		<TypeMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiPointCoverage" nsabr="gml"/>
+<!--		<TypeMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiPointCoverage" nsabr="gml"/> -->
 		<TypeMapEntry type="CV_DiscreteSurfaceCoverage" gmlVersion="3.1" rule="propertyType" mapTo="MultiSurfaceCoverage" nsabr="gml"/>
 
 		<!-- added by SJDC 2005-09-28 -->
@@ -472,6 +472,73 @@
 		<ElementMapEntry type="CV_RectifiedGrid" gmlVersion="3.1" rule="direct" mapTo="RectifiedGrid" nsabr="gml"/>
 		<TypeMapEntry type="CV_RectifiedGrid" gmlVersion="3.0" rule="direct" mapTo="RectifiedGridPropertyType" nsabr="gml"/>
 		<TypeMapEntry type="CV_RectifiedGrid" gmlVersion="3.1" rule="direct" mapTo="RectifiedGridPropertyType" nsabr="gml"/>
+
+		<!-- CV extensions per OGC 06-188 SJDC 2007-02-27 -->
+		
+		<BaseMapEntry type="CV_DomainObject" gmlVersion="3.1" rule="direct" mapTo="CV_DomainObjectType" nsabr="cv"/>
+		<ElementMapEntry type="CV_DomainObject" gmlVersion="3.1" rule="direct" mapTo="CV_DomainObject" nsabr="cv"/>
+		<TypeMapEntry type="CV_DomainObject" gmlVersion="3.1" rule="propertyType" mapTo="CV_DomainObjectPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_GeometryValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_AbstractGeometryValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CV_GeometryValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_GeometryValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CV_GeometryValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CV_AbstractGeometryValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_PointValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_PointValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CV_PointValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_PointValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CV_PointValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CV_PointValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_TimeInstantValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_TimeInstantValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CV_TimeInstantValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_TimeInstantValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CV_TimeInstantValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CV_TimeInstantValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_ElementValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_ElementValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CV_ElementValuePair" gmlVersion="3.1" rule="direct" mapTo="CV_ElementValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CV_ElementValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CV_ElementValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_DiscreteCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscreteCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CV_DiscreteCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscreteCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CV_DiscreteCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CV_DiscreteCoveragePropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscretePointCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscretePointCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CV_DiscretePointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CV_DiscretePointCoveragePropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_DiscreteTimeInstantCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscreteTimeInstantCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CV_DiscreteTimeInstantCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscreteTimeInstantCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CV_DiscreteTimeInstantCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CV_DiscreteTimeInstantCoveragePropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CV_DiscreteElementCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscreteElementCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CV_DiscreteElementCoverage" gmlVersion="3.1" rule="direct" mapTo="CV_DiscreteElementCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CV_DiscreteElementCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CV_DiscreteElementCoveragePropertyType" nsabr="cv"/>
+
+
+		<BaseMapEntry type="CompactDomainObject" gmlVersion="3.1" rule="direct" mapTo="CompactDomainObjectType" nsabr="cv"/>
+		<ElementMapEntry type="CompactDomainObject" gmlVersion="3.1" rule="direct" mapTo="CompactDomainObject" nsabr="cv"/>
+		<TypeMapEntry type="CompactDomainObject" gmlVersion="3.1" rule="propertyType" mapTo="CompactDomainObjectPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CompactGeometryValuePair" gmlVersion="3.1" rule="direct" mapTo="CompactAbstractGeometryValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CompactGeometryValuePair" gmlVersion="3.1" rule="direct" mapTo="CompactGeometryValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CompactGeometryValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CompactAbstractGeometryValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CompactPointValuePair" gmlVersion="3.1" rule="direct" mapTo="CompactPointValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CompactPointValuePair" gmlVersion="3.1" rule="direct" mapTo="CompactPointValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CompactPointValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CompactPointValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CompactTimeValuePair" gmlVersion="3.1" rule="direct" mapTo="CompactTimeValuePairType" nsabr="cv"/>
+		<ElementMapEntry type="CompactTimeValuePair" gmlVersion="3.1" rule="direct" mapTo="CompactTimeValuePair" nsabr="cv"/>
+		<TypeMapEntry type="CompactTimeValuePair" gmlVersion="3.1" rule="propertyType" mapTo="CompactTimeValuePairPropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CompactDiscreteCoverage" gmlVersion="3.1" rule="direct" mapTo="CompactDiscreteCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CompactDiscreteCoverage" gmlVersion="3.1" rule="direct" mapTo="CompactDiscreteCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CompactDiscreteCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CompactDiscreteCoveragePropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CompactDiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="CompactDiscretePointCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CompactDiscretePointCoverage" gmlVersion="3.1" rule="direct" mapTo="CompactDiscretePointCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CompactDiscretePointCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CompactDiscretePointCoveragePropertyType" nsabr="cv"/>
+
+		<BaseMapEntry type="CompactDiscreteTimeCoverage" gmlVersion="3.1" rule="direct" mapTo="CompactDiscreteTimeCoverageType" nsabr="cv"/>
+		<ElementMapEntry type="CompactDiscreteTimeCoverage" gmlVersion="3.1" rule="direct" mapTo="CompactDiscreteTimeCoverage" nsabr="cv"/>
+		<TypeMapEntry type="CompactDiscreteTimeCoverage" gmlVersion="3.1" rule="propertyType" mapTo="CompactDiscreteTimeCoveragePropertyType" nsabr="cv"/>
 
 		<!-- ISO 19115 via ISO/TS 19139 (GML 3.1 version from SEEGrid) -->
 		<!-- added by SJDC 20060118 -->
