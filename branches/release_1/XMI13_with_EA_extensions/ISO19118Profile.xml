@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<UMLProfile profiletype="uml2">
+
+	<!--Profile name, version number and general notes -->
+	<Documentation id="ISO19118" name="UML Profile for GML Application Schemas" version="2"
+	               notes="This profile defines a set of stereotypes and tagged values for defining XSD Schemas that follow the patterns used in XSD representations of GML Application Schemas.   
+						These follow the normative rules provided in GML 3.2  Annex E, and in proposed revision of ISO 19118. 
+						Implemented for Enterprise Architect tool by Simon Cox, CSIRO Exploration and Mining.   Copyright © 2005, 2006, 2007 CSIRO - see https://www.seegrid.csiro.au/twiki/bin/view/Xmml/LegalNotices#Software_Notice "/>
+
+	<!-- The profile content -->
+	<Content>
+
+		<!-- List of stereotypes used in this profile. Each stereotype may also include tagged values, constraints, metafile and descriptive comments-->
+		<Stereotypes>
+
+			<!-- Stereotypes used for designing Application Schemas intended for implementation -->
+			<!-- ========================================= -->
+			<!-- Package stereotypes -->
+			<Stereotype name="Application Schema"
+			            notes="Root of model describing an Application Schema. Contains definitions of feature-types and other components related to a single conceptually coherent application.  This will normally have a single maintenance and governance framework, and shall use a single XML namespace. ">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="owner" description="Party responsible for maintenance of this package"/>
+					<Tag name="targetNamespace" description="URI to unique target namespace"/>
+					<Tag name="xmlns" description="Prefix associated with namespace"/>
+					<Tag name="version" description="Schema version"/>
+					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
+					<Tag name="gmlProfileSchema" description="an element  gml:gmlProfileSchema  with the content of the tagged value shall be created in an appinfo annotation of the  schema  element."/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Leaf"
+			            notes="Subset of model describing a schema. A leaf package shall not contain any other packages. When implemented using W3C XML Schema, all Leaf package contents or component classes are typically placed within one XML schema document.">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="version" description="Schema version"/>
+					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
+				</TaggedValues>
+			</Stereotype>
+
+			<!-- ========================================= -->
+			<!-- Class stereotypes -->
+			<Stereotype name="noStereotype" notes="(NO STEREOTYPE) 
+			Model: Defines an object type. Instances shall have identity.
+			XML implementation: Global element, whose content model is a globally scoped XML Schema type derived by direct/indirect extension of gml:AbstractGMLType, property type. ">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="false"/>
+					<Tag name="xsdName" description="value to be used for the schema conversion instead of the UML name"/>
+					<Tag name="isCollection" description="attribute group gml:AggregationAttributeGroup is added to the complex type of the feature type" values="true | false" default="false"/>
+					<Tag name="hasXmlLang" description="axml attribute xml:lang shall be generated for the type representing the class" values="true | false" default="false"/>
+					<Tag name="xsdCanonicalType" description="no type shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalElement" description="no element shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalPropertyType" description="type to be referenced if the class is used as a type of a property"/>
+					<Tag name="xsdCanonicalPropertyGroup" description="group to be referenced if the class is used as a type of a property"/>
+
+ 					<Tag name="xsdDerivation" description="class implemented as new type + element, or by applying constraints only" values="true | false" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="FeatureType" notes="Model: Feature type, realization of GF_FeatureType as defined in ISO 19109.
+			XML Implementation: Global element, whose content model is a globally scoped XML Schema type derived by direct/indirect extension of gml:AbstractFeatureType, property type">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="false"/>
+					<Tag name="xsdName" description="value to be used for the schema conversion instead of the UML name"/>
+					<Tag name="isCollection" description="attribute group gml:AggregationAttributeGroup is added to the complex type of the feature type" values="true | false" default="false"/>
+					<Tag name="hasXmlLang" description="axml attribute xml:lang shall be generated for the type representing the class" values="true | false" default="false"/>
+					<Tag name="xsdCanonicalType" description="no type shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalElement" description="no element shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalPropertyType" description="type to be referenced if the class is used as a type of a property"/>
+					<Tag name="xsdCanonicalPropertyGroup" description="group to be referenced if the class is used as a type of a property"/>
+
+ 					<Tag name="xsdDerivation" description="class implemented as new type + element, or by applying constraints only" values="true | false" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Type" notes="Model: Defines an object or data type.Only usable as an attribute type, in an association or as a super-type if it has a canonical encoding defined.
+			XML Implementation: Shall only be referenced if a canonical encoding is defined.
+			(UML 2: Abstract data type, without identity.   In UML 2 this effectively supersedes 'interface' and is typically used to group a set of properties that are realized or mixed-in to the inheriting/associated class.)">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" fixed="true"/>
+					<Tag name="xsdName" description="value to be used for the schema conversion instead of the UML name"/>
+					<Tag name="hasXmlLang" description="axml attribute xml:lang shall be generated for the type representing the class" values="true | false" default="false"/>
+					<Tag name="xsdCanonicalType" description="no type shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalElement" description="no element shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalPropertyType" description="type to be referenced if the class is used as a type of a property"/>
+					<Tag name="xsdCanonicalPropertyGroup" description="group to be referenced if the class is used as a type of a property"/>
+
+ 					<Tag name="xsdDerivation" description="class implemented as new type + element, or by applying constraints only" values="true | false" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Primitive" notes="Model: Defines a primitve data type and shall therefore not have an identity. Primitive data types shall have a canonical encoding.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" fixed="true"/>
+					<Tag name="xsdName" description="value to be used for the schema conversion instead of the UML name"/>
+					<Tag name="hasXmlLang" description="axml attribute xml:lang shall be generated for the type representing the class" values="true | false" default="false"/>
+					<Tag name="xsdCanonicalType" description="no type shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalElement" description="no element shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalPropertyType" description="type to be referenced if the class is used as a type of a property"/>
+					<Tag name="xsdCanonicalPropertyGroup" description="group to be referenced if the class is used as a type of a property"/>
+
+ 					<Tag name="xsdDerivation" description="class implemented as new type + element, or by applying constraints only" values="true | false" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="DataType"
+			            notes="Model: Defines a structured data type. The instances are not considered objects and shall therefore not have an identity.
+			            XML Implementation: Global element, whose content model is a globally scoped XML Schema complexType, property type
+			            This includes structured classes without identity.  In a GML implementation this is implemented as a complexType element in which the attributes and associations are complexContent (sub-elements) but the type is *not* derived (transitively) from AbstractGMLType or AbstractFeatureType.  ">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="false"/>
+					<Tag name="xsdName" description="value to be used for the schema conversion instead of the UML name"/>
+					<Tag name="isCollection" description="attribute group gml:AggregationAttributeGroup is added to the complex type of the feature type" values="true | false" default="false"/>
+					<Tag name="hasXmlLang" description="axml attribute xml:lang shall be generated for the type representing the class" values="true | false" default="false"/>
+					<Tag name="xsdCanonicalType" description="no type shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalElement" description="no element shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalPropertyType" description="type to be referenced if the class is used as a type of a property"/>
+					<Tag name="xsdCanonicalPropertyGroup" description="group to be referenced if the class is used as a type of a property"/>
+
+ 					<Tag name="xsdDerivation" description="class implemented as new type + element, or by applying constraints only" values="true | false" default="true"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Union" notes="Model: Defines a union data type.
+			XML Implementation: Choice group whose members are GML Objects or Features, or objects corresponding to DataTypes">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="noPropertyType" description="suppress automatic creation of *PropertyType complexType" values="true | false" default="false"/>
+					<Tag name="byValuePropertyType" description="enforce the 'by value' property pattern without xlinks" values="true | false" default="false"/>
+					<Tag name="xsdName" description="value to be used for the schema conversion instead of the UML name"/>
+					<Tag name="hasXmlLang" description="axml attribute xml:lang shall be generated for the type representing the class" values="true | false" default="false"/>
+					<Tag name="xsdCanonicalType" description="no type shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalElement" description="no element shall be generated for the class, but the given type or element referenced"/>
+					<Tag name="xsdCanonicalPropertyType" description="type to be referenced if the class is used as a type of a property"/>
+					<Tag name="xsdCanonicalPropertyGroup" description="group to be referenced if the class is used as a type of a property"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="CodeList"
+			            notes="Model: Defines an extendable enumerated data type, consisting of code and value pairs.
+			            XML Implementation: Union of an enumeration and a pattern (default mapping, an alternative mapping is a reference to a dictionary)">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="asDictionary" description="implement as a dictionary instead of enumeration" values="true | false" default="false"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Enumeration" notes="Model: Defines an enumerated data type.
+			XML Implementation: Restriction of xsd:string with enumeration values">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+
+			</Stereotype>
+
+			<Stereotype name="property" notes="attribute or associationEnd represents a 'property' of the containing class.">
+				<AppliesTo>
+					<Apply type="attribute"/>
+					<Apply type="associationRole"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="inlineOrByReference" description="Constrain attribute or association-end to be implemented either inline or by reference only" values="inline | byReference"/>
+					<Tag name="sequenceNumber" description="Specify position of attribute or association-end within content model implemented as an ordered sequence"/>
+					<Tag name="isMetadata" description="flag that attribute or association-end is to be treated as metadata" values="true | false" default="false"/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="multipleInheritance" notes="generalized class represents a 'property' of the containing class.">
+				<AppliesTo>
+					<Apply type="generalization"/>
+				</AppliesTo>
+
+				<TaggedValues>
+					<Tag name="sequenceNumber" description="Specify position of attribute-group within content model implemented as an ordered sequence"/>
+				</TaggedValues>
+			</Stereotype>
+
+		</Stereotypes>
+	</Content>
+</UMLProfile>
