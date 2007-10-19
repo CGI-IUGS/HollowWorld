@@ -2,9 +2,9 @@
 <UMLProfile profiletype="uml2">
 
 	<!--Profile name, version number and general notes -->
-	<Documentation id="ISO19136Profile" name="UML Profile for GML Application Schemas" version="2"
-	               notes="This profile defines a set of stereotypes and tagged values for defining XSD Schemas that follow the patterns used in XSD representations of GML Application Schemas.   
-						These follow the normative rules provided in GML 3.2  Annex E, and in proposed revision of ISO 19118. 
+	<Documentation id="ISO19136UML" name="UML Profile for GML Application Schemas" version="2"
+	               notes="This profile defines a set of stereotypes and tagged values for building UML Schemas that allow generation of XSD representations of GML Application Schemas.   
+						These follow the normative rules provided in GML 3.2  Annex E. 
 						Implemented for Enterprise Architect tool by Simon Cox, CSIRO Exploration and Mining.   Copyright © 2005, 2006, 2007 CSIRO - see https://www.seegrid.csiro.au/twiki/bin/view/Xmml/LegalNotices#Software_Notice "/>
 
 	<!-- The profile content -->
@@ -31,19 +31,6 @@
 					<Tag name="gmlProfileSchema" description="an element  gml:gmlProfileSchema  with the content of the tagged value shall be created in an appinfo annotation of the  schema  element."/>
 				</TaggedValues>
 			</Stereotype>
-
-			<Stereotype name="Leaf"
-			            notes="Model: Subset of model describing a schema. A leaf package shall not contain any other packages. 
-						XML implementation: All Leaf package contents or component classes are placed within one XML schema document.">
-				<AppliesTo>
-					<Apply type="package"/>
-				</AppliesTo>
-				<TaggedValues>
-					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
-					<Tag name="version" description="Schema version"/>
-				</TaggedValues>
-			</Stereotype>
-
 			<!-- ========================================= -->
 			<!-- Class stereotypes -->
 			<Stereotype name="noStereotype" notes="(NO STEREOTYPE) 
@@ -63,6 +50,7 @@
 			</Stereotype>
 
 			<Stereotype name="Type" notes="Model: Defines an object type. Instances shall have identity.
+			Note: this is *not* the same as ISO 19103 or UML [[type]]
 			XML implementation: Global element, whose content model is a globally scoped XML Schema type derived by direct/indirect extension of gml:AbstractGMLType, property type. ">
 				<AppliesTo>
 					<Apply type="class"/>
@@ -141,30 +129,6 @@
 					<Apply type="class"/>
 				</AppliesTo>
 
-			</Stereotype>
-
-			<Stereotype name="property" notes="Model: attribute or association role represents a 'property' of the containing class.
-			XML implementation: local xsd:element, the type is either a property type (if the type is a complex type) or a simple type.">
-				<AppliesTo>
-					<Apply type="attribute"/>
-					<Apply type="associationRole"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="sequenceNumber" description="Specify position of attribute or association-end within content model implemented as an ordered sequence"/>
-					<Tag name="inlineOrByReference" description="Constrain attribute or association-end to be implemented either inline or by reference only" values="inline | byReference"/>
-					<Tag name="isMetadata" description="flag that attribute or association-end is to be treated as metadata" values="true | false" default="false"/>
-				</TaggedValues>
-			</Stereotype>
-
-			<Stereotype name="multipleInheritance" notes="generalized class represents a 'property' of the containing class.">
-				<AppliesTo>
-					<Apply type="generalization"/>
-				</AppliesTo>
-
-				<TaggedValues>
-					<Tag name="sequenceNumber" description="Specify position of attribute-group within content model implemented as an ordered sequence"/>
-				</TaggedValues>
 			</Stereotype>
 
 		</Stereotypes>
