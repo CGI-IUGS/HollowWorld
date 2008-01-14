@@ -23,7 +23,6 @@
 					<Apply type="package"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="canonicalXSD" description="If true, this package is implemented in an existing, canonical, XSD document identified by the value of the xsdDocument. A new xsd representation should not be generated." values="true | false" default="false"/>
 					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
 					<Tag name="version" description="Schema version"/>
 				</TaggedValues>
