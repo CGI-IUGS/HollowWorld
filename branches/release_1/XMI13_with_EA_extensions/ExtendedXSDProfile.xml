@@ -10,6 +10,11 @@
 	<!-- The profile content -->
 	<Content>
 
+		<!-- List of generic tagged values used in this profile. (i.e. not associated with any particular stereotype) -->
+				<TaggedValues>
+					<Tag name="schematron" description="schematron rule (report or assertion) to be applied to this context"/>
+				</TaggedValues>
+
 		<!-- List of stereotypes used in this profile. Each stereotype may also include tagged values, constraints, metafile and descriptive comments-->
 		<Stereotypes>
 
@@ -24,7 +29,6 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="xsdDocument" description="Relative path to XML Schema document corresponding to this package."/>
-					<Tag name="version" description="Schema version"/>
 				</TaggedValues>
 			</Stereotype>
 
@@ -48,6 +52,7 @@
 				</TaggedValues>
 			</Stereotype>
 
+			<!-- Stereotypes for other elements -->
 			<Stereotype name="property" notes="Model: attribute or association role represents a 'property' of the containing class.
 			XML implementation: local xsd:element, the type is either a property type (if the type is a complex type) or a simple type.">
 				<AppliesTo>
@@ -59,6 +64,8 @@
 					<Tag name="sequenceNumber" description="Specify position of attribute or association-end within content model implemented as an ordered sequence"/>
 					<Tag name="inlineOrByReference" description="Constrain attribute or association-end to be implemented either inline or by reference only" values="inline | byReference"/>
 					<Tag name="isMetadata" description="flag that attribute or association-end is to be treated as metadata" values="true | false" default="false"/>
+
+					<Tag name="noPropertyElement" description="suppress creation of local element definition - set true if no new property element is required because this property re-defines a property inherited from a parent, and the re-definition is handled by a constraint instead" values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
 
