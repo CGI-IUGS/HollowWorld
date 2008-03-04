@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sa="http://www.opengis.net/sampling/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
+	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 ../../../../resources/type-mapping-util/type-mapping.xsd"
+	id="Mapping_OM2_Sampling.xml">
+	<description>Provides a mapping of the classes in the OM2 model to their implementation in the http://www.opengis.net/sampling/1.0 XML Schema</description>
+	<entry>
+		<umlClass>SamplingFeature</umlClass>
+		<gmlObjectElement>sa:SamplingFeature</gmlObjectElement>
+		<gmlType>sa:SamplingFeatureType</gmlType>
+		<gmlPropertyType>sa:SamplingFeaturePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SamplingFeatureRelation</umlClass>
+		<gmlObjectElement>sa:SamplingFeatureRelation</gmlObjectElement>
+		<gmlType>sa:SamplingFeatureRelationType</gmlType>
+		<gmlPropertyType>sa:SamplingFeatureRelationPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SamplingFeatureCollection</umlClass>
+		<gmlObjectElement>sa:SamplingFeatureCollection</gmlObjectElement>
+		<gmlType>sa:SamplingFeatureCollectionType</gmlType>
+		<gmlPropertyType>sa:SamplingFeatureCollectionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SamplingPoint</umlClass>
+		<gmlObjectElement>sa:SamplingPoint</gmlObjectElement>
+		<gmlType>sa:SamplingPointType</gmlType>
+		<gmlPropertyType>sa:SamplingPointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SpatiallyExtensiveSamplingFeature</umlClass>
+		<gmlObjectElement>sa:SpatiallyExtensiveSamplingFeature</gmlObjectElement>
+		<gmlType>sa:SpatiallyExtensiveSamplingFeatureType</gmlType>
+		<gmlPropertyType>sa:SpatiallyExtensiveSamplingFeaturePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SamplingCurve</umlClass>
+		<gmlObjectElement>sa:SamplingCurve</gmlObjectElement>
+		<gmlType>sa:SamplingCurveType</gmlType>
+		<gmlPropertyType>sa:SamplingCurvePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SamplingSurface</umlClass>
+		<gmlObjectElement>sa:SamplingSurface</gmlObjectElement>
+		<gmlType>sa:SamplingSurfaceType</gmlType>
+		<gmlPropertyType>sa:SamplingSurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SamplingSolid</umlClass>
+		<gmlObjectElement>sa:SamplingSolid</gmlObjectElement>
+		<gmlType>sa:SamplingSolidType</gmlType>
+		<gmlPropertyType>sa:SamplingSolidPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Specimen</umlClass>
+		<gmlObjectElement>sa:Specimen</gmlObjectElement>
+		<gmlType>sa:SpecimenType</gmlType>
+		<gmlPropertyType>sa:SpecimenPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>LocatedSpecimen</umlClass>
+		<gmlObjectElement>sa:LocatedSpecimen</gmlObjectElement>
+		<gmlType>sa:LocatedSpecimenType</gmlType>
+		<gmlPropertyType>sa:LocatedSpecimenPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Location</umlClass>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>sa:LocationPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SurveyProcedure</umlClass>
+		<gmlObjectElement>sa:SurveyProcedure</gmlObjectElement>
+		<gmlType>sa:SurveyProcedureType</gmlType>
+		<gmlPropertyType>sa:SurveyProcedurePropertyType</gmlPropertyType>
+	</entry>
+</mapping>
