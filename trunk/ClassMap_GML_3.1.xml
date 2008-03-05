@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:cgu="urn:cgi:xmlns:CGI:Utilities:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-         xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 ../../../../resources/type-mapping-util/type-mapping.xsd" id="Mapping_GML_3.1.xml">
+         xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 ../../../../resources/type-mapping-util/type-mapping.xsd" id="ClassMap_GML_3.1.xml">
 	<description>Provides a mapping of GML 3.1 to classes in the ISO/TC 211 harmonized model</description>
-	<package id="Mapping_primitive_Types">
+	<package id="ClassMap_primitive_Types">
 		<description>Provides a mapping of primitive types built into most UML tools to their XML implementation (mostly in GML)
 		Note that ISO 19103 types are preferred. </description>
 		<entry>
@@ -54,7 +54,7 @@
 			<gmlPropertyType>xsd:short</gmlPropertyType>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19103_Types">
+	<package id="ClassMap_ISO_19103_Types">
 		<description>Provides a mapping of selected ISO 19103 classes to their XML implementation (mostly in GML)</description>
 		<entry>
 			<umlClass>CharacterString</umlClass>
@@ -195,7 +195,7 @@
 			<gmlPropertyType>gml:UnitOfMeasureType</gmlPropertyType>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19107_Spatial.xml">
+	<package id="ClassMap_ISO_19107_Spatial.xml">
 		<description>Provides a mapping of selected ISO 19107 classes to their XML implementation (mostly in GML)</description>
 		<entry>
 			<umlClass>GM_Object</umlClass>
@@ -546,7 +546,7 @@
 			<gmlPropertyType>gml:TopoComplexPropertyType</gmlPropertyType>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19108_Temporal.xml">
+	<package id="ClassMap_ISO_19108_Temporal.xml">
 		<description>Provides a mapping of elements specific to GeoSciML Version 2.0.</description>
 		<entry>
 			<umlClass>TM_Object</umlClass>
@@ -699,7 +699,7 @@
 			<gmlPropertyType>gml:TimeOrdinalEraPropertyType</gmlPropertyType>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19111_CRS">
+	<package id="ClassMap_ISO_19111_CRS">
 		<description>Provides a mapping of selected ISO 19111 classes to their XML implementation (mostly in GML)</description>
 		<entry>
 			<umlClass>SC_CRS</umlClass>
@@ -708,7 +708,7 @@
 			<gmlPropertyType>gml:CRSPropertyType</gmlPropertyType>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19115_Metadata.xml">
+	<package id="ClassMap_ISO_19115_Metadata.xml">
 		<description>Provides a mapping of elements specific to GeoSciML Version 2.0.</description>
 		<entry>
 			<umlClass>MD_Metadata</umlClass>
@@ -735,7 +735,7 @@
 			<gmlPropertyType>xsd:string</gmlPropertyType>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19123_Coverage.xml">
+	<package id="ClassMap_ISO_19123_Coverage.xml">
 		<description>Provides a mapping of selected ISO 19123 classes to their XML implementation (mostly in GML)</description>
 		<entry>
 			<umlClass>CV_Coverage</umlClass>
@@ -786,7 +786,7 @@
 			<gmlPropertyType xsi:nil="true" anonymous="true"/>
 		</entry>
 	</package>
-	<package id="Mapping_ISO_19136_Annex_D">
+	<package id="ClassMap_ISO_19136_Annex_D">
 		<description>Additional classes not from other ISO 19100 standards</description>
 		<entry>
 			<umlClass>AnyDefinition</umlClass>
