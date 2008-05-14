@@ -1,8 +1,13 @@
-<MDG.Technology version="1.0"><Documentation id="GAS_HW" name="GML" version="1.0" notes="HollowWorld UML profile for GML Application Schemas"/><UMLProfiles><UMLProfile profiletype="uml2">
+
+<MDG.Technology version="1.0">
+	<Documentation id="GAS_HW" name="GML" version="1.0" notes="HollowWorld UML profile for GML Application Schemas"/>
+	<UMLProfiles>
+		<UMLProfile profiletype="uml2">
 			<Documentation id="4EBFD514-1" name="Extended GAS Profile" version="1.0" notes="UML Profile containing adidtional stereotypes and association tagged values that apply to modelling GML Application Schemas"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="Leaf" notes="Model: Subset of model describing a schema. A leaf package shall not contain any other packages. &#xA;						&#xA;XML implementation: All Leaf package contents or component classes are placed within one XML schema document.">
+					<Stereotype name="Leaf"
+					            notes="Model: Subset of model describing a schema. A leaf package shall not contain any other packages. &#xA;      &#xA;XML implementation: All Leaf package contents or component classes are placed within one XML schema document.">
 						<AppliesTo>
 							<Apply type="Package"/>
 						</AppliesTo>
@@ -10,7 +15,8 @@
 							<Tag name="xsdDocument" type="string" description="Relative path to XML Schema document corresponding" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="multipleInheritance" notes="generalized class is one of multiple parents. The specialized class is only substitutable for the parent that is the target of the generalization with sequenceNumber=0. Other parents merely supply additional attributes and associations in the content model.">
+					<Stereotype name="multipleInheritance"
+					            notes="generalized class is one of multiple parents. The specialized class is only substitutable for the parent that is the target of the generalization with sequenceNumber=0. Other parents merely supply additional attributes and associations in the content model.">
 						<AppliesTo>
 							<Apply type="Generalization">
 								<Property name="direction" value="Source -&gt; Destination"/>
@@ -21,7 +27,8 @@
 							<Tag name="sequenceNumber" type="" description="Specify position of attribute-group within content" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="property" notes="Model: attribute or association role represents a 'property' of the containing class.&#xA;			&#xA;XML implementation: local xsd:element, the type is either a property type (if the type is a complex type) or a simple type.">
+					<Stereotype name="property"
+					            notes="Model: attribute or association role represents a 'property' of the containing class.&#xA;   &#xA;XML implementation: local xsd:element, the type is either a property type (if the type is a complex type) or a simple type.">
 						<AppliesTo>
 							<Apply type="AssociationRole">
 								<Property name="aggregation" value="none"/>
@@ -48,7 +55,8 @@
 			<Documentation id="73EA480B-F" name="ISO 19136 Annex E" version="1.0" notes="UML Profile containing the stereotypes described in ISO 19136 Annex E, and associated Tagged Values"/>
 			<Content>
 				<Stereotypes>
-					<Stereotype name="Application Schema" notes="Model describing implementable elements required for a domain of discourse (see ISO 19109). &#xA;&#xA;Contains definitions of feature-types and other components related to a single conceptually coherent application.  &#xA;This will normally have a single maintenance and governance framework. &#xA;&#xA;XML: Implemented as a single XML Schema. ">
+					<Stereotype name="Application Schema"
+					            notes="Model describing implementable elements required for a domain of discourse (see ISO 19109). &#xA;&#xA;Contains definitions of feature-types and other components related to a single conceptually coherent application.  &#xA;This will normally have a single maintenance and governance framework. &#xA;&#xA;XML: Implemented as a single XML Schema. ">
 						<AppliesTo>
 							<Apply type="Package"/>
 						</AppliesTo>
@@ -74,7 +82,8 @@
 							<Tag name="asDictionary" type="boolean" description="implement as a dictionary instead of enumeration" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="DataType" notes="Model: Defines a structured data type. The instances are not considered objects and shall therefore not have an identity, and may only appear as the type of class attributes or as the target of composition-associations. &#xA;&#xA;XML: Global element, whose content model is a globally scoped XML Schema complexType, property type">
+					<Stereotype name="DataType"
+					            notes="Model: Defines a structured data type. The instances are not considered objects and shall therefore not have an identity, and may only appear as the type of class attributes or as the target of composition-associations. &#xA;&#xA;XML: Global element, whose content model is a globally scoped XML Schema complexType, property type">
 						<AppliesTo>
 							<Apply type="Class">
 								<Property name="isActive" value=""/>
@@ -110,7 +119,8 @@
 							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="Type" notes="Model: Defines an object type. Instances shall have identity.&#xA;&#xA;Note: this is *not* the same as ISO 19103 or UML &lt;&lt;type&gt;&gt;&#xA;&#xA;XML: Global element, whose content model is a globally scoped XML Schema type derived by direct/indirect extension of gml:AbstractGMLType, property type">
+					<Stereotype name="Type"
+					            notes="Model: Defines an object type. Instances shall have identity.&#xA;&#xA;Note: this is *not* the same as ISO 19103 or UML &lt;&lt;type&gt;&gt;&#xA;&#xA;XML: Global element, whose content model is a globally scoped XML Schema type derived by direct/indirect extension of gml:AbstractGMLType, property type">
 						<AppliesTo>
 							<Apply type="Class">
 								<Property name="isActive" value=""/>
@@ -123,7 +133,8 @@
 							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
-					<Stereotype name="Union" notes="Model: Set of classes, subsitutable by selecting one of its members. Effectively acts as a way to compose a superclass with arbitrary membership, independ of the inheritance hierachy. &#xA;&#xA;XML: Choice group whose members are GML objects or features, or objects corresponding to DataTypes">
+					<Stereotype name="Union"
+					            notes="Model: Set of classes, subsitutable by selecting one of its members. Effectively acts as a way to compose a superclass with arbitrary membership, independ of the inheritance hierachy. &#xA;&#xA;XML: Choice group whose members are GML objects or features, or objects corresponding to DataTypes">
 						<AppliesTo>
 							<Apply type="Class">
 								<Property name="isActive" value=""/>
@@ -139,5 +150,41 @@
 				<TaggedValueTypes/>
 			</Content>
 		</UMLProfile>
-	</UMLProfiles><TaggedValueTypes><RefData version="1.0" exporter="EA.25">
-			<DataSet name="Property Types" table="t_propertytypes" filter="Property='#Property#'"><DataRow><Column name="Property" value="Role"/><Column name="Description" value="Person role "/><Column name="Notes" value="Used in entities"/></DataRow><DataRow><Column name="Property" value="inlineOrByReference"/><Column name="Description" value="implementation of property-type"/><Column name="Notes" value="Type=Enum;&#xA;Values=inline,byReference,inlineOrByReference;&#xA;Default=inlineOrByReference"/></DataRow><DataRow><Column name="Property" value="isMetadata"/><Column name="Description" value="flag that attribute or association-end is metadata"/><Column name="Notes" value="Type=Boolean;&#xA;Default=false"/></DataRow><DataRow><Column name="Property" value="sequenceNumber"/><Column name="Description" value="Position of element within XML content model"/><Column name="Notes" value="Type=Integer"/></DataRow><DataRow><Column name="Property" value="schematron"/><Column name="Description" value="sch:assert and sch:report rules "/><Column name="Notes" value="Type=Memo"/></DataRow><DataRow><Column name="Property" value="noPropertyElement"/><Column name="Description" value="no gml property element in XML encoding"/><Column name="Notes" value="Type=Boolean;&#xA;Default=false"/></DataRow></DataSet></RefData></TaggedValueTypes></MDG.Technology>
+	</UMLProfiles>
+	<TaggedValueTypes>
+		<RefData version="1.0" exporter="EA.25">
+			<DataSet name="Property Types" table="t_propertytypes" filter="Property='#Property#'">
+				<DataRow>
+					<Column name="Property" value="Role"/>
+					<Column name="Description" value="Person role "/>
+					<Column name="Notes" value="Used in entities"/>
+				</DataRow>
+				<DataRow>
+					<Column name="Property" value="inlineOrByReference"/>
+					<Column name="Description" value="implementation of property-type"/>
+					<Column name="Notes" value="Type=Enum;&#xA;Values=inline,byReference,inlineOrByReference;&#xA;Default=inlineOrByReference"/>
+				</DataRow>
+				<DataRow>
+					<Column name="Property" value="isMetadata"/>
+					<Column name="Description" value="flag that attribute or association-end is metadata"/>
+					<Column name="Notes" value="Type=Boolean;&#xA;Default=false"/>
+				</DataRow>
+				<DataRow>
+					<Column name="Property" value="sequenceNumber"/>
+					<Column name="Description" value="Position of element within XML content model"/>
+					<Column name="Notes" value="Type=Integer"/>
+				</DataRow>
+				<DataRow>
+					<Column name="Property" value="schematron"/>
+					<Column name="Description" value="sch:assert and sch:report rules "/>
+					<Column name="Notes" value="Type=Memo"/>
+				</DataRow>
+				<DataRow>
+					<Column name="Property" value="ownedBy"/>
+					<Column name="Description" value="attribute or role owned by external package"/>
+					<Column name="Notes" value="Type=String"/>
+				</DataRow>
+			</DataSet>
+		</RefData>
+	</TaggedValueTypes>
+</MDG.Technology>
