@@ -194,9 +194,21 @@
 			<gmlType xsi:nil="true"/>
 			<gmlPropertyType>gml:UnitOfMeasureType</gmlPropertyType>
 		</entry>
+		<entry>
+			<umlClass>Any</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:anyType</gmlPropertyType>
+		</entry>
 	</package>
 	<package id="ClassMap_ISO_19107_Spatial.xml">
 		<description>Provides a mapping of selected ISO 19107 classes to their XML implementation (mostly in GML)</description>
+		<entry>
+			<umlClass>GM_Envelope</umlClass>
+			<gmlObjectElement>gml:Envelope</gmlObjectElement>
+			<gmlType>gml:EnvelopeType</gmlType>
+			<gmlPropertyType>gml:BoundingShapeType</gmlPropertyType>
+		</entry>
 		<entry>
 			<umlClass>GM_Object</umlClass>
 			<gmlObjectElement>gml:_Geometry</gmlObjectElement>
@@ -708,6 +720,7 @@
 			<gmlPropertyType>gml:CRSPropertyType</gmlPropertyType>
 		</entry>
 	</package>
+	<!--
 	<package id="ClassMap_ISO_19115_Metadata.xml">
 		<description>Provides a mapping of elements specific to GeoSciML Version 2.0.</description>
 		<entry>
@@ -735,6 +748,7 @@
 			<gmlPropertyType>xsd:string</gmlPropertyType>
 		</entry>
 	</package>
+	-->
 	<package id="ClassMap_ISO_19123_Coverage.xml">
 		<description>Provides a mapping of selected ISO 19123 classes to their XML implementation (mostly in GML)</description>
 		<entry>

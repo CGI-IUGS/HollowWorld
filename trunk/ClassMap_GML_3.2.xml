@@ -5,796 +5,888 @@
 	id="ClassMap_GML_3.2.xml">
 	<description>Provides a mapping of the Table D.2 found in Annex D of the Internation Standard ISO 19136 (GML Version
 		3.2), 2007.</description>
-	<entry>
-		<umlClass>AnyDefinition</umlClass>
-		<gmlObjectElement>gml:Definition</gmlObjectElement>
-		<gmlType>gml:DefinitionType</gmlType>
-		<gmlPropertyType>gml:DefinitionPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>AnyDictionary</umlClass>
-		<gmlObjectElement>gml:Dictionary</gmlObjectElement>
-		<gmlType>gml:DictionaryType</gmlType>
-		<gmlPropertyType>gml:DictionaryPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>AnyFeature</umlClass>
-		<gmlObjectElement>gml:AbstractFeature</gmlObjectElement>
-		<gmlType>gml:AbstractFeatureType</gmlType>
-		<gmlPropertyType>gml:FeaturePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Object</umlClass>
-		<gmlObjectElement>gml:AbstractGeometry</gmlObjectElement>
-		<gmlType>gml:AbstractGeometryType</gmlType>
-		<gmlPropertyType>gml:GeometryPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Primitive</umlClass>
-		<gmlObjectElement>gml:AbstractGeometricPrimitive</gmlObjectElement>
-		<gmlType>gml:AbstractGeometricPrimitiveType</gmlType>
-		<gmlPropertyType>gmlGeometricPrimitivePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>DirectPosition</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:DirectPositionType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Position</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType group="true">gml:geometricPositionGroup</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_PointArray</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType group="true">gml:geometricPositionListGroup</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Point</umlClass>
-		<gmlObjectElement>gml:Point</gmlObjectElement>
-		<gmlType>gml:PointType</gmlType>
-		<gmlPropertyType>gml:PointPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Curve</umlClass>
-		<gmlObjectElement>gml:Curve</gmlObjectElement>
-		<gmlType>gml:CurveType</gmlType>
-		<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Surface</umlClass>
-		<gmlObjectElement>gml:Surface</gmlObjectElement>
-		<gmlType>gml:SurfaceType</gmlType>
-		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_PolyhedralSurface</umlClass>
-		<gmlObjectElement>gml:PolyhedralSurface</gmlObjectElement>
-		<gmlType>gml:PolyhedralSurfaceType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_TriangulatedSurface</umlClass>
-		<gmlObjectElement>gml:TriangulatedSurface</gmlObjectElement>
-		<gmlType>gml:TriangulatedSurfaceType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Tin</umlClass>
-		<gmlObjectElement>gml:Tin</gmlObjectElement>
-		<gmlType>gml:TinType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Solid</umlClass>
-		<gmlObjectElement>gml:Solid</gmlObjectElement>
-		<gmlType>gml:SolidType</gmlType>
-		<gmlPropertyType>gml:SolidPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_OrientableCurve</umlClass>
-		<gmlObjectElement>gml:OrientableCurve</gmlObjectElement>
-		<gmlType>gml:OrientableCurveType</gmlType>
-		<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_OrientableSurface</umlClass>
-		<gmlObjectElement>gml:OrientableSurface</gmlObjectElement>
-		<gmlType>gml:OrientableSurfaceType</gmlType>
-		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Ring</umlClass>
-		<gmlObjectElement>gml:Ring</gmlObjectElement>
-		<gmlType>gml:RingType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Shell</umlClass>
-		<gmlObjectElement>gml:Shell</gmlObjectElement>
-		<gmlType>gml:ShellType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:LineString</gmlObjectElement>
-		<gmlType>gml:LineStringType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:Polygon</gmlObjectElement>
-		<gmlType>gml:PolygonType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:LinearRing</gmlObjectElement>
-		<gmlType>gml:LinearRingType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_CompositePoint</umlClass>
-		<gmlObjectElement>gml:Point</gmlObjectElement>
-		<gmlType>gml:PointType</gmlType>
-		<gmlPropertyType>gml:PointPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_CompositeCurve</umlClass>
-		<gmlObjectElement>gml:CompositeCurve</gmlObjectElement>
-		<gmlType>gml:CompositeCurveType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_CompositeSurface</umlClass>
-		<gmlObjectElement>gml:CompositeSurface</gmlObjectElement>
-		<gmlType>gml:CompositeSurfaceType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_CompositeSolid</umlClass>
-		<gmlObjectElement>gml:CompositeSolid</gmlObjectElement>
-		<gmlType>gml:CompositeSolidType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Complex</umlClass>
-		<gmlObjectElement>gml:GeometricComplex</gmlObjectElement>
-		<gmlType>gml:GeometricComplexType</gmlType>
-		<gmlPropertyType>gml:GeometricComplexPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_Aggregate</umlClass>
-		<gmlObjectElement>gml:MultiGeometry</gmlObjectElement>
-		<gmlType>gml:MultiGeometryType</gmlType>
-		<gmlPropertyType>gml:MultiGeometryPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_MultiPoint</umlClass>
-		<gmlObjectElement>gml:MultiPoint</gmlObjectElement>
-		<gmlType>gml:MultiPointType</gmlType>
-		<gmlPropertyType>gml:MultiPointPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_MultiCurve</umlClass>
-		<gmlObjectElement>gml:MultiCurve</gmlObjectElement>
-		<gmlType>gml:MultiCurveType</gmlType>
-		<gmlPropertyType>gml:MultiCurvePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_MultiSurface</umlClass>
-		<gmlObjectElement>gml:MultiSurface</gmlObjectElement>
-		<gmlType>gml:MultiSurfaceType</gmlType>
-		<gmlPropertyType>gml:MultiSurfacePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_MultiSolid</umlClass>
-		<gmlObjectElement>gml:MultiSolid</gmlObjectElement>
-		<gmlType>gml:MultiSolidType</gmlType>
-		<gmlPropertyType>gml:MultiSolidPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_MultiPrimitive</umlClass>
-		<gmlObjectElement>gml:MultiGeometry</gmlObjectElement>
-		<gmlType>gml:MultiGeometryType</gmlType>
-		<gmlPropertyType>gml:MultiGeometryPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GM_CurveSegment</umlClass>
-		<gmlObjectElement>gml:AbstractCurveSegment</gmlObjectElement>
-		<gmlType>gml:AbstractCurveSegmentType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Arc</umlClass>
-		<gmlObjectElement>gml:Arc</gmlObjectElement>
-		<gmlType>gml:ArcType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_ArcByBulge</umlClass>
-		<gmlObjectElement>gml:ArcByBulge</gmlObjectElement>
-		<gmlType>gml:ArcByBulgeType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:ArcByCenterPoint</gmlObjectElement>
-		<gmlType>gml:ArcByCenterPointType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_ArcString</umlClass>
-		<gmlObjectElement>gml:ArcString</gmlObjectElement>
-		<gmlType>gml:ArcStringType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_ArcStringByBulge</umlClass>
-		<gmlObjectElement>gml:ArcStringByBulge</gmlObjectElement>
-		<gmlType>gml:ArcStringByBulgeType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Bezier</umlClass>
-		<gmlObjectElement>gml:Bezier</gmlObjectElement>
-		<gmlType>gml:BezierType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_BsplineCurve</umlClass>
-		<gmlObjectElement>gml:BSpline</gmlObjectElement>
-		<gmlType>gml:BSplineType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Circle</umlClass>
-		<gmlObjectElement>gml:Circle</gmlObjectElement>
-		<gmlType>gml:CircleType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:CircleByCenterPoint</gmlObjectElement>
-		<gmlType>gml:CircleByCenterPointType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Clothoid</umlClass>
-		<gmlObjectElement>gml:Clothoid</gmlObjectElement>
-		<gmlType>gml:ClothoidType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_CubicSpline</umlClass>
-		<gmlObjectElement>gml:CubicSpline</gmlObjectElement>
-		<gmlType>gml:CubicSplineType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_GeodesicString</umlClass>
-		<gmlObjectElement>gml:GeodesicString</gmlObjectElement>
-		<gmlType>gml:GeodesicStringType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_LineString</umlClass>
-		<gmlObjectElement>gml:LineStringSegment</gmlObjectElement>
-		<gmlType>gml:LineStringSegmentType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_OffsetCurve</umlClass>
-		<gmlObjectElement>gml:OffsetCurve</gmlObjectElement>
-		<gmlType>gml:OffsetCurveType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_SurfacePatch</umlClass>
-		<gmlObjectElement>gml:AbstractSurfacePatch</gmlObjectElement>
-		<gmlType>gml:AbstractSurfacePatchType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_GriddedSurface</umlClass>
-		<gmlObjectElement>gml:AbstractGriddedSurface</gmlObjectElement>
-		<gmlType>gml:AbstractGriddedSurfaceType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_ParametricCurveSurface</umlClass>
-		<gmlObjectElement>gml:AbstractParametricCurveSurface</gmlObjectElement>
-		<gmlType>gml:AbstractParametricCurveSurfaceType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Cone</umlClass>
-		<gmlObjectElement>gml:Cone</gmlObjectElement>
-		<gmlType>gml:ConeType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Cylinder</umlClass>
-		<gmlObjectElement>gml:Cylinder</gmlObjectElement>
-		<gmlType>gml:CylinderType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Geodesic</umlClass>
-		<gmlObjectElement>gml:Geodesic</gmlObjectElement>
-		<gmlType>gml:GeodesicType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Polygon</umlClass>
-		<gmlObjectElement>gml:PolygonPatch</gmlObjectElement>
-		<gmlType>gml:PolygonPatchType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:Rectangle</gmlObjectElement>
-		<gmlType>gml:RectangleType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Sphere</umlClass>
-		<gmlObjectElement>gml:Sphere</gmlObjectElement>
-		<gmlType>gml:SphereType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>GM_Triangle</umlClass>
-		<gmlObjectElement>gml:Triangle</gmlObjectElement>
-		<gmlType>gml:TriangleType</gmlType>
-		<gmlPropertyType xsi:nil="true"/>
-	</entry>
-	<entry>
-		<umlClass>TP_Object</umlClass>
-		<gmlObjectElement>gml:AbstractTopology</gmlObjectElement>
-		<gmlType>gml:AbstractTopologyType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>TP_Node</umlClass>
-		<gmlObjectElement>gml:Node</gmlObjectElement>
-		<gmlType>gml:NodeType</gmlType>
-		<gmlPropertyType>gml:DirectedNodePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_Edge</umlClass>
-		<gmlObjectElement>gml:Edge</gmlObjectElement>
-		<gmlType>gml:EdgeType</gmlType>
-		<gmlPropertyType>gml:DirectedEdgePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_Face</umlClass>
-		<gmlObjectElement>gml:Face</gmlObjectElement>
-		<gmlType>gml:FaceType</gmlType>
-		<gmlPropertyType>gml:DirectedFacePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_Solid</umlClass>
-		<gmlObjectElement>gml:TopoSolid</gmlObjectElement>
-		<gmlType>gml:TopoSolidType</gmlType>
-		<gmlPropertyType>gml:DirectedTopoSolidPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_DirectedNode</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:DirectedNodePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_DirectedEdge</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:DirectedEdgePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_DirectedFace</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:DirectedFacePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_DirectedSolid</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:DirectedTopoSolidPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TP_Complex</umlClass>
-		<gmlObjectElement>gml:TopoComplex</gmlObjectElement>
-		<gmlType>gml:TopoComplexType</gmlType>
-		<gmlPropertyType>gml:TopoComplexPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:TopoPoint</gmlObjectElement>
-		<gmlType>gml:TopoPointType</gmlType>
-		<gmlPropertyType>gml:TopoPointPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:TopoCurve</gmlObjectElement>
-		<gmlType>gml:TopoCurveType</gmlType>
-		<gmlPropertyType>gml:TopoCurvePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:TopoSurface</gmlObjectElement>
-		<gmlType>gml:TopoSurfaceType</gmlType>
-		<gmlPropertyType>gml:TopoSurfacePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass xsi:nil="true"/>
-		<gmlObjectElement>gml:TopoVolume</gmlObjectElement>
-		<gmlType>gml:TopoVolumeType</gmlType>
-		<gmlPropertyType>gml:TopoVolumePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Object</umlClass>
-		<gmlObjectElement>gml:AbstractTimeObject</gmlObjectElement>
-		<gmlType>gml:AbstractTimeObjectType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>TM_Complex</umlClass>
-		<gmlObjectElement>gml:AbstractTimeComplex</gmlObjectElement>
-		<gmlType>gml:AbstractTimeComplexType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>TM_GeometricPrimitive</umlClass>
-		<gmlObjectElement>gml:AbstractTimeGeometricPrimitive</gmlObjectElement>
-		<gmlType>gml:AbstractTimeGeometricPrimitiveType</gmlType>
-		<gmlPropertyType>gml:TimeGeometricPrimitivePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Instant</umlClass>
-		<gmlObjectElement>gml:TimeInstant</gmlObjectElement>
-		<gmlType>gml:TimeInstantType</gmlType>
-		<gmlPropertyType>gml:TimeInstantPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Period</umlClass>
-		<gmlObjectElement>gml:TimePeriod</gmlObjectElement>
-		<gmlType>gml:TimePeriodType</gmlType>
-		<gmlPropertyType>gml:TimePeriodPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_TopologicalComplex</umlClass>
-		<gmlObjectElement>gml:TimeTopologyComplex</gmlObjectElement>
-		<gmlType>gml:TimeTopologyComplexType</gmlType>
-		<gmlPropertyType>gml:TimeTopologyComplexPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_TopologicalPrimitive</umlClass>
-		<gmlObjectElement>gml:AbstractTimeTopologyPrimitive</gmlObjectElement>
-		<gmlType>gml:AbstractTimeTopologyPrimitiveType</gmlType>
-		<gmlPropertyType>gml:TimeTopologyPrimitivePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Node</umlClass>
-		<gmlObjectElement>gml:TimeNode</gmlObjectElement>
-		<gmlType>gml:TimeNodeType</gmlType>
-		<gmlPropertyType>gml:TimeNodePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Edge</umlClass>
-		<gmlObjectElement>gml:TimeEdge</gmlObjectElement>
-		<gmlType>gml:TimeEdgeType</gmlType>
-		<gmlPropertyType>gml:TimeEdgePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_PeriodDuration</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:duration</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_IntervalLength</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType group="true">gml:timeIntervalLengthType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Duration</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType group="true">gml:timeLength</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Position</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:TimePositionType</gmlPropertyType>
-	</entry>
-	<!--	<entry>
+	<package id="ClassMap_primitive_Types">
+		<description>Provides a mapping of primitive types built into most UML tools to their XML implementation (mostly in GML)
+		Note that ISO 19103 types are preferred. </description>
+		<entry>
+			<umlClass>boolean</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:boolean</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>byte</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>char</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:string</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>double</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:double</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>float</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:float</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>int</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:integer</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>long</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:long</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>short</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:short</gmlPropertyType>
+		</entry>
+	</package>
+	<package id="ClassMap_ISO_19103_Types">
+		<description>Provides a mapping of selected ISO 19103 classes to their XML implementation (mostly in GML)</description>
+		<entry>
+			<umlClass>CharacterString</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:string</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Boolean</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:boolean</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Real</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:double</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Number</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:double</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Decimal</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:decimal</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Date</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:date</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Time</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:time</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>DateTime</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Integer</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:integer</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Vector</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:VectorType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GenericName</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:CodeType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>LocalName</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:CodeType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>ScopedName</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>cgu:CodeWithAuthorityType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Length</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:LengthType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Distance</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:LengthType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Angle</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:AngleType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Speed</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:SpeedType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Scale</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:ScaleType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Area</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:AreaType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Volume</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:VolumeType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Measure</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:MeasureType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Sign</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:SignType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>UnitOfMeasure</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:UnitOfMeasureType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>Any</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:anyType</gmlPropertyType>
+		</entry>
+	</package>
+	<package id="ClassMap_ISO_19107_Spatial.xml">
+		<description>Provides a mapping of selected ISO 19107 classes to their XML implementation (mostly in GML)</description>
+		<entry>
+			<umlClass>GM_Envelope</umlClass>
+			<gmlObjectElement>gml:Envelope</gmlObjectElement>
+			<gmlType>gml:EnvelopeType</gmlType>
+			<gmlPropertyType>gml:BoundingShapeType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Object</umlClass>
+			<gmlObjectElement>gml:AbstractGeometry</gmlObjectElement>
+			<gmlType>gml:AbstractGeometryType</gmlType>
+			<gmlPropertyType>gml:GeometryPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Primitive</umlClass>
+			<gmlObjectElement>gml:AbstractGeometricPrimitive</gmlObjectElement>
+			<gmlType>gml:AbstractGeometricPrimitiveType</gmlType>
+			<gmlPropertyType>gml:GeometricPrimitivePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>DirectPosition</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:DirectPositionType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Position</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType group="true">gml:geometricPositionGroup</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_PointArray</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType group="true">gml:geometricPositionListGroup</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Point</umlClass>
+			<gmlObjectElement>gml:Point</gmlObjectElement>
+			<gmlType>gml:PointType</gmlType>
+			<gmlPropertyType>gml:PointPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Curve</umlClass>
+			<gmlObjectElement>gml:Curve</gmlObjectElement>
+			<gmlType>gml:CurveType</gmlType>
+			<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Surface</umlClass>
+			<gmlObjectElement>gml:Surface</gmlObjectElement>
+			<gmlType>gml:SurfaceType</gmlType>
+			<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_PolyhedralSurface</umlClass>
+			<gmlObjectElement>gml:PolyhedralSurface</gmlObjectElement>
+			<gmlType>gml:PolyhedralSurfaceType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_TriangulatedSurface</umlClass>
+			<gmlObjectElement>gml:TriangulatedSurface</gmlObjectElement>
+			<gmlType>gml:TriangulatedSurfaceType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Tin</umlClass>
+			<gmlObjectElement>gml:Tin</gmlObjectElement>
+			<gmlType>gml:TinType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Solid</umlClass>
+			<gmlObjectElement>gml:Solid</gmlObjectElement>
+			<gmlType>gml:SolidType</gmlType>
+			<gmlPropertyType>gml:SolidPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_OrientableCurve</umlClass>
+			<gmlObjectElement>gml:OrientableCurve</gmlObjectElement>
+			<gmlType>gml:OrientableCurveType</gmlType>
+			<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_OrientableSurface</umlClass>
+			<gmlObjectElement>gml:OrientableSurface</gmlObjectElement>
+			<gmlType>gml:OrientableSurfaceType</gmlType>
+			<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Ring</umlClass>
+			<gmlObjectElement>gml:Ring</gmlObjectElement>
+			<gmlType>gml:RingType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_CompositePoint</umlClass>
+			<gmlObjectElement>gml:Point</gmlObjectElement>
+			<gmlType>gml:PointType</gmlType>
+			<gmlPropertyType>gml:PointPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_CompositeCurve</umlClass>
+			<gmlObjectElement>gml:CompositeCurve</gmlObjectElement>
+			<gmlType>gml:CompositeCurveType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_CompositeSurface</umlClass>
+			<gmlObjectElement>gml:CompositeSurface</gmlObjectElement>
+			<gmlType>gml:CompositeSurfaceType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_CompositeSolid</umlClass>
+			<gmlObjectElement>gml:CompositeSolid</gmlObjectElement>
+			<gmlType>gml:CompositeSolidType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Complex</umlClass>
+			<gmlObjectElement>gml:GeometricComplex</gmlObjectElement>
+			<gmlType>gml:GeometricComplexType</gmlType>
+			<gmlPropertyType>gml:GeometricComplexPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_Aggregate</umlClass>
+			<gmlObjectElement>gml:MultiGeometry</gmlObjectElement>
+			<gmlType>gml:MultiGeometryType</gmlType>
+			<gmlPropertyType>gml:MultiGeometryPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_MultiPoint</umlClass>
+			<gmlObjectElement>gml:MultiPoint</gmlObjectElement>
+			<gmlType>gml:MultiPointType</gmlType>
+			<gmlPropertyType>gml:MultiPointPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_MultiCurve</umlClass>
+			<gmlObjectElement>gml:MultiCurve</gmlObjectElement>
+			<gmlType>gml:MultiCurveType</gmlType>
+			<gmlPropertyType>gml:MultiCurvePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_MultiSurface</umlClass>
+			<gmlObjectElement>gml:MultiSurface</gmlObjectElement>
+			<gmlType>gml:MultiSurfaceType</gmlType>
+			<gmlPropertyType>gml:MultiSurfacePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_MultiSolid</umlClass>
+			<gmlObjectElement>gml:MultiSolid</gmlObjectElement>
+			<gmlType>gml:MultiSolidType</gmlType>
+			<gmlPropertyType>gml:MultiSolidPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_MultiPrimitive</umlClass>
+			<gmlObjectElement>gml:MultiGeometry</gmlObjectElement>
+			<gmlType>gml:MultiGeometryType</gmlType>
+			<gmlPropertyType>gml:MultiGeometryPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>GM_CurveSegment</umlClass>
+			<gmlObjectElement>gml:AbstractCurveSegment</gmlObjectElement>
+			<gmlType>gml:AbstractCurveSegmentType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Arc</umlClass>
+			<gmlObjectElement>gml:Arc</gmlObjectElement>
+			<gmlType>gml:ArcType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_ArcByBulge</umlClass>
+			<gmlObjectElement>gml:ArcByBulge</gmlObjectElement>
+			<gmlType>gml:ArcByBulgeType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_ArcString</umlClass>
+			<gmlObjectElement>gml:ArcString</gmlObjectElement>
+			<gmlType>gml:ArcStringType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_ArcStringByBulge</umlClass>
+			<gmlObjectElement>gml:ArcStringByBulge</gmlObjectElement>
+			<gmlType>gml:ArcStringByBulgeType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Bezier</umlClass>
+			<gmlObjectElement>gml:Bezier</gmlObjectElement>
+			<gmlType>gml:BezierType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_BsplineCurve</umlClass>
+			<gmlObjectElement>gml:BSpline</gmlObjectElement>
+			<gmlType>gml:BSplineType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Circle</umlClass>
+			<gmlObjectElement>gml:Circle</gmlObjectElement>
+			<gmlType>gml:CircleType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Clothoid</umlClass>
+			<gmlObjectElement>gml:Clothoid</gmlObjectElement>
+			<gmlType>gml:ClothoidType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_CubicSpline</umlClass>
+			<gmlObjectElement>gml:CubicSpline</gmlObjectElement>
+			<gmlType>gml:CubicSplineType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_GeodesicString</umlClass>
+			<gmlObjectElement>gml:GeodesicString</gmlObjectElement>
+			<gmlType>gml:GeodesicStringType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_LineString</umlClass>
+			<gmlObjectElement>gml:LineStringSegment</gmlObjectElement>
+			<gmlType>gml:LineStringSegmentType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_OffsetCurve</umlClass>
+			<gmlObjectElement>gml:OffsetCurve</gmlObjectElement>
+			<gmlType>gml:OffsetCurveType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_SurfacePatch</umlClass>
+			<gmlObjectElement>gml:AbstractSurfacePatch</gmlObjectElement>
+			<gmlType>gml:AbstractSurfacePatchType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_GriddedSurface</umlClass>
+			<gmlObjectElement>gml:AbstractGriddedSurface</gmlObjectElement>
+			<gmlType>gml:AbstractGriddedSurfaceType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_ParametricCurveSurface</umlClass>
+			<gmlObjectElement>gml:AbstractParametricCurveSurface</gmlObjectElement>
+			<gmlType>gml:AbstractParametricCurveSurfaceType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Cone</umlClass>
+			<gmlObjectElement>gml:Cone</gmlObjectElement>
+			<gmlType>gml:ConeType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Cylinder</umlClass>
+			<gmlObjectElement>gml:Cylinder</gmlObjectElement>
+			<gmlType>gml:CylinderType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Geodesic</umlClass>
+			<gmlObjectElement>gml:Geodesic</gmlObjectElement>
+			<gmlType>gml:GeodesicType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Polygon</umlClass>
+			<gmlObjectElement>gml:PolygonPatch</gmlObjectElement>
+			<gmlType>gml:PolygonPatchType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Sphere</umlClass>
+			<gmlObjectElement>gml:Sphere</gmlObjectElement>
+			<gmlType>gml:SphereType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>GM_Triangle</umlClass>
+			<gmlObjectElement>gml:Triangle</gmlObjectElement>
+			<gmlType>gml:TriangleType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass>TP_Object</umlClass>
+			<gmlObjectElement>gml:AbstractTopology</gmlObjectElement>
+			<gmlType>gml:AbstractTopologyType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>TP_Node</umlClass>
+			<gmlObjectElement>gml:Node</gmlObjectElement>
+			<gmlType>gml:NodeType</gmlType>
+			<gmlPropertyType>gml:DirectedNodePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_Edge</umlClass>
+			<gmlObjectElement>gml:Edge</gmlObjectElement>
+			<gmlType>gml:EdgeType</gmlType>
+			<gmlPropertyType>gml:DirectedEdgePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_Face</umlClass>
+			<gmlObjectElement>gml:Face</gmlObjectElement>
+			<gmlType>gml:FaceType</gmlType>
+			<gmlPropertyType>gml:DirectedFacePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_Solid</umlClass>
+			<gmlObjectElement>gml:TopoSolid</gmlObjectElement>
+			<gmlType>gml:TopoSolidType</gmlType>
+			<gmlPropertyType>gml:DirectedTopoSolidPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_DirectedNode</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:DirectedNodePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_DirectedEdge</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:DirectedEdgePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_DirectedFace</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:DirectedFacePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_DirectedSolid</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:DirectedTopoSolidPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TP_Complex</umlClass>
+			<gmlObjectElement>gml:TopoComplex</gmlObjectElement>
+			<gmlType>gml:TopoComplexType</gmlType>
+			<gmlPropertyType>gml:TopoComplexPropertyType</gmlPropertyType>
+		</entry>
+	</package>
+	<package id="ClassMap_ISO_19108_Temporal.xml">
+		<description>Provides a mapping of elements specific to GeoSciML Version 2.0.</description>
+		<entry>
+			<umlClass>TM_Object</umlClass>
+			<gmlObjectElement>gml:AbstractTimeObject</gmlObjectElement>
+			<gmlType>gml:AbstractTimeObjectType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>TM_Complex</umlClass>
+			<gmlObjectElement>gml:AbstractTimeComplex</gmlObjectElement>
+			<gmlType>gml:AbstractTimeComplexType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>TM_GeometricPrimitive</umlClass>
+			<gmlObjectElement>gml:AbstractTimeGeometricPrimitive</gmlObjectElement>
+			<gmlType>gml:AbstractTimeGeometricPrimitiveType</gmlType>
+			<gmlPropertyType>gml:TimeGeometricPrimitivePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Instant</umlClass>
+			<gmlObjectElement>gml:TimeInstant</gmlObjectElement>
+			<gmlType>gml:TimeInstantType</gmlType>
+			<gmlPropertyType>gml:TimeInstantPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Period</umlClass>
+			<gmlObjectElement>gml:TimePeriod</gmlObjectElement>
+			<gmlType>gml:TimePeriodType</gmlType>
+			<gmlPropertyType>gml:TimePeriodPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_TopologicalComplex</umlClass>
+			<gmlObjectElement>gml:TimeTopologyComplex</gmlObjectElement>
+			<gmlType>gml:TimeTopologyComplexType</gmlType>
+			<gmlPropertyType>gml:TimeTopologyComplexPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_TopologicalPrimitive</umlClass>
+			<gmlObjectElement>gml:AbstractTimeTopologyPrimitive</gmlObjectElement>
+			<gmlType>gml:AbstractTimeTopologyPrimitiveType</gmlType>
+			<gmlPropertyType>gml:TimeTopologyPrimitivePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Node</umlClass>
+			<gmlObjectElement>gml:TimeNode</gmlObjectElement>
+			<gmlType>gml:TimeNodeType</gmlType>
+			<gmlPropertyType>gml:TimeNodePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Edge</umlClass>
+			<gmlObjectElement>gml:TimeEdge</gmlObjectElement>
+			<gmlType>gml:TimeEdgeType</gmlType>
+			<gmlPropertyType>gml:TimeEdgePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_PeriodDuration</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:duration</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_IntervalLength</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType group="true">gml:timeIntervalLengthType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Duration</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType group="true">gml:timeLength</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Position</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:TimePositionType</gmlPropertyType>
+		</entry>
+		<!--	<entry>
 		<umlClass>TM_IndeterminateValue</umlClass>
 		<gmlObjectElement xsi:nil="true"/>
 		<gmlType xsi:nil="true"/>
 		<gmlPropertyType>@TimeIndeterminateValue (attribute on TimePositionType)PropertyType</gmlPropertyType>
 	</entry>-->
-	<entry>
-		<umlClass>TM_Coordinate</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:decimal</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_CalDate</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:CalDate</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_ClockTime</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:time</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_DateAndTime</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Calendar</umlClass>
-		<gmlObjectElement>gml:TimeCalendar</gmlObjectElement>
-		<gmlType>gml:TimeCalendarType</gmlType>
-		<gmlPropertyType>gml:TimeCalendarPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_CalendarEra</umlClass>
-		<gmlObjectElement>gml:TimeCalendarEra</gmlObjectElement>
-		<gmlType>gml:TimeCalendarEraType</gmlType>
-		<gmlPropertyType>gml:TimeCalendarEraPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_Clock</umlClass>
-		<gmlObjectElement>gml:TimeClock</gmlObjectElement>
-		<gmlType>gml:TimeClockType</gmlType>
-		<gmlPropertyType>gml:TimeClockPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>TM_CoordinateSystem</umlClass>
-		<gmlObjectElement>gml:TimeCoordinateSystem</gmlObjectElement>
-		<gmlType>gml:TimeCoordinateSystemType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>TM_OrdinalReferenceSystem</umlClass>
-		<gmlObjectElement>gml:TimeOrdinalReferenceSystem</gmlObjectElement>
-		<gmlType>gml:TimeOrdinalReferenceSystemType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>TM_OrdinalEra</umlClass>
-		<gmlObjectElement>gml:TimeOrdinalEra</gmlObjectElement>
-		<gmlType>gml:TimeOrdinalEraType</gmlType>
-		<gmlPropertyType>gml:TimeOrdinalEraPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>SC_CRS</umlClass>
-		<gmlObjectElement>gml:AbstractCRS</gmlObjectElement>
-		<gmlType>gml:AbstractCRSType</gmlType>
-		<gmlPropertyType>gml:CRSPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>SI_LocationInstance</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_Coverage</umlClass>
-		<gmlObjectElement>gml:AbstractCoverage</gmlObjectElement>
-		<gmlType>gml:AbstractCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_ContinuousCoverage</umlClass>
-		<gmlObjectElement>gml:AbstractContinuousCoverage</gmlObjectElement>
-		<gmlType>gml:AbstractContinuousCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_DiscreteCoverage</umlClass>
-		<gmlObjectElement>gml:AbstractDiscreteCoverage</gmlObjectElement>
-		<gmlType>gml:AbstractDiscreteCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_DiscretePointCoverage</umlClass>
-		<gmlObjectElement>gml:MultiPointCoverage</gmlObjectElement>
-		<gmlType>gml:MultiPointCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_DiscreteCurveCoverage</umlClass>
-		<gmlObjectElement>gml:MultiCurveCoverage</gmlObjectElement>
-		<gmlType>gml:MultiCurveCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_DiscreteSurfaceCoverage</umlClass>
-		<gmlObjectElement>gml:MultiSurfaceCoverage</gmlObjectElement>
-		<gmlType>gml:MultiSurfaceCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_DiscreteSolidCoverage</umlClass>
-		<gmlObjectElement>gml:MultiSolidCoverage</gmlObjectElement>
-		<gmlType>gml:MultiSolidCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CV_DiscreteGridPointCoverage</umlClass>
-		<gmlObjectElement>gml:GridCoverage</gmlObjectElement>
-		<gmlType>gml:GridCoverageType</gmlType>
-		<gmlPropertyType xsi:nil="true" anonymous="true"/>
-	</entry>
-	<entry>
-		<umlClass>CharacterString</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:string</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Boolean</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:boolean</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>boolean</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:boolean</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Real</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:double</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Number</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:double</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Decimal</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:decimal</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Date</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:date</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Time</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:time</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>DateTime</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Integer</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:integer</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>integer</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:integer</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>int</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>xsd:integer</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Vector</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:VectorType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>GenericName</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:CodeType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>LocalName</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:CodeType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>ScopedName</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:CodeWithAuthorityType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Length</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:LengthType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Distance</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:LengthType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Angle</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:AngleType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Speed</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:SpeedType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Scale</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:ScaleType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Area</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:AreaType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Volume</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:VolumeType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Measure</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:MeasureType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>Sign</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:SignType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>UnitOfMeasure</umlClass>
-		<gmlObjectElement xsi:nil="true"/>
-		<gmlType xsi:nil="true"/>
-		<gmlPropertyType>gml:UnitOfMeasureType</gmlPropertyType>
-	</entry>
+		<entry>
+			<umlClass>TM_Coordinate</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:decimal</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_CalDate</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:CalDate</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_ClockTime</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:time</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_DateAndTime</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Calendar</umlClass>
+			<gmlObjectElement>gml:TimeCalendar</gmlObjectElement>
+			<gmlType>gml:TimeCalendarType</gmlType>
+			<gmlPropertyType>gml:TimeCalendarPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_CalendarEra</umlClass>
+			<gmlObjectElement>gml:TimeCalendarEra</gmlObjectElement>
+			<gmlType>gml:TimeCalendarEraType</gmlType>
+			<gmlPropertyType>gml:TimeCalendarEraPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_Clock</umlClass>
+			<gmlObjectElement>gml:TimeClock</gmlObjectElement>
+			<gmlType>gml:TimeClockType</gmlType>
+			<gmlPropertyType>gml:TimeClockPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>TM_ReferenceSystem</umlClass>
+			<gmlObjectElement>gml:AbstractTimeReferenceSystem</gmlObjectElement>
+			<gmlType>gml:AbstractTimeReferenceSystemType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>TM_CoordinateSystem</umlClass>
+			<gmlObjectElement>gml:TimeCoordinateSystem</gmlObjectElement>
+			<gmlType>gml:TimeCoordinateSystemType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>TM_OrdinalReferenceSystem</umlClass>
+			<gmlObjectElement>gml:TimeOrdinalReferenceSystem</gmlObjectElement>
+			<gmlType>gml:TimeOrdinalReferenceSystemType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>TM_OrdinalEra</umlClass>
+			<gmlObjectElement>gml:TimeOrdinalEra</gmlObjectElement>
+			<gmlType>gml:TimeOrdinalEraType</gmlType>
+			<gmlPropertyType>gml:TimeOrdinalEraPropertyType</gmlPropertyType>
+		</entry>
+	</package>
+	<package id="ClassMap_ISO_19111_CRS">
+		<description>Provides a mapping of selected ISO 19111 classes to their XML implementation (mostly in GML)</description>
+		<entry>
+			<umlClass>SC_CRS</umlClass>
+			<gmlObjectElement>gml:AbstractCRS</gmlObjectElement>
+			<gmlType>gml:AbstractCRSType</gmlType>
+			<gmlPropertyType>gml:CRSPropertyType</gmlPropertyType>
+		</entry>
+	</package>
+	<!--
+	<package id="ClassMap_ISO_19115_Metadata.xml">
+		<description>Provides a mapping of elements specific to GeoSciML Version 2.0.</description>
+		<entry>
+			<umlClass>MD_Metadata</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>CI_ResponsibleParty</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>DQ_Element</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:string</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>DQ_ThematicAccuracy</umlClass>
+			<gmlObjectElement xsi:nil="true"/>
+			<gmlType xsi:nil="true"/>
+			<gmlPropertyType>xsd:string</gmlPropertyType>
+		</entry>
+	</package>
+	-->
+	<package id="ClassMap_ISO_19123_Coverage.xml">
+		<description>Provides a mapping of selected ISO 19123 classes to their XML implementation (mostly in GML)</description>
+		<entry>
+			<umlClass>CV_Coverage</umlClass>
+			<gmlObjectElement>gml:AbstractCoverage</gmlObjectElement>
+			<gmlType>gml:AbstractCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_ContinuousCoverage</umlClass>
+			<gmlObjectElement>gml:AbstractContinuousCoverage</gmlObjectElement>
+			<gmlType>gml:AbstractContinuousCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_DiscreteCoverage</umlClass>
+			<gmlObjectElement>gml:AbstractDiscreteCoverage</gmlObjectElement>
+			<gmlType>gml:AbstractDiscreteCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_DiscretePointCoverage</umlClass>
+			<gmlObjectElement>gml:MultiPointCoverage</gmlObjectElement>
+			<gmlType>gml:MultiPointCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_DiscreteCurveCoverage</umlClass>
+			<gmlObjectElement>gml:MultiCurveCoverage</gmlObjectElement>
+			<gmlType>gml:MultiCurveCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_DiscreteSurfaceCoverage</umlClass>
+			<gmlObjectElement>gml:MultiSurfaceCoverage</gmlObjectElement>
+			<gmlType>gml:MultiSurfaceCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_DiscreteSolidCoverage</umlClass>
+			<gmlObjectElement>gml:MultiSolidCoverage</gmlObjectElement>
+			<gmlType>gml:MultiSolidCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>CV_DiscreteGridPointCoverage</umlClass>
+			<gmlObjectElement>gml:GridCoverage</gmlObjectElement>
+			<gmlType>gml:GridCoverageType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+	</package>
+	<package id="ClassMap_ISO_19136_Annex_D">
+		<description>Additional classes not from other ISO 19100 standards</description>
+		<entry>
+			<umlClass>AnyDefinition</umlClass>
+			<gmlObjectElement>gml:Definition</gmlObjectElement>
+			<gmlType>gml:DefinitionType</gmlType>
+			<gmlPropertyType>gml:DictionaryEntryType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass>AnyDictionary</umlClass>
+			<gmlObjectElement>gml:Dictionary</gmlObjectElement>
+			<gmlType>gml:DictionaryType</gmlType>
+			<gmlPropertyType xsi:nil="true" anonymous="true"/>
+		</entry>
+		<entry>
+			<umlClass>AnyFeature</umlClass>
+			<gmlObjectElement>gml:AbstractFeature</gmlObjectElement>
+			<gmlType>gml:AbstractFeatureType</gmlType>
+			<gmlPropertyType>gml:FeaturePropertyType</gmlPropertyType>
+		</entry>
+
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:LineString</gmlObjectElement>
+			<gmlType>gml:LineStringType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:Polygon</gmlObjectElement>
+			<gmlType>gml:PolygonType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:LinearRing</gmlObjectElement>
+			<gmlType>gml:LinearRingType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:ArcByCenterPoint</gmlObjectElement>
+			<gmlType>gml:ArcByCenterPointType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:CircleByCenterPoint</gmlObjectElement>
+			<gmlType>gml:CircleByCenterPointType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:Rectangle</gmlObjectElement>
+			<gmlType>gml:RectangleType</gmlType>
+			<gmlPropertyType xsi:nil="true"/>
+		</entry>
+
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:TopoPoint</gmlObjectElement>
+			<gmlType>gml:TopoPointType</gmlType>
+			<gmlPropertyType>gml:TopoPointPropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:TopoCurve</gmlObjectElement>
+			<gmlType>gml:TopoCurveType</gmlType>
+			<gmlPropertyType>gml:TopoCurvePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:TopoSurface</gmlObjectElement>
+			<gmlType>gml:TopoSurfaceType</gmlType>
+			<gmlPropertyType>gml:TopoSurfacePropertyType</gmlPropertyType>
+		</entry>
+		<entry>
+			<umlClass xsi:nil="true"/>
+			<gmlObjectElement>gml:TopoVolume</gmlObjectElement>
+			<gmlType>gml:TopoVolumeType</gmlType>
+			<gmlPropertyType>gml:TopoVolumePropertyType</gmlPropertyType>
+		</entry>
+	</package>
 </mapping>
