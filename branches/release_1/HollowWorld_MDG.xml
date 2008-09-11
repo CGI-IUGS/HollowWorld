@@ -62,11 +62,13 @@
 						</AppliesTo>
 						<TaggedValues>
 							<Tag name="owner" type="string" description="Party responsible for maintenance of this package" unit="" values="" default=""/>
-							<Tag name="xsdDocument" type="string" description="Relative path to XML Schema document corresponding" unit="" values="" default=""/>
+							<Tag name="xsdDocument" type="string" description="Relative path to XML Schema document representing this schema" unit="" values="" default=""/>
 							<Tag name="targetNamespace" type="string" description="URI to unique target namespace" unit="" values="" default=""/>
 							<Tag name="xmlns" type="string" description="Prefix associated with namespace" unit="" values="" default=""/>
 							<Tag name="version" type="string" description="Schema version" unit="" values="" default=""/>
 							<Tag name="gmlProfileSchema" type="string" description="an element  gml:gmlProfileSchema  with the content" unit="" values="" default=""/>
+							<Tag name="schemaLocation" type="string" description="Full URL to XML Schema document representing this schema" unit="" values="" default=""/>
+							<Tag name="classMap" type="string" description="Full URL to document providing a mapping of classes in this schema to their representation as XML Schema element declarations and type definitions" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="CodeList" notes="Model: extensible enumeration&#xA;&#xA;XML: Union of an enumeration and a pattern (default mapping, an alternative mapping is a reference to a dictionary)">
