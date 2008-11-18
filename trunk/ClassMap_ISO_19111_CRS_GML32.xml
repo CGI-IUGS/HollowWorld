@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:gml="http://www.opengis.net/gml/3.2"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
+xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
+http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+id="ClassMap_ISO_19111_CRS_GML32.xml">
+		<description>Provides a mapping of selected ISO 19111 classes to their XML implementation (mostly in GML)
+		GML 3.2 binding</description>
+		<entry>
+			<umlClass>SC_CRS</umlClass>
+			<gmlObjectElement>gml:AbstractCRS</gmlObjectElement>
+			<gmlType>gml:AbstractCRSType</gmlType>
+			<gmlPropertyType>gml:CRSPropertyType</gmlPropertyType>
+		</entry>
+</mapping>

@@ -7,7 +7,13 @@ xmlns:gsr="http://www.isotc211.org/2005/gsr"
 xmlns:gss="http://www.isotc211.org/2005/gss" 
 xmlns:gts="http://www.isotc211.org/2005/gts" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-         xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 ../../../../resources/type-mapping-util/type-mapping.xsd" id="ClassMap_ISO_19115_Metadata.xml">
+xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
+http://www.isotc211.org/2005/gco http://schemas.opengis.net/iso/19139/20070417/gco/gco.xsd
+http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
+http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20070417/gmx/gmx.xsd
+http://www.isotc211.org/2005/gsr http://schemas.opengis.net/iso/19139/20070417/gsr/gsr.xsd
+http://www.isotc211.org/2005/gss http://schemas.opengis.net/iso/19139/20070417/gss/gss.xsd
+http://www.isotc211.org/2005/gts http://schemas.opengis.net/iso/19139/20070417/gts/gts.xsd" id="ClassMap_ISO_19115_Metadata.xml">
 	<description>Provides a mapping of the classes in the ISO 19115 model to their implementation in the http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas XML Schema</description>
 	<package id="ClassMap_gco">
 		<description>Provides a mapping of classes implemented in the GCO schema</description>

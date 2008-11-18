@@ -2,12 +2,14 @@
 <package
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns:gml32="http://www.opengis.net/gml/3.2"
-	xmlns:gml="http://www.opengis.net/gm"
+	xmlns:gml="http://www.opengis.net/gml"
 	xmlns:cgu="urn:cgi:xmlns:CGI:Utilities:1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:type-mapping:2.0"
-	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:type-mapping:2.0
-	https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-map.xsd"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:type-mapping:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-map.xsd
+	http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd
+	http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd
+	urn:cgi:xmlns:CGI:Utilities:1.0 http://www.geosciml.org/cgiutilities/1.0/xsd/cgiUtilities.xsd"
 	id="ClassMap_ISO_19103_CSL">
 	<description>Provides a mapping of selected ISO 19103 classes to their XML implementation (mostly in GML)</description>
 	<entry>
