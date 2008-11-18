@@ -17,13 +17,13 @@ id="ClassMap_ISO_19107_Spatial.xml">
 		</entry>
 		<entry>
 			<umlClass>GM_Object</umlClass>
-			<gmlObjectElement>gml:AbstractGeometry</gmlObjectElement>
+			<gmlObjectElement>gml:_Geometry</gmlObjectElement>
 			<gmlType>gml:AbstractGeometryType</gmlType>
 			<gmlPropertyType>gml:GeometryPropertyType</gmlPropertyType>
 		</entry>
 		<entry>
 			<umlClass>GM_Primitive</umlClass>
-			<gmlObjectElement>gml:AbstractGeometricPrimitive</gmlObjectElement>
+			<gmlObjectElement>gml:_GeometricPrimitive</gmlObjectElement>
 			<gmlType>gml:AbstractGeometricPrimitiveType</gmlType>
 			<gmlPropertyType>gml:GeometricPrimitivePropertyType</gmlPropertyType>
 		</entry>
@@ -173,7 +173,7 @@ id="ClassMap_ISO_19107_Spatial.xml">
 		</entry>
 		<entry>
 			<umlClass>GM_CurveSegment</umlClass>
-			<gmlObjectElement>gml:AbstractCurveSegment</gmlObjectElement>
+			<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
 			<gmlType>gml:AbstractCurveSegmentType</gmlType>
 			<gmlPropertyType xsi:nil="true"/>
 		</entry>
@@ -251,19 +251,19 @@ id="ClassMap_ISO_19107_Spatial.xml">
 		</entry>
 		<entry>
 			<umlClass>GM_SurfacePatch</umlClass>
-			<gmlObjectElement>gml:AbstractSurfacePatch</gmlObjectElement>
+			<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
 			<gmlType>gml:AbstractSurfacePatchType</gmlType>
 			<gmlPropertyType xsi:nil="true"/>
 		</entry>
 		<entry>
 			<umlClass>GM_GriddedSurface</umlClass>
-			<gmlObjectElement>gml:AbstractGriddedSurface</gmlObjectElement>
+			<gmlObjectElement>gml:_GriddedSurface</gmlObjectElement>
 			<gmlType>gml:AbstractGriddedSurfaceType</gmlType>
 			<gmlPropertyType xsi:nil="true"/>
 		</entry>
 		<entry>
 			<umlClass>GM_ParametricCurveSurface</umlClass>
-			<gmlObjectElement>gml:AbstractParametricCurveSurface</gmlObjectElement>
+			<gmlObjectElement>gml:_ParametricCurveSurface</gmlObjectElement>
 			<gmlType>gml:AbstractParametricCurveSurfaceType</gmlType>
 			<gmlPropertyType xsi:nil="true"/>
 		</entry>
@@ -305,7 +305,7 @@ id="ClassMap_ISO_19107_Spatial.xml">
 		</entry>
 		<entry>
 			<umlClass>TP_Object</umlClass>
-			<gmlObjectElement>gml:AbstractTopology</gmlObjectElement>
+			<gmlObjectElement>gml:_Topology</gmlObjectElement>
 			<gmlType>gml:AbstractTopologyType</gmlType>
 			<gmlPropertyType xsi:nil="true" anonymous="true"/>
 		</entry>
