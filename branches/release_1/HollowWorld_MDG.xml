@@ -67,8 +67,7 @@
 							<Tag name="xmlns" type="string" description="Prefix associated with namespace" unit="" values="" default=""/>
 							<Tag name="version" type="string" description="Schema version" unit="" values="" default=""/>
 							<Tag name="gmlProfileSchema" type="string" description="an element  gml:gmlProfileSchema  with the content" unit="" values="" default=""/>
-							<Tag name="schemaLocation" type="string" description="Full URL to XML Schema document representing this schema" unit="" values="" default=""/>
-							<Tag name="classMap" type="string" description="Full URL to document providing a mapping of classes in this schema to their representation as XML Schema element declarations and type definitions" unit="" values="" default=""/>
+							<Tag name="classMap" type="string" description="Relative path to document providing a mapping of classes in this schema to their representation as XML Schema element declarations and type definitions" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="CodeList" notes="Model: extensible enumeration&#xA;&#xA;XML: Union of an enumeration and a pattern (default mapping, an alternative mapping is a reference to a dictionary)">
@@ -82,6 +81,9 @@
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
 							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
 							<Tag name="asDictionary" type="boolean" description="implement as a dictionary instead of enumeration" unit="" values="true,false" default="false"/>
+							<Tag name="codeSpace" type="string" description="URI that identifies the authority for this dictionary and its members" unit="" values="" default=""/>
+							<Tag name="dictionaryIdentifier" type="string" description="URI that identifies this dictionary" unit="" values="" default=""/>
+							<Tag name="memberIdentifierStem" type="string" description="URI stem used for dictionary members" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="DataType"
