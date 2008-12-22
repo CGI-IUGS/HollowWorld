@@ -9,7 +9,7 @@
 	<description>Provides a mapping of the classes in the SensorML model to their implementation in the http://www.opengis.net/sensorML/1.0.1 XML Schema
 	GML 3.1 binding</description>
 	<imports>
-		<entry prefix="sml" namespace="http://www.opengis.net/sensorML/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-127/sensorML/1.0.1_gml32/sensorML.xsd" />
+		<schema prefix="sml" namespace="http://www.opengis.net/sensorML/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-127/sensorML/1.0.1_gml32/sensorML.xsd" />
 	</imports>
 	<entry>
 		<umlClass>Process</umlClass>

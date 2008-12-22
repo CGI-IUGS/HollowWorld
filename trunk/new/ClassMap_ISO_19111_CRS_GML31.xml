@@ -9,7 +9,7 @@
 	<description>Provides a mapping of selected ISO 19111 classes to their XML implementation (mostly in GML)
 		GML 3.1 binding</description>
 	<imports>
-		<entry prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+		<schema prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
 	</imports>
 	<entry>
 		<umlClass>SC_CRS</umlClass>

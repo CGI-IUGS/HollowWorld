@@ -9,7 +9,7 @@
 	<description>Provides a mapping of the classes in the OM1 model to their implementation in the http://www.opengis.net/om/1.0 XML Schema
 	GML 3.2 binding</description>
 	<imports>
-		<entry prefix="om" namespace="http://www.opengis.net/om/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-128/om/1.0.0_gml32/om.xsd" />
+		<schema prefix="om" namespace="http://www.opengis.net/om/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-128/om/1.0.0_gml32/om.xsd" />
 	</imports>
 	<entry>
 		<umlClass>Observation</umlClass>

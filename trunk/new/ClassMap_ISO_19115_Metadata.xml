@@ -9,9 +9,9 @@
 	id="ClassMap_ISO_19115_Metadata.xml">
 	<description>Provides a mapping of the classes in the ISO 19115 model to their implementation in the http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas XML Schema</description>
 	<imports>
-		<entry prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
-		<entry prefix="gmd" namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd" />
-		<entry prefix="gco" namespace="http://www.isotc211.org/2005/gco" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gco/gco.xsd" />
+		<schema prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
+		<schema prefix="gmd" namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd" />
+		<schema prefix="gco" namespace="http://www.isotc211.org/2005/gco" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gco/gco.xsd" />
 	</imports>
 	<entry>
 		<umlClass>DateTime</umlClass>

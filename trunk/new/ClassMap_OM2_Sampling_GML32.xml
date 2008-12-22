@@ -9,7 +9,7 @@
 	<description>Provides a mapping of the classes in the OM2 model to their implementation in the http://www.opengis.net/sampling/1.0 XML Schema
 	GML 3.2 binding</description>
 	<imports>
-		<entry prefix="sa" namespace="http://www.opengis.net/sampling/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-129/sampling/1.0.0_gml32/sampling.xsd" />
+		<schema prefix="sa" namespace="http://www.opengis.net/sampling/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-129/sampling/1.0.0_gml32/sampling.xsd" />
 	</imports>
 	<entry>
 		<umlClass>SamplingFeature</umlClass>

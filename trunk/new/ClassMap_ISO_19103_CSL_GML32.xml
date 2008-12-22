@@ -9,8 +9,8 @@
 	<description>Provides a mapping of selected ISO 19103 classes to their XML implementation (mostly in GML)
 	GML 3.2 binding</description>
 	<imports>
-		<entry prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
-		<entry prefix="gml" namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+		<schema prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
+		<schema prefix="gml" namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
 	</imports>
 	<entry>
 		<umlClass>CharacterString</umlClass>

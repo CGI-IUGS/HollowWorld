@@ -9,8 +9,8 @@
 	<description>Provides a mapping of the classes listed in Table D.2 found in Annex D of the Internation Standard ISO 19136 (GML Version
 		3.2), 2007 but omitting those that correspond directly with classes in other ISO 19100 series standards</description>
 	<imports>
-		<entry prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
-		<entry prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+		<schema prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
+		<schema prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
 	</imports>
 	<entry>
 		<umlClass>boolean</umlClass>

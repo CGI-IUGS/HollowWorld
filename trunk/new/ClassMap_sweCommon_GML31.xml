@@ -9,7 +9,7 @@
 	<description>Provides a mapping of the classes in the SWE Common model to their implementation in the http://www.opengis.net/swe/1.0.1 XML Schema
 	GML 3.1 binding</description>
 	<imports>
-		<entry prefix="swe" namespace="http://www.opengis.net/swe/1.0.1" schemaLocation="http://schemas.opengis.net/sweCommon/1.0.1/swe.xsd" />
+		<schema prefix="swe" namespace="http://www.opengis.net/swe/1.0.1" schemaLocation="http://schemas.opengis.net/sweCommon/1.0.1/swe.xsd" />
 	</imports>
 	<entry>
 		<umlClass>TM_Aggregate</umlClass>
