@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapping
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:gml="http://www.opengis.net/gml"
-	xmlns:cgu="urn:cgi:xmlns:CGI:Utilities:1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0
-	https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
-	http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/package-class-map.xsd"
 	id="ClassMap_IS_19136_Annex_D_GML31.xml">
 	<description>Provides a mapping of additional classes not from other ISO 19100 standards
 	GML 3.1 binding</description>
+	<imports>
+		<entry prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+	</imports>
 	<entry>
 		<umlClass>AnyDefinition</umlClass>
 		<gmlObjectElement>gml:Definition</gmlObjectElement>

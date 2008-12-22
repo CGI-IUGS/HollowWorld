@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapping
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:sa="http://www.opengis.net/sampling/1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
-	http://www.opengis.net/sampling/1.0 http://schemas.opengis.net/sampling/1.0.0/sampling.xsd"
+	xmlns:sa="http://www.opengis.net/sampling/1.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/package-class-map.xsd"
 	id="ClassMap_OM2_Sampling_GML31.xml">
 	<description>Provides a mapping of the classes in the OM2 model to their implementation in the http://www.opengis.net/sampling/1.0 XML Schema
 	GML 3.1 binding</description>
+	<imports>
+		<entry prefix="sa" namespace="http://www.opengis.net/sampling/1.0" schemaLocation="http://schemas.opengis.net/sampling/1.0.0/sampling.xsd" />
+	</imports>
 	<entry>
 		<umlClass>SamplingFeature</umlClass>
 		<gmlObjectElement>sa:SamplingFeature</gmlObjectElement>
