@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
+	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0
+	https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
+	http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"
+	id="ClassMap_ISO_19123_Coverage_GML31.xml">
+	<description>Provides a mapping of selected ISO 19123 classes to their XML implementation (mostly in GML)
+	GML3.1 binding</description>
+	<entry>
+		<umlClass>CV_Coverage</umlClass>
+		<gmlObjectElement>gml:_Coverage</gmlObjectElement>
+		<gmlType>gml:AbstractCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_ContinuousCoverage</umlClass>
+		<gmlObjectElement>gml:_ContinuousCoverage</gmlObjectElement>
+		<gmlType>gml:AbstractContinuousCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteCoverage</umlClass>
+		<gmlObjectElement>gml:_DiscreteCoverage</gmlObjectElement>
+		<gmlType>gml:AbstractDiscreteCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscretePointCoverage</umlClass>
+		<gmlObjectElement>gml:MultiPointCoverage</gmlObjectElement>
+		<gmlType>gml:MultiPointCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteCurveCoverage</umlClass>
+		<gmlObjectElement>gml:MultiCurveCoverage</gmlObjectElement>
+		<gmlType>gml:MultiCurveCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteSurfaceCoverage</umlClass>
+		<gmlObjectElement>gml:MultiSurfaceCoverage</gmlObjectElement>
+		<gmlType>gml:MultiSurfaceCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteSolidCoverage</umlClass>
+		<gmlObjectElement>gml:MultiSolidCoverage</gmlObjectElement>
+		<gmlType>gml:MultiSolidCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteGridPointCoverage</umlClass>
+		<gmlObjectElement>gml:GridCoverage</gmlObjectElement>
+		<gmlType>gml:GridCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+</mapping>
