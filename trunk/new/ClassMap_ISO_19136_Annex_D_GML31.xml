@@ -12,13 +12,31 @@
 		<schema prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
 	</imports>
 	<entry>
-		<umlClass>AnyDefinition</umlClass>
+		<umlClass>AbstractObject</umlClass>
+		<gmlObjectElement>gml:_Object</gmlObjectElement>
+		<gmlType>xsd:anyType</gmlType>
+		<gmlPropertyType>gml:AssociationType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AbstractGML</umlClass>
+		<gmlObjectElement>gml:_GML</gmlObjectElement>
+		<gmlType>gml:AbstractGMLType</gmlType>
+		<gmlPropertyType>gml:AssociationType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AbstractFeature</umlClass>
+		<gmlObjectElement>gml:_Feature</gmlObjectElement>
+		<gmlType>gml:AbstractFeatureType</gmlType>
+		<gmlPropertyType>gml:FeaturePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Definition</umlClass>
 		<gmlObjectElement>gml:Definition</gmlObjectElement>
 		<gmlType>gml:DefinitionType</gmlType>
 		<gmlPropertyType>gml:DictionaryEntryType</gmlPropertyType>
 	</entry>
 	<entry>
-		<umlClass>AnyDictionary</umlClass>
+		<umlClass>Dictionary</umlClass>
 		<gmlObjectElement>gml:Dictionary</gmlObjectElement>
 		<gmlType>gml:DictionaryType</gmlType>
 		<gmlPropertyType
@@ -26,83 +44,74 @@
 			anonymous="true"/>
 	</entry>
 	<entry>
-		<umlClass>AnyFeature</umlClass>
-		<gmlObjectElement>gml:_Feature</gmlObjectElement>
-		<gmlType>gml:AbstractFeatureType</gmlType>
-		<gmlPropertyType>gml:FeaturePropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>LineString</umlClass>
 		<gmlObjectElement>gml:LineString</gmlObjectElement>
 		<gmlType>gml:LineStringType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"/>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>Polygon</umlClass>
 		<gmlObjectElement>gml:Polygon</gmlObjectElement>
 		<gmlType>gml:PolygonType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"/>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>LinearRing</umlClass>
 		<gmlObjectElement>gml:LinearRing</gmlObjectElement>
 		<gmlType>gml:LinearRingType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"/>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>ArcByCenterPoint</umlClass>
 		<gmlObjectElement>gml:ArcByCenterPoint</gmlObjectElement>
 		<gmlType>gml:ArcByCenterPointType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"/>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>CircleByCenterPoint</umlClass>
 		<gmlObjectElement>gml:CircleByCenterPoint</gmlObjectElement>
 		<gmlType>gml:CircleByCenterPointType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"/>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>Rectangle</umlClass>
 		<gmlObjectElement>gml:Rectangle</gmlObjectElement>
 		<gmlType>gml:RectangleType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"/>
 	</entry>
 	<entry>
-		<umlClass
+		<umlClass>MultiGeometry</umlClass>
+		<gmlObjectElement>gml:MultiGeometry</gmlObjectElement>
+		<gmlType>gml:MultiGeometryType</gmlType>
+		<gmlPropertyType
 			xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>TopoPoint</umlClass>
 		<gmlObjectElement>gml:TopoPoint</gmlObjectElement>
 		<gmlType>gml:TopoPointType</gmlType>
 		<gmlPropertyType>gml:TopoPointPropertyType</gmlPropertyType>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>TopoCurve</umlClass>
 		<gmlObjectElement>gml:TopoCurve</gmlObjectElement>
 		<gmlType>gml:TopoCurveType</gmlType>
 		<gmlPropertyType>gml:TopoCurvePropertyType</gmlPropertyType>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>TopoSurface</umlClass>
 		<gmlObjectElement>gml:TopoSurface</gmlObjectElement>
 		<gmlType>gml:TopoSurfaceType</gmlType>
 		<gmlPropertyType>gml:TopoSurfacePropertyType</gmlPropertyType>
 	</entry>
 	<entry>
-		<umlClass
-			xsi:nil="true"/>
+		<umlClass>TopoVolume</umlClass>
 		<gmlObjectElement>gml:TopoVolume</gmlObjectElement>
 		<gmlType>gml:TopoVolumeType</gmlType>
 		<gmlPropertyType>gml:TopoVolumePropertyType</gmlPropertyType>
