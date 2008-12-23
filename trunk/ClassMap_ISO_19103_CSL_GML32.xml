@@ -1,156 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapping 
-xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-xmlns:gml="http://www.opengis.net/gml/3.2"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
-http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
-id="ClassMap_ISO_19103_CSL_GML32.xml">
-		<description>Provides a mapping of selected ISO 19103 classes to their XML implementation (mostly in GML)
-		GML 3.2 binding</description>
-		<entry>
-			<umlClass>CharacterString</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:string</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Boolean</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:boolean</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Real</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:double</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Number</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:double</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Decimal</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:decimal</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Date</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:date</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Time</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:time</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>DateTime</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:dateTime</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Integer</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>xsd:integer</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Vector</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:VectorType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>GenericName</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:CodeType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>LocalName</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:CodeType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>ScopedName</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:CodeWithAuthorityType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Length</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:LengthType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Distance</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:LengthType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Angle</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:AngleType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Speed</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:SpeedType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Scale</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:ScaleType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Area</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:AreaType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Volume</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:VolumeType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Measure</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:MeasureType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Sign</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:SignType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>UnitOfMeasure</umlClass>
-			<gmlObjectElement xsi:nil="true"/>
-			<gmlType xsi:nil="true"/>
-			<gmlPropertyType>gml:UnitOfMeasureType</gmlPropertyType>
-		</entry>
-		<entry>
-			<umlClass>Any</umlClass>
-			<gmlObjectElement>gml:AbstractObject</gmlObjectElement>
-			<gmlType>xsd:anyType</gmlType>
-			<gmlPropertyType>gml:AssociationType</gmlPropertyType>
-		</entry>
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/package-class-map.xsd"
+	id="ClassMap_ISO_19103_CSL_GML32.xml">
+	<description>Provides a mapping of selected ISO 19103 classes to their XML implementation (mostly in GML)
+	GML 3.2 binding</description>
+	<imports>
+		<schema prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
+		<schema prefix="gml" namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+	</imports>
+	<entry>
+		<umlClass>CharacterString</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:string</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Boolean</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:boolean</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Real</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:double</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Number</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:double</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Decimal</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:decimal</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Date</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:date</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Time</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:time</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DateTime</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Integer</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:integer</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Vector</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:VectorType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GenericName</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:CodeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>LocalName</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:CodeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ScopedName</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:CodeWithAuthorityType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Length</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:LengthType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Distance</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:LengthType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Angle</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:AngleType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Speed</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:SpeedType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Scale</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ScaleType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Area</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:AreaType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Volume</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:VolumeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Measure</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:MeasureType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Sign</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:SignType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>UnitOfMeasure</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:UnitOfMeasureType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Any</umlClass>
+		<gmlObjectElement>gml:AbstractObject</gmlObjectElement>
+		<gmlType>xsd:anyType</gmlType>
+		<gmlPropertyType>gml:AssociationType</gmlPropertyType>
+	</entry>
 </mapping>

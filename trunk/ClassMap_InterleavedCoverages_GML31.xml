@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cv="http://www.opengis.net/cv/0.2.1"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
-	http://www.opengis.net/cv/0.2.1 http://bp.schemas.opengis.net/06-188r1/cv/0.2.1/cv.xsd"
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cv="http://www.opengis.net/cv/0.2.1"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/package-class-map.xsd"
 	id="ClassMap_InterleavedCoverages_GML31.xml">
 	<description>Provides a mapping of the classes in the OM2 model to their implementation in the http://www.opengis.net/sampling/1.0 XML Schema</description>
+	<imports>
+		<schema prefix="cv" namespace="http://www.opengis.net/cv/0.2.1" schemaLocation="http://bp.schemas.opengis.net/06-188r1/cv/0.2.1/cv.xsd" />
+	</imports>
 	<entry>
 		<umlClass>CV_DomainObject</umlClass>
 		<gmlObjectElement>cv:CV_DomainObject</gmlObjectElement>

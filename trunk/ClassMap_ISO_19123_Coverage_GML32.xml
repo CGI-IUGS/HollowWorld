@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapping
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:gml="http://www.opengis.net/gml/3.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
-	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0
-	https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
-	http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/package-class-map.xsd"
 	id="ClassMap_ISO_19123_Coverage_GML32.xml">
 	<description>Provides a mapping of selected ISO 19123 classes to their XML implementation (mostly in GML)
 	GML3.2 binding</description>
+	<imports>
+		<schema prefix="gml" namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+	</imports>
 	<entry>
 		<umlClass>CV_Coverage</umlClass>
 		<gmlObjectElement>gml:AbstractCoverage</gmlObjectElement>
@@ -70,6 +71,56 @@
 		<umlClass>CV_DiscreteGridPointCoverage</umlClass>
 		<gmlObjectElement>gml:GridCoverage</gmlObjectElement>
 		<gmlType>gml:GridCoverageType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_GridValuesMatrix</umlClass>
+		<gmlObjectElement>gml:GridFunction</gmlObjectElement>
+		<gmlType>gml:GridFunctionType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_SequenceRule</umlClass>
+		<gmlObjectElement
+			xsi:nil="true" />
+		<gmlType
+			xsi:nil="true"
+			anonymous="true"/>
+		<gmlPropertyType>gml:SequenceRuleType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_SequenceType</umlClass>
+		<gmlObjectElement
+			xsi:nil="true" />
+		<gmlType
+			xsi:nil="true"
+			anonymous="true"/>
+		<gmlPropertyType>gml:SequenceRuleEnumeration</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_Grid</umlClass>
+		<gmlObjectElement>gml:Grid</gmlObjectElement>
+		<gmlType>gml:GridType</gmlType>
+		<gmlPropertyType
+			xsi:nil="true"
+			anonymous="true"/>
+	</entry>
+	<entry>
+		<umlClass>CV_GridEnvelope</umlClass>
+		<gmlObjectElement>gml:GridEnvelope</gmlObjectElement>
+		<gmlType
+			xsi:nil="true"
+			anonymous="true"/>
+		<gmlPropertyType>gml:GridLimitsType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_RectifiedGrid</umlClass>
+		<gmlObjectElement>gml:RectifiedGrid</gmlObjectElement>
+		<gmlType>gml:RectifiedGridType</gmlType>
 		<gmlPropertyType
 			xsi:nil="true"
 			anonymous="true"/>
