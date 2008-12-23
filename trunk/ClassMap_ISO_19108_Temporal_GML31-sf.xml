@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/package-class-map.xsd"
+	id="ClassMap_ISO_19108_Temporal_GML31.xml">
+	<description>Provides a mapping of elements specific to GeoSciML Version 2.0.
+	GML 3.1 binding</description>
+	<imports>
+		<schema prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
+		<schema prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+	</imports>
+	<entry>
+		<umlClass>TM_Object</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Complex</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_GeometricPrimitive</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Primitive</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Instant</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Period</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:string</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_TopologicalComplex</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_TopologicalPrimitive</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Node</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Edge</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_PeriodDuration</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:duration</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_IntervalLength</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType group="true">xsd:duration</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Duration</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType group="true">xsd:duration</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Position</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_OrdinalPosition</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:anyURI</gmlPropertyType>
+	</entry>
+	<!--	<entry>
+	<umlClass>TM_IndeterminateValue</umlClass>
+	<gmlObjectElement xsi:nil="true"/>
+	<gmlType xsi:nil="true"/>
+	<gmlPropertyType>@TimeIndeterminateValue (attribute on TimePositionType)PropertyType</gmlPropertyType>
+</entry>-->
+	<entry>
+		<umlClass>TM_Coordinate</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:decimal</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_CalDate</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:date</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_ClockTime</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:time</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_DateAndTime</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>xsd:dateTime</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Calendar</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_CalendarEra</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Clock</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_ReferenceSystem</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_CoordinateSystem</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_OrdinalReferenceSystem</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_OrdinalEra</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+</mapping>
