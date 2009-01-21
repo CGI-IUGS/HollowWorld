@@ -79,7 +79,7 @@
 						<TaggedValues>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
+							<Tag name="isCollection" type="boolean" description="gml:AggregationAttributeGroup is added to the type" unit="" values="true,false" default="false"/>
 							<Tag name="asDictionary" type="boolean" description="implement as a dictionary instead of enumeration" unit="" values="true,false" default="false"/>
 							<Tag name="codeSpace" type="string" description="URI that identifies the authority for this dictionary and its members" unit="" values="" default=""/>
 							<Tag name="dictionaryIdentifier" type="string" description="URI that identifies this dictionary" unit="" values="" default=""/>
@@ -94,10 +94,10 @@
 							</Apply>
 						</AppliesTo>
 						<TaggedValues>
+							<Tag name="asGroup" type="boolean" description="implement as an XML Schema model group" unit="" values="true,false" default="false"/>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
-							<Tag name="asGroup" type="boolean" description="implement as an XML Schema model group" unit="" values="true,false" default="false"/>
+							<Tag name="isCollection" type="boolean" description="gml:AggregationAttributeGroup is added to the type" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Enumeration" notes="Model: Non-extensible enumerated data type.&#xA;&#xA;XML: Restriction of xsd:string with enumeration values">
