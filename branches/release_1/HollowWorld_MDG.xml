@@ -97,6 +97,7 @@
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
 							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
+							<Tag name="asGroup" type="boolean" description="implement as an XML Schema model group" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Enumeration" notes="Model: Non-extensible enumerated data type.&#xA;&#xA;XML: Restriction of xsd:string with enumeration values">
