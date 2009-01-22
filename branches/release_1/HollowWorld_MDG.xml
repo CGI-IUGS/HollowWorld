@@ -44,6 +44,7 @@
 							<Tag name="sequenceNumber" type="" description="Specify position of attribute-group within content" unit="" values="" default=""/>
 							<Tag name="inlineOrByReference" type="" description="" unit="" values="" default=""/>
 							<Tag name="isMetadata" type="" description="flag that attribute or association-end is to be tr" unit="" values="" default=""/>
+							<Tag name="asXmlAttribute" type="boolean" description="Encode as an XML attribute" unit="" values="true,false" default="false"/>
 							<Tag name="noPropertyElement" type="" description="suppress creation of local element definition - se" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
@@ -67,7 +68,6 @@
 							<Tag name="xmlns" type="string" description="Prefix associated with namespace" unit="" values="" default=""/>
 							<Tag name="version" type="string" description="Schema version" unit="" values="" default=""/>
 							<Tag name="gmlProfileSchema" type="string" description="an element  gml:gmlProfileSchema  with the content" unit="" values="" default=""/>
-							<Tag name="classMap" type="string" description="Relative path to document providing a mapping of classes in this schema to their representation as XML Schema element declarations and type definitions" unit="" values="" default=""/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="CodeList" notes="Model: extensible enumeration&#xA;&#xA;XML: Union of an enumeration and a pattern (default mapping, an alternative mapping is a reference to a dictionary)">
@@ -79,7 +79,6 @@
 						<TaggedValues>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="gml:AggregationAttributeGroup is added to the type" unit="" values="true,false" default="false"/>
 							<Tag name="asDictionary" type="boolean" description="implement as a dictionary instead of enumeration" unit="" values="true,false" default="false"/>
 							<Tag name="codeSpace" type="string" description="URI that identifies the authority for this dictionary and its members" unit="" values="" default=""/>
 							<Tag name="dictionaryIdentifier" type="string" description="URI that identifies this dictionary" unit="" values="" default=""/>
@@ -97,7 +96,6 @@
 							<Tag name="asGroup" type="boolean" description="implement as an XML Schema model group" unit="" values="true,false" default="false"/>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="gml:AggregationAttributeGroup is added to the type" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Enumeration" notes="Model: Non-extensible enumerated data type.&#xA;&#xA;XML: Restriction of xsd:string with enumeration values">
@@ -109,7 +107,6 @@
 						<TaggedValues>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="FeatureType" notes="Model: Identifiable item of interest&#xA;&#xA;XML: Global element, whose content model is a globally scoped XML Schema type derived by direct/indirect extension of gml:AbstractFeatureType, property type">
@@ -121,7 +118,7 @@
 						<TaggedValues>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
+							<Tag name="isCollection" type="boolean" description="gml:AggregationAttributeGroup is added to typedef" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Type"
@@ -135,7 +132,7 @@
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
 							<Tag name="xmlSchemaType" type="string" description="no type shall be generated for the class, but the " unit="" values="" default=""/>
-							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
+							<Tag name="isCollection" type="boolean" description="gml:AggregationAttributeGroup is added to typedef" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 					<Stereotype name="Union"
@@ -148,7 +145,6 @@
 						<TaggedValues>
 							<Tag name="noPropertyType" type="boolean" description="suppress automatic creation of *PropertyType compl" unit="" values="true,false" default="false"/>
 							<Tag name="byValuePropertyType" type="boolean" description="enforce the 'by value' property pattern without xl" unit="" values="true,false" default="false"/>
-							<Tag name="isCollection" type="boolean" description="attribute group gml:AggregationAttributeGroup is a" unit="" values="true,false" default="false"/>
 						</TaggedValues>
 					</Stereotype>
 				</Stereotypes>
