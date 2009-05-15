@@ -13,18 +13,20 @@
 				<UML:Package name="HollowWorld" xmi.id="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="documentation" value="This package contains framework packages for information modelling. These include:&#xA;- elements of the ISO 19100 series of standards relating to Geographic Information. Of particular interest are:&#xA;   - the General Feature Model (ISO 19109), an upper-level model or meta-model for information types, to be used as the basis for domain models presenting an object-centric view of spatial information&#xA;   - the Coverage model (ISO 19123) which provides an alternative property-centric view of spatial information &#xA;   - cross-domain utility classes, including basic types (ISO 19103), spatial schema (ISO 19107), temporal schema (ISO 19108), coordinate reference systems (ISO 19111)&#xA;   - elements required for registration and governance (ISO 19110, ISO 19135)&#xA;   - service descriptions and profiles (ISO 19119, ISO 19128, ISO 19132)&#xA;- models associated with the OGC Sensor Web Enablement initiative&#xA;- additional packages of cross-domain interest, which have not yet been formally adopted by a recognised governance authority, including&#xA;   - components from GML that do not correspond with ISO elements&#xA;   - extensions and specializations to ISO 19123 Coverage model&#xA;   - extensions to ISO 19107 spatial schema covering convex polyhedra, surfaces, curves&#xA;"/>
+						<UML:TaggedValue tag="parent" value="EAPK_7CAE752A_947D_49e6_AED9_39683258C01C"/>
+						<UML:TaggedValue tag="ea_package_id" value="890"/>
 						<UML:TaggedValue tag="created" value="2007-02-21 00:00:00"/>
 						<UML:TaggedValue tag="modified" value="2007-02-21 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="HollowWorld.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2008-11-06 17:10:01"/>
+						<UML:TaggedValue tag="lastloaddate" value="2009-05-15 15:06:07"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-02-21 21:07:49"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
 						<UML:TaggedValue tag="logxml" value="FALSE"/>
 						<UML:TaggedValue tag="tpos" value="0"/>
-						<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld-trunk;CheckedOutOffline=0;CRC=0;"/>
+						<UML:TaggedValue tag="packageFlags" value="CheckedOutOffline=0;VCCFG=HollowWorld;CRC=0;"/>
 						<UML:TaggedValue tag="batchsave" value="0"/>
 						<UML:TaggedValue tag="batchload" value="0"/>
 						<UML:TaggedValue tag="phase" value="1.0"/>
@@ -36,70 +38,26 @@
 					<UML:Namespace.ownedElement>
 						<UML:Collaboration xmi.id="EAID_309849A8_4D0D_414b_8620_DC828D91BBE4_Collaboration" name="Collaborations">
 							<UML:Namespace.ownedElement>
-								<UML:ClassifierRole name="ISO 19100" xmi.id="EAID_1D7E0B33_486C_4b18_9723_197B3F78798B" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+								<UML:ClassifierRole name="OGC" xmi.id="EAID_135CF46E_6856_4222_A101_E494F625FAD3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="ISO 19100 Harmonized Model 2006-06-14 version&#xA;- Converted from Rose to EA by John Herring&#xA;- some elements mistakenly dropped in conversion.&#xA;-- 19103/Records package patched by Simon Cox, reinstating Schema and Record&#xA;-- 19109 package patched by Simon Cox, reinstating GF_*AssociationType classes &#xA;- Package Client/Supplier diagrams moved to new package to reduce clutter in Project browser&#xA;&#xA;SJDC 2007-02-14&#xA;&#xA;"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
 										<UML:TaggedValue tag="ea_ntype" value="0"/>
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
-										<UML:TaggedValue tag="date_created" value="2008-08-09 22:00:06"/>
-										<UML:TaggedValue tag="date_modified" value="2008-08-09 22:00:06"/>
-										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package2" value="EAID_1D7E0B33_486C_4b18_9723_197B3F78798B"/>
-										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
-										<UML:TaggedValue tag="phase" value="1.0"/>
-										<UML:TaggedValue tag="author" value="John R. Herring"/>
-										<UML:TaggedValue tag="complexity" value="1"/>
-										<UML:TaggedValue tag="status" value="Proposed"/>
-										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="444"/>
-										<UML:TaggedValue tag="ea_eleType" value="package"/>
-										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:ClassifierRole>
-								<UML:ClassifierRole name="SWE" xmi.id="EAID_35C9E213_6952_4b29_8FFC_87957EFE22D5" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="documentation" value="This package contains components associated with the Open Geospatial Consortium Sensor Web Enablement initiative"/>
-										<UML:TaggedValue tag="isSpecification" value="false"/>
-										<UML:TaggedValue tag="ea_stype" value="Package"/>
-										<UML:TaggedValue tag="ea_ntype" value="0"/>
-										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
-										<UML:TaggedValue tag="date_created" value="2008-08-09 22:02:58"/>
-										<UML:TaggedValue tag="date_modified" value="2008-08-09 22:02:58"/>
-										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package2" value="EAID_35C9E213_6952_4b29_8FFC_87957EFE22D5"/>
-										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
-										<UML:TaggedValue tag="phase" value="1.0"/>
-										<UML:TaggedValue tag="author" value="Simon Cox"/>
-										<UML:TaggedValue tag="complexity" value="1"/>
-										<UML:TaggedValue tag="status" value="Proposed"/>
-										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="654"/>
-										<UML:TaggedValue tag="ea_eleType" value="package"/>
-										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
-									</UML:ModelElement.taggedValue>
-								</UML:ClassifierRole>
-								<UML:ClassifierRole name="Patterns" xmi.id="EAID_7C4CBD89_348D_4ddc_AFD2_B5D4E3A3CFED" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="isSpecification" value="false"/>
-										<UML:TaggedValue tag="ea_stype" value="Package"/>
-										<UML:TaggedValue tag="ea_ntype" value="0"/>
-										<UML:TaggedValue tag="version" value="1.0"/>
-										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
-										<UML:TaggedValue tag="date_created" value="2008-11-10 13:50:22"/>
-										<UML:TaggedValue tag="date_modified" value="2008-11-10 13:50:22"/>
+										<UML:TaggedValue tag="date_created" value="2009-05-15 16:21:25"/>
+										<UML:TaggedValue tag="date_modified" value="2009-05-15 16:21:25"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package2" value="EAID_7C4CBD89_348D_4ddc_AFD2_B5D4E3A3CFED"/>
+										<UML:TaggedValue tag="package2" value="EAID_135CF46E_6856_4222_A101_E494F625FAD3"/>
 										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Simon Cox"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="729"/>
+										<UML:TaggedValue tag="ea_localid" value="1493"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -107,14 +65,14 @@
 								<UML:ClassifierRole name="CommonUsagePackages" xmi.id="EAID_7E174B4E_C64F_48eb_9687_7CE1FAE50C92" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="Collection of utilities that have not attained formal governance status, though in some cases they are on a standardization track. &#xA;These are recommended best practice within the HollowWorld modelling framework. "/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
 										<UML:TaggedValue tag="ea_ntype" value="0"/>
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
-										<UML:TaggedValue tag="date_created" value="2008-08-09 21:59:41"/>
-										<UML:TaggedValue tag="date_modified" value="2008-08-09 21:59:41"/>
-										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="date_created" value="2009-05-15 15:40:39"/>
+										<UML:TaggedValue tag="date_modified" value="2009-05-15 15:40:39"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_7E174B4E_C64F_48eb_9687_7CE1FAE50C92"/>
 										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
@@ -123,7 +81,7 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="434"/>
+										<UML:TaggedValue tag="ea_localid" value="1140"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -131,13 +89,14 @@
 								<UML:ClassifierRole name="UsingHollowWorld" xmi.id="EAID_C10C3540_5914_4bab_BD54_D64E59C567C3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="documentation" value="This package to contain explanation of the nature of the HollowWorld modelling template.&#xA;Currently incomplete and not properly synced.  &#xA;Also see https://www.seegrid.csiro.au/twiki/bin/view/AppSchemas/HollowWorld"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
 										<UML:TaggedValue tag="ea_ntype" value="0"/>
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
-										<UML:TaggedValue tag="date_created" value="2008-08-09 22:03:32"/>
-										<UML:TaggedValue tag="date_modified" value="2008-08-09 22:03:32"/>
+										<UML:TaggedValue tag="date_created" value="2009-05-15 15:41:46"/>
+										<UML:TaggedValue tag="date_modified" value="2009-05-15 15:41:46"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_C10C3540_5914_4bab_BD54_D64E59C567C3"/>
 										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
@@ -145,7 +104,30 @@
 										<UML:TaggedValue tag="complexity" value="1"/>
 										<UML:TaggedValue tag="status" value="Proposed"/>
 										<UML:TaggedValue tag="tpos" value="1"/>
-										<UML:TaggedValue tag="ea_localid" value="697"/>
+										<UML:TaggedValue tag="ea_localid" value="1200"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="ISO TC211" xmi.id="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+										<UML:TaggedValue tag="date_created" value="2009-05-15 15:29:34"/>
+										<UML:TaggedValue tag="date_modified" value="2009-05-15 15:29:34"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="jrherrin"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="1018"/>
 										<UML:TaggedValue tag="ea_eleType" value="package"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
@@ -156,11 +138,12 @@
 						<UML:Package name="CommonUsagePackages" xmi.id="EAPK_7E174B4E_C64F_48eb_9687_7CE1FAE50C92" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="Collection of utilities that have not attained formal governance status, though in some cases they are on a standardization track. &#xA;These are recommended best practice within the HollowWorld modelling framework. "/>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
 								<UML:TaggedValue tag="created" value="2007-02-07 00:00:00"/>
 								<UML:TaggedValue tag="modified" value="2007-02-07 00:00:00"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
-								<UML:TaggedValue tag="xmlpath" value="CommonUsage.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2008-08-09 21:59:54"/>
+								<UML:TaggedValue tag="xmlpath" value="Examples\CommonUsage.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2009-05-15 15:40:45"/>
 								<UML:TaggedValue tag="lastsavedate" value="2007-02-07 20:52:44"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -169,7 +152,7 @@
 								<UML:TaggedValue tag="tpos" value="0"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="CheckedOutOffline=0;VCCFG=HollowWorld-trunk;"/>
+								<UML:TaggedValue tag="packageFlags" value="CheckedOutOffline=0;VCCFG=HollowWorld;"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
 								<UML:TaggedValue tag="author" value="Simon Cox"/>
@@ -177,69 +160,47 @@
 								<UML:TaggedValue tag="ea_stype" value="Public"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Package>
-						<UML:Package name="ISO 19100" xmi.id="EAPK_1D7E0B33_486C_4b18_9723_197B3F78798B" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Package name="ISO TC211" xmi.id="EAPK_CAB2E56D_50FA_4904_A16C_B34D7AE325B6" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="documentation" value="ISO 19100 Harmonized Model 2006-06-14 version&#xA;- Converted from Rose to EA by John Herring&#xA;- some elements mistakenly dropped in conversion.&#xA;-- 19103/Records package patched by Simon Cox, reinstating Schema and Record&#xA;-- 19109 package patched by Simon Cox, reinstating GF_*AssociationType classes &#xA;- Package Client/Supplier diagrams moved to new package to reduce clutter in Project browser&#xA;&#xA;SJDC 2007-02-14&#xA;&#xA;"/>
-								<UML:TaggedValue tag="created" value="2006-06-14 14:11:36"/>
-								<UML:TaggedValue tag="modified" value="2006-06-14 14:11:36"/>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+								<UML:TaggedValue tag="created" value="2008-04-10 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2008-04-10 00:00:00"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
-								<UML:TaggedValue tag="xmlpath" value="ISO 19100.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2008-08-09 22:02:48"/>
-								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="xmlpath" value="isotc211\ISO TC211.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2009-05-15 15:29:42"/>
+								<UML:TaggedValue tag="lastsavedate" value="2008-04-17 08:41:00"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
 								<UML:TaggedValue tag="usedtd" value="FALSE"/>
-								<UML:TaggedValue tag="logxml" value="FALSE"/>
-								<UML:TaggedValue tag="tpos" value="0"/>
-								<UML:TaggedValue tag="batchsave" value="0"/>
-								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld-trunk;CheckedOutOffline=0;"/>
-								<UML:TaggedValue tag="phase" value="1.0"/>
-								<UML:TaggedValue tag="status" value="Proposed"/>
-								<UML:TaggedValue tag="author" value="John R. Herring"/>
-								<UML:TaggedValue tag="complexity" value="1"/>
-								<UML:TaggedValue tag="ea_stype" value="Public"/>
-							</UML:ModelElement.taggedValue>
-						</UML:Package>
-						<UML:Package name="Patterns" xmi.id="EAPK_7C4CBD89_348D_4ddc_AFD2_B5D4E3A3CFED" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
-							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="created" value="2008-11-06 00:00:00"/>
-								<UML:TaggedValue tag="modified" value="2008-11-06 00:00:00"/>
-								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
-								<UML:TaggedValue tag="xmlpath" value="GI_Patterns.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2008-11-10 13:50:23"/>
-								<UML:TaggedValue tag="lastsavedate" value="2008-11-10 13:50:22"/>
-								<UML:TaggedValue tag="version" value="1.0"/>
-								<UML:TaggedValue tag="isprotected" value="FALSE"/>
-								<UML:TaggedValue tag="usedtd" value="FALSE"/>
-								<UML:TaggedValue tag="logxml" value="FALSE"/>
-								<UML:TaggedValue tag="tpos" value="0"/>
-								<UML:TaggedValue tag="batchsave" value="0"/>
-								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld-trunk;"/>
-								<UML:TaggedValue tag="phase" value="1.0"/>
-								<UML:TaggedValue tag="status" value="Proposed"/>
-								<UML:TaggedValue tag="author" value="Simon Cox"/>
-								<UML:TaggedValue tag="complexity" value="1"/>
-								<UML:TaggedValue tag="ea_stype" value="Public"/>
-							</UML:ModelElement.taggedValue>
-						</UML:Package>
-						<UML:Package name="SWE" xmi.id="EAPK_35C9E213_6952_4b29_8FFC_87957EFE22D5" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
-							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="documentation" value="This package contains components associated with the Open Geospatial Consortium Sensor Web Enablement initiative"/>
-								<UML:TaggedValue tag="created" value="2005-09-28 00:00:00"/>
-								<UML:TaggedValue tag="modified" value="2005-09-28 00:00:00"/>
-								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
-								<UML:TaggedValue tag="xmlpath" value="SWE.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2008-11-10 09:43:37"/>
-								<UML:TaggedValue tag="lastsavedate" value="2007-02-06 13:20:37"/>
-								<UML:TaggedValue tag="isprotected" value="FALSE"/>
-								<UML:TaggedValue tag="usedtd" value="TRUE"/>
 								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
 								<UML:TaggedValue tag="logxml" value="FALSE"/>
 								<UML:TaggedValue tag="tpos" value="0"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld-trunk;CheckedOutOffline=0;"/>
+								<UML:TaggedValue tag="packageFlags" value="CheckedOutOffline=0;VICON=3;VCCFG=HollowWorld;"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="jrherrin"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="OGC" xmi.id="EAPK_135CF46E_6856_4222_A101_E494F625FAD3" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+								<UML:TaggedValue tag="created" value="2009-05-15 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2009-05-15 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="OGC\OGC.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2009-05-15 16:21:27"/>
+								<UML:TaggedValue tag="lastsavedate" value="2009-05-15 16:21:25"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld;"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
 								<UML:TaggedValue tag="author" value="Simon Cox"/>
@@ -250,11 +211,12 @@
 						<UML:Package name="UsingHollowWorld" xmi.id="EAPK_C10C3540_5914_4bab_BD54_D64E59C567C3" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="documentation" value="This package to contain explanation of the nature of the HollowWorld modelling template.&#xA;Currently incomplete and not properly synced.  &#xA;Also see https://www.seegrid.csiro.au/twiki/bin/view/AppSchemas/HollowWorld"/>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
 								<UML:TaggedValue tag="created" value="2007-01-29 00:00:00"/>
 								<UML:TaggedValue tag="modified" value="2007-01-29 00:00:00"/>
 								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
-								<UML:TaggedValue tag="xmlpath" value="UsingHollowWorld.xml"/>
-								<UML:TaggedValue tag="lastloaddate" value="2008-08-09 22:03:49"/>
+								<UML:TaggedValue tag="xmlpath" value="Utilities\UsingHollowWorld.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2009-05-15 15:41:56"/>
 								<UML:TaggedValue tag="lastsavedate" value="2007-02-06 19:01:11"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -263,7 +225,7 @@
 								<UML:TaggedValue tag="tpos" value="1"/>
 								<UML:TaggedValue tag="batchsave" value="0"/>
 								<UML:TaggedValue tag="batchload" value="0"/>
-								<UML:TaggedValue tag="packageFlags" value="CheckedOutOffline=0;VCCFG=HollowWorld-trunk;"/>
+								<UML:TaggedValue tag="packageFlags" value="CheckedOutOffline=0;VCCFG=HollowWorld;"/>
 								<UML:TaggedValue tag="phase" value="1.0"/>
 								<UML:TaggedValue tag="status" value="Proposed"/>
 								<UML:TaggedValue tag="complexity" value="1"/>
@@ -274,6 +236,10 @@
 				</UML:Package>
 			</UML:Namespace.ownedElement>
 		</UML:Model>
+		<UML:TaggedValue tag="RationalRose:Tool#1299" xmi.id="EAID_9B1B649E_BB6C_4e7f_934F_198CECB92C11" value="Oracle8" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+		<UML:TaggedValue tag="RationalRose:Tool#1307" xmi.id="EAID_DAB9F4EA_1CB0_4aa0_92B4_24449AF91180" value="Visual Basic" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+		<UML:TaggedValue tag="RationalRose:Tool#148" xmi.id="EAID_7F9DEEFF_AC2A_41e5_94E0_0605AB98D233" value="MOF" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+		<UML:TaggedValue tag="RationalRose:Tool#170" xmi.id="EAID_8605C968_188D_4481_8B24_CD9B4C3FA18D" value="Java" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
 	</XMI.content>
 	<XMI.difference/>
 	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
