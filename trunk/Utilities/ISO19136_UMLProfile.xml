@@ -39,12 +39,10 @@
 				<AppliesTo>
 					<Apply type="package"/>
 				</AppliesTo>
-<!-- these tagged values may be added during the conversion to an implementation model, if needed
 				<TaggedValues>
 					<Tag name="xsdDocument" description="Name of an XML Schema document to create representing the content of this package"/>
 					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
 				</TaggedValues>
--->
 			</Stereotype>
 
 			<Stereotype name="FeatureType" notes="A feature type.">
@@ -135,7 +133,8 @@
 				</AppliesTo>
 			</Stereotype>
 
-<!-- this stereotype may be added for properties with no stereotype during the conversion to an implementation model
+<!-- this stereotype may be added for properties with no stereotype during the conversion to an implementation model -->
+
 			<Stereotype name="property" notes="A regular property.">
 				<AppliesTo>
 					<Apply type="attribute"/>
@@ -147,7 +146,6 @@
 					<Tag name="isMetadata" description="Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world." values="true | false" default="false"/>
 				</TaggedValues>
 			</Stereotype>
--->
 
 		</Stereotypes>
 	</Content>	
