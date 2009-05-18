@@ -19,7 +19,7 @@
 					<Tag name="version" description="Current version of the application schema" default="FIXME" />
 					<Tag name="xsdDocument" description="Name of an XML Schema document to create representing the content of this package" default="FIXME"/>
 					<Tag name="gmlProfileSchema" description="URL of the schema location of a GML profile (optional)"/>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 				</TaggedValues>
 			</Stereotype>
 
@@ -41,7 +41,7 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="xsdDocument" description="Name of an XML Schema document to create representing the content of this package"/>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 				</TaggedValues>
 			</Stereotype>
 
@@ -50,7 +50,7 @@
 					<Apply type="class"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE." values="false" default="false" />
 					<Tag name="byValuePropertyType" description="Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE." values="false" default="false" />
 					<Tag name="isCollection" description="Identifies the feature type as a feature collection." values="true | false" default="false" />
@@ -62,7 +62,7 @@
 					<Apply type="class"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE." values="false" default="false" />
 					<Tag name="byValuePropertyType" description="Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE." values="false" default="false" />
 					<Tag name="isCollection" description="Identifies the type as an object collection." values="true | false" default="false" />
@@ -89,7 +89,7 @@
 					<Apply type="class"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE." values="false" default="false" />
 					<Tag name="isCollection" description="Identifies the data type as an object collection." values="true | false" default="false" />
 				</TaggedValues>
@@ -100,7 +100,7 @@
 					<Apply type="class"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE." values="false" default="false" />
 				</TaggedValues>
 			</Stereotype>
@@ -110,7 +110,7 @@
 					<Apply type="class"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 				</TaggedValues>
 			</Stereotype>
 
@@ -119,7 +119,7 @@
 					<Apply type="class"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
 					<Tag name="asDictionary" description="Encode code list as externally managed dictionary (applies to ISO 19136:2007 encoding rule). Always true in INSPIRE." values="true" default="true" />
 					<Tag name="codeSpace" type="string" description="URI that identifies the authority for this dictionary and its members" unit="" values="" default=""/>
 					<Tag name="dictionaryIdentifier" type="string" description="URI that identifies this dictionary" unit="" values="" default=""/>
