@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:swe="http://www.opengis.net/swe/1.0.1"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_sweCommon_GML31.xml">
+	<description>Provides a mapping of the classes in the SWE Common model to their implementation in the http://www.opengis.net/swe/1.0.1 XML Schema
+	GML 3.1 binding</description>
+	<imports>
+		<schema prefix="swe" namespace="http://www.opengis.net/swe/1.0.1" schemaLocation="http://schemas.opengis.net/sweCommon/1.0.1/swe.xsd" />
+	</imports>
+	<entry>
+		<umlClass>TM_Aggregate</umlClass>
+		<gmlObjectElement>swe:TimeAggregate</gmlObjectElement>
+		<gmlType>swe:TimeAggregateType</gmlType>
+		<gmlPropertyType>swe:TimeAggregatePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_Grid</umlClass>
+		<gmlObjectElement>swe:TimeGrid</gmlObjectElement>
+		<gmlType>swe:TimeGridType</gmlType>
+		<gmlPropertyType>swe:TimeGridPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_GridEnvelope</umlClass>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:TimeGridEnvelopePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_InstantGrid</umlClass>
+		<gmlObjectElement>swe:TimeInstantGrid</gmlObjectElement>
+		<gmlType>swe:TimeInstantGridType</gmlType>
+		<gmlPropertyType>swe:TimeInstantGridPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TM_IntervalGrid</umlClass>
+		<gmlObjectElement>swe:TimeIntervalGrid</gmlObjectElement>
+		<gmlType>swe:TimeIntervalGridType</gmlType>
+		<gmlPropertyType>swe:TimeIntervalGridPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>PropertyType</umlClass>
+		<gmlObjectElement>swe:Phenomenon</gmlObjectElement>
+		<gmlType>swe:PhenomenonType</gmlType>
+		<gmlPropertyType>swe:PhenomenonPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ConstrainedPropertyType</umlClass>
+		<gmlObjectElement>swe:ConstrainedPhenomenon</gmlObjectElement>
+		<gmlType>swe:ConstrainedPhenomenonType</gmlType>
+		<gmlPropertyType xsi:nil="true" />
+	</entry>
+	<entry>
+		<umlClass>CompoundPropertyType</umlClass>
+		<gmlObjectElement>swe:CompoundPhenomenon</gmlObjectElement>
+		<gmlType>swe:CompoundPhenomenonType</gmlType>
+		<gmlPropertyType xsi:nil="true" />
+	</entry>
+	<entry>
+		<umlClass>PropertyTypeSeries</umlClass>
+		<gmlObjectElement>swe:CompositePhenomenon</gmlObjectElement>
+		<gmlType>swe:CompositePhenomenonType</gmlType>
+		<gmlPropertyType xsi:nil="true" />
+	</entry>
+	<entry>
+		<umlClass>CompositePropertyType</umlClass>
+		<gmlObjectElement>swe:PhenomenonSeries</gmlObjectElement>
+		<gmlType>swe:PhenomenonSeriesType</gmlType>
+		<gmlPropertyType xsi:nil="true" />
+	</entry>
+</mapping>
