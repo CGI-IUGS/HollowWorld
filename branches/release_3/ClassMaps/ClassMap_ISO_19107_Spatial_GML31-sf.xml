@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_ISO_19107_Spatial.xml">
+	<description>Provides a mapping of selected ISO 19107 classes to their XML implementation (mostly in GML)
+	GML 3.1 binding</description>
+	<imports>
+		<schema prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsf2.xsd" />
+	</imports>
+	<entry>
+		<umlClass>GM_Envelope</umlClass>
+		<gmlObjectElement>gml:Envelope</gmlObjectElement>
+		<gmlType>gml:EnvelopeType</gmlType>
+		<gmlPropertyType>gml:BoundingShapeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Object</umlClass>
+		<gmlObjectElement>gml:_Geometry</gmlObjectElement>
+		<gmlType>gml:AbstractGeometryType</gmlType>
+		<gmlPropertyType>gml:GeometryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Primitive</umlClass>
+		<gmlObjectElement>gml:_GeometricPrimitive</gmlObjectElement>
+		<gmlType>gml:AbstractGeometricPrimitiveType</gmlType>
+		<gmlPropertyType>gml:GeometricPrimitivePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DirectPosition</umlClass>
+		<gmlObjectElement>gml:pos</gmlObjectElement>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:DirectPositionType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Position</umlClass>
+		<gmlObjectElement>gml:pos</gmlObjectElement>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType group="true">gml:DirectPositionType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_PointArray</umlClass>
+		<gmlObjectElement>gml:posList</gmlObjectElement>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType group="true">gml:DirectPositionListType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Point</umlClass>
+		<gmlObjectElement>gml:Point</gmlObjectElement>
+		<gmlType>gml:PointType</gmlType>
+		<gmlPropertyType>gml:PointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Curve</umlClass>
+		<gmlObjectElement>gml:Curve</gmlObjectElement>
+		<gmlType>gml:CurveType</gmlType>
+		<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Surface</umlClass>
+		<gmlObjectElement>gml:Surface</gmlObjectElement>
+		<gmlType>gml:SurfaceType</gmlType>
+		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_PolyhedralSurface</umlClass>
+		<gmlObjectElement>gml:Surface</gmlObjectElement>
+		<gmlType>gml:SurfaceType</gmlType>
+		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_TriangulatedSurface</umlClass>
+		<gmlObjectElement>gml:Surface</gmlObjectElement>
+		<gmlType>gml:SurfaceType</gmlType>
+		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Tin</umlClass>
+		<gmlObjectElement>gml:Surface</gmlObjectElement>
+		<gmlType>gml:SurfaceType</gmlType>
+		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Solid</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_OrientableCurve</umlClass>
+		<gmlObjectElement>gml:Curve</gmlObjectElement>
+		<gmlType>gml:CurveType</gmlType>
+		<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_OrientableSurface</umlClass>
+		<gmlObjectElement>gml:Surface</gmlObjectElement>
+		<gmlType>gml:SurfaceType</gmlType>
+		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Ring</umlClass>
+		<gmlObjectElement>gml:Curve</gmlObjectElement>
+		<gmlType>gml:CurveType</gmlType>
+		<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_CompositePoint</umlClass>
+		<gmlObjectElement>gml:Point</gmlObjectElement>
+		<gmlType>gml:PointType</gmlType>
+		<gmlPropertyType>gml:PointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_CompositeCurve</umlClass>
+		<gmlObjectElement>gml:Curve</gmlObjectElement>
+		<gmlType>gml:CurveType</gmlType>
+		<gmlPropertyType>gml:CurvePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_CompositeSurface</umlClass>
+		<gmlObjectElement>gml:Surface</gmlObjectElement>
+		<gmlType>gml:SurfaceType</gmlType>
+		<gmlPropertyType>gml:SurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_CompositeSolid</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Complex</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_Aggregate</umlClass>
+		<gmlObjectElement>gml:_GeometricAggregate</gmlObjectElement>
+		<gmlType>gml:AbstractGeometricAggregateType</gmlType>
+		<gmlPropertyType>gml:MultiGeometryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_MultiPoint</umlClass>
+		<gmlObjectElement>gml:MultiPoint</gmlObjectElement>
+		<gmlType>gml:MultiPointType</gmlType>
+		<gmlPropertyType>gml:MultiPointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_MultiCurve</umlClass>
+		<gmlObjectElement>gml:MultiCurve</gmlObjectElement>
+		<gmlType>gml:MultiCurveType</gmlType>
+		<gmlPropertyType>gml:MultiCurvePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_MultiSurface</umlClass>
+		<gmlObjectElement>gml:MultiSurface</gmlObjectElement>
+		<gmlType>gml:MultiSurfaceType</gmlType>
+		<gmlPropertyType>gml:MultiSurfacePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_MultiSolid</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_MultiPrimitive</umlClass>
+		<gmlObjectElement>gml:_GeometricAggregate</gmlObjectElement>
+		<gmlType>gml:AbstractGeometricAggregateType</gmlType>
+		<gmlPropertyType>gml:MultiGeometryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GM_CurveSegment</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Arc</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_ArcByBulge</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_ArcString</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_ArcStringByBulge</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Bezier</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_BsplineCurve</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Circle</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Clothoid</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_CubicSpline</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_GeodesicString</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_LineString</umlClass>
+		<gmlObjectElement>gml:LineStringSegment</gmlObjectElement>
+		<gmlType>gml:LineStringSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_OffsetCurve</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_SurfacePatch</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_GriddedSurface</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_ParametricCurveSurface</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Cone</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Cylinder</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Geodesic</umlClass>
+		<gmlObjectElement>gml:_CurveSegment</gmlObjectElement>
+		<gmlType>gml:AbstractCurveSegmentType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Polygon</umlClass>
+		<gmlObjectElement>gml:PolygonPatch</gmlObjectElement>
+		<gmlType>gml:PolygonPatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Sphere</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>GM_Triangle</umlClass>
+		<gmlObjectElement>gml:_SurfacePatch</gmlObjectElement>
+		<gmlType>gml:AbstractSurfacePatchType</gmlType>
+		<gmlPropertyType xsi:nil="true"/>
+	</entry>
+	<entry>
+		<umlClass>TP_Object</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_Node</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_Edge</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_Face</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_Solid</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_DirectedNode</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_DirectedEdge</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_DirectedFace</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_DirectedSolid</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TP_Complex</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gml:ReferenceType</gmlPropertyType>
+	</entry>
+</mapping>
