@@ -5,8 +5,8 @@
 	xmlns:om="http://www.opengis.net/om/2.0"
 	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
 	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
-	id="ClassMap_ISO_19156_Observation_Core_GML32.xml">
-	<description>Provides a mapping of the classes in the Oand M 2.0 model, Observation Core package, to
+	id="ClassMap_ISO_DIS_19156_timeSeriesObservation_GML32.xml">
+	<description>Provides a mapping of the classes in the Oand M 2.0 model, time Series Observation package, to
 		their implementation in OMXML in the 
 		http://www.opengis.net/om/2.0
 	    namespaces </description>
@@ -18,27 +18,9 @@
 			schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>
 	</imports>
 	<entry>
-		<umlClass>OM_Observation</umlClass>
+		<umlClass>OM_TimeSeriesObservation</umlClass>
 		<gmlObjectElement>om:OM_Observation</gmlObjectElement>
 		<gmlType>om:OM_ObservationType</gmlType>
 		<gmlPropertyType>om:OM_ObservationPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>OM_Process</umlClass>
-		<gmlObjectElement xsi:nil="true" />
-		<gmlType>xsd:anyType</gmlType>
-		<gmlPropertyType>om:OM_ProcessPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>ObservationContext</umlClass>
-		<gmlObjectElement>om:ObservationContext</gmlObjectElement>
-		<gmlType>om:ObservationContextType</gmlType>
-		<gmlPropertyType>om:ObservationContextPropertyType</gmlPropertyType>
-	</entry>
-	<entry>
-		<umlClass>NamedValue</umlClass>
-		<gmlObjectElement>om:NamedValue</gmlObjectElement>
-		<gmlType>om:NamedValueType</gmlType>
-		<gmlPropertyType>om:NamedValuePropertyType</gmlPropertyType>
 	</entry>
 </mapping>
