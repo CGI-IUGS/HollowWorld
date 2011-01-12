@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:sam="http://www.opengis.net/sampling/2.0"
+	xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_ISO_19156_Specimen_GML32.xml">
+	<description>Provides a mapping of the classes in the Oand M 2.0 model, Specimen package, to
+		their implementation in OMXML in the 
+		http://www.opengis.net/sampling/2.0 
+		http://www.opengis.net/samplingSpecimen/2.0 
+	    namespaces </description>
+	<imports>
+		<!-- Schema documents are *not yet* available from these locations 2010-06-24 -->
+		<schema
+			prefix="sam"
+			namespace="http://www.opengis.net/sampling/2.0"
+			schemaLocation="http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd"/>
+		<schema
+			prefix="spec"
+			namespace="http://www.opengis.net/samplingSpecimen/2.0"
+			schemaLocation="http://schemas.opengis.net/samplingSpatial/2.0/samplingSpecimen.xsd"/>
+	</imports>
+	<entry>
+		<umlClass>SF_Process</umlClass>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType>xsd:anyType</gmlType>
+		<gmlPropertyType>sam:SF_ProcessPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>SF_Specimen</umlClass>
+		<gmlObjectElement>spec:SF_Specimen</gmlObjectElement>
+		<gmlType>spec:SF_SpecimenType</gmlType>
+		<gmlPropertyType>spec:SF_SpecimenPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>PreparationStep</umlClass>
+		<gmlObjectElement>spec:PreparationStep</gmlObjectElement>
+		<gmlType>spec:PreparationStepType</gmlType>
+		<gmlPropertyType>spec:PreparationStepPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Location</umlClass>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>spec:LocationPropertyType</gmlPropertyType>
+	</entry>
+</mapping>
