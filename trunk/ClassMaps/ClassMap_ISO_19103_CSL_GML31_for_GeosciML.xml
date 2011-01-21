@@ -11,7 +11,9 @@
 	GML 3.1 binding</description>
 	<imports>
 		<schema prefix="gml" namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+<!-- cgu namespace required to support CodeWithAuthorityType -->
 		<schema prefix="cgu" namespace="urn:cgi:xmlns:CGI:Utilities:1.0" schemaLocation="http://www.geosciml.org/cgiutilities/1.0/xsd/cgiUtilities.xsd" />
+<!-- ### -->
 		<schema prefix="xsd" namespace="http://www.w3.org/2001/XMLSchema" />
 	</imports>
 	<entry>
@@ -90,7 +92,9 @@
 		<umlClass>ScopedName</umlClass>
 		<gmlObjectElement xsi:nil="true"/>
 		<gmlType xsi:nil="true"/>
+<!-- CodeWithAuthorityType was not available in GML 3.1, so use CGI Utilities type instead -->
 		<gmlPropertyType>cgu:CodeWithAuthorityType</gmlPropertyType>
+<!-- ### -->
 	</entry>
 	<entry>
 		<umlClass>Length</umlClass>
