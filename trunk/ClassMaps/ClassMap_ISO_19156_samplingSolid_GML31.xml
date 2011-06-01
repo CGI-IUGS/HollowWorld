@@ -5,7 +5,7 @@
 	xmlns:sam="http://www.opengis.net/sampling/1.0"
 	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
 	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
-	id="ClassMap_ISO_DIS_19156_spatialSamplingFeature_GML31.xml">
+	id="ClassMap_ISO_19156_samplingSolid_GML31.xml">
 	<description>Provides a mapping of the classes in the Oand M 2.0 model, Sampling Core package, to
 		their implementation in OMXML 1.0 in the 
 		http://www.opengis.net/sampling/1.0 
@@ -17,9 +17,9 @@
 			schemaLocation="http://schemas.opengis.net/sampling/1.0.0/sampling.xsd"/>
 	</imports>
 	<entry>
-		<umlClass>SF_SpatialSamplingFeature</umlClass>
-		<gmlObjectElement>sam:SpatiallyExtensiveSamplingFeature</gmlObjectElement>
-		<gmlType>sam:SpatiallyExtensiveSamplingFeatureType</gmlType>
-		<gmlPropertyType>sam:SpatiallyExtensiveSamplingFeaturePropertyType</gmlPropertyType>
+		<umlClass>SF_SamplingSolid</umlClass>
+		<gmlObjectElement>sam:SamplingSolid</gmlObjectElement>
+		<gmlType>sam:SamplingSolidType</gmlType>
+		<gmlPropertyType>sam:SamplingSolidPropertyType</gmlPropertyType>
 	</entry>
 </mapping>
