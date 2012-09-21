@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:sa="http://www.opengis.net/sampling/1.0/gml32"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://fullmoon-framework.googlecode.com/svn/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_Specimen_GML32.xml">
+	<description>Provides a mapping of the classes in the OM2 model to their implementation in the http://www.opengis.net/sampling/1.0 XML Schema
+	GML 3.2 binding</description>
+	<imports>
+		<schema prefix="sa" namespace="http://www.opengis.net/sampling/1.0/gml32" schemaLocation="http://dp.schemas.opengis.net/08-129/sampling/1.0.0_gml32/sampling.xsd" />
+	</imports>
+	<entry>
+		<umlClass>SFN_Specimen</umlClass>
+		<gmlObjectElement>sa:LocatedSpecimen</gmlObjectElement>
+		<gmlType>sa:LocatedSpecimenType</gmlType>
+		<gmlPropertyType>sa:LocatedSpecimenPropertyType</gmlPropertyType>
+	</entry>
+</mapping>

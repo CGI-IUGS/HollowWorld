@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://fullmoon-framework.googlecode.com/svn/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_ISO_19156_samplingCurve_GML32.xml">
+	<description>Provides a mapping of the classes in the Oand M 2.0 model, samplingCurve package, to
+		their implementation in OMXML in the 
+		http://www.opengis.net/samplingSpatial/2.0
+	    namespaces </description>
+	<imports>
+		<schema
+			prefix="sams"
+			namespace="http://www.opengis.net/samplingSpatial/2.0"
+			schemaLocation="http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd"/>
+	</imports>
+	<entry>
+		<umlClass>SF_SamplingCurve</umlClass>
+		<gmlObjectElement>sams:SF_SpatialSamplingFeature</gmlObjectElement>
+		<gmlType>sams:SF_SpatialSamplingFeatureType</gmlType>
+		<gmlPropertyType>sams:SF_SpatialSamplingFeaturePropertyType</gmlPropertyType>
+	</entry>
+</mapping>

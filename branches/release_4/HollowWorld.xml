@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_309849A8_4D0D_414b_8620_DC828D91BBE4">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="HollowWorld" xmi.id="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="This package contains framework packages for information modelling. These include:&#xA;- elements of the ISO 19100 series of standards relating to Geographic Information. Of particular interest are:&#xA;   - the General Feature Model (ISO 19109), an upper-level model or meta-model for information types, to be used as the basis for domain models presenting an object-centric view of spatial information&#xA;   - the Coverage model (ISO 19123) which provides an alternative property-centric view of spatial information &#xA;   - cross-domain utility classes, including basic types (ISO 19103), spatial schema (ISO 19107), temporal schema (ISO 19108), coordinate reference systems (ISO 19111)&#xA;   - elements required for registration and governance (ISO 19110, ISO 19135)&#xA;   - service descriptions and profiles (ISO 19119, ISO 19128, ISO 19132)&#xA;- models associated with the OGC Sensor Web Enablement initiative&#xA;- additional packages of cross-domain interest, which have not yet been formally adopted by a recognised governance authority, including&#xA;   - components from GML that do not correspond with ISO elements&#xA;   - extensions and specializations to ISO 19123 Coverage model&#xA;   - extensions to ISO 19107 spatial schema covering convex polyhedra, surfaces, curves&#xA;"/>
+						<UML:TaggedValue tag="parent" value="EAPK_8E6DAA32_4E7C_4539_A12E_BCA07BCDEE05"/>
+						<UML:TaggedValue tag="ea_package_id" value="1007"/>
+						<UML:TaggedValue tag="created" value="2007-02-21 00:00:00"/>
+						<UML:TaggedValue tag="modified" value="2007-02-21 00:00:00"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="HollowWorld.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2012-04-11 11:30:24"/>
+						<UML:TaggedValue tag="lastsavedate" value="2007-02-21 21:07:49"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="2"/>
+						<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="2"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_309849A8_4D0D_414b_8620_DC828D91BBE4_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="CommonUsagePackages" xmi.id="EAID_7E174B4E_C64F_48eb_9687_7CE1FAE50C92" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Collection of utilities that have not attained formal governance status, though in some cases they are on a standardization track. &#xA;These are recommended best practice within the HollowWorld modelling framework. "/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+										<UML:TaggedValue tag="date_created" value="2011-06-24 09:44:34"/>
+										<UML:TaggedValue tag="date_modified" value="2011-06-24 09:44:34"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_7E174B4E_C64F_48eb_9687_7CE1FAE50C92"/>
+										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="Simon Cox"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="593"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="INSPIRE Consolidated UML Model" xmi.id="EAID_854E3882_3E39_4a93_A34F_DA6FBF474080" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+										<UML:TaggedValue tag="date_created" value="2012-04-19 15:39:24"/>
+										<UML:TaggedValue tag="date_modified" value="2012-04-19 15:39:24"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_854E3882_3E39_4a93_A34F_DA6FBF474080"/>
+										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="lutzmic"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="1350"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="ISO TC211" xmi.id="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+										<UML:TaggedValue tag="date_created" value="2011-06-24 10:21:42"/>
+										<UML:TaggedValue tag="date_modified" value="2011-06-24 10:21:42"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+										<UML:TaggedValue tag="package_name" value="HollowWorld"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="jrherrin"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="960"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Package name="CommonUsagePackages" xmi.id="EAPK_7E174B4E_C64F_48eb_9687_7CE1FAE50C92" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Collection of utilities that have not attained formal governance status, though in some cases they are on a standardization track. &#xA;These are recommended best practice within the HollowWorld modelling framework. "/>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+								<UML:TaggedValue tag="created" value="2007-02-07 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2007-02-07 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="Examples\CommonUsage.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2010-11-10 08:45:40"/>
+								<UML:TaggedValue tag="lastsavedate" value="2007-02-07 20:52:44"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=HollowWorld;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="Simon Cox"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="INSPIRE Consolidated UML Model" xmi.id="EAPK_854E3882_3E39_4a93_A34F_DA6FBF474080" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+								<UML:TaggedValue tag="created" value="2008-03-17 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2008-03-17 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="TEMPLATE - INSPIRE Consolidated UML Model - ANNEX I-II-III - without ISO.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-04-19 15:39:26"/>
+								<UML:TaggedValue tag="lastsavedate" value="2008-03-17 15:23:44"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="isModel=1;VICON=3;VCCFG=inspire-model;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="lutzmic"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="ISO TC211" xmi.id="EAPK_CAB2E56D_50FA_4904_A16C_B34D7AE325B6" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_309849A8_4D0D_414b_8620_DC828D91BBE4"/>
+								<UML:TaggedValue tag="created" value="2008-04-10 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2008-04-10 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="isotc211\ISO TC211.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-04-11 11:27:57"/>
+								<UML:TaggedValue tag="lastsavedate" value="2008-04-17 08:41:00"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="VCCFG=isotc211;VICON=3;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="jrherrin"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="RationalRose:Tool#1299" xmi.id="EAID_9B1B649E_BB6C_4e7f_934F_198CECB92C11" value="Oracle8" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+		<UML:TaggedValue tag="RationalRose:Tool#1307" xmi.id="EAID_DAB9F4EA_1CB0_4aa0_92B4_24449AF91180" value="Visual Basic" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+		<UML:TaggedValue tag="RationalRose:Tool#148" xmi.id="EAID_7F9DEEFF_AC2A_41e5_94E0_0605AB98D233" value="MOF" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+		<UML:TaggedValue tag="RationalRose:Tool#170" xmi.id="EAID_8605C968_188D_4481_8B24_CD9B4C3FA18D" value="Java" modelElement="EAID_CAB2E56D_50FA_4904_A16C_B34D7AE325B6"/>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>

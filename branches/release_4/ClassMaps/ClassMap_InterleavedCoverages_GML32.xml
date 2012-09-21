@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cv="http://www.opengis.net/cv/0.2/gml32"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://fullmoon-framework.googlecode.com/svn/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_InterleavedCoverages_GML32.xml">
+	<description>Provides a mapping of the classes in the OM2 model to their implementation in the http://www.opengis.net/sampling/1.0 XML Schema</description>
+	<imports>
+		<schema prefix="cv" namespace="http://www.opengis.net/cv/0.2/gml32" schemaLocation="http://bp.schemas.opengis.net/06-188r2/cv/0.2.2_gml32/cv.xsd" />
+	</imports>
+	<entry>
+		<umlClass>CV_DomainObject</umlClass>
+		<gmlObjectElement>cv:CV_DomainObject</gmlObjectElement>
+		<gmlType>cv:CV_DomainObjectType</gmlType>
+		<gmlPropertyType>cv:CV_DomainObjectPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_GeometryValuePair</umlClass>
+		<gmlObjectElement>cv:CV_AbstractGeometryValuePair</gmlObjectElement>
+		<gmlType>cv:CV_AbstractGeometryValuePairType</gmlType>
+		<gmlPropertyType>cv:CV_AbstractGeometryValuePairPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_PointValuePair</umlClass>
+		<gmlObjectElement>cv:CV_PointValuePair</gmlObjectElement>
+		<gmlType>cv:CV_PointValuePairType</gmlType>
+		<gmlPropertyType>cv:CV_PointValuePairPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_TimeInstantValuePair</umlClass>
+		<gmlObjectElement>cv:CV_TimeInstantValuePair</gmlObjectElement>
+		<gmlType>cv:CV_TimeInstantValuePairType</gmlType>
+		<gmlPropertyType>cv:CV_TimeInstantValuePairPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_ElementValuePair</umlClass>
+		<gmlObjectElement>cv:CV_ElementValuePair</gmlObjectElement>
+		<gmlType>cv:CV_ElementValuePairType</gmlType>
+		<gmlPropertyType>cv:CV_ElementValuePairPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteCoverage</umlClass>
+		<gmlObjectElement>cv:CV_AbstractDiscreteCoverage</gmlObjectElement>
+		<gmlType>cv:CV_AbstractDiscreteCoverageType</gmlType>
+		<gmlPropertyType>cv:CV_AbstractDiscreteCoveragePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscretePointCoverage</umlClass>
+		<gmlObjectElement>cv:CV_DiscretePointCoverage</gmlObjectElement>
+		<gmlType>cv:CV_DiscretePointCoverageType</gmlType>
+		<gmlPropertyType>cv:CV_DiscretePointCoveragePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteTimeInstantCoverage</umlClass>
+		<gmlObjectElement>cv:CV_DiscreteTimeInstantCoverage</gmlObjectElement>
+		<gmlType>cv:CV_DiscreteTimeInstantCoverageType</gmlType>
+		<gmlPropertyType>cv:CV_DiscreteTimeInstantCoveragePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CV_DiscreteElementCoverage</umlClass>
+		<gmlObjectElement>cv:CV_DiscreteElementCoverage</gmlObjectElement>
+		<gmlType>cv:CV_DiscreteElementCoverageType</gmlType>
+		<gmlPropertyType>cv:CV_DiscreteElementCoveragePropertyType</gmlPropertyType>
+	</entry>
+</mapping>

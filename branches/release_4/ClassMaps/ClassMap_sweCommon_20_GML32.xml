@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 https://fullmoon-framework.googlecode.com/svn/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_sweCommon_20_GML32.xml">
+	<description>Provides a mapping of the classes in the SWE Common 2.0 model to their implementation in the http://www.opengis.net/swe/2.0 XML Schema
+	GML 3.2 binding</description>
+	<imports>
+		<schema prefix="swe" namespace="http://www.opengis.net/swe/2.0" schemaLocation="http://schemas.opengis.net/sweCommon/2.0/swe.xsd" />
+	</imports>
+	<entry>
+		<umlClass>BinaryEncoding</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:BinaryEncoding</gmlObjectElement>
+		<gmlType>swe:BinaryEncodingType</gmlType>
+		<gmlPropertyType>swe:BinaryEncodingPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Block</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Block</gmlObjectElement>
+		<gmlType>swe:BlockType</gmlType>
+		<gmlPropertyType>swe:BlockPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Component</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Component</gmlObjectElement>
+		<gmlType>swe:ComponentType</gmlType>
+		<gmlPropertyType>swe:ComponentPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ComponentOrBlock</umlClass>
+		<umlStereotype>Union</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:ComponentOrBlockPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AbstractSWE</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:AbstractSWE</gmlObjectElement>
+		<gmlType>swe:AbstractSWEType</gmlType>
+		<gmlPropertyType xsi:nil="true" />
+	</entry>
+	<entry>
+		<umlClass>AbstractSWEIdentifiable</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:AbstractSWEIdentifiable</gmlObjectElement>
+		<gmlType>swe:AbstractSWEIdentifiableType</gmlType>
+		<gmlPropertyType xsi:nil="true" />
+	</entry>
+	<entry>
+		<umlClass>EncodedValues</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:EncodedValuesPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>NilValue</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:NilValue</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>IntegerPair</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:IntegerPair</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>RealPair</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:RealPair</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TimePair</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:TimePair</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TokenPair</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:TokenPair</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TimePosition</umlClass>
+		<umlStereotype>Union</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:TimePosition</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DataArray</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:DataArray</gmlObjectElement>
+		<gmlType>swe:DataArrayType</gmlType>
+		<gmlPropertyType>swe:DataArrayPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DataStream</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:DataStream</gmlObjectElement>
+		<gmlType>swe:DataStreamType</gmlType>
+		<gmlPropertyType>swe:DataStreamPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Matrix</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Matrix</gmlObjectElement>
+		<gmlType>swe:MatrixType</gmlType>
+		<gmlPropertyType>swe:MatrixPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DataChoice</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:DataChoice</gmlObjectElement>
+		<gmlType>swe:DataChoiceType</gmlType>
+		<gmlPropertyType>swe:DataChoicePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DataRecord</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:DataRecord</gmlObjectElement>
+		<gmlType>swe:DataRecordType</gmlType>
+		<gmlPropertyType>swe:DataRecordPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Vector</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Vector</gmlObjectElement>
+		<gmlType>swe:VectorType</gmlType>
+		<gmlPropertyType>swe:VectorPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AbstractDataComponent</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:AbstractDataComponent</gmlObjectElement>
+		<gmlType>swe:AbstractDataComponentType</gmlType>
+		<gmlPropertyType>swe:AbstractDataComponentPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AbstractSimpleComponent</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:AbstractSimpleComponent</gmlObjectElement>
+		<gmlType>swe:AbstractSimpleComponentType</gmlType>
+		<gmlPropertyType>swe:AbstractSimpleComponentPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AllowedTimes</umlClass>
+		<gmlObjectElement>swe:AllowedTimes</gmlObjectElement>
+		<gmlType>swe:AllowedTimesType</gmlType>
+		<gmlPropertyType>swe:AllowedTimesPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AllowedTokens</umlClass>
+		<gmlObjectElement>swe:AllowedTokens</gmlObjectElement>
+		<gmlType>swe:AllowedTokensType</gmlType>
+		<gmlPropertyType>swe:AllowedTokensPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AllowedValues</umlClass>
+		<gmlObjectElement>swe:AllowedValues</gmlObjectElement>
+		<gmlType>swe:AllowedValuesType</gmlType>
+		<gmlPropertyType>swe:AllowedValuesPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AnyNumerical</umlClass>
+		<umlStereotype>Union</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:AnyNumericalPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AnyRange</umlClass>
+		<umlStereotype>Union</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:AnyRangePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AnyScalar</umlClass>
+		<umlStereotype>Union</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:AnyScalarPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Boolean</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Boolean</gmlObjectElement>
+		<gmlType>swe:BooleanType</gmlType>
+		<gmlPropertyType>swe:BooleanPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Category</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Category</gmlObjectElement>
+		<gmlType>swe:CategoryType</gmlType>
+		<gmlPropertyType>swe:CategoryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CategoryRange</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:CategoryRange</gmlObjectElement>
+		<gmlType>swe:CategoryRangeType</gmlType>
+		<gmlPropertyType>swe:CategoryRangePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Count</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Count</gmlObjectElement>
+		<gmlType>swe:CountType</gmlType>
+		<gmlPropertyType>swe:CountPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CountRange</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:CountRange</gmlObjectElement>
+		<gmlType>swe:CountRangeType</gmlType>
+		<gmlPropertyType>swe:CountRangePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>NilValues</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:NilValues</gmlObjectElement>
+		<gmlType>swe:NilValuesType</gmlType>
+		<gmlPropertyType>swe:NilValuesPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Quality</umlClass>
+		<umlStereotype>Union</umlStereotype>
+		<gmlObjectElement xsi:nil="true" />
+		<gmlType xsi:nil="true" />
+		<gmlPropertyType>swe:QualityPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Quantity</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Quantity</gmlObjectElement>
+		<gmlType>swe:QuantityType</gmlType>
+		<gmlPropertyType>swe:QuantityPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>QuantityRange</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:QuantityRange</gmlObjectElement>
+		<gmlType>swe:QuantityRangeType</gmlType>
+		<gmlPropertyType>swe:QuantityRangePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Text</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Text</gmlObjectElement>
+		<gmlType>swe:TextType</gmlType>
+		<gmlPropertyType>swe:TextPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Time</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:Time</gmlObjectElement>
+		<gmlType>swe:TimeType</gmlType>
+		<gmlPropertyType>swe:TimePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TimeRange</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:TimeRange</gmlObjectElement>
+		<gmlType>swe:TimeRangeType</gmlType>
+		<gmlPropertyType>swe:TimeRangePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AbstractEncoding</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:AbstractEncoding</gmlObjectElement>
+		<gmlType>swe:AbstractEncodingType</gmlType>
+		<gmlPropertyType>swe:AbstractEncodingPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TextEncoding</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:TextEncoding</gmlObjectElement>
+		<gmlType>swe:TextEncodingType</gmlType>
+		<gmlPropertyType>swe:TextEncodingPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>XMLEncoding</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>swe:XMLEncoding</gmlObjectElement>
+		<gmlType>swe:XMLEncodingType</gmlType>
+		<gmlPropertyType>swe:XMLEncodingPropertyType</gmlPropertyType>
+	</entry>
+</mapping>
